@@ -1,158 +1,339 @@
-"ad" = (/obj/structure/table/wood{icon_state = "largetable"; dir = 10},/turf/open/floor/rogue/blocks/stonered,/area/rogue)
-"aI" = (/obj/structure/rack/rogue,/obj/item/quiver/bolts,/obj/item/quiver/bolts,/obj/item/quiver/bolts,/turf/open/floor/rogue/woodturned,/area/rogue)
-"bd" = (/obj/structure/rack/rogue,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow,/turf/open/floor/rogue/woodturned,/area/rogue)
-"bg" = (/obj/structure/chair/wood/rogue{dir = 1},/turf/open/floor/rogue/blocks/stonered,/area/rogue)
-"bn" = (/obj/structure/fluff/walldeco/church/line,/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/water/cleanshallow,/area/rogue)
-"bo" = (/obj/structure/closet/crate/chest/neu,/obj/item/rogueweapon/hoe,/obj/item/rogueweapon/shovel,/obj/item/clothing/mask/cigarette/pipe/westman,/turf/open/floor/rogue/tile/bath,/area/rogue)
-"bA" = (/obj/structure/fluff/railing/border{dir = 8},/turf/open/floor/rogue/grass,/area/rogue)
+"ad" = (/obj/structure/table/wood{icon_state = "largetable"; dir = 10},/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
+"aG" = (/obj/effect/turf_decal/weather/snow/corner{dir = 1},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"aI" = (/obj/structure/rack/rogue,/obj/item/quiver/bolts,/obj/item/quiver/bolts,/obj/item/quiver/bolts,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"bd" = (/obj/structure/rack/rogue,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"bg" = (/obj/structure/chair/wood/rogue{dir = 1},/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
+"bn" = (/obj/structure/fluff/walldeco/church/line,/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/water/cleanshallow,/area/rogue/indoors/town/magician)
+"bo" = (/obj/structure/closet/crate/chest/neu,/obj/item/rogueweapon/hoe,/obj/item/rogueweapon/shovel,/obj/item/clothing/mask/cigarette/pipe/westman,/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"br" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "manor"; name = "Stellari Quarters"},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"bA" = (/obj/structure/fluff/railing/border{dir = 8},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"bG" = (/obj/structure/chair/bench/coucha/r,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"bN" = (/obj/structure/chair/wood/rogue/chair3{dir = 1},/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"bU" = (/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/town/magician)
+"cf" = (/obj/effect/turf_decal/weather/snow/corner{dir = 4},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "cl" = (/turf/open/water/ocean/deep,/area/rogue)
-"eh" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/obj/structure/fluff/walldeco/church/line,/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/churchrough,/area/rogue)
+"cz" = (/obj/structure/closet/crate/chest/neu,/obj/item/rogueweapon/hoe,/obj/item/rogueweapon/thresher,/obj/structure/fluff/walldeco/customflag{pixel_y = 32},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"cB" = (/obj/structure/fluff/railing/border{dir = 10},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"cP" = (/obj/structure/closet/crate/chest,/obj/item/reagent_containers/food/snacks/egg,/obj/item/reagent_containers/food/snacks/egg,/obj/item/reagent_containers/food/snacks/egg,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/butter,/obj/item/reagent_containers/food/snacks/rogue/meat/sausage,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,/obj/item/reagent_containers/food/snacks/grown/potato/rogue,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"cY" = (/obj/effect/turf_decal/weather/snow/corner{dir = 1},/obj/effect/turf_decal/weather/snow/corner{dir = 5},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"dR" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/item/millstone{pixel_y = 7},/obj/effect/decal/cleanable/food/flour,/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
+"dS" = (/obj/effect/turf_decal/weather/snow/corner{dir = 6},/obj/effect/turf_decal/weather/snow/corner{dir = 1},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"eh" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/obj/structure/fluff/walldeco/church/line,/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"em" = (/turf/open/floor/rogue/wood,/area/rogue/outdoors/mountains/decap)
+"eB" = (/obj/effect/turf_decal/weather/snow/corner{dir = 10},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"eE" = (/obj/item/clothing/cloak/cape/fur,/turf/closed/wall/mineral/rogue/stonebrick,/area/rogue/indoors/town/manor)
+"eT" = (/obj/structure/chair/wood/rogue{dir = 8},/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"eU" = (/obj/item/roguebin/water,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"eW" = (/obj/effect/turf_decal/weather/snow/corner{dir = 8},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"fj" = (/turf/closed/wall/mineral/rogue/decostone,/area/rogue/indoors/town/manor)
+"fm" = (/obj/effect/decal/cleanable/food/flour,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"fp" = (/obj/structure/chair/wood/rogue{dir = 8},/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/magician)
 "fx" = (/turf/open/floor/rogue/carpet,/area/rogue)
-"fF" = (/obj/item/reagent_containers/glass/bucket,/turf/open/floor/rogue/tile/bath,/area/rogue)
-"fH" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/ruinedwood,/area/rogue)
+"fz" = (/obj/machinery/light/rogue/wallfire{pixel_x = 32},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"fF" = (/obj/item/reagent_containers/glass/bucket,/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"fH" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/ruinedwood,/area/rogue/outdoors/mountains/decap)
+"fK" = (/obj/effect/turf_decal/weather/snow/corner{dir = 5},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"fZ" = (/obj/structure/closet/crate/roguecloset,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"gb" = (/turf/open/transparent/openspace,/area/rogue/outdoors/mountains/decap)
 "gE" = (/obj/effect/decal/cobbleedge{dir = 10; icon_state = "cobbleedge-n"},/turf/closed/wall/mineral/rogue/stone,/area/rogue)
+"gG" = (/obj/structure/chair/wood/rogue/fancy{dir = 8},/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"gN" = (/obj/machinery/light/rogue/wallfire/candle/l,/obj/structure/chair/wood/rogue{dir = 1},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
 "gQ" = (/obj/structure/mineral_door/bars{locked = 1; lockid = "dungeon"},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue)
-"hm" = (/turf/open/floor/carpet/royalblack,/area/rogue)
-"hq" = (/obj/structure/fluff/railing/border{dir = 1},/turf/open/transparent/openspace,/area/rogue)
-"hy" = (/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/hexstone,/area/rogue)
+"hm" = (/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"hq" = (/obj/structure/fluff/railing/border{dir = 1},/turf/open/transparent/openspace,/area/rogue/outdoors/mountains/decap)
+"hy" = (/obj/machinery/light/rogue/torchholder/r,/obj/structure/closet/crate/roguecloset/inn/chest,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
+"hC" = (/obj/effect/turf_decal/weather/snow/corner{dir = 10; layer = -5},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "hK" = (/obj/structure/bars,/turf/closed/wall/mineral/rogue/craftstone,/area/rogue)
+"hZ" = (/turf/closed/wall/mineral/rogue/decostone,/area/rogue/indoors/town/garrison)
+"iB" = (/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
 "iI" = (/obj/structure/fluff/walldeco/chains,/turf/open/floor/rogue/cobble,/area/rogue)
-"iJ" = (/obj/structure/fluff/railing/border/north,/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue)
-"iX" = (/obj/structure/rack/rogue,/obj/item/rogueweapon/mace/woodclub/crafted,/obj/item/rogueweapon/mace/woodclub/crafted,/turf/open/floor/rogue/grass,/area/rogue)
+"iJ" = (/obj/structure/fluff/railing/border/north,/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/town/magician)
+"iX" = (/obj/structure/rack/rogue,/obj/item/rogueweapon/mace/woodclub/crafted,/obj/item/rogueweapon/mace/woodclub/crafted,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
 "jb" = (/obj/structure/bed/rogue/shit,/obj/effect/decal/cleanable/blood/old,/turf/open/floor/rogue/cobble,/area/rogue)
-"jF" = (/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/churchrough,/area/rogue)
-"jT" = (/turf/open/floor/rogue/woodturned,/area/rogue)
-"kb" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/woodturned,/area/rogue)
+"jj" = (/obj/effect/decal/cleanable/blood/old,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"jF" = (/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/machinery/light/rogue/wallfire/candle,/obj/structure/fluff/statue/femalestatue2,/obj/structure/fluff/walldeco/church/line,/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"jN" = (/obj/effect/turf_decal/weather/snow/corner{dir = 6},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"jT" = (/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"kb" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
 "km" = (/obj/structure/closet/crate/chest,/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue)
-"kv" = (/obj/structure/chair/wood/rogue/fancy,/turf/open/floor/rogue/tile,/area/rogue)
-"kO" = (/obj/structure/fluff/railing/border,/turf/open/floor/rogue/wood,/area/rogue)
-"kR" = (/obj/structure/well,/turf/open/floor/rogue/grass,/area/rogue)
+"kr" = (/obj/item/reagent_containers/glass/mortar,/obj/item/pestle,/obj/structure/table/wood/fancy,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"kv" = (/obj/structure/chair/wood/rogue/fancy,/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
+"ky" = (/obj/structure/table/wood{dir = 1; icon_state = "longtable"},/obj/item/reagent_containers/glass/bottle/rogue/elfred,/obj/item/reagent_containers/glass/cup/silver{pixel_x = 10; pixel_y = -3},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"kA" = (/obj/effect/turf_decal/weather/snow/corner{dir = 5},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"kD" = (/obj/machinery/light/rogue/hearth,/obj/item/cooking/pan,/obj/machinery/light/rogue/oven/south,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/indoors/town/manor)
+"kI" = (/obj/structure/table/wood/poor,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"kL" = (/obj/structure/mineral_door/wood/fancywood{name = "Bath"},/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"kN" = (/obj/effect/turf_decal/weather/snow/corner{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"kO" = (/obj/structure/fluff/railing/border,/turf/open/floor/rogue/wood,/area/rogue/outdoors/mountains/decap)
+"kR" = (/obj/structure/well,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"kZ" = (/turf/closed/wall/mineral/rogue/stone,/area/rogue/indoors/town/magician)
 "li" = (/obj/structure/pillory,/turf/open/floor/rogue/cobble,/area/rogue)
-"lm" = (/obj/structure/roguewindow,/turf/open/floor/rogue/concrete,/area/rogue)
+"lm" = (/obj/structure/roguewindow,/turf/open/floor/rogue/concrete,/area/rogue/indoors/town/magician)
+"lp" = (/obj/item/reagent_containers/glass/mortar,/obj/item/pestle,/obj/structure/table/wood,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"lD" = (/obj/structure/roguewindow/openclose{dir = 1},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue)
+"lF" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "royal"; name = "Hersir's Apartment"},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
 "lI" = (/obj/structure/bars,/turf/open/floor/rogue/concrete,/area/rogue)
-"lY" = (/obj/structure/table/wood/poor,/obj/structure/bars/passage/shutter{redstone_id = "weaponsmith_shutter"},/turf/open/floor/rogue/ruinedwood,/area/rogue)
+"lQ" = (/obj/effect/turf_decal/weather/snow/corner{dir = 6},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"lX" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "manor"; name = "Hall of Warriors"},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"lY" = (/obj/structure/table/wood/poor,/obj/structure/bars/passage/shutter{redstone_id = "weaponsmith_shutter"},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/manor)
 "mb" = (/obj/structure/closet/crate/chest,/obj/item/reagent_containers/food/snacks/rogue/honey,/obj/item/reagent_containers/food/snacks/rogue/honey,/obj/item/reagent_containers/food/snacks/rogue/cheese,/obj/item/reagent_containers/food/snacks/rogue/cheese,/obj/item/reagent_containers/food/snacks/rogue/cheese,/obj/item/reagent_containers/food/snacks/rogue/cheese,/obj/item/reagent_containers/food/snacks/rogue/cheese,/obj/item/reagent_containers/food/snacks/rogue/cheese,/obj/item/reagent_containers/food/snacks/rogue/cheese,/obj/item/reagent_containers/food/snacks/rogue/cheese,/obj/item/reagent_containers/food/snacks/butter,/obj/item/reagent_containers/food/snacks/butter,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue)
-"mn" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/carpet/royalblack,/area/rogue)
-"mD" = (/obj/structure/table/wood/long_table/right,/obj/item/paper{pixel_x = -4; pixel_y = -3},/obj/item/paper{pixel_x = 2; pixel_y = 2},/obj/item/natural/feather,/turf/open/floor/rogue/tile/bath,/area/rogue)
-"mH" = (/obj/structure/table/wood,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/turf/open/floor/rogue/dirt/road,/area/rogue)
-"mP" = (/obj/structure/fluff/railing/border{dir = 4},/turf/open/floor/rogue/grass,/area/rogue)
-"nr" = (/obj/structure/fermentation_keg/water,/turf/open/floor/rogue/grass,/area/rogue)
-"ns" = (/obj/effect/decal/cobbleedge{icon_state = "borderfall"; dir = 1},/turf/open/floor/rogue/blocks/stonered,/area/rogue)
+"mj" = (/obj/effect/turf_decal/weather/snow/corner{dir = 7},/obj/effect/turf_decal/weather/snow/corner{dir = 1},/obj/effect/turf_decal/weather/snow/corner{dir = 4},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"mn" = (/obj/machinery/light/rogue/wallfire/candle,/obj/structure/stairs/stone{dir = 4},/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"ms" = (/obj/structure/fluff/walldeco/rpainting/crown{pixel_x = -32},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"mD" = (/obj/structure/table/wood/long_table/right,/obj/item/paper{pixel_x = -4; pixel_y = -3},/obj/item/paper{pixel_x = 2; pixel_y = 2},/obj/item/natural/feather,/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"mH" = (/obj/structure/table/wood,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"mP" = (/obj/structure/fluff/railing/border{dir = 4},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"nr" = (/obj/structure/fermentation_keg/water,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"ns" = (/obj/effect/decal/cobbleedge{icon_state = "borderfall"; dir = 1},/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
 "nE" = (/obj/structure/toilet,/obj/effect/decal/cobbleedge{dir = 10; icon_state = "cobbleedge-w"},/turf/open/floor/rogue/dirt/road,/area/rogue)
+"nH" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/reagent_containers/glass/bucket,/obj/item/reagent_containers/glass/bucket,/obj/item/rogueweapon/hammer/iron,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
 "nS" = (/obj/structure/bars,/turf/closed/wall/mineral/rogue/stone,/area/rogue)
-"nU" = (/obj/structure/chair/wood/rogue{dir = 4},/turf/open/floor/rogue/blocks/stonered,/area/rogue)
-"oj" = (/obj/structure/roguewindow/openclose{dir = 4},/turf/open/floor/rogue/naturalstone,/area/rogue)
-"oD" = (/obj/structure/table/wood{icon_state = "longtable"; dir = 1},/turf/open/floor/rogue/tile,/area/rogue)
+"nU" = (/obj/structure/chair/wood/rogue{dir = 4},/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
+"od" = (/turf/closed/wall/mineral/rogue/stone,/area/rogue/indoors/town/manor)
+"oj" = (/obj/structure/roguewindow/openclose{dir = 4},/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"ou" = (/obj/effect/turf_decal/weather/snow/corner{dir = 10},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"oB" = (/obj/item/millstone{pixel_y = 7},/obj/structure/table/wood,/obj/structure/fluff/walldeco/customflag{pixel_y = 32},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"oD" = (/obj/structure/table/wood{icon_state = "longtable"; dir = 1},/obj/item/reagent_containers/glass/cup,/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
 "oH" = (/obj/structure/closet/crate/chest,/obj/item/reagent_containers/food/snacks/grown/apple,/obj/item/reagent_containers/food/snacks/grown/apple,/obj/item/reagent_containers/food/snacks/grown/apple,/obj/item/reagent_containers/food/snacks/grown/berries/rogue,/obj/item/reagent_containers/food/snacks/grown/berries/rogue,/obj/item/reagent_containers/food/snacks/grown/berries/rogue,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue)
-"oI" = (/obj/structure/stairs{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue)
+"oI" = (/obj/structure/stairs{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "oQ" = (/obj/structure/closet/crate/roguecloset,/obj/item/candle/yellow,/turf/open/floor/rogue/wood,/area/rogue)
-"oT" = (/turf/open/floor/rogue/hexstone,/area/rogue)
+"oT" = (/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
 "pb" = (/obj/machinery/light/rogue/torchholder,/turf/closed/wall/mineral/rogue/stone,/area/rogue)
-"px" = (/turf/open/floor/rogue/blocks/stonered,/area/rogue)
-"pC" = (/obj/machinery/light/rogue/forge,/turf/open/floor/rogue/hexstone,/area/rogue)
-"pQ" = (/obj/structure/table/wood/long_table,/obj/item/reagent_containers/glass/mortar{pixel_x = 7; pixel_y = 5},/obj/item/pestle{pixel_x = -10; pixel_y = 1},/turf/open/floor/rogue/tile/bath,/area/rogue)
-"qe" = (/obj/effect/decal/cobbleedge{icon_state = "borderfall"; dir = 1},/obj/structure/roguemachine/musicbox{pixel_y = 16},/obj/structure/table/wood{icon_state = "tablewood1"},/turf/open/floor/rogue/blocks/stonered,/area/rogue)
+"pf" = (/obj/structure/bed/rogue/inn/double,/obj/item/bedsheet/rogue/fabric_double,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/magician)
+"pn" = (/obj/structure/flora/roguetree/pine,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"px" = (/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
+"pB" = (/obj/structure/fluff/clock,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"pC" = (/obj/machinery/light/rogue/forge,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
+"pQ" = (/obj/structure/table/wood/long_table,/obj/item/reagent_containers/glass/mortar{pixel_x = 7; pixel_y = 5},/obj/item/pestle{pixel_x = -10; pixel_y = 1},/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"qe" = (/obj/effect/decal/cobbleedge{icon_state = "borderfall"; dir = 1},/obj/structure/roguemachine/musicbox{pixel_y = 16},/obj/structure/table/wood{icon_state = "tablewood1"},/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
 "qi" = (/turf/closed/wall/mineral/rogue/stonebrick,/area/rogue)
-"qA" = (/obj/structure/chair/bench/church/r{dir = 1},/turf/open/floor/rogue/grass,/area/rogue)
-"qN" = (/turf/open/floor/rogue/grass,/area/rogue)
-"rO" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/item/reagent_containers/glass/cup/steel,/obj/item/reagent_containers/glass/cup/steel,/turf/open/floor/rogue/woodturned,/area/rogue)
-"rW" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = 7; pixel_y = 8},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = 7},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = 7; pixel_y = -5},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_y = 8},/obj/item/reagent_containers/glass/bottle/alchemical,/obj/item/reagent_containers/glass/bottle/alchemical{pixel_y = -5},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = -7; pixel_y = 8},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = -7},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = -7; pixel_y = -5},/obj/structure/rack/rogue/shelf,/obj/item/storage/roguebag{pixel_y = 44},/turf/open/floor/rogue/tile/bath,/area/rogue)
-"sA" = (/obj/structure/mineral_door/wood{icon_state = "wcv"; locked = 1; lockid = "tower"; name = "Alchemy laboratory"},/turf/open/floor/rogue/concrete,/area/rogue)
-"sC" = (/obj/machinery/light/rogue/wallfire/candle/l,/turf/open/floor/rogue/tile/bath,/area/rogue)
+"qA" = (/obj/structure/chair/bench/church/r{dir = 1},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"qN" = (/obj/effect/turf_decal/weather/snow/corner{dir = 4},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"qU" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"rf" = (/obj/structure/fluff/railing/border,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"rq" = (/obj/structure/bed/rogue/inn/double{dir = 1},/obj/item/bedsheet/rogue/double_pelt{dir = 1; add_overlays = \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\s},/obj/effect/decal/cleanable/dirt/cobweb,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"rz" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "manor"; name = "Hall of Warriors"},/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/manor)
+"rO" = (/obj/structure/table/wood{icon_state = "tablewood1"},/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"rW" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = 7; pixel_y = 8},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = 7},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = 7; pixel_y = -5},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_y = 8},/obj/item/reagent_containers/glass/bottle/alchemical,/obj/item/reagent_containers/glass/bottle/alchemical{pixel_y = -5},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = -7; pixel_y = 8},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = -7},/obj/item/reagent_containers/glass/bottle/alchemical{pixel_x = -7; pixel_y = -5},/obj/structure/rack/rogue/shelf,/obj/item/storage/roguebag{pixel_y = 44},/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"so" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "royal"; name = "Vala's Den"},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/magician)
+"su" = (/obj/structure/rack/rogue/shelf,/obj/item/reagent_containers/glass/bucket/pot,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/indoors/town/manor)
+"sA" = (/obj/structure/mineral_door/wood{icon_state = "wcv"; locked = 1; lockid = "tower"; name = "Alchemy laboratory"},/turf/open/floor/rogue/concrete,/area/rogue/outdoors/mountains/decap)
+"sC" = (/obj/machinery/light/rogue/wallfire/candle/l,/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"sG" = (/obj/effect/turf_decal/weather/snow/corner{dir = 1},/obj/effect/turf_decal/weather/snow/corner{dir = 8},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
 "sH" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/naturalstone,/area/rogue)
-"sM" = (/obj/structure/table/wood{icon_state = "longtable_mid"; dir = 1},/turf/open/floor/rogue/tile,/area/rogue)
+"sM" = (/obj/structure/table/wood{icon_state = "longtable_mid"; dir = 1},/obj/item/reagent_containers/glass/cup,/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
+"sU" = (/obj/effect/turf_decal/weather/snow/corner{dir = 1},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "ta" = (/turf/closed/wall/mineral/rogue/stone,/area/rogue)
-"um" = (/obj/structure/closet/crate/chest,/obj/item/polishing_cream,/obj/item/armor_brush,/obj/item/rope/chain,/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,/obj/item/natural/cloth,/obj/item/natural/cloth,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,/obj/item/quiver/bolts,/turf/open/floor/rogue/ruinedwood,/area/rogue)
-"uB" = (/obj/structure/fluff/railing/border,/turf/open/transparent/openspace,/area/rogue)
+"tb" = (/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"to" = (/obj/structure/globe,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"tx" = (/obj/structure/telescope,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"tA" = (/obj/effect/landmark/start/lady{dir = 8},/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"tH" = (/obj/effect/decal/cleanable/blood/old,/obj/item/clothing/wrists/roguetown/wrappings{name = "puglist wrappings"},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"tI" = (/obj/machinery/light/rogue/wallfire/candle/l,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"tT" = (/obj/structure/chair/wood/rogue/fancy{dir = 4},/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"um" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"uo" = (/obj/structure/flora/roguegrass,/obj/structure/flora/ausbushes/ywflowers,/obj/structure/fluff/railing/border{dir = 4},/turf/open/floor/rogue/grass,/area/rogue/indoors/town/magician)
+"uB" = (/obj/structure/fluff/railing/border,/turf/open/transparent/openspace,/area/rogue/outdoors/mountains/decap)
+"uG" = (/obj/structure/bed/rogue/inn/double,/obj/item/bedsheet/rogue/fabric_double,/obj/machinery/light/rogue/wallfire/candle/r,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"uL" = (/obj/machinery/light/rogue/torchholder/r{dir = 4},/obj/structure/fluff/big_chain,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
 "uN" = (/obj/structure/bed/rogue/shit,/turf/open/floor/rogue/cobble,/area/rogue)
-"uQ" = (/obj/machinery/light/rogue/torchholder/r{dir = 4},/turf/open/floor/rogue/woodturned,/area/rogue)
+"uQ" = (/obj/machinery/light/rogue/torchholder/r{dir = 4},/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
 "uX" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/carpet,/area/rogue)
-"vf" = (/obj/effect/decal/cobbleedge{icon_state = "borderfall"; dir = 1},/obj/structure/fluff/psycross,/turf/open/floor/rogue/blocks/stonered,/area/rogue)
-"vs" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/churchrough,/area/rogue)
-"vU" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/turf/open/floor/rogue/churchrough,/area/rogue)
-"wz" = (/obj/structure/chair/bench/church/mid{dir = 1},/turf/open/floor/rogue/grass,/area/rogue)
-"wG" = (/turf/open/water/bath{desc = "clear, lightly foamy water, perfect for dipping into after a long day."},/area/rogue)
-"yN" = (/obj/machinery/light/rogue/oven/south{pixel_y = 0},/turf/closed/wall/mineral/rogue/decostone,/area/rogue)
-"zO" = (/obj/effect/decal/cleanable/blood/old,/turf/open/floor/rogue/dirt/road,/area/rogue)
+"ve" = (/obj/structure/roguewindow,/turf/open/floor/rogue/concrete,/area/rogue/indoors/town/garrison)
+"vf" = (/obj/effect/decal/cobbleedge{icon_state = "borderfall"; dir = 1},/obj/structure/fluff/psycross,/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
+"vl" = (/obj/structure/fluff/statue/knight/interior/r,/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/manor)
+"vn" = (/obj/structure/lever/wall,/turf/closed/wall/mineral/rogue/stone,/area/rogue/outdoors/mountains/decap)
+"vs" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/machinery/light/rogue/torchholder/l,/obj/structure/rack/rogue/shelf/biggest,/obj/item/natural/bundle/cloth/roll,/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"vG" = (/obj/structure/mirror{pixel_x = -28; pixel_y = 0},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"vR" = (/obj/structure/roguewindow/openclose,/turf/closed/wall/mineral/rogue/stone,/area/rogue/indoors/town/garrison)
+"vU" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"wh" = (/obj/structure/fluff/walldeco/chains,/obj/structure/mannequin,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"wu" = (/obj/machinery/light/rogue/wallfire{pixel_y = 32},/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"wz" = (/obj/structure/chair/bench/church/mid{dir = 1},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"wF" = (/obj/machinery/light/rogue/hearth,/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
+"wG" = (/turf/open/water/bath{desc = "clear, lightly foamy water, perfect for dipping into after a long day."},/area/rogue/indoors/town/manor)
+"wL" = (/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"wO" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"wR" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/rogueweapon/huntingknife/throwingknife,/obj/item/rogueweapon/huntingknife/throwingknife,/obj/item/rogueweapon/huntingknife/throwingknife,/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"xp" = (/obj/structure/fluff/railing/border,/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"xz" = (/obj/structure/roguewindow/openclose{dir = 8},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/garrison)
+"xB" = (/obj/item/reagent_containers/glass/cup/silver,/obj/structure/table/wood,/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"yj" = (/obj/effect/turf_decal/weather/snow/corner{dir = 7},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"yN" = (/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"zc" = (/obj/structure/flora/roguegrass,/obj/structure/flora/ausbushes/ppflowers,/turf/open/floor/rogue/grass,/area/rogue/indoors/town/magician)
+"zl" = (/obj/effect/decal/cleanable/food/flour,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"zm" = (/obj/structure/closet/crate/roguecloset/inn,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"zL" = (/obj/structure/chair/wood/rogue/chair3,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"zO" = (/obj/effect/decal/cleanable/blood/old,/obj/effect/turf_decal/weather/snow/corner{dir = 5},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "zQ" = (/turf/closed/mineral/random/rogue,/area/rogue)
+"zY" = (/obj/effect/decal/cleanable/debris/woody,/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"Al" = (/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
 "Am" = (/obj/machinery/light/rogue/wallfire/candle,/turf/closed/wall/mineral/rogue/stone,/area/rogue)
-"AG" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/item/candle/yellow/lit,/turf/open/floor/rogue/woodturned,/area/rogue)
+"Ay" = (/obj/machinery/light/rogue/oven/south{pixel_y = 0},/turf/closed/wall/mineral/rogue/decostone,/area/rogue/indoors/town/garrison)
+"AA" = (/obj/structure/table/wood,/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"AE" = (/obj/structure/fluff/railing/border{dir = 6},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"AG" = (/obj/structure/table/wood{icon_state = "tablewood1"},/obj/item/candle/yellow/lit,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"AK" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/structure/fireaxecabinet/south,/obj/item/book/rogue/bibble,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
 "Bw" = (/obj/structure/closet/crate/chest,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue)
-"BO" = (/obj/structure/fluff/railing/border,/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue)
-"BU" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue)
-"CJ" = (/obj/structure/stairs{dir = 4},/turf/open/floor/rogue/grass,/area/rogue)
-"CS" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue)
-"Di" = (/turf/open/floor/rogue/tile/bath,/area/rogue)
-"Dl" = (/obj/structure/fluff/alch,/turf/open/floor/rogue/tile/bath,/area/rogue)
+"Bx" = (/obj/structure/rack/rogue/shelf/biggest,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
+"BD" = (/obj/structure/table/wood/poor,/obj/item/paper,/obj/item/paper,/obj/item/paper,/obj/item/natural/feather,/obj/item/natural/feather,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"BO" = (/obj/structure/fluff/railing/border,/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/town/magician)
+"BU" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/town/magician)
+"Cw" = (/obj/effect/turf_decal/weather/snow/corner{dir = 3},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"CB" = (/obj/structure/fermentation_keg/random/beer,/obj/effect/decal/cleanable/dirt/cobweb/cobweb2,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"CG" = (/obj/structure/closet/crate/roguecloset,/obj/item/kitchen/spoon,/obj/item/kitchen/spoon,/obj/item/kitchen/spoon,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bowl,/obj/item/reagent_containers/glass/bucket/pot,/obj/item/cooking/platter,/obj/item/cooking/platter,/obj/item/cooking/platter,/obj/item/reagent_containers/glass/bucket,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"CJ" = (/obj/structure/stairs{dir = 4},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"CQ" = (/obj/structure/fermentation_keg/water,/obj/effect/decal/cleanable/dirt/cobweb,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"CS" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"CW" = (/obj/structure/fermentation_keg/random/beer,/obj/structure/fluff/railing/border,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"Dd" = (/obj/effect/turf_decal/weather/snow/corner,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"Dg" = (/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"Di" = (/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"Dl" = (/obj/structure/fluff/alch,/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
 "Dm" = (/turf/open/transparent/openspace,/area/rogue)
-"Dt" = (/turf/open/floor/rogue/naturalstone,/area/rogue)
-"DX" = (/obj/structure/mineral_door/wood/fancywood{name = "Keep Entrance"; lockid = "manor"},/turf/open/floor/rogue/wood,/area/rogue)
+"Dt" = (/obj/structure/table/wood,/obj/item/cooking/platter,/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"DG" = (/obj/effect/turf_decal/weather/snow/corner{dir = 9},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"DH" = (/obj/structure/flora/roguetree/pine/dead,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"DQ" = (/obj/structure/closet/crate/roguecloset,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"DX" = (/obj/structure/mineral_door/wood/fancywood{name = "Keep Entrance"; lockid = "manor"},/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"Ee" = (/obj/structure/fluff/statue/tdummy,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"Ex" = (/obj/structure/chair/wood/rogue,/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/manor)
 "EB" = (/obj/structure/closet/crate/chest,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/wheat,/obj/item/reagent_containers/food/snacks/grown/potato/rogue,/obj/item/reagent_containers/food/snacks/grown/potato/rogue,/obj/item/reagent_containers/food/snacks/grown/potato/rogue,/obj/item/reagent_containers/food/snacks/grown/onion/rogue,/obj/item/reagent_containers/food/snacks/grown/onion/rogue,/obj/item/reagent_containers/food/snacks/grown/onion/rogue,/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,/obj/item/reagent_containers/food/snacks/grown/cabbage/rogue,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue)
 "EN" = (/turf/open/floor/rogue/cobble,/area/rogue)
+"ER" = (/obj/structure/flora/tree/dead,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"ES" = (/obj/structure/chair/wood/rogue/chair3{dir = 1},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
 "EU" = (/obj/structure/closet/crate/chest,/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/powder/salt,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,/obj/item/reagent_containers/food/snacks/rogue/meat/poultry,/obj/item/reagent_containers/food/snacks/egg,/obj/item/reagent_containers/food/snacks/egg,/obj/item/reagent_containers/food/snacks/egg,/obj/item/reagent_containers/food/snacks/egg,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue)
-"EW" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/woodturned,/area/rogue)
+"EW" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"EX" = (/obj/structure/chair/wood/rogue{dir = 4},/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
 "EZ" = (/obj/structure/toilet,/turf/open/floor/rogue/wood,/area/rogue)
-"Fn" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/reagent_containers/glass/bottle/rogue,/obj/item/reagent_containers/glass/bottle/rogue{pixel_x = -5},/obj/item/reagent_containers/glass/bottle/rogue{pixel_x = 5},/obj/structure/fluff/walldeco/med3{pixel_y = 32},/turf/open/floor/rogue/tile/bath,/area/rogue)
-"FC" = (/obj/structure/stairs{dir = 4},/turf/open/floor/rogue/tile/bath,/area/rogue)
-"FT" = (/turf/open/floor/rogue/churchrough,/area/rogue)
-"FZ" = (/obj/machinery/light/rogue/wallfire{pixel_y = 32},/turf/open/floor/rogue/tile,/area/rogue)
+"Fn" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/reagent_containers/glass/bottle/rogue,/obj/item/reagent_containers/glass/bottle/rogue{pixel_x = -5},/obj/item/reagent_containers/glass/bottle/rogue{pixel_x = 5},/obj/structure/fluff/walldeco/med3{pixel_y = 32},/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"Fq" = (/obj/effect/decal/cleanable/blood/old,/obj/effect/turf_decal/weather/snow/corner{dir = 6},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"Fu" = (/obj/effect/turf_decal/weather/snow/corner{dir = 7},/obj/effect/turf_decal/weather/snow/corner{dir = 1},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"FC" = (/obj/structure/stairs{dir = 4},/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"FF" = (/obj/structure/shisha/hookah,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"FT" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/obj/structure/fluff/walldeco/church/line,/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"FU" = (/obj/structure/table/wood{dir = 1; icon_state = "longtable"},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"FZ" = (/obj/machinery/light/rogue/wallfire{pixel_y = 32},/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
+"Gg" = (/obj/structure/fluff/pillow/magenta,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"Gp" = (/turf/open/floor/rogue/rooftop/west,/area/rogue/outdoors/mountains/decap)
+"Gv" = (/obj/structure/bed/rogue/inn/double,/obj/item/bedsheet/rogue/fabric_double,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
 "Gy" = (/obj/structure/bars,/turf/open/floor/rogue/dirt/road,/area/rogue)
-"GC" = (/obj/structure/stairs{dir = 4},/turf/open/floor/rogue/dirt/road,/area/rogue)
-"GO" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/turf/open/floor/rogue/dirt/road,/area/rogue)
-"GP" = (/obj/structure/mineral_door/wood/donjon/stone,/turf/open/floor/rogue/ruinedwood,/area/rogue)
+"Gz" = (/obj/structure/fermentation_keg/random/beer,/obj/effect/decal/cleanable/dreamfiend_ichor/large{name = "gunk"},/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"GC" = (/obj/structure/stairs{dir = 4},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"GO" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/turf/open/floor/rogue/dirt/road,/area/rogue/indoors/town/magician)
+"GP" = (/obj/structure/mineral_door/wood/donjon/stone,/turf/open/floor/rogue/ruinedwood,/area/rogue/outdoors/mountains/decap)
 "GX" = (/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue)
-"GZ" = (/obj/structure/fermentation_keg/random/beer,/turf/open/floor/rogue/naturalstone,/area/rogue)
+"GZ" = (/obj/structure/closet/crate/chest/crate,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"Hx" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/obj/structure/fluff/walldeco/church/line{dir = 4},/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
 "HJ" = (/obj/structure/bed/rogue,/obj/effect/landmark/start/hostage{dir = 4},/turf/open/floor/rogue/carpet,/area/rogue)
+"HO" = (/obj/structure/fluff/walldeco/rpainting/forest{pixel_y = 32},/obj/structure/closet/crate/chest,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
 "HS" = (/obj/structure/mineral_door/bars{locked = 1; lockid = "dungeon"},/turf/open/floor/rogue/blocks,/area/rogue)
-"HW" = (/obj/structure/pillory,/obj/structure/fluff/railing/border,/turf/open/floor/rogue/wood,/area/rogue)
-"Io" = (/obj/structure/fluff/statue/astrata/gold,/turf/open/floor/rogue/churchrough,/area/rogue)
-"It" = (/obj/structure/fluff/walldeco/church/line,/turf/open/floor/rogue/churchrough,/area/rogue)
-"Jf" = (/obj/machinery/light/rogue/wallfire/candle,/turf/open/floor/rogue/woodturned,/area/rogue)
-"Jx" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/dirt/road,/area/rogue)
+"HT" = (/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/structure/rack/rogue/shelf/biggest,/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"HW" = (/obj/structure/pillory,/obj/structure/fluff/railing/border,/turf/open/floor/rogue/wood,/area/rogue/outdoors/mountains/decap)
+"If" = (/obj/item/clothing/wrists/roguetown/wrappings{name = "puglist wrappings"},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"Io" = (/obj/structure/fluff/walldeco/church/line,/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"It" = (/obj/structure/fluff/walldeco/church/line,/obj/structure/fluff/walldeco/church/line{dir = 1},/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"IE" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "royal"; name = "Vala's Den"},/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/magician)
+"Jf" = (/obj/machinery/light/rogue/wallfire/candle,/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"Jh" = (/obj/machinery/light/rogue/wallfire/candle/l,/obj/structure/table/wood{icon_state = "tablewood1"},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"Jx" = (/obj/structure/stairs/stone,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "Kg" = (/turf/closed/wall/mineral/rogue/stone/moss,/area/rogue)
+"Kw" = (/obj/structure/closet/crate/roguecloset/inn,/obj/item/clothing/suit/roguetown/shirt/dress/silkdress/random,/obj/item/clothing/suit/roguetown/armor/chainmail/hauberk,/obj/item/clothing/suit/roguetown/shirt/dress/silkdress/princess,/obj/item/clothing/suit/roguetown/shirt/tunic/random,/obj/item/clothing/suit/roguetown/shirt/tunic/black,/obj/item/clothing/suit/roguetown/shirt/undershirt/puritan,/obj/item/storage/backpack/rogue/satchel,/obj/item/storage/backpack/rogue/satchel,/obj/item/clothing/suit/roguetown/armor/silkcoat,/obj/item/clothing/cloak/half/red,/obj/item/clothing/cloak/half,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"KR" = (/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
 "KW" = (/obj/structure/fluff/walldeco/chains,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue)
 "KZ" = (/obj/machinery/light/rogue/wallfire/candle/l,/turf/open/floor/rogue/wood,/area/rogue)
-"Lb" = (/obj/structure/rack/rogue,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,/turf/open/floor/rogue/woodturned,/area/rogue)
+"Lb" = (/obj/structure/rack/rogue,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"Li" = (/obj/structure/chair/bench/couchablack,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"Lk" = (/turf/open/floor/rogue/cobble,/area/rogue/outdoors/mountains/decap)
 "Ls" = (/obj/structure/table/wood,/obj/item/reagent_containers/glass/cup/wooden,/obj/structure/fluff/walldeco/stone{pixel_y = 32},/turf/open/floor/rogue/cobble,/area/rogue)
-"LV" = (/obj/structure/bed/rogue/inn/double{dir = 1},/obj/item/bedsheet/rogue/double_pelt{dir = 1; add_overlays = \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\s},/turf/open/floor/rogue/ruinedwood,/area/rogue)
-"LX" = (/obj/structure/fluff/walldeco/church/line{dir = 1},/turf/open/floor/rogue/churchrough,/area/rogue)
-"Me" = (/turf/open/floor/rogue/ruinedwood,/area/rogue)
-"Mh" = (/turf/closed/wall/mineral/rogue/decostone,/area/rogue)
-"Mw" = (/obj/structure/stairs{dir = 8},/turf/open/floor/rogue/grass,/area/rogue)
+"LQ" = (/obj/structure/fluff/railing/border,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"LV" = (/obj/structure/closet/crate/chest,/obj/item/polishing_cream,/obj/item/armor_brush,/obj/item/rope/chain,/obj/item/reagent_containers/food/snacks/rogue/crackerscooked,/obj/item/natural/cloth,/obj/item/natural/cloth,/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow,/obj/item/quiver/bolts,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"LX" = (/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/structure/fluff/walldeco/church/line,/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"LY" = (/turf/closed/wall/mineral/rogue/stonebrick,/area/rogue/indoors/town/manor)
+"Me" = (/obj/structure/table/wood/poor,/obj/item/toy/cards/deck,/obj/item/roguecoin/copper,/obj/item/roguecoin/copper,/obj/item/roguecoin/gold,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"Mh" = (/obj/structure/bed/rogue/inn/double{dir = 1},/obj/item/bedsheet/rogue/double_pelt{dir = 1; add_overlays = \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\s},/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"Mu" = (/obj/structure/mineral_door/bars{name = "Armory"},/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"Mv" = (/obj/machinery/light/rogue/firebowl/standing,/obj/structure/rogue/trophy/deer,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"Mw" = (/obj/structure/stairs{dir = 8},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"MB" = (/turf/open/transparent/openspace,/area/rogue/indoors/town/manor)
+"MH" = (/obj/structure/stairs/stone{dir = 4},/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"MJ" = (/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
 "MV" = (/obj/structure/table/wood{icon_state = "tablewood2"; dir = 10},/obj/structure/mirror{pixel_y = 28},/turf/open/floor/rogue/carpet,/area/rogue)
-"MW" = (/obj/machinery/anvil,/turf/open/floor/rogue/hexstone,/area/rogue)
-"Nj" = (/obj/item/roguebin/water/gross,/turf/open/floor/rogue/hexstone,/area/rogue)
-"Oe" = (/turf/open/floor/rogue/snow,/area/rogue)
-"Ou" = (/obj/structure/fluff/walldeco/rpainting{pixel_y = 32},/turf/open/floor/rogue/tile,/area/rogue)
-"OH" = (/turf/open/floor/rogue/tile,/area/rogue)
+"MW" = (/obj/machinery/anvil,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
+"Nj" = (/obj/item/roguebin/water/gross,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
+"Nm" = (/obj/machinery/light/rogue/wallfire/candle/r,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"Nx" = (/turf/closed/wall/mineral/rogue/stone,/area/rogue/indoors/town/garrison)
+"ND" = (/obj/structure/fluff/walldeco/rpainting{pixel_x = -32},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"NJ" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "farm"; name = "kitchen"},/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"Oe" = (/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"Oj" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "royal"; name = "Meeting Room"},/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/manor)
+"Ou" = (/obj/structure/fluff/walldeco/rpainting{pixel_y = 32},/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
+"OE" = (/obj/structure/rack/rogue/shelf,/turf/open/floor/rogue/tile/brownbrick,/area/rogue/indoors/town/manor)
+"OH" = (/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
 "OI" = (/turf/closed/wall/mineral/rogue/craftstone,/area/rogue)
 "OM" = (/obj/effect/decal/cleanable/blood/old,/turf/open/floor/rogue/cobble,/area/rogue)
-"Pz" = (/obj/structure/closet/crate/chest/crate,/obj/item/ash,/obj/item/ash,/obj/item/ash,/obj/item/ash,/obj/machinery/light/rogue/wallfire/candle/l,/turf/open/floor/rogue/tile/bath,/area/rogue)
+"Pz" = (/obj/structure/closet/crate/chest/crate,/obj/item/ash,/obj/item/ash,/obj/item/ash,/obj/item/ash,/obj/machinery/light/rogue/wallfire/candle/l,/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"PG" = (/obj/structure/rack/rogue/shelf/biggest,/obj/item/reagent_containers/glass/bottle,/obj/item/reagent_containers/glass/bottle,/obj/item/reagent_containers/glass/bottle,/obj/item/storage/belt/rogue/surgery_bag/full,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"PP" = (/obj/machinery/light/rogue/wallfire/candle,/obj/machinery/light/rogue/cauldron,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"PQ" = (/obj/machinery/light/rogue/wallfire{pixel_y = 32},/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"PT" = (/obj/structure/table/wood{dir = 1; icon_state = "longtable"},/obj/item/rogueweapon/huntingknife/cleaver,/obj/item/rogueweapon/huntingknife/chefknife,/obj/item/kitchen/rollingpin,/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
+"Qg" = (/obj/structure/mineral_door/wood/donjon/stone,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
 "Qx" = (/obj/structure/closet/crate/roguecloset,/obj/item/natural/cloth,/obj/item/rogue/instrument/flute,/turf/open/floor/rogue/wood,/area/rogue)
-"Qz" = (/obj/machinery/light/rogue/cauldron,/turf/open/floor/rogue/metal/barograte,/area/rogue)
-"Ri" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/obj/structure/fluff/walldeco/church/line,/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/churchrough,/area/rogue)
-"RH" = (/turf/open/floor/rogue/dirt/road,/area/rogue)
-"RX" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/turf/open/floor/rogue/churchrough,/area/rogue)
+"Qz" = (/obj/machinery/light/rogue/cauldron,/turf/open/floor/rogue/metal/barograte,/area/rogue/indoors/town/magician)
+"QJ" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "manor"; name = "Hall of Warriors"},/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"QY" = (/obj/effect/turf_decal/weather/snow/corner{dir = 7},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"Rf" = (/obj/structure/fluff/walldeco/church/line{dir = 1},/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"Ri" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/obj/structure/fluff/walldeco/church/line,/obj/machinery/light/rogue/torchholder/l,/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"Rm" = (/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/manor)
+"RH" = (/obj/effect/turf_decal/weather/snow/corner{dir = 4},/obj/effect/turf_decal/weather/snow/corner{dir = 8},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"RX" = (/obj/structure/fluff/walldeco/church/line{dir = 8},/obj/structure/fluff/walldeco/church/line{dir = 4},/obj/structure/mirror{pixel_x = -28; pixel_y = 0},/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
 "RY" = (/obj/structure/chair/wood/rogue{dir = 8},/turf/open/floor/rogue/carpet,/area/rogue)
+"Sd" = (/turf/open/floor/rogue/rooftop/west,/area/rogue)
+"SC" = (/obj/structure/chair/bench/church{dir = 1; level = 5; layer = 5},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
 "SI" = (/obj/structure/bars,/turf/open/floor/rogue/blocks,/area/rogue)
-"SN" = (/obj/structure/fluff/railing/border{dir = 1},/obj/structure/fluff/railing/border,/turf/open/transparent/openspace,/area/rogue)
-"SZ" = (/obj/structure/bars/passage{redstone_id = "gobcell2"},/turf/open/floor/rogue/cobble,/area/rogue)
+"SN" = (/obj/structure/fluff/railing/border{dir = 1},/obj/structure/fluff/railing/border,/turf/open/transparent/openspace,/area/rogue/outdoors/mountains/decap)
+"SP" = (/obj/structure/chair/wood/rogue{dir = 8},/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/manor)
+"SZ" = (/obj/structure/bars/passage{redstone_id = "gobcell2"},/turf/open/floor/rogue/cobble,/area/rogue/outdoors/mountains/decap)
+"TO" = (/obj/structure/flora/roguegrass,/obj/structure/flora/ausbushes/ywflowers,/obj/structure/fluff/railing/border{dir = 8},/turf/open/floor/rogue/grass,/area/rogue/indoors/town/magician)
 "TQ" = (/obj/structure/mineral_door/bars{name = "Cell Door"; locked = 1; lockid = "dungeon"},/turf/open/floor/rogue/cobble,/area/rogue)
-"Ub" = (/obj/structure/lever{pixel_y = -8; redstone_id = "weaponsmith_shutter"},/turf/open/floor/rogue/hexstone,/area/rogue)
-"UH" = (/obj/structure/chair/bench/church{dir = 1},/turf/open/floor/rogue/grass,/area/rogue)
-"UQ" = (/obj/structure/table/wood{icon_state = "largetable"; dir = 6},/turf/open/floor/rogue/blocks/stonered,/area/rogue)
+"Ub" = (/obj/structure/lever{pixel_y = -8; redstone_id = "weaponsmith_shutter"},/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
+"Uw" = (/obj/structure/fermentation_keg/random/beer,/turf/open/floor/rogue/naturalstone,/area/rogue/indoors/town/manor)
+"UG" = (/obj/structure/fluff/big_chain,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
+"UH" = (/obj/structure/chair/bench/church{dir = 1},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"UP" = (/obj/structure/bed/rogue/inn/hay,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"UQ" = (/obj/structure/table/wood{icon_state = "largetable"; dir = 6},/obj/item/reagent_containers/glass/cup/wooden,/obj/item/reagent_containers/glass/cup/wooden,/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
 "Vi" = (/obj/structure/chair/stool/rogue,/turf/open/floor/rogue/cobble,/area/rogue)
-"Wl" = (/obj/structure/rack/rogue,/obj/item/rogueweapon/mace/wsword,/obj/item/rogueweapon/mace/wsword,/turf/open/floor/rogue/grass,/area/rogue)
-"WE" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/churchrough,/area/rogue)
+"Vk" = (/obj/structure/fluff/alch,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"Vo" = (/obj/structure/fermentation_keg,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"VE" = (/obj/structure/fluff/railing/border,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
+"VM" = (/turf/closed/wall/mineral/rogue/stonebrick,/area/rogue/indoors/town/magician)
+"VN" = (/obj/structure/rack/rogue/shelf/biggest,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"VX" = (/obj/structure/roguewindow/openclose{dir = 1},/turf/closed/wall/mineral/rogue/stone,/area/rogue/indoors/town/garrison)
+"VY" = (/obj/machinery/light/rogue/wallfire/candle/l,/obj/structure/table/wood{icon_state = "tablewood1"},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/magician)
+"Wl" = (/obj/structure/rack/rogue,/obj/item/rogueweapon/mace/wsword,/obj/item/rogueweapon/mace/wsword,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"Wo" = (/obj/structure/mineral_door/bars{lockid = "crafterguild"; name = "smithy's iron door"},/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
+"WC" = (/obj/structure/curtain,/turf/open/floor/rogue/wood,/area/rogue/indoors/town/garrison)
+"WE" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/obj/structure/fluff/walldeco/church/line{dir = 1},/obj/machinery/light/rogue/torchholder/r,/obj/effect/decal/cleanable/dirt/cobweb{dir = 1},/turf/open/floor/rogue/churchrough,/area/rogue/indoors/town/manor)
+"WF" = (/obj/effect/turf_decal/weather/snow/corner{dir = 9},/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
+"WI" = (/obj/structure/table/wood/poor,/obj/item/reagent_containers/food/snacks/grown/manabloom,/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/manor)
 "WN" = (/turf/open/floor/rogue/wood,/area/rogue)
-"Xc" = (/obj/structure/fluff/statue/tdummy,/turf/open/floor/rogue/dirt/road,/area/rogue)
-"Xk" = (/obj/structure/chair/wood/rogue{dir = 8},/turf/open/floor/rogue/blocks/stonered,/area/rogue)
-"YG" = (/obj/structure/table/wood{icon_state = "longtable"},/turf/open/floor/rogue/tile,/area/rogue)
-"YL" = (/obj/effect/decal/carpet/square/black,/turf/open/floor/rogue/tile/bath,/area/rogue)
-"YQ" = (/obj/structure/chair/wood/rogue,/turf/open/floor/rogue/tile,/area/rogue)
-"YY" = (/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/woodturned,/area/rogue)
+"Xc" = (/obj/structure/fluff/statue/tdummy,/obj/effect/turf_decal/weather/snow/corner{dir = 4},/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/mountains/decap)
+"Xi" = (/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"Xk" = (/obj/structure/chair/wood/rogue{dir = 8},/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
+"Xv" = (/obj/structure/fluff/statue/knight,/turf/open/floor/rogue/churchbrick,/area/rogue/indoors/town/manor)
+"XJ" = (/turf/closed/wall/mineral/rogue/stone,/area/rogue/outdoors/mountains/decap)
+"Yq" = (/obj/item/reagent_containers/glass/bottle,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/garrison)
+"YG" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/item/reagent_containers/glass/cup,/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
+"YL" = (/obj/effect/decal/carpet/square/black,/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
+"YQ" = (/obj/structure/chair/wood/rogue,/turf/open/floor/rogue/tile,/area/rogue/indoors/town/manor)
+"YY" = (/obj/machinery/light/rogue/torchholder/r,/turf/open/floor/rogue/woodturned,/area/rogue/indoors/town/manor)
+"Zd" = (/obj/structure/chair/wood/rogue/fancy,/turf/open/floor/carpet/royalblack,/area/rogue/indoors/town/manor)
+"Ze" = (/obj/structure/table/wood{icon_state = "longtable"},/obj/item/rogueweapon/sword/sabre,/obj/machinery/light/rogue/wallfire/candle/l,/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/manor)
+"Zj" = (/obj/structure/roguewindow/openclose{dir = 1},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/garrison)
+"Zt" = (/obj/item/roguebin/water,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/town/magician)
 "Zw" = (/obj/effect/decal/cleanable/blood/old,/obj/structure/mineral_door/bars{locked = 1; lockid = "dungeon"},/obj/effect/decal/cleanable/blood/tracks{dir = 8},/turf/open/floor/rogue/blocks,/area/rogue)
-"ZS" = (/obj/machinery/light/rogue/smelter/great,/turf/open/floor/rogue/hexstone,/area/rogue)
+"ZO" = (/turf/open/transparent/openspace,/area/rogue/indoors/town/garrison)
+"ZS" = (/obj/machinery/light/rogue/smelter/great,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/manor)
 
 (1,1,1) = {"
 zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
@@ -281,32 +462,32 @@ zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
 zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatataclclclclclcltatatataclclclclclcltatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
 zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
 zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatatatatapbtatatatatatatatatatatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataaIjTbdLbjTaItaGZDtGZtaZSoToToTtauQtavsLXLXjFLXWEtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataaIjTbdLbjTaItaGZDtGZtapCoToThytajTtaRXIoFTwGwGvUtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataaIjTbdLbjTaItaGZDtGZtaMWoToToTtajTtaRXwGwGwGwGvUtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataaIjTbdLbjTaItaGZDtGZtaNjoToTUbjTjTtaRXwGwGwGwGvUtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclcltataaIjTbdLbjTaItaGZDtGZtalYlYlYtatajTtaRXwGwGwGwGvUtataclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclcltataaIjTjTjTjTjTjTjTjTjTjTjTjTjTjTjTjTtaRiItItItItehtataclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclcltatatatatatatatatauQjTjTjTjTjTjTjTjTYYtatatatatatatatataclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclclcltataDtDtDtDtDtDtDtjTjTjTjTjTjTjTjTkbDmtajTjTjTjTjTjTtataclclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatataDtDtDtDtDtDtDtjTjTjTjTjTjTjTjTkbDmtauQjTjTjTjTYYtatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatataDtDtDtDtDtDtDtjTjTjTjTEWEWjTjTjTjTjTjTjTjTjTjTjTtatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatataDtDtDtDtDtDtDtDtDtDtDttatatatatatatatatatatataDttatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatataDtDtDtDtDtDtDtDtDtDtDtDthmhmmnOHFZOuOuFZOHJfjTjTtatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatataDtDtDtDtDtDtDtDtDtDtDttahmhmhmOHYQkvkvYQOHjTjTjTtatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatataDtDtDtDtDtDtDtDtDtDtDtojhmhmrOOHYGsMsMoDOHAGjTjTtatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatataDtDtDtDtDtDtDtDtDtDtDttahmhmMhnsnsvfvfnsqeMhjTjTAmtatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatataDtDtDtDtDtDtDtDtDtDtDtojpxpxpxpxpxpxpxpxpxpxpxpxtatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclclcltataDtDtDtDtDtDtDtDtDtDtDttapxnUadUQXkpxpxnUadUQXkpxtataclclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclcltataDtDtDtDtDtDtDtDtDtDtDtojpxpxbgbgpxpxpxpxbgbgpxpxtataclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclcltataDtDtDtDtDtDtDtDtDtDtDttapxpxpxpxpxpxpxpxpxpxpxpxAmtaclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclcltataDtDtDtDtDtDtDtDtDtDtDtDtpxpxpxpxpxpxpxpxpxpxpxpxtataclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataDtDtDtDtDtDtDtDtDtDtDttatatatatatatatatatatatatatataclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDttatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDttatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDtDttatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
-zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataaIjTbdLbjTaIodwhUwCBodZSoTBxUGoduLodvsHTRfjFLXWEtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataaIjTbdLbjTaIodeUMJGzodpCoToThyodjTodwOIoFTwGwGvUtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataaIjTbdLbjTaIodGZMJMJodMWoToToTodjTodRXwGwGwGwGvUtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataaIjTbdLbjTaIodzlMJUwodNjoToTUbWojTkLHxwGwGwGwGvUtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclcltataaIjTbdLbjTaIodCWLQLQodlYlYlYododtbodRXwGwGwGwGvUtataclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclcltataaIjTjTjTjTjTMutbtbjTjTjTjTjTjTtbtbodRiItItItItehtataclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclcltataeELYlFLYLYLYoduQjTjTtbtbtbjTjTjTYYodododododododtataclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclclcltataAKFUAlLibGKwLYjTjTjTjTtbzYtbjTkbMBodCQsukDOEcPCGtataclclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatagNhmhmhmhmfzLYtbjTtbjTjTjTjTjTkbMBoduQjTjTfmjTYYtatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatavGZdhmhmtAGvLYxpxprfrfEWEWtbtbjTjTNJjTjTdRPTqUjTtatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatataZekytoAlAlAlLYRmRmRmRmododododododododododododQJtatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatataLYLYLYlFLYLYodXvRmRmRmlXhmhmmnOHFZOuOuFZOHJfjTjTtatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatatapBHOAlAlAlMvLYRmRmRmRmodhmhmMHOHYQkvkvYQOHkbjTjTtatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatataAlhmhmhmhmAlOjRmRmRmRmojhmhmrOOHYGsMsMoDOHAGjTjTtatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatataqimstTDtxBgGAlLYRmRmRmvlodhmhmfjnsnsvfvfnsqefjjTjTAmtatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatItTAAAAgGNmLYRmRmRmRmojpxpxpxpxpxpxpxpxpxpxpxpxtatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclclcltaqiNDtTxBDtgGAlLYExRmRmRmodpxnUadUQXkwFwFnUadUQXkpxtataclclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclcltataAlAlAlAlAlAlLYWISPRmRmojpxpxbgbgpxwFwFpxbgbgpxpxtataclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclcltataVMVMVMVMsoVMVMVMVMRmRmodpxpxpxpxpxpxpxpxpxpxpxpxAmtaclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclcltataoBDQVklpwLkrPPczVMRmRmrzpxpxpxpxpxpxpxpxpxpxpxpxtataclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatawLwLwLwLwLwLwLwLIERmRmodLYbrLYLYLYLYLYLYLYLYbrLYtataclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataVYfpwLGgFFGgwLwLVMRmRmodfZhmwuhmAlododfZhmwuhmAltatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatataZtAEVEVEVEVEcBpfVMRmRmodAlhmhmhmuGododAlhmhmhmuGtatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatazcuobUbUbUbUTOzcVMRmRmodJheThmhmAlododJheThmhmAltatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatazcuobUbUbUbUTOzckZtatatatatatatatatatatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
+zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatatatalDlDtatatatatatatatatatatatatatatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
 zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatatatatatataclclclcltatatatatatatataclclclcltatatatatatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
 zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclcltatatataclclclclclclclcltatatatatatatataclclclclclclclcltatatataclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
 zQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQclclclclclclclclclclclclclclclcltatatatatatatataclclclclclclclclclclclclclclclclzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQzQ
@@ -363,64 +544,64 @@ OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
 OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
 OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
 OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmENENENENDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmENENENENDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmENENENENDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmDmENENENENDmDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtaDmDmDmDmDmENENENENDmDmDmDmDmtaDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtataDmDmDmDmENENENENDmDmDmDmtataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataDmDmDmENENENENDmDmDmtatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatataDmDmENENENENDmDmtatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtataENtataDmENENENENDmtataENtataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtataENENtataSZSZSZSZtataENENtataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtataENENENtaENENENENtaENENENtataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtataENENENENENENENENENENENENtataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmDmtataENENENENENENENENENENENENtataDmDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmDmDmDmtatatatatataSZSZSZSZtatatatatataDmDmDmDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmENENENENDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmENENENENDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatataDmDmDmDmDmDmDmDmDmDmENENENENDmDmDmDmDmDmDmDmDmDmtatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatataDmDmDmDmDmDmENENENENDmDmDmDmDmDmtatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatatatatatatatataSZSZSZSZtatatatatatatatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatatatatatatatataENENENENtatatatatatatatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataqNqNqNqNqNqNqNqNqNqNRHRHRHRHqNqNqNqNqNqNqNqNqNqNtatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataqNqNqNqNqNRHRHRHRHRHRHRHRHRHRHRHRHRHRHqNqNqNqNqNtatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataqNqNqNqNqNRHtatatatatatatatatatatataRHqNqNqNqNqNtatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataqNqNqNqNqNRHtaWNWNWNWNWNWNWNWNWNWNtaRHqNqNqNqNqNtatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmtataqNqNqNqNqNRHtaWNWNWNWNWNWNWNWNWNWNtaRHqNqNqNqNqNtataDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmtataqNqNqNqNqNRHtaWNWNWNWNWNWNWNWNWNWNtaRHqNqNqNqNqNtataDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmtataqNqNqNqNqNRHtatatataDXtataDXtatatataRHqNqNqNqNqNtataDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmtataqNqNqNqNqNRHRHRHRHGCWNWNWNWNoIRHRHRHRHWliXqNqNqNtataDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatataqNqNqNqNqNqNqNqNqNCJHWkOkOHWMwqNqNqNRHRHRHRHzOqNtatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatataqNqNqNqNqNqNqNqNqNqNmPDmDmbAqNqNqNRHRHzORHRHXcqNtatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatatataqNqNqNqNqNqNqNqNqNqNqNJxJxqNqNqNqNRHRHRHRHRHRHqNtatatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatatatataqNqNqNqNqNqNqNqNUHwzqARHRHUHwzqAqNRHRHRHRHRHXcqNtatatatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatatatataqNqNqNqNkRqNqNqNUHwzqARHRHUHwzqAqNqNRHRHRHRHzOqNtatatatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatatataqNqNtatatatataqNRHRHRHRHRHRHqNqNqNmHnrqNqNqNqNqNtatatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatataqNqNtaLVumMetaqNRHqNqNqNqiqilmlmlmqiqilmqiqiqNqNtatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatataqNqNtaMeMeMetaqNRHqNqNqNqiFnQzDlQzrWBURHGOqiqNqNtatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmtataqNMhMhLVumMetataCSRHqNqNqisCDiYLDiDiBORHGOlmqNqNtataDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmtataqNMhyNMeMeMeGPqNRHRHqNqNqibnDiDiDiDiFCRHRHlmqNqNtataDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmtataqNMhMhLVumMetataCSqNqNqNsADiDiDiDiDiFCRHRHlmqNqNtataDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmtataqNqNtaMeMeMetaqNqNqNqNqNqiDiDiDiDiDiiJRHGOlmqNqNtataDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataqNqNtaLVumMetaqNqNqNqNqNqiPzfFmDpQboBURHGOqiqNqNtataDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataqNqNtatatatataqNqNqNqNqNqiqiqiqiqiqiqiqiqiqiqNqNtatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNtatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatataqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNqNtatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatatatatatataDmDmDmDmtatatatatatatataDmDmDmDmtatatatatatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatataDmDmDmDmDmDmDmDmtatatatatatatataDmDmDmDmDmDmDmDmtatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtatatatatatatataDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtatatatatatatataDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtatatatatatatataDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmOeOeOeOeOeDmDmDmDmtatatatatataDmDmDmDmOeOeOeOeOeDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtatatataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmtataDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
-OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeDmDmOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbLkLkLkLkgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbLkLkLkLkgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbLkLkLkLkgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbgbLkLkLkLkgbgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJgbgbgbgbgbLkLkLkLkgbgbgbgbgbXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJgbgbgbgbLkLkLkLkgbgbgbgbXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJgbgbgbLkLkLkLkgbgbgbXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJgbgbLkLkLkLkgbgbXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJLkXJXJgbLkLkLkLkgbXJXJLkXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJLkLkXJXJSZSZSZSZXJXJLkLkXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJLkLkLkXJLkLkLkLkXJLkLkLkXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJLkLkLkLkLkLkLkLkLkLkLkLkXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbgbXJXJLkLkLkLkLkLkLkLkLkLkLkLkXJXJgbgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbgbgbgbXJXJXJXJXJXJSZSZSZSZXJXJXJXJXJXJgbgbgbgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbLkLkLkLkgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbLkLkLkLkgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJgbgbgbgbgbgbgbgbgbgbLkLkLkLkgbgbgbgbgbgbgbgbgbgbXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbgbgbLkLkLkLkgbgbgbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJXJXJXJXJXJXJSZSZSZSZXJXJXJXJXJXJXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJXJXJXJXJXJXJLkLkLkLkvnvnvnXJXJXJXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJOeOeOeOeOeyjyjyjyjjNkNKRKRcfeByjyjyjyjOeOeOeOeOeXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJOeOeOeOeqNDGsUsUsUsUKRKRKRKRsUsUsUsUfKeWOeOeOeOeXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJOeOeOeOeqNkNNxNxNxvRNxNxNxNxvRNxNxNxcfeWpnOeEROeXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJOeOeOeOeqNkNNxUPzmWCPQkIBDPQDgiBVoNxcfeWOeOeOeOeXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbXJXJOeOeOepnqNkNNxDgDgWCDgbNbNDgkIDgnHNxcfeWOeOeOeOeXJXJgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbXJXJOeEROeOeqNkNNxUPzmWCDgDgDgiBkIDgPGNxcfeWEROepnOeXJXJgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbXJXJOeOeOeOeqNkNNxNxVXNxDXNxNxDXNxVXNxNxcfeWOeOeOeOeXJXJgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbXJXJOeOeOeOeqNhCQYQYKRGCememememoIKRCwCwlQWliXyjyjOeXJXJgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJOeOeOeOeOeaGaGcYouCJHWkOkOHWMwlQsGdSDGsUsUsUzOeWXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJOeOeOeOeOeOeOeOeaGaGmPgbgbbAaGaGqNDGKRjjKRKRXceWXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJXJOeOeDHOeOeEROeOeOeOeOeJxJxOeOeOeqNkNKRKRKRKRcfeWXJXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJXJXJOeOeOeOeOeOeOeOeUHwzqAkNcfUHwzqAqNhCKRKRKRKRXceWXJXJXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJXJXJOeOeOeOekROeOeOeUHwzqAkNcfSCwzqAOekAhCCwDdDdFqeWXJXJXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJXJOeNxNxNxNxNxNxqNDGFuFuQYQYmjeWOeOemHnraGaGaGaGOeXJXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJOeNxMhLVyNwRNxqNRHWFaGaGVMVMlmlmlmVMVMlmVMVMOeOeXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJOeNxyNyNyNEeveqNRHeBOeOeVMFnQzDlQzrWBUbUGOVMOeOeXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbXJXJOehZMhLVumXiNxXJCSfKeWOeVMsCDiYLDiDiBObUGOlmOeOeXJXJgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbXJXJOeAyyNyNXiyNGPKRKRlQeWOeVMbnDiDiDiDiFCbUbUlmOeOeXJXJgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbXJXJOehZMhLVyNzLNxXJCSaGOeOesADiDiDiDiDiFCbUbUlmOeOeXJXJgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbXJXJOeNxXiyNyNMeveOeOeOeOeOeVMDiDiDiDiDiiJbUGOlmOeOeXJXJgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJOeNxMhLVyNESNxOeOeOeOeOeVMPzfFmDpQboBUbUGOVMOeOeXJXJgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJOeNxNxNxNxNxNxOeOeOepnOeVMVMVMVMVMVMVMVMVMVMOeOeXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJOepnOeOeOeOeOeOeEROeOeOeOeOeOeOeOeOeOeOeOeOeOeOeXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJgbgbgbgbgbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbgbgbgbgbXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbgbgbgbgbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbgbgbgbgbgbgbgbXJXJXJXJXJXJXJXJgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbOeOeOeOeOegbgbgbgbXJXJXJXJXJXJgbgbgbgbOeOeOeOeOegbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbXJXJgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbgbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
+OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOegbgbOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
 OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
 OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
 OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
@@ -461,106 +642,106 @@ OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
 OeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOeOe
 "}
 (1,1,4) = {"
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtatatatataDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtaLVumMetaDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtaMeMeMetauBDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmMhMhLVumMeGPfHDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmMhyNMeMeMetaSNDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmMhMhLVumMeGPfHDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtaMeMeMetahqDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtaLVumMetaDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmtatatatataDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbGpGpGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbGpGpGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbGpGpGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbGpGpGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbGpGpGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbZONxNxNxNxNxgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbNxrqLVEXtxxzgbgbgbgbgbGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbNxYqyNyNyNNxuBgbgbgbgbGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbhZMhLVyNXiQgfHgbgbgbgbGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbAyyNXiXiVNNxSNgbgbgbgbGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbhZMhLVXiXiQgfHgbgbgbgbGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbNxXiyNyNIfNxhqgbgbgbgbGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbNxMhLVyNtHxzgbgbgbgbgbGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbNxNxNxZjNxNxgbgbgbgbgbGpGpGpGpGpGpGpGpGpGpgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
+gbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgbgb
 "}
 (1,1,5) = {"
 DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
@@ -600,15 +781,15 @@ DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
 DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
 DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
 DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
-DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
+DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmSdSdSdSdSdSdDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
 DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
 DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
 DmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDmDm
