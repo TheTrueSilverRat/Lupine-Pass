@@ -437,7 +437,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/goblinguard
-	name = "Goblin Guard"
+	name = TITLE_DEEPDWELLER_WARRIOR
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/goblinsmith

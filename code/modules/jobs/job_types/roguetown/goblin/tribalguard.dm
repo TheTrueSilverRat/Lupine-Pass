@@ -1,5 +1,5 @@
 /datum/job/roguetown/goblinguard
-	title = "Goblin Guard"
+	title = TITLE_DEEPDWELLER_WARRIOR
 	flag = GOBLINGUARD
 	department_flag = GOBLIN
 	faction = "Station"
