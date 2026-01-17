@@ -3,7 +3,7 @@
 	flag = PRISONERB
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 0
+	total_positions = 4
 	spawn_positions = 4
 
 	allowed_sexes = list(MALE, FEMALE)
