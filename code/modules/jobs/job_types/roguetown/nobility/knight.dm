@@ -8,8 +8,8 @@
 	allowed_races = RACES_NO_CONSTRUCT
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	tutorial = "Having proven yourself both loyal and capable, you have been knighted to serve the realm as the royal family's sentry. \
-				You listen to your Liege, the Marshal, and the Knight Captain, defending your Lord and realm - the last beacon of chivalry in these dark times."
+	tutorial = "You are an elite warrior noble serving under your hersir and jarl, and you are respected by your subordinates for your achievements in combat.\
+				You command a squad of roughly four drengir to enact the will of your masters, and you do so with brutal efficiency."
 	display_order = JDO_KNIGHT
 	whitelist_req = TRUE
 	outfit = /datum/outfit/job/roguetown/knight
