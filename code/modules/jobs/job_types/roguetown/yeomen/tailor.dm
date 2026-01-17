@@ -3,7 +3,7 @@
 	flag = TAILOR
 	department_flag = YEOMEN
 	faction = "Station"
-	tutorial = "You have worked sleepless nights on honing your craft. From sacks, to tapestry and luxurious clothing, there is little you cannot sew into existence. Use your storefront to turn even the ugliest peasant into a proper gentleman; who knows, even the nobility may pay you a visit."
+	tutorial = "You were the hamlet’s tailor for as long as you could remember.  The influx of people has left you busy, mostly with repairs of travel clothes and leather armors."
 	total_positions = 1
 	spawn_positions = 1
 	display_order = 6
