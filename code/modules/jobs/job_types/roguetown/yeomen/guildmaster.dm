@@ -12,8 +12,7 @@
 
 	allowed_races = RACES_ALL_KINDS
 
-	tutorial = "You are the leader of the Rotwood Vale Guild of Crafts. You represents the interests of all of the craftsmen underneath you - including the Tailor\
-	the Blacksmiths, the Artificers and the Architects. Other townspeople may look to you for guidance, but they are not under your control. You are an experienced smith and artificer, and can do their work easily. Protect the craftsmen's interests."
+	tutorial = "You’re the hamlet’s smith.  Where you might have once made horseshoes and nails, you now smith weapons and armor.  The influx of adventurers has certainly proved profitable."
 
 	outfit = /datum/outfit/job/roguetown/guildmaster
 	selection_color = JCOLOR_YEOMAN
