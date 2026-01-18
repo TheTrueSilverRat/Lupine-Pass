@@ -57,7 +57,7 @@
 		"Absolver",
 		"Warden",
 		"Squire",
-		"Veteran",
+		TITLE_BURGMEISTER,
 		"Apothecary"
 	)
 

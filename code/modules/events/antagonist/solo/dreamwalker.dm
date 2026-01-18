@@ -43,7 +43,7 @@
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",
-		"Veteran",
+		TITLE_BURGMEISTER,
 	)
 
 /datum/round_event/antagonist/solo/dreamwalker
