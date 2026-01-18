@@ -48,7 +48,7 @@
     var/list/valid_roles
     valid_roles = list("Grand Duke", "Prince", TITLE_OLD_PRIEST, "Priestess", "Councillor", TITLE_PRIEST, "Inquisitor", "Merchant", "Town Elder", TITLE_HAMLET_SMITH, "Steward", "Clerk")
     var/list/strong_combat_roles
-    strong_combat_roles = list(TITLE_STELLARI, "Marshal", "Knight Captain", "Man at Arms", "Sergeant", "Warden", "Watchman", "Squire", "Dungeoneer", TITLE_SAILOR, TITLE_BURGMEISTER)
+    strong_combat_roles = list(TITLE_STELLARI, "Marshal", "Knight Captain", "Man at Arms", "Sergeant", TITLE_SKOGAMOR, "Watchman", "Squire", "Dungeoneer", TITLE_SAILOR, TITLE_BURGMEISTER)
     var/list/candidates
     candidates = list()
     var/list/available_roles = list()

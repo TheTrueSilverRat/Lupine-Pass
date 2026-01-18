@@ -6,7 +6,7 @@
 #define TITLE_VALA "Vala"
 #define TITLE_STELLARI "Stellari"
 #define TITLE_DRENGIR "Drengir" //8 L, MAA
-#define TITLE_SKOGAMOR "Skogamor" //2 L, Warden
+#define TITLE_SKOGAMOR "Skogamor"
 #define TITLE_SMIOR "Smior"
 #define TITLE_THRALL "Thrall"
 

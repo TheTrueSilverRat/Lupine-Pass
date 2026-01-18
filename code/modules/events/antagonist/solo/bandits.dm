@@ -37,7 +37,7 @@
 		"Inquisitor",
 		"Orthodoxist",
 		"Absolver",
-		"Warden",
+		TITLE_SKOGAMOR,
 		"Squire",
 		TITLE_BURGMEISTER,
 		"Apothecary"

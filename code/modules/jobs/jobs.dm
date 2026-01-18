@@ -81,7 +81,7 @@ GLOBAL_LIST_INIT(courtier_positions, list(
 
 GLOBAL_LIST_INIT(garrison_positions, list(
 	"Watchman",
-	"Warden",
+	TITLE_SKOGAMOR,
 	"Sergeant",
 	"Man at Arms",
 	"Squire",

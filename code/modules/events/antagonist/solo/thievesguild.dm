@@ -38,7 +38,7 @@
 		TITLE_VALA,
 		"Inquisitor",
 		"Orthodoxist",
-		"Warden",
+		TITLE_SKOGAMOR,
 		"Squire",
 		TITLE_BURGMEISTER,
 		"Apothecary"

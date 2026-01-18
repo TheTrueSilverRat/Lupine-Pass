@@ -243,7 +243,7 @@
 		TITLE_STELLARI,
 		"Squire",
 		TITLE_SAILOR,
-		"Warden",
+		TITLE_SKOGAMOR,
 	)
 
 	var/mob/living/marked_target = null
