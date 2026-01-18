@@ -1,7 +1,7 @@
 #define GUILDMASTER_ANNOUNCEMENT_COOLDOWN (2 MINUTES)
 
 /datum/job/roguetown/guildmaster
-	title = "Guildmaster"
+	title = TITLE_HAMLET_SMITH
 	flag = GUILDMASTER
 	department_flag = YEOMEN
 	faction = "Station"
@@ -39,7 +39,7 @@
 		H.become_blind("advsetup")
 
 /datum/advclass/guildmaster
-	name = "Guildmaster"
+	name = TITLE_HAMLET_SMITH
 	tutorial = "You are the leader of the Vale's Guild of Crafts. You represents the interests of all of the craftsmen underneath you - including the Tailor\
 	the Blacksmiths, the Artificers and the Architects. Other townspeople may look to you for guidance, but they are not under your control. You are an experienced smith and artificer, and can do their work easily. Protect the craftsmen's interests."
 	outfit = /datum/outfit/job/roguetown/guildmaster/basic

@@ -289,7 +289,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/guildmaster
-	name = "Guildmaster"
+	name = TITLE_HAMLET_SMITH
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/tailor

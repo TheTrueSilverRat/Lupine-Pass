@@ -54,7 +54,7 @@
 		/area/rogue/indoors/town/tavern = list("Innkeeper", "Tapster", "Cook"),
 		/area/rogue/indoors/town/bath = list(TITLE_TAPSTER, TITLE_SHIPS_CAPTAIN),
 		/area/rogue/indoors/town/church = list("Priest", "Acolyte", "Templar", "Churchling"),
-		/area/rogue/indoors/town/dwarfin = list("Guildmaster", "Guildsman"),
+		/area/rogue/indoors/town/dwarfin = list(TITLE_HAMLET_SMITH, "Guildsman"),
 		/area/rogue/indoors/town/shop = list("Merchant", "Shophand"),
 		/area/rogue/indoors/town/manor = list("Councillor", "Nobleman", "Hand", "Knight Captain", "Marshal", "Steward", "Clerk", "Head Mage", "Duke"),
 		/area/rogue/indoors/town/magician = list("Court Magician", "Magicians Associate"),
