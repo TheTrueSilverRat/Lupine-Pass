@@ -17,7 +17,7 @@
 	if(completed)
 		return
 
-	if(target.job == "Towner" || istype(target.mind?.assigned_role, /datum/job/roguetown/villager))
+	if(target.job == TITLE_SMIOR || istype(target.mind?.assigned_role, /datum/job/roguetown/villager))
 		to_chat(owner.current, span_greentext("You've hugged a local, completing Eora's objective!"))
 		owner.current.adjust_triumphs(1)
 		completed = TRUE

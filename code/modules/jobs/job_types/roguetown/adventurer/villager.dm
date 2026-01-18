@@ -1,11 +1,11 @@
 /datum/job/roguetown/villager
-	title = "Towner"
+	title = TITLE_SMIOR
 	flag = VILLAGER
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 75
-	spawn_positions = 75
-	allowed_races = RACES_ALL_KINDS
+	total_positions = 2
+	spawn_positions = 2
+	allowed_races = RACES_KEEP
 	tutorial = "You are a skilled craftsman, sent to ply your trade to the warriors of the fort.   Though you are respected for your talents, expect no preferential treatment.\
 				You are merely laborer guests here.  Even still, you stand to make good coin; You’ve heard the vault is positively loaded."
 	advclass_cat_rolls = list(CTAG_TOWNER = 20)

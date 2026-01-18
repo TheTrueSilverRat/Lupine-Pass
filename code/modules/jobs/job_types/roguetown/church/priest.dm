@@ -189,7 +189,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		for(var/mob/living/carbon/human/HL in GLOB.human_list)
 			if(HL.mind)
 				if(HL.mind.assigned_role == "Grand Duke")
-					HL.mind.assigned_role = "Towner" //So they don't get the innate traits of the king
+					HL.mind.assigned_role = TITLE_SMIOR //So they don't get the innate traits of the king
 			//would be better to change their title directly, but that's not possible since the title comes from the job datum
 			if(HL.job == "Grand Duke")
 				HL.job = "Duke Emeritus"

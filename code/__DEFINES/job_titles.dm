@@ -7,7 +7,7 @@
 #define TITLE_STELLARI "Stellari" //2 L, Knight
 #define TITLE_DRENGIR "Drengir" //8 L, MAA
 #define TITLE_SKOGAMOR "Skogamor" //2 L, Warden
-#define TITLE_SMIOR "Smior" //2 L, Towner
+#define TITLE_SMIOR "Smior"
 #define TITLE_THRALL "Thrall"
 
 //Deepdwellers

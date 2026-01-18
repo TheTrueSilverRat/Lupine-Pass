@@ -128,7 +128,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 /obj/effect/landmark/start/villagerlate
 	name = "Townerlate"
 	icon_state = "arrow"
-	jobspawn_override = list("Towner")
+	jobspawn_override = list(TITLE_SMIOR)
 	delete_after_roundstart = FALSE
 
 /obj/effect/landmark/start/lord
@@ -208,7 +208,7 @@ INITIALIZE_IMMEDIATE(/obj/effect/landmark)
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/villager
-	name = "Towner"
+	name = TITLE_SMIOR
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/woodsman

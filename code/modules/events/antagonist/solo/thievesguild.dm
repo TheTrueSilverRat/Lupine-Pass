@@ -9,7 +9,7 @@
 	shared_occurence_type = SHARED_MINOR_THREAT
 
 	// Allow adventurers and towners to be Thieves' Guild members
-	needed_job = list("Adventurer", "Towner")
+	needed_job = list("Adventurer", TITLE_SMIOR)
 
 	// Restrict from important roles
 	restricted_roles = list(

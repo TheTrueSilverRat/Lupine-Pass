@@ -20,7 +20,7 @@
 	for(var/mob/living/carbon/human/H in GLOB.player_list)
 		if(!istype(H) || H.stat == DEAD || !H.client)
 			continue
-		if(H.job == "Towner" || istype(H.mind?.assigned_role, /datum/job/roguetown/villager))
+		if(H.job == TITLE_SMIOR || istype(H.mind?.assigned_role, /datum/job/roguetown/villager))
 			beggar_count++
 			if(beggar_count >= 2)
 				break
