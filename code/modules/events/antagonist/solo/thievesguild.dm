@@ -21,7 +21,7 @@
 		"Men-at-arms",
 		"Marshal",
 		"Merchant",
-		"Priest",
+		TITLE_OLD_PRIEST,
 		"Acolyte",
 		"Martyr",
 		"Templar",

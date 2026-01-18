@@ -1541,7 +1541,7 @@ var/forgerites = list("Ritual of Blessed Reforgance")
 		if(H.has_status_effect(/datum/status_effect/debuff/ritualdefiled))
 			continue
 
-		if(H.is_noble() || HAS_TRAIT(H, TRAIT_INQUISITION) || (H.mind?.assigned_role in list("Priest", "Templar", "Martyr")))
+		if(H.is_noble() || HAS_TRAIT(H, TRAIT_INQUISITION) || (H.mind?.assigned_role in list(TITLE_OLD_PRIEST, "Templar", "Martyr")))
 			victim = H
 			break
 

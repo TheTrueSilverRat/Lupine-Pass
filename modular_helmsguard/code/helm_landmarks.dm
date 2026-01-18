@@ -46,7 +46,7 @@
 	name = "Church Late (Helm)"
 	icon_state = "arrow"
 	jobspawn_override = list(	
-	"Priest",
+	TITLE_OLD_PRIEST,
 	"Inquisitor",
 	"Monk",
 	"Chapter Master",
@@ -174,7 +174,7 @@
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/helms/church/priest
-	name = "Priest"
+	name = TITLE_OLD_PRIEST
 	icon_state = "arrow"
 
 /obj/effect/landmark/start/helms/church/inquisitor

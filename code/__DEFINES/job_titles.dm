@@ -1,3 +1,6 @@
+//Unused
+#define TITLE_OLD_PRIEST "oldpriest"
+
 //Keep
 #define TITLE_HERSIR "Hersir" //1 L, Duke
 #define TITLE_VALA "Vala" //1 L, court magos
