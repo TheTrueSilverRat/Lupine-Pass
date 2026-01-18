@@ -8,7 +8,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(RACES_DEEPDWELLERS)
 	allowed_patrons = list(/datum/patron/inhumen/graggar)
-	tutorial = "Cook, farm, butcher. Make king happy with apple pies! Don't forget about your brothers."
+	tutorial = "You’ve an important job in the clan; Keep everyone fed and supplied, preferably without resorting to moldy bread and maggoty meat.  Those are always options, of course."
 
 
 	outfit = /datum/outfit/job/roguetown/goblincook

@@ -12,7 +12,7 @@
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	
 
-	tutorial = "Dancing, music, or practicioners of the body. You've worked up a reputation as an entertainer, and sometime in life, the bathmaster has chosen to onboard you for one of these talents. In the bathhouse, your place on the hierarchy is determined by how long you've been in the game - and how much mammon you're worth."
+	tutorial = "You are the innkeep’s assistant, sheltered from the horrors outside by their grace.  Assist them in cooking food, brewing booze, and making up rooms."
 
 	outfit = /datum/outfit/job/roguetown/nightmaiden
 	advclass_cat_rolls = list(CTAG_NIGHTMAIDEN = 20)

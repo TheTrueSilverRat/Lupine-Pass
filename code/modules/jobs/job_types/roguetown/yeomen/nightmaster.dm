@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	f_title = "Bathmatron"
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "You are renting out the bathhouse in a joint operation with the Innkeep. You provide security for the bathwenches and help them to find work--when you're not being a trouble-making rake that others suffer to tolerate."
+	tutorial = "You’re the ship’s captain, ferrying countless adventurers to the hamlet.  It's in your best interest to ensure the hamlet does not fall whilst you are in port; Both for your safety and future prospects."
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/roguetown/niteman
 	display_order = JDO_NITEMASTER

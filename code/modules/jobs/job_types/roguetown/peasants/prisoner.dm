@@ -9,7 +9,7 @@
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "How does it feel to be the rat in the cage? You're alone and at the mercy of your captors, kept around as a hostage. You spend your days waiting for the oft chance someone comes to pay your ransom. Might as well start praying to whatever god you find solace in."
+	tutorial = "You’ve lost count of how long it has been since you were a freeman.  You’ve learned that the lupians are not so cruel to useful, obedient slaves.  Perhaps you can have them trust you enough to eventually slip away when the gates are open."
 
 	outfit = /datum/outfit/job/roguetown/prisonerr
 	bypass_jobban = TRUE

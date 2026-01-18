@@ -7,7 +7,7 @@
 	spawn_positions = 8
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Blood stains your hands and the coins you hold. You are a sell-sword, a mercenary, a contractor of war. Where you come from, what you are, who you serve.. none of it matters. What matters is that the mammon flows to your pocket."
+	tutorial = "You are a well traveled sailor from foreign lands.  A life traveling the world and encountering its many dangers have left you a skilled fighter.  Though it is your time to relax on land, some light mercenary work for coin would not hurt."
 	display_order = JDO_MERCENARY
 	selection_color = JCOLOR_MERCENARY
 	min_pq = 2		//Will be handled by classes if PQ limiting is needed. --But Until then, learn escalation, mercs.

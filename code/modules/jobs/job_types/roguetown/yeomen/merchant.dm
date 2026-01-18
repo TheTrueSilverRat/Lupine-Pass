@@ -7,7 +7,7 @@
 	spawn_positions = 1
 	selection_color = JCOLOR_YEOMAN
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "You were born into wealth, learning from before you could talk about the basics of mathematics. Counting coins is a simple pleasure for any person, but you've made it an art form. These people are addicted to your wares, and you are the literal beating heart of this economy: Don't let these filth-covered troglodytes ever forget that."
+	tutorial = "You are a traveling merchant.  It’s well known there is good coin to be made in the area, especially during the winter when supply lines are snowed in.  As such, you make it an annual tradition to brave the dangers of the wilds to arrive here in the hamlet and winter over."
 
 	display_order = JDO_MERCHANT
 

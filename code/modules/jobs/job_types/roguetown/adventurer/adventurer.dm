@@ -11,7 +11,8 @@ GLOBAL_VAR_INIT(adventurer_hugbox_duration_still, 3 MINUTES)
 	total_positions = 20
 	spawn_positions = 20
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Hero of nothing, a wanderer in foreign lands in search of fame and riches. Whatever led you to this fate is up to the wind to decide, and you've never fancied yourself for much other than the thrill. Some day your pride is going to catch up to you, and you're going to find out why most men don't end up in the annals of history."
+	tutorial = "You seek gold, glory, or redemption.  Brave or foolhardy, you’ve set out to raid the Lupian Pass region where evil is afoot.\
+				Whispers of untold riches within the Lupian fort have been heard, and countless slaves awaiting freedom and safety.  Perhaps you will be the one to deliver us from the relentless Lupian Menace."
 
 
 	outfit = null
