@@ -1,10 +1,10 @@
 /datum/job/roguetown/monk
-	title = "Acolyte"
+	title = TITLE_PRIEST
 	flag = MONK
 	department_flag = CHURCHMEN
 	faction = "Station"
-	total_positions = 6
-	spawn_positions = 6
+	total_positions = 1
+	spawn_positions = 1
 
 	allowed_races = RACES_ALL_KINDS
 	allowed_patrons = ALL_DIVINE_PATRONS
@@ -53,7 +53,7 @@
 		H.name = "[title] [prev_name]"
 
 /datum/advclass/acolyte
-	name = "Acolyte"
+	name = TITLE_PRIEST
 	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Bishop in their daily tasks, maybe today will be the day something interesting happens."
 	outfit = /datum/outfit/job/roguetown/monk/basic
 	category_tags = list(CTAG_ACOLYTE)
@@ -64,7 +64,7 @@
 	)
 
 /datum/outfit/job/roguetown/monk
-	name = "Acolyte"
+	name = TITLE_PRIEST
 	jobtype = /datum/job/roguetown/monk
 	job_bitflag = BITFLAG_CHURCH
 	allowed_patrons = list(/datum/patron/divine/undivided, /datum/patron/divine/pestra, /datum/patron/divine/astrata, /datum/patron/divine/eora, /datum/patron/divine/noc, /datum/patron/divine/necra, /datum/patron/divine/abyssor, /datum/patron/divine/malum, /datum/patron/divine/ravox, /datum/patron/divine/xylix) // The whole Ten. Probably could delete this now, actually.

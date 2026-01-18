@@ -1,4 +1,4 @@
-//Unused
+//Unused, original Roguetown Priest- the name is being used for a different role.
 #define TITLE_OLD_PRIEST "oldpriest"
 
 //Keep
@@ -25,7 +25,7 @@
 //Hamlet
 #define TITLE_BURGMEISTER "Burgmeister"
 #define TITLE_HAMLET_SMITH "Hamlet Smith"
-#define TITLE_PRIEST "Priest" //1 Acolyte
+#define TITLE_PRIEST "Priest"
 #define TITLE_TAPSTER "Tapster"
 #define TITLE_SHIPS_CAPTAIN "Ship's Captain"
 #define TITLE_SAILOR "Sailor"

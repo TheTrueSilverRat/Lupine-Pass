@@ -22,7 +22,7 @@
 		"Marshal",
 		"Merchant",
 		TITLE_OLD_PRIEST,
-		"Acolyte",
+		TITLE_PRIEST,
 		"Martyr",
 		"Templar",
 		"Councillor",

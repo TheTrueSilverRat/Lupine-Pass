@@ -246,7 +246,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 /obj/effect/proc_holder/spell/self/convertrole/monk
 	name = "Recruit Acolyte"
-	new_role = "Acolyte"
+	new_role = TITLE_PRIEST
 	overlay_state = "recruit_acolyte"
 	recruitment_faction = "Church"
 	recruitment_message = "Serve the ten, %RECRUIT!"

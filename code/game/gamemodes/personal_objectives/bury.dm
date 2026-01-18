@@ -7,7 +7,7 @@
 /datum/objective/proper_burial/on_creation()
 	. = ..()
 	if(owner?.current)
-		if(owner.current.job == "Acolyte" || istype(owner.current.mind?.assigned_role, /datum/job/roguetown/monk))
+		if(owner.current.job == TITLE_PRIEST || istype(owner.current.mind?.assigned_role, /datum/job/roguetown/monk))
 			required_burials = 2
 		RegisterSignal(owner.current, COMSIG_GRAVE_CONSECRATED, PROC_REF(on_grave_consecrated))
 	update_explanation_text()

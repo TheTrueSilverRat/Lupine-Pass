@@ -20,7 +20,7 @@
 		"Marshal",
 		"Merchant",
 		"Bishop",
-		"Acolyte",
+		TITLE_PRIEST,
 		"Martyr",
 		"Templar",
 		"Councillor",

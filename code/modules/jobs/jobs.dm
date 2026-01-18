@@ -91,7 +91,7 @@ GLOBAL_LIST_INIT(garrison_positions, list(
 GLOBAL_LIST_INIT(church_positions, list(
 	"Bishop",
 	"Confessor",
-	"Acolyte",
+	TITLE_PRIEST,
 	"Mortician",
 	"Templar",
 	"Druid",
