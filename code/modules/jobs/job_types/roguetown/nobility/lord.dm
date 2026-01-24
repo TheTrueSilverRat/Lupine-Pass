@@ -3,7 +3,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/job/roguetown/lord
 	title = TITLE_HERSIR
-	f_title = "Grand Duchess"
+	f_title = TITLE_HERSIR
 	flag = LORD
 	department_flag = NOBLEMEN
 	faction = "Station"
