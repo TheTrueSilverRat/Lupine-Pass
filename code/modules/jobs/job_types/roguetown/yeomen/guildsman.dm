@@ -5,8 +5,8 @@
 	flag = GUILDSMAN
 	department_flag = YEOMEN
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 0
+	spawn_positions = 0
 	advclass_cat_rolls = list(CTAG_GUILDSMEN = 20)
 
 	allowed_races = RACES_ALL_KINDS
