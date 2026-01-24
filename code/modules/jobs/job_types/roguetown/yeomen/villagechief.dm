@@ -63,7 +63,7 @@
 	H.adjust_skillrank(/datum/skill/craft/cooking, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/ceramics, 3, TRUE)
 	H.change_stat(STATKEY_PER, 2)
-	H.change_stat(STATKEY_WIL, 2)
+	H.change_stat(STATKEY_END, 2)
 	H.change_stat(STATKEY_SPD, -1)
 	H.change_stat(STATKEY_CON, 1)
 	H.change_stat(STATKEY_INT, 3)

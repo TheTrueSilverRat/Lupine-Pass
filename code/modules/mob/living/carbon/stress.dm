@@ -225,7 +225,7 @@ GLOBAL_LIST_INIT(stress_messages, world.file2list("strings/rt/stress_messages.tx
 
 
 /mob/living/carbon/get_stress_amount()
-	var/willpowerresistance = CLAMP((STAWIL - 10), 0, 10)
+	var/willpowerresistance = CLAMP((STAEND - 10), 0, 10)
 	var/wpmodifier = willpowerresistance / 3
 	if(HAS_TRAIT(src, TRAIT_NOMOOD))
 		return 0

@@ -9,7 +9,7 @@
 	subclass_stats = list(
 		STATKEY_STR =  1,
 		STATKEY_CON = -3,
-		STATKEY_WIL = -3,
+		STATKEY_END = -3,
 		STATKEY_INT = -4
 	)
 	extra_context = "Fortune is randomised."

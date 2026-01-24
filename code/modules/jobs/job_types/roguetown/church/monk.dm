@@ -59,7 +59,7 @@
 	category_tags = list(CTAG_ACOLYTE)
 	subclass_stats = list(
 		STATKEY_INT = 3,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_SPD = 1
 	)
 

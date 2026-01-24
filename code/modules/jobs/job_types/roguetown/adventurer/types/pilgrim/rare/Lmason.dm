@@ -14,7 +14,7 @@
 		STATKEY_CON = 2,
 		STATKEY_PER = 2,
 		STATKEY_SPD = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_STR = 1
 	)
 /datum/outfit/job/roguetown/adventurer/grandmastermason/pre_equip(mob/living/carbon/human/H)

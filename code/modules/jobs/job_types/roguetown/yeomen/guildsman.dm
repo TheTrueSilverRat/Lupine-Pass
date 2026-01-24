@@ -46,7 +46,7 @@
 	traits_applied = list(TRAIT_TRAINED_SMITH)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_CON = 2,
 		STATKEY_INT = 1
 	)
@@ -113,7 +113,7 @@
 	traits_applied = list(TRAIT_ARCYNE_T1)
 	subclass_stats = list(
 		STATKEY_INT = 3,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_STR = 1,
 		STATKEY_CON = 1,
 		STATKEY_PER = 1
@@ -179,7 +179,7 @@
 	traits_applied = list()
 	subclass_stats = list(
 		STATKEY_INT = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_LCK = 2,
 		STATKEY_STR = 1,
 		STATKEY_CON = 1,

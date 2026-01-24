@@ -9,7 +9,7 @@
 	subclass_stats = list(
 		STATKEY_SPD = 3,
 		STATKEY_INT = 2,
-		STATKEY_WIL = 1
+		STATKEY_END = 1
 	)
 /datum/advclass/mercenary/vaquero/equipme(mob/living/carbon/human/H)
 	if(should_wear_femme_clothes(H))

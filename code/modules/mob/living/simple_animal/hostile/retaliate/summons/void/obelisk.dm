@@ -51,7 +51,7 @@
 	obj_damage = 75
 	melee_damage_lower = 30
 	melee_damage_upper = 30
-	STAWIL = 20
+	STAEND = 20
 	STACON = 20
 	STASTR = 12
 	STASPD = 8

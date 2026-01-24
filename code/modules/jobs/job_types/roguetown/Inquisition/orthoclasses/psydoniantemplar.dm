@@ -8,7 +8,7 @@
 	cmode_music = 'sound/music/templarofpsydonia.ogg'
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	subclass_stats = list(
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_CON = 2,
 		STATKEY_STR = 2
 	)

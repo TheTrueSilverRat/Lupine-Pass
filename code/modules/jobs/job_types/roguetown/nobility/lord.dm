@@ -117,7 +117,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	subclass_stats = list(
 		STATKEY_LCK = 5,
 		STATKEY_INT = 3,
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_PER = 2,
 		STATKEY_SPD = 1,
 		STATKEY_STR = 1,
@@ -162,7 +162,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		STATKEY_INT = 5,
 		STATKEY_PER = 4,
 		STATKEY_SPD = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 	)
 
 /datum/outfit/job/roguetown/lord/merchant/pre_equip(mob/living/carbon/human/H)
@@ -202,7 +202,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		STATKEY_INT = -2,
 		STATKEY_PER = -2,
 		STATKEY_CON = -2,
-		STATKEY_WIL = -2,
+		STATKEY_END = -2,
 		STATKEY_STR = -2,
 	)
 

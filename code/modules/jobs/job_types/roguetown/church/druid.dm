@@ -46,7 +46,7 @@
 	category_tags = list(CTAG_DRUID)
 	subclass_stats = list(
 		STATKEY_INT = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_SPD = 1,
 		STATKEY_PER = -1
 	)

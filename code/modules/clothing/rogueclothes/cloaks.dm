@@ -1602,7 +1602,7 @@
 			user.change_stat(STATKEY_PER, 2)
 			user.change_stat(STATKEY_INT, 2)
 			user.change_stat(STATKEY_CON, 2)
-			user.change_stat(STATKEY_WIL, 2)
+			user.change_stat(STATKEY_END, 2)
 			user.change_stat(STATKEY_SPD, 2)
 			armor = getArmor("blunt" = 100, "slash" = 100, "stab" = 100, "piercing" = 100, "fire" = 50, "acid" = 0)
 		else
@@ -1620,7 +1620,7 @@
 		user.change_stat(STATKEY_PER, -2)
 		user.change_stat(STATKEY_INT, -2)
 		user.change_stat(STATKEY_CON, -2)
-		user.change_stat(STATKEY_WIL, -2)
+		user.change_stat(STATKEY_END, -2)
 		user.change_stat(STATKEY_SPD, -2)
 	else
 		to_chat(user, span_notice("Strange, I don't feel that power anymore..."))

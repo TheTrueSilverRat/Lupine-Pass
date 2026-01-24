@@ -49,7 +49,7 @@
 
 	H.change_stat(STATKEY_INT, 3)
 	H.change_stat(STATKEY_STR, 4)
-	H.change_stat(STATKEY_WIL, 4)
+	H.change_stat(STATKEY_END, 4)
 	H.change_stat(STATKEY_CON, 4)
 	H.change_stat(STATKEY_SPD, 2)
 	if(H.mind)

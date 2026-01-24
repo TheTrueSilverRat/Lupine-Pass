@@ -8,7 +8,7 @@
 	traits_applied = list(TRAIT_DODGEEXPERT)
 	subclass_stats = list(
 		STATKEY_SPD = 3,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_PER = 1
 	)
 
@@ -84,7 +84,7 @@
 		STATKEY_CON = 2,
 		STATKEY_SPD = 2,
 		STATKEY_STR = 1,
-		STATKEY_WIL = 1
+		STATKEY_END = 1
 	)
 
 /datum/outfit/job/roguetown/wretch/marauder/pre_equip(mob/living/carbon/human/H)

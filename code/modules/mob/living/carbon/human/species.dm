@@ -2268,7 +2268,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			return
 		if(!I.sharpness)
 			if(!target.resting)
-				var/endurance = target.STAWIL
+				var/endurance = target.STAEND
 				var/knockback_tiles = 0
 				var/newforce = get_complex_damage(I, user)
 				if(endurance >= 3)

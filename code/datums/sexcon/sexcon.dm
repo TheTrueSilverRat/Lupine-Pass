@@ -482,7 +482,7 @@
 	id = "knot_tied"
 	status_type = STATUS_EFFECT_UNIQUE
 	alert_type = /atom/movable/screen/alert/status_effect/knot_tied
-	effectedstats = list("strength" = -1, "willpower" = -2, "speed" = -2, "intelligence" = -3)
+	effectedstats = list("strength" = -1, "endurance" = -2, "speed" = -2, "intelligence" = -3)
 
 /atom/movable/screen/alert/status_effect/knot_tied
 	name = "Knotted"

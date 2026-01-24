@@ -325,7 +325,7 @@
 /datum/status_effect/buff/blood_fortitude
 	id = "blood_fortitude"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/blood_fortitude
-	effectedstats = list(STATKEY_WIL = 20,STATKEY_CON = 20)
+	effectedstats = list(STATKEY_END = 20,STATKEY_CON = 20)
 	duration = 30 SECONDS
 
 /atom/movable/screen/alert/status_effect/buff/blood_fortitude

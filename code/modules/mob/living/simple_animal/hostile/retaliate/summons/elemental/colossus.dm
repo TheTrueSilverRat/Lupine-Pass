@@ -49,7 +49,7 @@
 	ranged_message = "launches earth"
 
 	STACON = 20
-	STAWIL = 20
+	STAEND = 20
 	STASTR = 16
 	STASPD = 3
 

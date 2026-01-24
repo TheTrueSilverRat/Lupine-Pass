@@ -10,7 +10,7 @@
 	// tuff boys
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED)
 	subclass_stats = list(
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_STR = 2,
 		STATKEY_CON = 2
 	)

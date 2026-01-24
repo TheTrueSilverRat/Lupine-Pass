@@ -20,7 +20,7 @@
 
 		src.STASTR = 10
 		src.STACON = 13
-		src.STAWIL = 16 //Because I don't want to give it TRAIT_INFINITE_STAMINA
+		src.STAEND = 16 //Because I don't want to give it TRAIT_INFINITE_STAMINA
 		src.STASPD = 15
 
 		AddSpell(new /obj/effect/proc_holder/spell/self/saigahoofs)

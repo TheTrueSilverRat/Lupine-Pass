@@ -5,7 +5,7 @@
 	var/STAPER = 10
 	var/STAINT = 10
 	var/STACON = 10
-	var/STAWIL = 10
+	var/STAEND = 10
 	var/STASPD = 10
 	var/STALUC = 10
 	//buffers, the 'true' amount of each stat
@@ -46,7 +46,7 @@
 	STAPER = 10
 	STAINT = 10
 	STACON = 10
-	STAWIL = 10
+	STAEND = 10
 	STASPD = 10
 	STALUC = 10
 	if(ishuman(src))
@@ -63,7 +63,7 @@
 		switch(H.age)
 			if(AGE_MIDDLEAGED)
 				change_stat(STATKEY_SPD, -1)
-				change_stat(STATKEY_WIL, 1)
+				change_stat(STATKEY_END, 1)
 			if(AGE_OLD)
 				change_stat(STATKEY_STR, -1)
 				change_stat(STATKEY_SPD, -2)
@@ -75,7 +75,7 @@
 			if(check_blacklist(ckey(key)))
 				change_stat(STATKEY_STR, -5)
 				change_stat(STATKEY_SPD, -20)
-				change_stat(STATKEY_WIL, -2)
+				change_stat(STATKEY_END, -2)
 				change_stat(STATKEY_CON, -2)
 				change_stat(STATKEY_INT, -20)
 				change_stat(STATKEY_LCK, -20)
@@ -96,8 +96,8 @@
 			return STAINT
 		if(STAT_CONSTITUTION)
 			return STACON
-		if(STAT_WILLPOWER)
-			return STAWIL
+		if(STAT_ENDURANCE)
+			return STAEND
 		if(STAT_SPEED)
 			return STASPD
 		if(STAT_FORTUNE)
@@ -206,17 +206,17 @@
 				BUFCON++
 			STACON = newamt
 
-		if(STATKEY_WIL)
-			newamt = STAWIL + amt
+		if(STATKEY_END)
+			newamt = STAEND + amt
 			if(BUFEND < 0)
 				BUFEND = BUFEND + amt
 				if(BUFEND > 0)
-					newamt = STAWIL + BUFEND
+					newamt = STAEND + BUFEND
 					BUFEND = 0
 			if(BUFEND > 0)
 				BUFEND = BUFEND + amt
 				if(BUFEND < 0)
-					newamt = STAWIL + BUFEND
+					newamt = STAEND + BUFEND
 					BUFEND = 0
 			while(newamt < 1)
 				newamt++
@@ -224,7 +224,7 @@
 			while(newamt > 20)
 				newamt--
 				BUFEND++
-			STAWIL = newamt
+			STAEND = newamt
 
 		if(STATKEY_SPD)
 			newamt = STASPD + amt
@@ -288,8 +288,8 @@
 			return STASTR
 		if(STATKEY_PER)
 			return STAPER
-		if(STATKEY_WIL)
-			return STAWIL
+		if(STATKEY_END)
+			return STAEND
 		if(STATKEY_CON)
 			return STACON
 		if(STATKEY_INT)
@@ -346,15 +346,15 @@
 				new_amt = STACON - result_amt
 			STACON = new_amt
 
-		if("willpower")
-			get_stat_level(STATKEY_WIL)
-			if(STAWIL < min_amt)
-				result_amt = min_amt - STAWIL
-				new_amt = STAWIL + result_amt
-			if(STAWIL > max_amt)
-				result_amt = STAWIL - max_amt
-				new_amt = STAWIL - result_amt
-			STAWIL = new_amt
+		if("endurance")
+			get_stat_level(STATKEY_END)
+			if(STAEND < min_amt)
+				result_amt = min_amt - STAEND
+				new_amt = STAEND + result_amt
+			if(STAEND > max_amt)
+				result_amt = STAEND - max_amt
+				new_amt = STAEND - result_amt
+			STAEND = new_amt
 
 		if("speed")
 			get_stat_level(STATKEY_SPD)

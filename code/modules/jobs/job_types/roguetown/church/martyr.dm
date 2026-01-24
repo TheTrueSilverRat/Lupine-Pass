@@ -268,7 +268,7 @@
 				current_holder.STASTR += stat_bonus_martyr
 				//current_holder.STASPD += stat_bonus_martyr
 				current_holder.STACON += stat_bonus_martyr
-				current_holder.STAWIL += stat_bonus_martyr
+				current_holder.STAEND += stat_bonus_martyr
 				current_holder.STAINT += stat_bonus_martyr
 				current_holder.STAPER += stat_bonus_martyr
 				current_holder.STALUC += stat_bonus_martyr
@@ -277,7 +277,7 @@
 				current_holder.STASTR = 20
 				current_holder.STASPD = 20
 				current_holder.STACON = 20
-				current_holder.STAWIL = 20
+				current_holder.STAEND = 20
 				current_holder.STAINT = 20
 				current_holder.STAPER = 20
 				current_holder.STALUC = 20
@@ -389,7 +389,7 @@
 				current_holder.STASTR += stat_bonus_martyr
 				current_holder.STASPD += stat_bonus_martyr
 				current_holder.STACON += stat_bonus_martyr
-				current_holder.STAWIL += stat_bonus_martyr
+				current_holder.STAEND += stat_bonus_martyr
 				current_holder.STAINT += stat_bonus_martyr
 				current_holder.STAPER += stat_bonus_martyr
 				current_holder.STALUC += stat_bonus_martyr
@@ -477,7 +477,7 @@
 	category_tags = list(CTAG_MARTYR)
 	subclass_stats = list(
 		STATKEY_CON = 3,
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_STR = 2,
 		STATKEY_PER = 1,
 		STATKEY_INT = 1

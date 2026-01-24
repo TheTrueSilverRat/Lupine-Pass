@@ -41,5 +41,5 @@
 	H.change_stat(STATKEY_STR, 1)
 	H.change_stat(STATKEY_PER, 2)
 	H.change_stat(STATKEY_CON, 1)
-	H.change_stat(STATKEY_WIL, 1)
+	H.change_stat(STATKEY_END, 1)
 	H.change_stat(STATKEY_INT, -1)

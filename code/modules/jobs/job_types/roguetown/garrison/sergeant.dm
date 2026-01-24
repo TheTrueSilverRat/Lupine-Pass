@@ -73,7 +73,7 @@
 		STATKEY_INT = 1,
 		STATKEY_CON = 1,
 		STATKEY_PER = 1, //Gets bow-skills, so give a SMALL tad of perception to aid in bow draw.
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 	)
 
 /datum/outfit/job/roguetown/sergeant/sergeant/pre_equip(mob/living/carbon/human/H)
@@ -308,7 +308,7 @@
 
 /obj/effect/proc_holder/spell/invoked/order/hold
 	name = "Hold!"
-	desc = "Orders your underlings to Endure. +2 Willpower and Constitution."
+	desc = "Orders your underlings to Endure. +2 endurance and Constitution."
 	overlay_state = "hold"
 
 
@@ -341,7 +341,7 @@
 /datum/status_effect/buff/order/hold
 	id = "hold"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/order/hold
-	effectedstats = list(STATKEY_WIL = 2, STATKEY_CON = 2)
+	effectedstats = list(STATKEY_END = 2, STATKEY_CON = 2)
 	duration = 1 MINUTES
 
 /atom/movable/screen/alert/status_effect/buff/order/hold

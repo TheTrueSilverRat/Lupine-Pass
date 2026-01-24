@@ -33,7 +33,7 @@
 	H.change_stat(STATKEY_STR, -1)
 	H.change_stat(STATKEY_INT, 2)
 	H.change_stat(STATKEY_CON, 6)
-	H.change_stat(STATKEY_WIL, 1)
+	H.change_stat(STATKEY_END, 1)
 	H.change_stat(STATKEY_SPD, -2)
 
 /mob/living/carbon/human/proc/goblinannouncement()

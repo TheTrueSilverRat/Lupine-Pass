@@ -102,7 +102,7 @@
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/stealing, 3, TRUE)
 	H.change_stat("strength", 2)
-	H.change_stat("willpower", 1)
+	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 3)
 	H.change_stat("speed", -1)
 	H.change_stat("intelligence", -1)
@@ -137,7 +137,7 @@
 	H.adjust_skillrank(/datum/skill/labor/lumberjacking, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.change_stat("strength", 1)
-	H.change_stat("willpower", 2)
+	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 1)
 	H.change_stat("intelligence", 1)
 	H.change_stat("speed", -1)
@@ -165,7 +165,7 @@
 	H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 	H.change_stat("strength", 2)
 	H.change_stat("intelligence", 1)
-	H.change_stat("willpower", 2)
+	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 2)
 	ADD_TRAIT(H, TRAIT_TRAINED_SMITH, TRAIT_GENERIC)
 
@@ -234,7 +234,7 @@
 	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 	H.change_stat("speed", 3)
-	H.change_stat("willpower", 2)
+	H.change_stat("endurance", 2)
 	H.change_stat("perception", 1)
 	ADD_TRAIT(H, TRAIT_KEENEARS, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
@@ -267,7 +267,7 @@
 	H.adjust_skillrank(/datum/skill/craft/crafting, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/butchering, 5, TRUE)
 	H.change_stat("strength", 1)
-	H.change_stat("willpower", 2)
+	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 2)
 
 /datum/advclass/prisoner_cheesemaker
@@ -295,7 +295,7 @@
 	H.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 	H.change_stat("intelligence", 2)
 	H.change_stat("constitution", 2)
-	H.change_stat("willpower", 1)
+	H.change_stat("endurance", 1)
 
 /datum/advclass/prisoner_seamstress
 	parent_type = /datum/advclass
@@ -337,7 +337,7 @@
 	H.adjust_skillrank(/datum/skill/craft/masonry, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/ceramics, 5, TRUE)
-	H.change_stat("willpower", 2)
+	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 1)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", -1)
@@ -450,7 +450,7 @@
 	H.adjust_skillrank(/datum/skill/craft/smelting, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.change_stat("strength", 2)
-	H.change_stat("willpower", 1)
+	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 2)
 	H.change_stat("fortune", 2)
 	ADD_TRAIT(H, TRAIT_DARKVISION, TRAIT_GENERIC)
@@ -484,7 +484,7 @@
 	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 	H.change_stat("strength", 2)
-	H.change_stat("willpower", 1)
+	H.change_stat("endurance", 1)
 	H.change_stat("constitution", 1)
 	H.change_stat("perception", 1)
 
@@ -516,7 +516,7 @@
 	H.adjust_skillrank(/datum/skill/misc/medicine, 2, TRUE)
 	H.cmode_music = 'sound/music/combat_holy.ogg'
 	H.change_stat("intelligence", 2)
-	H.change_stat("willpower", 1)
+	H.change_stat("endurance", 1)
 	H.change_stat("perception", 2)
 	H.change_stat("speed", 1)
 

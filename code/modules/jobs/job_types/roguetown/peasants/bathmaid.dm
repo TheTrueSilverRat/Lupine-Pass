@@ -51,7 +51,7 @@
 	traits_applied = list(TRAIT_NUTCRACKER, TRAIT_CICERONE)
 	subclass_stats = list(
 		STATKEY_CON = 3,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_STR = 1
 	)
 
@@ -98,7 +98,7 @@
 	traits_applied = list(TRAIT_LIGHT_STEP, TRAIT_BEAUTIFUL)
 	subclass_stats = list(
 		STATKEY_PER = 3,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_STR = 1
 	)
 
@@ -170,7 +170,7 @@
 	traits_applied = list(TRAIT_NUTCRACKER, TRAIT_NOPAINSTUN) //might be a bit much but given their profession I imagine they'd be able to handle a bit of pain.
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_INT = -1,
 		STATKEY_CON = 1
 	)
@@ -217,7 +217,7 @@
 	traits_applied = list(TRAIT_KEENEARS, TRAIT_BEAUTIFUL)
 	subclass_stats = list(
 		STATKEY_SPD = 3,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_PER = 1
 	)
 

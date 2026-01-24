@@ -40,7 +40,7 @@
 	category_tags = list(CTAG_INNKEEPER)
 	subclass_stats = list(
 		STATKEY_STR = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_CON = 1,
 		STATKEY_INT = 1,
 		STATKEY_SPD = 1

@@ -9,7 +9,7 @@
 	cmode_music = 'sound/music/combat_kazengite.ogg'
 	subclass_stats = list(
 		STATKEY_CON = 3,
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_STR = 2,
 		STATKEY_PER = 1,
 		STATKEY_SPD = -1
@@ -56,7 +56,7 @@
 	subclass_stats = list(
 		STATKEY_SPD = 4,
 		STATKEY_PER = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_STR = -1,
 		STATKEY_CON = -1
 	)

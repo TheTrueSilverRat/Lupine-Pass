@@ -220,7 +220,7 @@
 	return ..()
 
 /datum/reagent/buff/endurance
-	name = STATKEY_WIL
+	name = STATKEY_END
 	color = "#ffff00"
 	taste_description = "oversweetened milk"
 

@@ -68,7 +68,7 @@
 	subclass_stats = list(
 		STATKEY_STR = 3,
 		STATKEY_CON = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_SPD = 2
 	)
 
@@ -217,7 +217,7 @@
 	category_tags = list(CTAG_TEMPLAR)
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	subclass_stats = list(
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_STR = 2,
 		STATKEY_CON = 2,
 	)

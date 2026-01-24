@@ -11,7 +11,7 @@
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_CON = 2,
-		STATKEY_WIL = 1
+		STATKEY_END = 1
 	)
 
 /datum/outfit/job/roguetown/wretch/heretic/pre_equip(mob/living/carbon/human/H)
@@ -149,7 +149,7 @@
 			head = /obj/item/clothing/head/roguetown/helmet/heavy/knight/armet
 			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
-			H.change_stat(STATKEY_WIL, 2) //ENDVRE
+			H.change_stat(STATKEY_END, 2) //ENDVRE
 
 /datum/advclass/wretch/heretic/spy
 	name = "Heretic Spy"
@@ -160,7 +160,7 @@
 	//Slower than outlaw, but a bit more PER and INT
 	subclass_stats = list(
 		STATKEY_PER = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_SPD = 2,
 		STATKEY_INT = 1
 	)
@@ -291,7 +291,7 @@
 		if(/datum/patron/old_god)
 			wrists = /obj/item/clothing/neck/roguetown/psicross
 			cloak = /obj/item/clothing/cloak/tabard/crusader/psydon
-			H.change_stat(STATKEY_WIL, 2) //ENDVRE
+			H.change_stat(STATKEY_END, 2) //ENDVRE
 
 /obj/effect/proc_holder/spell/invoked/convert_heretic
 	name = "Convert The Downtrodden"

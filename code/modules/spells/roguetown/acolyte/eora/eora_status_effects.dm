@@ -51,7 +51,7 @@
 	// Apply stat boosts to all attributes
 	effectedstats = list(
 		STATKEY_STR = current_boost,
-		STATKEY_WIL = current_boost,
+		STATKEY_END = current_boost,
 		STATKEY_CON = current_boost,
 		STATKEY_INT = current_boost,
 		STATKEY_PER = current_boost,

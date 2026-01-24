@@ -65,7 +65,7 @@
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/misc/tracking, 2, TRUE)
 			H.change_stat(STATKEY_STR, 2)
-			H.change_stat(STATKEY_WIL, 1)
+			H.change_stat(STATKEY_END, 1)
 			H.change_stat(STATKEY_CON, 2)
 			H.change_stat(STATKEY_SPD, 1)
 			ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
@@ -103,7 +103,7 @@
 			H.adjust_skillrank_up_to(/datum/skill/labor/mining, 3, TRUE)		//Ditto
 			H.adjust_skillrank_up_to(/datum/skill/craft/traps, 3, TRUE)			//Ditto
 			H.change_stat(STATKEY_STR, 2)		//Statblock prone to revision. Probably will be revised. Currently weighted for 7 points and not 9.
-			H.change_stat(STATKEY_WIL, 3)
+			H.change_stat(STATKEY_END, 3)
 			H.change_stat(STATKEY_CON, 2)
 			H.change_stat(STATKEY_PER, 2)
 			H.change_stat(STATKEY_SPD, -2)
@@ -142,7 +142,7 @@
 			H.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 			H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 			H.change_stat(STATKEY_PER, 3)
-			H.change_stat(STATKEY_WIL, 2)
+			H.change_stat(STATKEY_END, 2)
 			H.change_stat(STATKEY_SPD, 2)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
@@ -171,7 +171,7 @@
 			H.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 			H.change_stat(STATKEY_STR, 1)
 			H.change_stat(STATKEY_PER, 2)
-			H.change_stat(STATKEY_WIL, 1)
+			H.change_stat(STATKEY_END, 1)
 			H.change_stat(STATKEY_SPD, 2)
 			ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)

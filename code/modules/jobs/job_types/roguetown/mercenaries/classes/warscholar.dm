@@ -9,7 +9,7 @@
 	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T3)
 	subclass_stats = list(
 		STATKEY_INT = 3,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_SPD = 2,
 		STATKEY_PER = 1,
 		STATKEY_CON = -1
@@ -97,7 +97,7 @@
 	subclass_stats = list(
 		STATKEY_STR = 3,
 		STATKEY_SPD = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_PER = -1,
 		STATKEY_CON = -1
 	)
@@ -174,7 +174,7 @@
 	subclass_stats = list(
 		STATKEY_INT = 3,
 		STATKEY_SPD = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 	)
 
 /datum/outfit/job/roguetown/mercenary/warscholar_vizier

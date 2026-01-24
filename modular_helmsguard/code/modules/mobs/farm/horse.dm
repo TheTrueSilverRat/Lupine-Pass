@@ -35,7 +35,7 @@
 	STASPD = 15
 	STACON = 8
 	STASTR = 12
-	STAWIL = 15
+	STAEND = 15
 	pixel_x = -8
 	attack_sound = list('sound/vo/mobs/saiga/attack (1).ogg','sound/vo/mobs/saiga/attack (2).ogg')
 	can_buckle = TRUE

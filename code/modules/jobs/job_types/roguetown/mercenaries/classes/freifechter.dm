@@ -64,7 +64,7 @@
 		STATKEY_PER = 3,
 		STATKEY_SPD = 1, //We want to encourage backstepping since you no longer get an extra layer of armour. I don't think this will break much of anything.
 		STATKEY_STR = 1,
-		STATKEY_WIL = -2
+		STATKEY_END = -2
 	)
 
 /datum/outfit/job/roguetown/mercenary/freelancer_lancer/pre_equip(mob/living/carbon/human/H)

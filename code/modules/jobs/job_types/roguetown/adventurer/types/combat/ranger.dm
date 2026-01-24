@@ -70,7 +70,7 @@
 	subclass_stats = list(
 		STATKEY_PER = 2,
 		STATKEY_SPD = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 	)
 
 /datum/outfit/job/roguetown/adventurer/assassin/pre_equip(mob/living/carbon/human/H)
@@ -161,7 +161,7 @@
 	traits_applied = list(TRAIT_OUTDOORSMAN)
 	subclass_stats = list(
 		STATKEY_PER = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_INT = 1,
 	)
 	extra_context = "Selecting Light Armor grants +1 SPD. Selecting Medium Armor grants +1 STR along with the corresponding traits."

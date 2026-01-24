@@ -10,7 +10,7 @@
 	subclass_stats = list(
 		STATKEY_INT = 3,	//This guy's here to grind = baby.
 		STATKEY_STR = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_PER = 1,
 		STATKEY_LCK = 1,
 	)

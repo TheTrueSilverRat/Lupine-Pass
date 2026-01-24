@@ -64,7 +64,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	category_tags = list(CTAG_BISHOP)
 	subclass_stats = list(
 		STATKEY_INT = 4,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_STR = -1,
 		STATKEY_CON = -1,
 		STATKEY_SPD = -1

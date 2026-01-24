@@ -9,7 +9,7 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DEATHBYSNUSNU)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_SPD = 2,
 		STATKEY_CON = 1,
 		STATKEY_LCK = 1

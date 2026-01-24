@@ -9,7 +9,7 @@
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_CON = 2,
-		STATKEY_WIL = 1
+		STATKEY_END = 1
 	)
 
 /datum/outfit/job/roguetown/adventurer/foreigner/pre_equip(mob/living/carbon/human/H)
@@ -50,7 +50,7 @@
 	subclass_stats = list(
 		STATKEY_STR = 2,
 		STATKEY_CON = 2,
-		STATKEY_WIL = 1
+		STATKEY_END = 1
 	)
 
 /datum/outfit/job/roguetown/adventurer/custodian/pre_equip(mob/living/carbon/human/H)
@@ -95,7 +95,7 @@
 	subclass_stats = list(
 		STATKEY_SPD = 3,
 		STATKEY_PER = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 	)
 
 /datum/outfit/job/roguetown/adventurer/yoruku/pre_equip(mob/living/carbon/human/H)

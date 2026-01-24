@@ -14,7 +14,7 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_TRAINED_SMITH, TRAIT_STEELHEARTED)
 	subclass_stats = list(
 		STATKEY_INT = 3,
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_PER = 3,//Anvil"Strikes deftly" is based on PER
 		STATKEY_STR = 1,
 		STATKEY_SPD = -2
@@ -62,7 +62,7 @@
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED)
 	subclass_stats = list(
 		STATKEY_CON = 5,
-		STATKEY_WIL = 4,
+		STATKEY_END = 4,
 		STATKEY_STR = 2,
 		STATKEY_SPD = -2
 	)

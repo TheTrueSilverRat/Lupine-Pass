@@ -31,7 +31,7 @@
 
 	job_stats = list(
 		STATKEY_CON = 7,
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_SPD = -2
 	)
 

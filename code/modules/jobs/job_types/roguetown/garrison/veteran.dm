@@ -60,7 +60,7 @@
 		STATKEY_INT = 2,
 		STATKEY_STR = 1,
 		STATKEY_SPD = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_CON = 1,
 		STATKEY_PER = 1
 	)
@@ -103,7 +103,7 @@
 		H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/maces, 1, TRUE)
 		H.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
-		H.change_stat(STATKEY_WIL, 1)
+		H.change_stat(STATKEY_END, 1)
 
 	H.verbs |= /mob/proc/haltyell
 	H.cmode_music = 'sound/music/cmode/towner/combat_retired.ogg'
@@ -120,7 +120,7 @@
 		STATKEY_INT = 2,
 		STATKEY_STR = 1,
 		STATKEY_PER = 1,
-		STATKEY_WIL = 1
+		STATKEY_END = 1
 	)
 
 // No hero, just a normal guy who happened to survive war.
@@ -181,7 +181,7 @@
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED, TRAIT_NOBLE)
 	subclass_stats = list(
 		STATKEY_CON = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_STR = 1,
 		STATKEY_PER = 1,
 		STATKEY_INT = 1,
@@ -262,7 +262,7 @@
 	category_tags = list(CTAG_VETERAN)
 	traits_applied = list(TRAIT_HEAVYARMOR, TRAIT_MEDIUMARMOR, TRAIT_STEELHEARTED)
 	subclass_stats = list(
-		STATKEY_WIL = 3,// two handed weapons require a LOT of stamina.
+		STATKEY_END = 3,// two handed weapons require a LOT of stamina.
 		STATKEY_STR = 2,
 		STATKEY_CON = 1,
 		STATKEY_INT = 1,
@@ -339,7 +339,7 @@
 	subclass_stats = list(
 		STATKEY_PER = 3,// you are OLD you have OLD EYES. this is to counter that debuff so you can be OBSERVANT. You sacrifice your strength and armor, so.
 		STATKEY_INT = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_CON = 1,
 		STATKEY_SPD = 1,// You get -2 speed from being old.
 		STATKEY_STR = -1

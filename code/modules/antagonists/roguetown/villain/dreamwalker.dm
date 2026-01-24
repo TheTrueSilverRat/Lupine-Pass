@@ -32,7 +32,7 @@
 	var/STASTR = 15
 	var/STASPD = 12
 	var/STAINT = 12
-	var/STAWIL = 12
+	var/STAEND = 12
 	var/STACON = 12
 	var/STAPER = 12
 	var/STALUC = 10
@@ -57,7 +57,7 @@
 	owner.current.STAPER = src.STAPER
 	owner.current.STAINT = src.STAINT
 	owner.current.STASPD = src.STASPD
-	owner.current.STAWIL = src.STAWIL
+	owner.current.STAEND = src.STAEND
 	owner.current.STACON = src.STACON
 	owner.current.STALUC = src.STALUC
 	//Dreamfiends fear them up close.
@@ -96,7 +96,7 @@
 	H.change_stat(STATKEY_CON, 2)
 	H.change_stat(STATKEY_PER, 2)
 	H.change_stat(STATKEY_SPD, 2)
-	H.change_stat(STATKEY_WIL, 2)
+	H.change_stat(STATKEY_END, 2)
 
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/blink)

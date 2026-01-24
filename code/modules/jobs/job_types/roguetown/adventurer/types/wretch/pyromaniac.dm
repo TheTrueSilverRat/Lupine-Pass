@@ -7,7 +7,7 @@
 	category_tags = list(CTAG_WRETCH)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_CON = 3,
 		STATKEY_INT = 3
 	)

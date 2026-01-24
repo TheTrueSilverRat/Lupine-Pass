@@ -9,7 +9,7 @@
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	traits_applied = list(TRAIT_TRAINED_SMITH)
 	subclass_stats = list(
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_CON = 2,
 		STATKEY_STR = 1,
 		STATKEY_LCK = 1,

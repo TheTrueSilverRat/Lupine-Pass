@@ -39,7 +39,7 @@
 	outfit = /datum/outfit/job/roguetown/niteman/basic
 	category_tags = list(CTAG_BATHMOM)
 	subclass_stats = list(
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_STR = 1,
 		STATKEY_CON = 1,
 		STATKEY_INT = -1

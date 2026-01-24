@@ -58,7 +58,7 @@
 	subclass_stats = list(
 		STATKEY_PER = 2,//7 points weighted, same as MAA. They get temp buffs in the woods instead of in the city.
 		STATKEY_SPD = 2,
-		STATKEY_WIL = 1
+		STATKEY_END = 1
 	)
 
 /datum/outfit/job/roguetown/bogguardsman/ranger/pre_equip(mob/living/carbon/human/H)
@@ -128,7 +128,7 @@
 	subclass_stats = list(
 		STATKEY_STR = 2,//7 points weighted, same as MAA. They get temp buffs in the woods instead of in the city.
 		STATKEY_CON = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_PER = 1
 	)
 

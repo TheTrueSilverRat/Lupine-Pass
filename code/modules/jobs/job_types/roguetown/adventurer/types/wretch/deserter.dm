@@ -12,7 +12,7 @@
 	cmode_music = 'sound/music/cmode/antag/combat_thewall.ogg' // same as new hedgeknight music
 	// Deserter are the knight-equivalence. They get a balanced, straightforward 2 2 3 statspread to endure and overcome.
 	subclass_stats = list(
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_CON = 2,
 		STATKEY_STR = 2
 	)
@@ -136,7 +136,7 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_INT = 1,
 		STATKEY_CON = 1,
 		STATKEY_PER = 1,

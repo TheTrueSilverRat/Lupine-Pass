@@ -64,7 +64,7 @@
 		STATKEY_STR = 2,
 		STATKEY_INT = 1,
 		STATKEY_CON = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 	)
 
 /datum/outfit/job/roguetown/adventurer/spellblade/pre_equip(mob/living/carbon/human/H)
@@ -132,7 +132,7 @@
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_SPD = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 	)
 /datum/outfit/job/roguetown/adventurer/spellsinger/pre_equip(mob/living/carbon/human/H)
 	..()

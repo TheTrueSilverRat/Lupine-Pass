@@ -60,7 +60,7 @@
 	STACON = 16
 	STASTR = 16
 	STASPD = 2
-	STAWIL = 17
+	STAEND = 17
 
 	retreat_distance = 0
 	minimum_distance = 0

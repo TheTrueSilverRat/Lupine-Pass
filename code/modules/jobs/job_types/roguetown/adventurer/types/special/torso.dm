@@ -28,7 +28,7 @@
 	H.adjust_skillrank(/datum/skill/misc/reading, rand(0,4), TRUE)
 	H.adjust_skillrank(/datum/skill/misc/riding, rand(0,4), TRUE)
 	H.change_stat(STATKEY_STR, 3)
-	H.change_stat(STATKEY_WIL, 3)
+	H.change_stat(STATKEY_END, 3)
 	H.change_stat(STATKEY_CON, 3)
 	H.change_stat(STATKEY_PER, 2)
 	H.change_stat(STATKEY_SPD, 2)

@@ -7,7 +7,7 @@
 	category_tags = list(CTAG_VAGABOND)
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/goatmale/tame
 	subclass_stats = list(
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_INT = -1,
 		STATKEY_CON = -1
 	)

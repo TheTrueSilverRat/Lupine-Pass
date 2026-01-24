@@ -10,7 +10,7 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_HEAVYARMOR, TRAIT_NOBLE, TRAIT_DEATHBYSNUSNU)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_CON = 3, //dark souls 3 dual greatshield moment
 		STATKEY_INT = 1,
 		STATKEY_SPD = 1,
@@ -53,7 +53,7 @@
 	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/labor/butchering, 1, TRUE)
 	H.change_stat("strength", 2)
-	H.change_stat("willpower", 2)
+	H.change_stat("endurance", 2)
 	H.change_stat("constitution", 3) //dark souls 3 dual greatshield moment
 	H.change_stat("intelligence", 1)
 	H.change_stat("speed", 1)

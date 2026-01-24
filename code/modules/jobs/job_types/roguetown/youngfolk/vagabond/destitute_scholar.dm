@@ -9,7 +9,7 @@
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_CON = -1,
-		STATKEY_WIL = -1
+		STATKEY_END = -1
 	)
 
 /datum/outfit/job/roguetown/vagabond/scholar/pre_equip(mob/living/carbon/human/H)

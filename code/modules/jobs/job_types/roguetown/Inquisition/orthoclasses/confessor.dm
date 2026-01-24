@@ -15,7 +15,7 @@
 	)
 	subclass_stats = list(
 		STATKEY_SPD = 3,
-		STATKEY_WIL = 3,
+		STATKEY_END = 3,
 		STATKEY_PER = 2,
 		STATKEY_STR = -1//weazel
 	)

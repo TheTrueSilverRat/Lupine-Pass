@@ -45,11 +45,11 @@
 /datum/status_effect/buff/alch/endurancepot
 	id = "endpot"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/alch/endurancepot
-	effectedstats = list(STATKEY_WIL = 3)
+	effectedstats = list(STATKEY_END = 3)
 	duration = 3 SECONDS
 
 /atom/movable/screen/alert/status_effect/buff/alch/endurancepot
-	name = STATKEY_WIL
+	name = STATKEY_END
 	icon_state = "buff"
 
 /datum/status_effect/buff/alch/speedpot

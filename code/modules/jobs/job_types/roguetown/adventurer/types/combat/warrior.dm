@@ -8,7 +8,7 @@
 	category_tags = list(CTAG_ADVENTURER, CTAG_COURTAGENT)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_CON = 2,
 	)
 
@@ -107,7 +107,7 @@
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_STR = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_SPD = 1,
 	)
 
@@ -164,7 +164,7 @@
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_CON = 1,
 		STATKEY_INT = 1,
 	)
@@ -239,7 +239,7 @@
 	subclass_stats = list(
 		STATKEY_STR = 3,
 		STATKEY_CON = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_INT = -2,
 	)
 
@@ -312,7 +312,7 @@
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_CRITICAL_RESISTANCE, TRAIT_NOPAINSTUN, TRAIT_DODGEEXPERT)
 	subclass_stats = list(
 		STATKEY_CON = 5,
-		STATKEY_WIL = 5,
+		STATKEY_END = 5,
 		STATKEY_SPD = 1,
 		STATKEY_STR = -2,
 		STATKEY_INT = -2,
@@ -350,7 +350,7 @@
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_HEAVYARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_CON = 1,
 	)
 
@@ -445,7 +445,7 @@
 	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_HEAVYARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_CON = 1,
 	)
 
@@ -473,7 +473,7 @@
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			H.set_blindness(0)
 			H.change_stat("speed", 3)
-			H.change_stat("willpower", 1)
+			H.change_stat("endurance", 1)
 			H.change_stat("strength", 1)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/bikini
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/shorts
@@ -524,7 +524,7 @@
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			H.set_blindness(0)
 			H.change_stat("speed", 3)
-			H.change_stat("willpower", 1)
+			H.change_stat("endurance", 1)
 			H.change_stat("strength", 1)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/hide/bikini
 			pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/shorts
@@ -574,7 +574,7 @@
 			ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 			H.set_blindness(0)
 			H.change_stat("speed", 2)
-			H.change_stat("willpower", 1)
+			H.change_stat("endurance", 1)
 			H.change_stat("strength", 2)
 			armor = /obj/item/clothing/suit/roguetown/armor/leather/studded/bikini
 			pants = /obj/item/clothing/under/roguetown/tights/black
@@ -623,7 +623,7 @@
 			ADD_TRAIT(H, TRAIT_NOPAIN, TRAIT_GENERIC)
 			H.set_blindness(0)
 			H.change_stat("strength", 2)
-			H.change_stat("willpower", 2)
+			H.change_stat("endurance", 2)
 			H.change_stat("constitution", 1)
 			armor = /obj/item/clothing/suit/roguetown/armor/plate/bikini
 			pants = /obj/item/clothing/under/roguetown/trou/leather

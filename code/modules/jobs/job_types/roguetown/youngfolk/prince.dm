@@ -205,7 +205,7 @@
 		STATKEY_PER = -2,
 		STATKEY_INT = -2,
 		STATKEY_CON = -2,
-		STATKEY_WIL = -2,
+		STATKEY_END = -2,
 		STATKEY_LCK = -2
 	)
 
@@ -252,7 +252,7 @@
 	STATKEY_SPD = 4,
 	STATKEY_PER = 2,
 	STATKEY_INT = 2,
-	STATKEY_WIL = 1,
+	STATKEY_END = 1,
 	STATKEY_LCK = 1,
 	)
 	adv_stat_ceiling = list(STAT_STRENGTH = 8, STAT_CONSTITUTION = 8, STAT_SPEED = 15)	//don't get caught

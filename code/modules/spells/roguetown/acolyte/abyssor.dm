@@ -554,7 +554,7 @@
 	effectedstats = list(
 		STATKEY_STR = str_buff,
 		STATKEY_CON = con_buff,
-		STATKEY_WIL = end_buff,
+		STATKEY_END = end_buff,
 		STATKEY_LCK = fortune_malus,
 		STATKEY_SPD = speed_malus,
 		STATKEY_PER = perception_malus

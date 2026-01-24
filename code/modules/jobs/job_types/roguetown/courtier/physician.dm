@@ -49,7 +49,7 @@
 	category_tags = list(CTAG_COURTPHYS)
 	subclass_stats = list(
 		STATKEY_INT = 4,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_LCK = 1,
 		STATKEY_SPD = 1,
 		STATKEY_STR = -1,
