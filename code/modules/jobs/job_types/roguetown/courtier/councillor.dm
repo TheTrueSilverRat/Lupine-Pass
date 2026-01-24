@@ -1,10 +1,10 @@
 /datum/job/roguetown/councillor
-	title = "Councillor"
+	title = "Visiting Dignitary"
 	flag = COUNCILLOR
 	department_flag = NOBLEMEN
 	faction = "Station"
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 0
+	spawn_positions = 0
 	allowed_ages = ALL_AGES_LIST
 	allowed_races = RACES_NO_CONSTRUCT		//Nobility, so no constructs.
 	allowed_sexes = list(MALE, FEMALE)
