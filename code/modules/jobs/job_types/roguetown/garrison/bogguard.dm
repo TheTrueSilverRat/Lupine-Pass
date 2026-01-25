@@ -8,7 +8,7 @@
 	selection_color = JCOLOR_SOLDIER
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = RACES_KEEP
+	allowed_races = list(RACES_KEEP)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	tutorial = "You are a person of the wilds, disgraced by past crimes against your jarl.\
 				Your time as an outcast has made you adept at traversing untrodden land and tracking prey in the dead of winter.\

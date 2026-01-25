@@ -5,7 +5,7 @@
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 2
-	allowed_races = RACES_KEEP
+	allowed_races = list(RACES_KEEP)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	tutorial = "You are an elite warrior noble serving under your hersir and jarl, and you are respected by your subordinates for your achievements in combat.\

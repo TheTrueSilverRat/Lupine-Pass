@@ -128,10 +128,12 @@
 /datum/species/critterfolk/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	..()
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+	C.mob_size = MOB_SIZE_SMALL//makes the mob small :)
 
 /datum/species/critterfolk/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
+	C.mob_size = MOB_SIZE_MEDIUM//makes the mob medium :)
 
 /datum/species/critterfolk/check_roundstart_eligible()
 	return TRUE

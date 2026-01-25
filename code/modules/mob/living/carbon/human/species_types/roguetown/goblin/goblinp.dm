@@ -118,7 +118,9 @@
 	..()
 	C.cmode_music = 'sound/music/combat_gronn.ogg'
 	RegisterSignal(C, COMSIG_MOB_SAY, PROC_REF(handle_speech))
+	C.mob_size = MOB_SIZE_SMALL//makes the mob small :)
 
 /datum/species/goblinp/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
+	C.mob_size = MOB_SIZE_MEDIUM//makes the mob medium :)

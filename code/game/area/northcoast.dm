@@ -31,6 +31,9 @@
 /area/rogue/outdoors/beach/forest/hamlet
 	name = "The Rotwood Coast - Hamlet"
 	first_time_text = "THE HAMLET"
+	droning_sound = 'sound/music/area/The Hamlet.ogg'
+	droning_sound_dusk = 'sound/music/area/The Hamlet.ogg'
+	droning_sound_night = 'sound/music/area/The Hamlet.ogg' // I have no idea if dusk and night are actually needed. - Greed23
 	ambush_mobs = null // We don't want actual ambushes in Hamlet but we also don't want to misuse outdoors/beach lol
 	threat_region = THREAT_REGION_NORTH_AZUREAN_COAST
 
