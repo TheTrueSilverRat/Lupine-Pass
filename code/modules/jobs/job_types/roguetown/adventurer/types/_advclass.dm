@@ -116,8 +116,8 @@
 			return FALSE
 
 	if(min_pq != -100) // If someone sets this we actually do the check.
-		if(!(get_playerquality(H.client.ckey) >= min_pq))
-			return FALSE
+		/*if(!(get_playerquality(H.client.ckey) >= min_pq))
+			return FALSE*/ //Disable PQ requirements temporily
 
 	if(prob(pickprob))
 		return TRUE
