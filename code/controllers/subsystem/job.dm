@@ -150,8 +150,8 @@ SUBSYSTEM_DEF(job)
 		if(job.plevel_req > player.client.patreonlevel())
 			JobDebug("FOC incompatible with PATREON LEVEL, Player: [player], Job: [job.title], Race: [player.client.prefs.pref_species.name]")
 			continue
-		if(!isnull(job.min_pq) && (get_playerquality(player.ckey) < job.min_pq))
-			continue
+		/*if(!isnull(job.min_pq) && (get_playerquality(player.ckey) < job.min_pq)) PQ Requirements are temporarily disabled.
+			continue*/
 		if(!isnull(job.max_pq) && (get_playerquality(player.ckey) > job.max_pq))
 			continue
 		if(!(player.client.prefs.gender in job.allowed_sexes))
@@ -475,8 +475,8 @@ SUBSYSTEM_DEF(job)
 					JobDebug("DO incompatible with PATREON LEVEL, Player: [player], Job: [job.title], Race: [player.client.prefs.pref_species.name]")
 					continue
 
-				if(!isnull(job.min_pq) && (get_playerquality(player.ckey) < job.min_pq))
-					continue
+				/*if(!isnull(job.min_pq) && (get_playerquality(player.ckey) < job.min_pq)) //PQ requirements are temporarily disabled
+					continue*/
 
 				if(!isnull(job.max_pq) && (get_playerquality(player.ckey) > job.max_pq))
 					continue
@@ -573,8 +573,8 @@ SUBSYSTEM_DEF(job)
 				if(job.plevel_req > player.client.patreonlevel())
 					continue
 
-				if(!isnull(job.min_pq) && (get_playerquality(player.ckey) < job.min_pq) && level != JP_LOW) //since its required people on low can roll for it
-					continue
+				/*if(!isnull(job.min_pq) && (get_playerquality(player.ckey) < job.min_pq) && level != JP_LOW) //since its required people on low can roll for it
+					continue*/ //TEMPORARILY DISABLE PQ REQUIREMENTS
 
 				if((player.client.prefs.lastclass == job.title) && (!job.bypass_lastclass))
 					continue
