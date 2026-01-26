@@ -84,10 +84,10 @@
 	category_tags = list(CTAG_ROYALGUARD)
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	subclass_stats = list(
-		STATKEY_STR = 3,//Heavy hitters. Less con/end, high strength.
+		STATKEY_STR = 5,//Heavy hitters. Less con/end, high strength.
 		STATKEY_INT = 3,
-		STATKEY_CON = 1,
-		STATKEY_END = 1,
+		STATKEY_CON = 3,
+		STATKEY_END = 3,
 		STATKEY_SPD = -1)
 
 /datum/outfit/job/roguetown/knight/heavy/pre_equip(mob/living/carbon/human/H)
@@ -176,10 +176,10 @@
 	category_tags = list(CTAG_ROYALGUARD)
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	subclass_stats = list(
-		STATKEY_STR = 1,//Tanky, less strength, but high con/end.
+		STATKEY_STR = 3,//Tanky, less strength, but high con/end.
 		STATKEY_INT = 1,
-		STATKEY_CON = 3,
-		STATKEY_END = 3,)
+		STATKEY_CON = 5,
+		STATKEY_END = 5,)
 
 /datum/outfit/job/roguetown/knight/footknight/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -262,10 +262,10 @@
 	traits_applied = list(TRAIT_HEAVYARMOR)
 	//Decent all-around stats. Nothing spectacular. Ranged/melee hybrid class on horseback.
 	subclass_stats = list(
-		STATKEY_STR = 2,
+		STATKEY_STR = 4,
 		STATKEY_INT = 1,
-		STATKEY_CON = 1,
-		STATKEY_END = 1,
+		STATKEY_CON = 3,
+		STATKEY_END = 3,
 		STATKEY_PER = 2)
 
 /datum/outfit/job/roguetown/knight/mountedknight/pre_equip(mob/living/carbon/human/H)
@@ -366,10 +366,11 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT)
 	category_tags = list(CTAG_ROYALGUARD)
 	subclass_stats = list(
-		STATKEY_STR = 1,
+		STATKEY_STR = 3,
 		STATKEY_INT = 1,
-		STATKEY_END = 2,
-		STATKEY_SPD = 2)
+		STATKEY_END = 4,
+		STATKEY_SPD = 2,
+		STATKEY_CON = 2)
 
 
 /datum/outfit/job/roguetown/knight/irregularknight/pre_equip(mob/living/carbon/human/H)
