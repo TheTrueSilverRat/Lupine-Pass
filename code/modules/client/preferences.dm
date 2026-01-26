@@ -1119,7 +1119,7 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 		if(1)
 			jpval = JP_HIGH
 
-	if(/*job.required && !isnull(job.min_pq) && (get_playerquality(user.ckey) < job.min_pq)*/ TRUE) //Temporarily disable PQ requirements
+	if(/*job.required && !isnull(job.min_pq) && (get_playerquality(user.ckey) < job.min_pq)*/ FALSE) //Temporarily disable PQ requirements
 		if(job_preferences[job.title] == JP_LOW)
 			jpval = null
 		else
