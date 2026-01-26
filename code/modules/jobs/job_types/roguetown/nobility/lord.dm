@@ -117,10 +117,11 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	subclass_stats = list(
 		STATKEY_LCK = 5,
 		STATKEY_INT = 3,
-		STATKEY_END = 3,
+		STATKEY_END = 5,
 		STATKEY_PER = 2,
 		STATKEY_SPD = 1,
-		STATKEY_STR = 1,
+		STATKEY_STR = 3,
+		STATKEY_CON = 2,
 	)
 
 /datum/outfit/job/roguetown/lord/warrior/pre_equip(mob/living/carbon/human/H)
