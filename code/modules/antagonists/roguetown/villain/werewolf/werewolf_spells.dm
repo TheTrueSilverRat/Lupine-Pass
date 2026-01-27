@@ -1,3 +1,32 @@
+/obj/effect/proc_holder/spell/self/werewolf_transform
+	name = "Transform into War Form"
+	desc = "Unlesh your inner strength"
+	overlay_state = "howl"
+	antimagic_allowed =  TRUE
+	recharge_time = 100 //10 seconds
+	ignore_cockblock = TRUE
+	var/transformed = FALSE //Are you transformed into a werewolf or not? FALSE = CURRENTLY HUMAN, TRUE = CURRENTLY WEREWOLF
+	var/wolf_name //Use for Werewolf name
+
+/obj/effect/proc_holder/spell/self/werewolf_transform/cast(mob/living/carbon/human/user = usr)
+	..()
+	if(!wolf_name)
+		wolf_name = input(user, "Give upon yourself your Deed Name (Name in War Form)") as text|null
+		user.wolf_name = wolf_name
+	if(transformed == FALSE)
+		user.flash_fullscreen("redflash3")
+		user.emote("agony", forced = TRUE)
+		to_chat(user, span_userdanger("MY WAR FORM TEARS FROM MY MORTAL SHELL WITHIN!"))
+		user.werewolf_transform()
+		transformed = TRUE
+	else
+		user.emote("rage", forced = TRUE)
+		user.flash_fullscreen("redflash1")
+		to_chat(user, span_warning("I withdraw my form from within."))
+		user.werewolf_untransform()
+		transformed = FALSE
+
+
 /obj/effect/proc_holder/spell/self/howl
 	name = "Howl"
 	desc = "!"

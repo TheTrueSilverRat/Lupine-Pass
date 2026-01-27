@@ -1,6 +1,8 @@
 /mob/living/carbon/human
 	var/mob/stored_mob = null
+	var/wolf_name //for wolf stuff
 
+/* COMMENTING THIS ALL OUT TO MAKE SURE THAT WEREWOLVES DONT TURN IN THE NIGHT
 /datum/antagonist/werewolf/on_life(mob/user)
 	if(!user) return
 	var/mob/living/carbon/human/H = user
@@ -56,7 +58,7 @@
 			else if (world.time >= untransforming) // Alert player
 				H.flash_fullscreen("redflash1")
 				to_chat(H, span_warning("Daylight shines around me... the curse begins to fade."))
-
+*/
 
 /mob/living/carbon/human/species/werewolf/death(gibbed, nocutscene = FALSE)
 	werewolf_untransform(TRUE, gibbed)
@@ -65,8 +67,8 @@
 	if(!mind)
 		log_runtime("NO MIND ON [src.name] WHEN TRANSFORMING")
 	Paralyze(1, ignore_canstun = TRUE)
-	for(var/obj/item/W in src)
-		dropItemToGround(W)
+//	for(var/obj/item/W in src)
+//		dropItemToGround(W)
 	regenerate_icons()
 	icon = null
 	var/oldinv = invisibility
@@ -76,7 +78,7 @@
 		SSdroning.play_area_sound(get_area(src), client)
 //	stop_cmusic()
 
-	src.fully_heal(FALSE)
+//	src.fully_heal(FALSE) Removing this so that you don't have transformation as an easy change
 
 	var/ww_path
 	if(gender == MALE)
@@ -99,6 +101,8 @@
 	src.forceMove(W)
 
 	W.after_creation()
+	W.real_name = src.wolf_name
+	W.name = src.wolf_name
 	W.stored_language = new
 	W.stored_language.copy_known_languages_from(src)
 	W.stored_skills = ensure_skills().known_skills.Copy()
@@ -110,7 +114,7 @@
 	skills?.skill_experience = list()
 	W.grant_language(/datum/language/beast)
 
-	W.base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB)
+	W.base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB, INTENT_HARM)
 	W.update_a_intents()
 
 	to_chat(W, span_userdanger("I transform into a horrible beast!"))
@@ -130,20 +134,24 @@
 	W.adjust_skillrank(/datum/skill/misc/climbing, 6, TRUE)
 	W.adjust_skillrank(/datum/skill/misc/swimming, 5, TRUE)
 
-	W.STASTR = 20
-	W.STACON = 20
-	W.STAEND = 20
+	W.STASTR = src.STASTR + 5
+	W.STAPER = src.STAPER + 2
+	W.STAINT = src.STAINT
+	W.STALUC = src.STALUC
+	W.STASPD = src.STASPD + 5
+	W.STACON = src.STACON + 5
+	W.STAEND = src.STAEND + 5
 
 	W.AddSpell(new /obj/effect/proc_holder/spell/self/howl)
 	W.AddSpell(new /obj/effect/proc_holder/spell/self/claws)
 	W.AddSpell(new /obj/effect/proc_holder/spell/targeted/woundlick)
 
 	ADD_TRAIT(src, TRAIT_NOSLEEP, TRAIT_GENERIC)
-	ADD_TRAIT(W, TRAIT_GRABIMMUNE, TRAIT_GENERIC) // THIS IS THE CORRECT PLACE FOR WEREWOLF TRAITS. GOD.
+//	ADD_TRAIT(W, TRAIT_GRABIMMUNE, TRAIT_GENERIC) // THIS IS THE CORRECT PLACE FOR WEREWOLF TRAITS. GOD. Make it more balanced
 	ADD_TRAIT(W, TRAIT_STRONGBITE, TRAIT_GENERIC)
 	ADD_TRAIT(W, TRAIT_ZJUMP, TRAIT_GENERIC)
 	ADD_TRAIT(W, TRAIT_NOFALLDAMAGE1, TRAIT_GENERIC)
-	ADD_TRAIT(W, TRAIT_INFINITE_STAMINA, TRAIT_GENERIC)
+//	ADD_TRAIT(W, TRAIT_INFINITE_STAMINA, TRAIT_GENERIC) Make it more balanced
 	ADD_TRAIT(W, TRAIT_BASHDOORS, TRAIT_GENERIC)
 	ADD_TRAIT(W, TRAIT_SHOCKIMMUNE, TRAIT_GENERIC)
 	ADD_TRAIT(W, TRAIT_STEELHEARTED, TRAIT_GENERIC)
@@ -160,24 +168,25 @@
 	ADD_TRAIT(W, TRAIT_SPELLCOCKBLOCK, TRAIT_GENERIC)
 	ADD_TRAIT(W, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
 	ADD_TRAIT(W, TRAIT_STRENGTH_UNCAPPED, TRAIT_GENERIC)
-	ADD_TRAIT(W, TRAIT_GRABIMMUNE, TRAIT_GENERIC)
 	ADD_TRAIT(W, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 
 	invisibility = oldinv
 
 /mob/living/carbon/human/proc/werewolf_untransform(dead,gibbed)
-	if(!stored_mob)
-		return
+
 	if(!mind)
 		log_runtime("NO MIND ON [src.name] WHEN UNTRANSFORMING")
 	Paralyze(1, ignore_canstun = TRUE)
-	for(var/obj/item/W in src)
+	for(var/obj/item/W in src) //Necessary for no conflict in equipment
 		dropItemToGround(W)
 	icon = null
 	invisibility = INVISIBILITY_MAXIMUM
 
 	var/mob/living/carbon/human/W = stored_mob
 	stored_mob = null
+
+
+	
 	REMOVE_TRAIT(W, TRAIT_NOSLEEP, TRAIT_GENERIC)
 	if(dead)
 		W.death(gibbed)

@@ -14,3 +14,5 @@ Muaru = Game Master
 Wolfskralle4 = Watcher
 RogueRay = Host
 EvenInDeathIStillServe = Host
+AzazelSeer = Host
+azazelseer = Host
