@@ -21,7 +21,7 @@
 	if(blood_volume < BLOOD_VOLUME_NORMAL)
 		blood_volume += 0.1 // regenerate blood VERY slowly
 		if((blood_volume < BLOOD_VOLUME_OKAY) && !HAS_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE))
-			adjustOxyLoss(round((BLOOD_VOLUME_NORMAL - blood_volume) * 0.02, 1))
+			adjustOxyLoss(round((BLOOD_VOLUME_NORMAL - blood_volume) * 0))
 
 /mob/living/proc/handle_blood()
 	if((bodytemperature <= TCRYO) || HAS_TRAIT(src, TRAIT_HUSK)) //cryosleep or husked people do not pump the blood.
