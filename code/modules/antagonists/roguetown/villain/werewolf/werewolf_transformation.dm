@@ -134,13 +134,13 @@
 	W.adjust_skillrank(/datum/skill/misc/climbing, 6, TRUE)
 	W.adjust_skillrank(/datum/skill/misc/swimming, 5, TRUE)
 
-	W.STASTR = src.STASTR + 5
+	W.STASTR = src.STASTR + 4
 	W.STAPER = src.STAPER + 2
 	W.STAINT = src.STAINT
 	W.STALUC = src.STALUC
-	W.STASPD = src.STASPD + 5
-	W.STACON = src.STACON + 5
-	W.STAEND = src.STAEND + 5
+	W.STASPD = src.STASPD + 1
+	W.STACON = src.STACON + 2
+	W.STAEND = src.STAEND + 2
 
 	W.AddSpell(new /obj/effect/proc_holder/spell/self/howl)
 	W.AddSpell(new /obj/effect/proc_holder/spell/self/claws)

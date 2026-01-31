@@ -189,5 +189,4 @@
 
 /obj/item/rogueweapon/werewolf_claw/Initialize()
 	. = ..()
-	ADD_TRAIT(src, TRAIT_NODROP, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOEMBED, TRAIT_GENERIC)
