@@ -10,10 +10,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(RACES_KEEP)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "You are a Guardian of the Wilds. Among your tribe you are all granted a gift from the Allmother Dendor. Lycantrophy. \n\n\
-				Your natural guardianship over the wilds has allowed you mastery within it, both in your warform and normal form. \n\n\
-				For the time being you have aligned with the Lupians and the local Jarl. In belief their ascension shall ensure Nature is kept at is greatest strength. \n\n\
-				So Pillage and Plunder, ravage those who would despoil nature and return the prisoners to the Jarl and their men."
+	tutorial = "You are a Guardian of the Wilds. A disgraced scout, go out and bring back prisoners for the Keep."
 	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
 
@@ -49,7 +46,6 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
-		H.mind?.AddSpell(new /obj/effect/proc_holder/spell/self/werewolf_transform)
 /datum/advclass/bogguardsman/ranger
 	name = "Ranger"
 	tutorial = "You are a ranger, a hunter who volunteered to become a part of the wardens. You have experience using bows and daggers."

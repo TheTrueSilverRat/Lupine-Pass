@@ -3,7 +3,7 @@
 	desc = "Unlesh your inner strength"
 	overlay_state = "howl"
 	antimagic_allowed =  TRUE
-	recharge_time = 100 //10 seconds
+	recharge_time = 1 MINUTES //60 seconds
 	ignore_cockblock = TRUE
 	var/transformed = FALSE //Are you transformed into a werewolf or not? FALSE = CURRENTLY HUMAN, TRUE = CURRENTLY WEREWOLF
 	var/wolf_name //Use for Werewolf name
@@ -32,7 +32,7 @@
 	desc = "!"
 	overlay_state = "howl"
 	antimagic_allowed = TRUE
-	recharge_time = 600 //1 minute
+	recharge_time = 60 //6 SECONDS
 	ignore_cockblock = TRUE
 	var/use_language = FALSE
 

@@ -43,12 +43,14 @@
 		forge_werewolf_objectives()
 	
 	wolfname = "[pick(GLOB.wolf_prefixes)] [pick(GLOB.wolf_suffixes)]"
+	owner.AddSpell(new /obj/effect/proc_holder/spell/self/werewolf_transform)
 	return ..()
 
 /datum/antagonist/werewolf/on_removal()
 	if(!silent && owner.current)
 		to_chat(owner.current,span_danger("I am no longer a [special_role]!"))
 	owner.special_role = null
+	owner.RemoveSpell(/obj/effect/proc_holder/spell/self/werewolf_transform)
 	return ..()
 
 /datum/antagonist/werewolf/proc/add_objective(datum/objective/O)
