@@ -9,7 +9,7 @@
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_CIVILIZEDBARBARIAN, TRAIT_OUTLANDER)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_CON = 2,
 		STATKEY_SPD = 1,
 	)
@@ -136,7 +136,7 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_CON = 2,
 	)
 
@@ -285,7 +285,7 @@
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_EMPATH)
 	subclass_stats = list(
 		STATKEY_STR = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_SPD = 2,
 	)
 
@@ -414,7 +414,7 @@
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_PER = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_SPD = 1,
 	)
 
