@@ -800,7 +800,7 @@
 	density = 0
 	max_integrity = 100
 	static_debris = list(/obj/item/grown/log/tree = 2)
-	stump_type = null
+	stump_type = /obj/structure/flora/roguetree/stump/pine
 
 /obj/structure/flora/roguetree/pine/Initialize()
 	. = ..()

@@ -58,6 +58,7 @@
 /obj/structure/flora/stump
 	name = "stump"
 	desc = "" //running naked through the trees
+	icon = 'icons/obj/flora/deadtrees.dmi'
 	icon_state = "tree_stump"
 	density = FALSE
 	pixel_x = -16
