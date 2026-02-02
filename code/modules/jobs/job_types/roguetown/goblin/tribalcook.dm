@@ -7,7 +7,6 @@
 	spawn_positions = 2
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(RACES_DEEPDWELLERS)
-	allowed_patrons = ALL_INHUMEN_PATRONS
 	tutorial = "You’ve an important job in the clan; Keep everyone fed and supplied, preferably without resorting to moldy bread and maggoty meat.  Those are always options, of course."
 
 

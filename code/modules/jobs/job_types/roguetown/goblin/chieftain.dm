@@ -8,7 +8,6 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(RACES_DEEPDWELLERS)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	allowed_patrons = ALL_INHUMEN_PATRONS
 	tutorial = "You’ve garnered power amongst your clan through deception and cutthroat ruthlessness.  Maintain power by providing for your clan; Be it food, trinkets, or slaves.\
 				All can be found in the surrounding area, for the brave or foolhardy- Especially as fresh adventurers arrive frequently."
 	whitelist_req = FALSE
