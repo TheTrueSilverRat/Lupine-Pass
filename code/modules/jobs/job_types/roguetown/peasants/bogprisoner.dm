@@ -1,10 +1,10 @@
 /datum/job/roguetown/prisonerb
 	title = TITLE_DEEPDWELLER_SLAVE
 	flag = PRISONERB
-	department_flag = NOBLEMEN
+	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 4
-	spawn_positions = 4
+	total_positions = 2
+	spawn_positions = 2
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
@@ -17,6 +17,8 @@
 	min_pq = -14
 	max_pq = null
 	can_random = FALSE
+	job_traits = list(TRAIT_GOODLOVER)
+	round_contrib_points = 2
 
 	cmode_music = 'sound/music/combat_bum.ogg'
 
@@ -31,6 +33,9 @@
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/music, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/riding, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/cooking, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 	H.change_stat(STATKEY_INT, 1)
 	H.change_stat(STATKEY_LCK, 2)
 	if(H.mind)
@@ -44,5 +49,5 @@
 		armor = /obj/item/clothing/suit/roguetown/shirt/tunic/random
 	else if(should_wear_femme_clothes(H))
 		H.change_stat(STATKEY_STR, -1)
-		shirt = /obj/item/clothing/suit/roguetown/shirt/dress/random
+		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/random
 		armor = /obj/item/clothing/suit/roguetown/shirt/dress/gen/random

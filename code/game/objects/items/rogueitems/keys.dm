@@ -290,6 +290,22 @@
 /obj/item/roguekey/roomvi/village
 	lockid = "vroomvi"
 
+//Goblin fort keys
+
+/obj/item/roguekey/mercenary/bedrooms/chiefmanor
+	name = "chief manor key"
+	desc = "my precious."
+	icon_state = "greenkey"
+	lockid = "chiefkey"
+
+/obj/item/roguekey/roomi/slavecage
+	name = "slave cage key"
+	desc = "slave and armory key."
+	icon_state = "brownkey"
+	lockid = "ratslaves"
+
+//Lupian pass tavern rooms
+
 /obj/item/roguekey/roomi
 	name = "room I key"
 	desc = "The key to the first room."
