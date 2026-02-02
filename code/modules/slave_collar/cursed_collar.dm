@@ -125,7 +125,11 @@
 /obj/item/clothing/neck/roguetown/cursed_collar/canStrip(mob/living/carbon/human/stripper, mob/living/carbon/human/owner)
 	if(!owner.mind)
 		return
-	if(stripper.mind != owner)
+	var/check_slave //Checks if the Stripper has a collared curse of their own
+	for(var/obj/item/clothing/neck/current_item in stripper.get_equipped_items(TRUE))
+		if(current_item.type == (/obj/item/clothing/neck/roguetown/cursed_collar))
+			check_slave = TRUE
+	if(stripper.mind != owner && check_slave != TRUE)
 		REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 		SEND_SIGNAL(owner, COMSIG_CARBON_LOSE_COLLAR)
 		return TRUE
