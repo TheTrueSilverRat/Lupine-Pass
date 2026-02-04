@@ -47,12 +47,12 @@
 				index = copytext(H.real_name, 1,index)
 			if(!index)
 				index = H.real_name
-			S.name = "knight's tabard ([index])"
+			S.name = "stellari's tabard ([index])"
 		var/prev_real_name = H.real_name
 		var/prev_name = H.name
-		var/honorary = "Ser"
+		var/honorary = "Herra"
 		if(should_wear_femme_clothes(H))
-			honorary = "Dame"
+			honorary = "Skaldmö"
 		H.real_name = "[honorary] [prev_real_name]"
 		H.name = "[honorary] [prev_name]"
 
