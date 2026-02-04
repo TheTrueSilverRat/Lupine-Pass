@@ -42,6 +42,7 @@
 	var/mob/living/carbon/knotted_recipient = null // whom took the knot
 	/// Which zones we are using in the current action.
 	var/using_zones = list()
+	var/orgasm_counter = 0 //you know, to tell how many orgasms there is
 
 /datum/sex_controller/New(mob/living/carbon/human/owner)
 	user = owner
@@ -195,6 +196,25 @@
 	if(!oral)
 		after_intimate_climax()
 
+/datum/sex_controller/proc/handle_orgasm_counter(var/mob/living/carbon/human/mind_breaked, var/mob/living/carbon/human/mind_breaker)
+	if(HAS_TRAIT(mind_breaker, TRAIT_DEATHBYSNUSNU) && istype(mind_breaker.rmb_intent, /datum/rmb_intent/strong)) //If the one fucking has it
+		mind_breaked.sexcon.orgasm_counter += 1
+		to_chat(mind_breaker, "Current Orgasm Counter of [mind_breaked] : [mind_breaked.sexcon.orgasm_counter]")
+		if(mind_breaked.sexcon.orgasm_counter >= 2)
+			to_chat(mind_breaker, span_warningbig("Resetting Orgasm Counter"))
+			mind_breaked.sexcon.orgasm_counter = 0
+			handle_mindBreak(mind_breaked, mind_breaker)
+		if(mind_breaked.has_status_effect(/datum/status_effect/knot_fucked_stupid))
+			for(var/datum/status_effect/knot_fucked_stupid/stupid in mind_breaked.status_effects)
+				stupid.refresh()
+
+/datum/sex_controller/proc/handle_mindBreak(var/mob/living/carbon/human/mind_breaked, var/mob/living/carbon/human/mind_breaker)
+	if(!mind_breaked.has_status_effect(/datum/status_effect/knot_fucked_stupid))
+		to_chat(mind_breaker, span_love("[mind_breaked] breaks under your constant ravaging and cums [mind_breaked.p_their()] brains out"))
+		mind_breaked.apply_status_effect(/datum/status_effect/knot_fucked_stupid)
+	else
+		return
+
 /datum/sex_controller/proc/knot_penis_type()
 	var/obj/item/organ/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
 	if(!penis)
@@ -226,19 +246,19 @@
 		if(!user.sexcon.knotted_status)
 			to_chat(user, span_notice("My knot was too soft to tie."))
 		if(!target.sexcon.knotted_status)
-			to_chat(target, span_notice("I feel their deflated knot slip out."))
+			to_chat(target, span_notice("I feel [user.p_their()] deflated knot slip out."))
 		return
 	if(target.sexcon.knotted_status) // only one knot at a time, you slut
 		var/repeated_customer = target.sexcon.knotted_owner == user ? TRUE : FALSE // we're knotting the same character we were already knotted to, don't remove the status effects (this fixes a weird perma stat debuff if we try to remove/apply the same effect in the same tick)
 		var/target_is_a_bottom = target.sexcon.knotted_status == KNOTTED_AS_BTM // keep the same status effect in place, they're still getting topped
 		target.sexcon.knot_remove(keep_btm_status = target_is_a_bottom, keep_top_status = repeated_customer)
-		if(target_is_a_bottom && !target.has_status_effect(/datum/status_effect/knot_fucked_stupid)) // if the target is getting double teamed, give them the fucked stupid status
-			target.apply_status_effect(/datum/status_effect/knot_fucked_stupid)
 	if(user.sexcon.knotted_status)
 		var/top_still_topping = user.sexcon.knotted_status == KNOTTED_AS_TOP // top just reknotted a different character, don't retrigger the same status (this fixes a weird perma stat debuff if we try to remove/apply the same effect in the same tick)
 		user.sexcon.knot_remove(keep_top_status = top_still_topping)
+/*
 	if((target.compliance || user.patron && istype(user.patron, /datum/patron/inhumen/baotha)) && !target.has_status_effect(/datum/status_effect/knot_fucked_stupid)) // as requested, if the top is of the baotha faith, or the target has compliance mode on
 		target.apply_status_effect(/datum/status_effect/knot_fucked_stupid)
+*/
 	user.sexcon.knotted_owner = user
 	user.sexcon.knotted_recipient = target
 	user.sexcon.knotted_status = KNOTTED_AS_TOP
@@ -254,7 +274,7 @@
 		else
 			target.sexcon.try_do_pain_effect(PAIN_MILD_EFFECT, FALSE)
 		target.Stun(80) // stun for dramatic effect
-	user.visible_message(span_notice("[user] ties their knot inside of [target]!"), span_notice("I tie my knot inside of [target]."))
+	user.visible_message(span_notice("[user] ties [user.p_their()] knot inside of [target]!"), span_notice("I tie my knot inside of [target]."))
 	if(target.stat != DEAD)
 		to_chat(target, span_userdanger("You have been knotted!"))
 	if(!target.has_status_effect(/datum/status_effect/knot_tied)) // only apply status if we don't have it already
@@ -276,7 +296,7 @@
 	playsound(get_turf(top), 'sound/combat/dismemberment/dismem (5).ogg', 80, TRUE)
 	playsound(get_turf(top), 'sound/vo/male/tomscream.ogg', 80, TRUE)
 	to_chat(top, span_userdanger("You feel a sharp pain as your knot is torn asunder!"))
-	to_chat(btm, span_userdanger("You feel their knot withdraw faster than you can process!"))
+	to_chat(btm, span_userdanger("You feel [top.p_their()] knot withdraw faster than you can process!"))
 	knot_remove(forceful_removal = TRUE, notify = FALSE)
 	log_combat(btm, top, "Top had their cock ripped off (knot tugged too far)")
 	return TRUE
@@ -429,11 +449,11 @@
 			playsound(top, 'sound/misc/mat/segso.ogg', 50, TRUE, -2, ignore_walls = FALSE)
 			btm.emote("paincrit", forced = TRUE)
 			if(notify)
-				top.visible_message(span_notice("[top] yanks their knot out of [btm]!"), span_notice("I yank my knot out from [btm]."))
+				top.visible_message(span_notice("[top] yanks [top.p_their()] knot out of [btm]!"), span_notice("I yank my knot out from [btm]."))
 				btm.sexcon.try_do_pain_effect(PAIN_HIGH_EFFECT, FALSE)
 		else if(notify)
 			playsound(btm, 'sound/misc/mat/insert (1).ogg', 50, TRUE, -2, ignore_walls = FALSE)
-			top.visible_message(span_notice("[top] slips their knot out of [btm]!"), span_notice("I slip my knot out from [btm]."))
+			top.visible_message(span_notice("[top] slips [top.p_their()] knot out of [btm]!"), span_notice("I slip my knot out from [btm]."))
 			btm.emote("painmoan", forced = TRUE)
 			btm.sexcon.try_do_pain_effect(PAIN_MILD_EFFECT, FALSE)
 		add_cum_floor(get_turf(btm))
@@ -489,14 +509,23 @@
 
 /datum/status_effect/knot_fucked_stupid
 	id = "knot_fucked_stupid"
-	duration = 2 MINUTES
+	duration = 30 MINUTES
 	status_type = STATUS_EFFECT_UNIQUE
 	alert_type = /atom/movable/screen/alert/status_effect/knot_fucked_stupid
-	effectedstats = list("intelligence" = -10)
+	effectedstats = list(STATKEY_INT = -5, STATKEY_END = -8, STATKEY_STR = -10)
 
 /atom/movable/screen/alert/status_effect/knot_fucked_stupid
 	name = "Fucked Stupid"
-	desc = "Mmmph I can't think straight..."
+	desc = "<font color='#f590ce'><span class='bold'>Mmmph I can't think straight...</span></font>"
+
+/datum/status_effect/knot_fucked_stupid/on_apply()
+	. = ..()
+	to_chat(owner, span_love("I don't want to fight anymore, everything feels so good."))
+	ADD_TRAIT(owner, TRAIT_PACIFISM, "FUCKED STUPID")
+
+/datum/status_effect/knot_fucked_stupid/on_remove()
+	. = ..()
+	REMOVE_TRAIT(owner, TRAIT_PACIFISM, "FUCKED STUPID")
 
 /datum/status_effect/knot_gaped
 	id = "knot_gaped"

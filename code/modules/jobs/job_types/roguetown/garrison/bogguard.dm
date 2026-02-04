@@ -23,7 +23,7 @@
 	round_contrib_points = 2
 
 	cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
-	job_traits = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN)
+	job_traits = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN, TRAIT_DEATHBYSNUSNU)
 	job_subclasses = list(
 		/datum/advclass/bogguardsman/ranger,
 		/datum/advclass/bogguardsman/forester

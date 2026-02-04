@@ -79,11 +79,14 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 /datum/outfit/job/roguetown/lord/pre_equip(mob/living/carbon/human/H)
 	..()
+/*
 	if(SSroguemachine.crown == null || (QDELETED(SSroguemachine.crown)))
 		SSroguemachine.crown = null
 		head = /obj/item/clothing/head/roguetown/crown/serpcrown
+
 	else
 		to_chat(H, span_warning("My crown must be yet in the realm. I shall search it out."))
+*/
 	if(should_wear_femme_clothes(H))
 		pants = /obj/item/clothing/under/roguetown/tights/black
 		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
@@ -104,6 +107,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 			qdel(H.wear_mask)
 			mask = /obj/item/clothing/mask/rogue/lordmask/l
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 
 //	SSticker.rulermob = H
 /**

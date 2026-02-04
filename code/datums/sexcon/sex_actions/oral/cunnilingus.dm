@@ -29,6 +29,7 @@
 
 	user.sexcon.perform_sex_action(target, 2, 3, TRUE)
 	if(target.sexcon.check_active_ejaculation())
+		user.sexcon.handle_orgasm_counter(target, user)
 		target.visible_message(span_love("[target] ejaculates into [user]'s mouth!"))
 		target.sexcon.cum_into(oral = TRUE, splashed_user = user)
 

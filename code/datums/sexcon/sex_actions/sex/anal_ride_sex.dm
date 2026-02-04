@@ -41,6 +41,7 @@
 
 	user.sexcon.perform_sex_action(target, 2, 4, FALSE)
 	if(target.sexcon.check_active_ejaculation())
+		user.sexcon.handle_orgasm_counter(target, user)
 		target.visible_message(span_love("[target] cums into [user]'s butt!"))
 		target.sexcon.cum_into(splashed_user = user)
 		target.virginity = FALSE

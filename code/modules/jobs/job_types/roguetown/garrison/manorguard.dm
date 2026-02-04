@@ -9,7 +9,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(RACES_KEEP)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED)
+	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED, TRAIT_DEATHBYSNUSNU)
 	tutorial = "You are a professional warrior with many battles under your belt, all while serving courageously.\
 				You are a cut above the standard foot soldier, and as such are trusted to defend such a strategic position.\
 				Obey the orders of your stallari and hersir so that you may bring honor and glory in combat."

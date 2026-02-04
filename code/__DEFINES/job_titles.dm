@@ -29,5 +29,5 @@
 #define TITLE_HAMLET_SMITH "Hamlet Smith"
 #define TITLE_PRIEST "Priest"
 #define TITLE_TAPSTER "Tapster"
-#define TITLE_SHIPS_CAPTAIN "Ship's Captain"
+#define TITLE_SHIPS_CAPTAIN "Ship Captain"
 #define TITLE_SAILOR "Sailor"
