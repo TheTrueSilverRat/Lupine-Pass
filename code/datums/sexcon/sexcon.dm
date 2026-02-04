@@ -217,8 +217,10 @@
 		return
 	if(!user.sexcon.current_action)
 		return
+/*
 	if(!target.client.prefs.sexable)
 		return
+*/
 	var/datum/sex_action/action = SEX_ACTION(user.sexcon.current_action)
 	if(!action.knot_on_finish) // the current action does not support knot climaxing, abort
 		return
@@ -305,7 +307,7 @@
 	if(!ishuman(btm) || QDELETED(btm) || !ishuman(top) || QDELETED(top))
 		knot_exit()
 		return
-	if(isnull(top.client) || !top.client?.prefs.sexable || isnull(btm.client) || !btm.client?.prefs.sexable) // we respect safewords here, let the players untie themselves
+	if(isnull(top.client) || !top.client?.prefs.sexable || isnull(btm.client) /*|| !btm.client?.prefs.sexable*/) // we respect safewords here, let the players untie themselves
 		knot_remove()
 		return
 	if(prob(10) && top.m_intent == MOVE_INTENT_WALK && (btm in top.buckled_mobs)) // if the two characters are being held in a fireman carry, let them muturally get pleasure from it
@@ -370,7 +372,7 @@
 	if(!ishuman(btm) || QDELETED(btm) || !ishuman(top) || QDELETED(top))
 		knot_exit()
 		return
-	if(isnull(top.client) || !top.client?.prefs.sexable || isnull(btm.client) || !btm.client?.prefs.sexable) // we respect safewords here, let the players untie themselves
+	if(isnull(top.client) || !top.client?.prefs.sexable || isnull(btm.client)/*|| !btm.client?.prefs.sexable*/) // we respect safewords here, let the players untie themselves
 		knot_remove()
 		return
 	if(top.stat >= SOFT_CRIT) // only removed if the knot owner is injured/asleep/dead
@@ -967,7 +969,7 @@
 	var/datum/sex_action/action = SEX_ACTION(current_action)
 	action.on_start(user, target)
 	while(TRUE)
-		if(!isnull(target.client) && target.client.prefs.sexable == FALSE) //Vrell - Needs changed to let me test sex mechanics solo
+		if(!isnull(target.client)/*&& target.client.prefs.sexable == FALSE*/) //Vrell - Needs changed to let me test sex mechanics solo
 			break
 		if(!user.stamina_add(action.stamina_cost * get_stamina_cost_multiplier()))
 			break

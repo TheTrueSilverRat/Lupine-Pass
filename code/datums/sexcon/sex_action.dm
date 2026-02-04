@@ -35,5 +35,12 @@
 /datum/sex_action/proc/is_finished(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	return FALSE
 
+//Refactors the code so conditions that show up IN EVERY ACTION, go here so it's less fucking clunky
+//ALSO USE . = ..() SO THAT THE RETURN VALUE IS RECORDED  WHICH IS NEEDED CAUSE THIS IS A BOOLEAN CHECKER PROC
 /datum/sex_action/proc/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	if(target.client.prefs.defiant && target.cmode) //If the Target has defiant toggled on and ALSO has Combat mode on because from what I gathered /
+	//Combat mode is needed to turn Defiant on but it's not in DreamKeep code so I gotta do it myself
+		return FALSE
+	if(user == target)
+		return FALSE
 	return TRUE

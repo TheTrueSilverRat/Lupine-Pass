@@ -2,13 +2,9 @@
 	name = "Scissor them"
 
 /datum/sex_action/scissoring/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user == target)
+	if(!user.getorganslot(ORGAN_SLOT_VAGINA) && !target.getorganslot(ORGAN_SLOT_VAGINA))
 		return FALSE
-	if(!user.getorganslot(ORGAN_SLOT_VAGINA))
-		return
-	if(!target.getorganslot(ORGAN_SLOT_VAGINA))
-		return
-	return TRUE
+	. = ..()
 
 /datum/sex_action/scissoring/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)

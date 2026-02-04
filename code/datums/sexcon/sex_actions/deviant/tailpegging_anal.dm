@@ -3,14 +3,9 @@
 	stamina_cost = 1.0
 
 /datum/sex_action/tailpegging_anal/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user == target)
+	if(!target.getorganslot(ORGAN_SLOT_VAGINA) && !user.getorganslot(ORGAN_SLOT_TAIL))
 		return FALSE
-	if(!target.getorganslot(ORGAN_SLOT_VAGINA))
-		return FALSE
-	if(!user.getorganslot(ORGAN_SLOT_TAIL))
-		return FALSE
-	return TRUE
-
+	. = ..()
 /datum/sex_action/tailpegging_anal/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE

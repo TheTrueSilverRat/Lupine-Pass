@@ -3,9 +3,7 @@
 	check_same_tile = FALSE
 
 /datum/sex_action/rub_body/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user == target)
-		return FALSE
-	return TRUE
+	. = ..()
 
 /datum/sex_action/rub_body/can_perform(mob/living/user, mob/living/target)
 	if(user == target)
