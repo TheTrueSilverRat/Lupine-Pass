@@ -64,7 +64,6 @@
 	if(!user?.client?.prefs.sexable)
 		to_chat(user, "<span class='warning'>I don't want to touch [target]. (Your ERP preference, in the options)</span>")
 		return
-/* Have to do this for testing purposes
 	if(!target?.client?.prefs)
 		to_chat(user, span_warning("[target] is simply not there. I can't do this."))
 		log_combat(user, target, "tried ERP menu against d/ced")
@@ -75,6 +74,7 @@
 		log_combat(user, target, "tried unwanted ERP menu against")
 		return
 */
+
 	user.sexcon.start(target)
 
 /mob/living/proc/can_do_sex()
