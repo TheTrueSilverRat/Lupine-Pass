@@ -85,6 +85,7 @@
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 	if(H.mind)
 		var/datum/antagonist/new_antag = new /datum/antagonist/suitor()
 		H.mind.add_antag_datum(new_antag)
@@ -115,6 +116,7 @@
 	H.change_stat(STATKEY_LCK, 1)
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 	head = /obj/item/clothing/head/roguetown/nyle/consortcrown
 	pants = /obj/item/clothing/under/roguetown/tights/black
 	wrists = /obj/item/clothing/wrists/roguetown/bracers/leather/heavy
@@ -165,6 +167,7 @@
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTLANDER, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
 	head = /obj/item/clothing/head/roguetown/nyle/consortcrown
 	mask = /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/gallant
 	pants = /obj/item/clothing/under/roguetown/tights/black

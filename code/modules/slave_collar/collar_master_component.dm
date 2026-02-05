@@ -195,7 +195,7 @@ GLOBAL_LIST_EMPTY(collar_masters)
 
     // Visual effects
     pet.visible_message(span_danger("[pet]'s collar crackles with electricity!"), \
-                       span_userdanger("Your collar sends searing pain through your body!"))
+						span_userdanger("Your collar sends searing pain through your body!"))
 
     var/turf/T = get_turf(pet)
     if(T)

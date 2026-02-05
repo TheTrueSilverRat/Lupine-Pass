@@ -59,7 +59,7 @@
 	outfit = /datum/outfit/job/roguetown/hand/handclassic
 
 	category_tags = list(CTAG_HAND)
-	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_HEAVYARMOR)
+	traits_applied = list(TRAIT_STEELHEARTED, TRAIT_HEAVYARMOR, TRAIT_DEATHBYSNUSNU)
 	subclass_stats = list(
 		STATKEY_PER = 3,
 		STATKEY_INT = 3,
@@ -97,7 +97,7 @@
 	outfit = /datum/outfit/job/roguetown/hand/spymaster
 
 	category_tags = list(CTAG_HAND)
-	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT, TRAIT_PERFECT_TRACKER)
+	traits_applied = list(TRAIT_MEDIUMARMOR, TRAIT_DODGEEXPERT, TRAIT_PERFECT_TRACKER, TRAIT_DEATHBYSNUSNU)
 	subclass_stats = list(
 		STATKEY_SPD = 3,
 		STATKEY_PER = 2,
@@ -152,7 +152,7 @@
 	outfit = /datum/outfit/job/roguetown/hand/advisor
 
 	category_tags = list(CTAG_HAND)
-	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2)
+	traits_applied = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T2, TRAIT_DEATHBYSNUSNU)
 	subclass_stats = list(
 		STATKEY_INT = 4,
 		STATKEY_PER = 3,

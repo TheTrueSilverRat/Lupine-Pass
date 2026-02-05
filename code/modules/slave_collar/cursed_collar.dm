@@ -123,13 +123,20 @@
 	REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 
 /obj/item/clothing/neck/roguetown/cursed_collar/canStrip(mob/living/carbon/human/stripper, mob/living/carbon/human/owner)
-	if(!stripper.mind)
+	if(!owner.mind)
 		return
-	if(stripper.mind == collar_master)
+	var/check_slave //Checks if the Stripper has a collared curse of their own
+	for(var/obj/item/clothing/neck/current_item in stripper.get_equipped_items(TRUE))
+		if(current_item.type == (/obj/item/clothing/neck/roguetown/cursed_collar))
+			check_slave = TRUE
+	if(stripper.mind != owner && check_slave != TRUE)
 		REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 		SEND_SIGNAL(owner, COMSIG_CARBON_LOSE_COLLAR)
 		return TRUE
-	. = ..()
+	else
+		to_chat(owner, span_warning("The Collar shocks you, stopping you from taking it off!"))
+		return FALSE
+//	. = ..() Might not be necessary
 
 /obj/item/clothing/neck/roguetown/cursed_collar/proc/send_collar_signal(mob/living/carbon/human/user)
     if(!collar_master) // Don't send signal if no master
