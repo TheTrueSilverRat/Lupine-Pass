@@ -42,14 +42,6 @@
 	icon = 'icons/obj/statuelarge.dmi'
 	icon_state = "ribr"
 
-	/obj/structure/statue/bone/rib/left
-	name = "collosal rib"
-	desc = ""
-	oreAmount = 4
-	icon = 'icons/obj/statuelarge.dmi'
-	icon_state = "ribl"
-
-
 /obj/structure/statue/bone/skull
 	name = "collosal skull"
 	desc = ""
