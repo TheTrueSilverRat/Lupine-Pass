@@ -37,9 +37,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 	job_subclasses = list(
 		/datum/advclass/lord/warrior,
-		/datum/advclass/lord/merchant,
+/*		/datum/advclass/lord/merchant,
 		/datum/advclass/lord/inbred
-	)
+*/	)
 
 /datum/outfit/job/roguetown/lord
 	job_bitflag = BITFLAG_ROYALTY
@@ -70,7 +70,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
 
 /datum/outfit/job/roguetown/lord
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/full
 	cloak = /obj/item/clothing/cloak/lordcloak
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	beltl = /obj/item/storage/keyring/lord
@@ -129,6 +129,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		STATKEY_CON = 2,
 	)
 
+/**
 /datum/outfit/job/roguetown/lord/warrior/pre_equip(mob/living/carbon/human/H)
 	..()
 	l_hand = /obj/item/rogueweapon/lordscepter
@@ -148,7 +149,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	if(H.age == AGE_OLD)
 		H.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 
-/**
+
 	Merchant Lord subclass. Consider this an evolution from Sheltered Aristocrat.
 	Gets the same weighted 12 statspread + 5 fortune, but no strength. +2 Int, trade 2 End for 2 Perception. Keep speed. Deals gotta be quick.
 	Get nice traits for seeing price, secular appraise and keen ears for spying.
