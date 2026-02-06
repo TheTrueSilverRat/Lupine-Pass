@@ -94,11 +94,15 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchains
 		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
 		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves 
+		head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet
 	else if(should_wear_masc_clothes(H))
-		pants = /obj/item/clothing/under/roguetown/tights/black
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/royal
-		shoes = /obj/item/clothing/shoes/roguetown/boots
+		pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
+		shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+		armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
+		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchains
+		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
+		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves 
+		head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet
 	if(H.wear_mask)
 		if(istype(H.wear_mask, /obj/item/clothing/mask/rogue/eyepatch))
 			qdel(H.wear_mask)
