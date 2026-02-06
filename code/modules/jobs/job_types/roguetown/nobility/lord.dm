@@ -91,7 +91,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
 		shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
-		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchains
+		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain
 		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
 		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves 
 		head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet
@@ -99,7 +99,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
 		shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
 		armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
-		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchains
+		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain
 		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
 		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves 
 		head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet
