@@ -121,7 +121,7 @@ GLOBAL_LIST_INIT(ghost_verbs, list(
 				if(animal.animal == TRUE)
 					continue
 
-
+//awaag
 			if(!(L in GLOB.player_list) && !L.mind)
 				possessible += L
 
