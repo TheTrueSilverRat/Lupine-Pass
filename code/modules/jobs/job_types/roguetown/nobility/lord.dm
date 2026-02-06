@@ -36,9 +36,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	cmode_music = 'sound/music/combat_noble.ogg'
 
 	job_subclasses = list(
-		/datum/advclass/lord/warrior,
-		/datum/advclass/lord/merchant,
-		/datum/advclass/lord/inbred
+		/datum/advclass/lord/warrior
 	)
 
 /datum/outfit/job/roguetown/lord
