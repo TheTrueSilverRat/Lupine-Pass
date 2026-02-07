@@ -27,6 +27,9 @@
 	var/charge = SEX_MAX_CHARGE
 	/// Whether we want to screw until finished, or non stop
 	var/do_until_finished = TRUE
+	/// The bed (if) we're occupying, update on starting an action
+	var/obj/structure/bed/rogue/bed = null
+	var/target_on_bed = FALSE
 	/// Arousal won't change if active.
 	var/arousal_frozen = FALSE
 	var/last_arousal_increase_time = 0
@@ -51,6 +54,7 @@
 	//remove_from_target_receiving()
 	user = null
 	target = null
+	bed = null
 	if(knotted_status)
 		knot_exit()
 	//receiving = list()
@@ -80,6 +84,46 @@
 
 	animate(user, pixel_x = target_x, pixel_y = target_y, time = time)
 	animate(pixel_x = oldx, pixel_y = oldy, time = time)
+	if(bed && force > SEX_FORCE_MID)
+		if (!istype(bed) || QDELETED(bed))
+			bed = null
+			target_on_bed = FALSE
+			return
+		oldy = bed.pixel_y
+		target_y = oldy-1
+		time /= 2
+		animate(bed, pixel_y = target_y, time = time)
+		animate(pixel_y = oldy, time = time)
+		if(target_on_bed && target)
+			oldy = target.pixel_y
+			target_y = oldy-1
+			animate(target, pixel_y = target_y, time = time)
+			animate(pixel_y = oldy, time = time)
+		bed.damage_bed(force > SEX_FORCE_HIGH ? 0.5 : 0.25)
+	else if(grassy_knoll)
+		if (!istype(grassy_knoll) || QDELETED(grassy_knoll))
+			grassy_knoll = null
+			return
+		SEND_SIGNAL(grassy_knoll, COMSIG_MOVABLE_CROSSED, user)
+
+/obj/structure/bed/rogue
+	var/broken_matress = FALSE
+	var/broken_percentage = 0
+
+/obj/structure/bed/rogue/proc/damage_bed(dam_value)
+	if(sleepy <= 2) // the bed is already pretty awful and broken (i.e: straw bed/bedroll), so don't break it even further
+		return
+	broken_percentage += dam_value
+	if(!broken_matress && (broken_percentage >= 100))
+		broken_matress = TRUE
+		sleepy = 1 //Worse than a bedroll, better than nothing
+		visible_message(span_warning("\The [src] gives an violent snap. It looks broken!"))
+		playsound(src, 'sound/misc/mat/bed break.ogg', 50, TRUE, ignore_walls = FALSE)
+		desc += " The bed looks stained and has seen better daes."
+	else if(broken_percentage >= 100) // clamp
+		broken_percentage = 100
+	else
+		playsound(src, pick(list('sound/misc/mat/bed squeak (1).ogg','sound/misc/mat/bed squeak (2).ogg','sound/misc/mat/bed squeak (3).ogg')), 30, TRUE, ignore_walls = FALSE)
 
 /datum/sex_controller/proc/is_spent()
 	if(charge < CHARGE_FOR_CLIMAX)
@@ -971,6 +1015,8 @@
 	desire_stop = FALSE
 	user.doing = FALSE
 	current_action = null
+	bed = null
+	target_on_bed = FALSE
 	using_zones = list()
 
 /datum/sex_controller/proc/try_start_action(action_type)
@@ -990,6 +1036,8 @@
 	// Set vars
 	desire_stop = FALSE
 	current_action = action_type
+	bed = null
+	target_on_bed = FALSE
 	var/datum/sex_action/action = SEX_ACTION(current_action)
 	log_combat(user, target, "Started sex action: [action.name]")
 	INVOKE_ASYNC(src, PROC_REF(sex_action_loop))
@@ -1014,6 +1062,7 @@
 			break
 		if(desire_stop)
 			break
+		find_occupying_bed()
 		action.on_perform(user, target)
 		// It could want to finish afterwards the performed action
 		if(action.is_finished(user, target))
@@ -1031,6 +1080,15 @@
 	if(!action.can_perform(user, target))
 		return FALSE
 	return TRUE
+
+/datum/sex_controller/proc/find_occupying_bed()
+	if(bed)
+		return
+	if(target && !(target.mobility_flags & MOBILITY_STAND) && isturf(target.loc)) // find target's bed
+		bed = locate() in target.loc
+		target_on_bed = TRUE
+	if(!bed && !(user.mobility_flags & MOBILITY_STAND) && isturf(user.loc)) // find our bed
+		bed = locate() in user.loc
 
 /datum/sex_controller/proc/inherent_perform_check(action_type)
 	var/datum/sex_action/action = SEX_ACTION(action_type)
