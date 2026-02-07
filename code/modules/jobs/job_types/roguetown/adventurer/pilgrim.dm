@@ -3,10 +3,10 @@
 	flag = PILGRIM
 	department_flag = PEASANTS
 	faction = "Station"
-	total_positions = 0
-	spawn_positions = 0 //disables round-start spawn of pilgrims but allows migrant waves
+	total_positions = 10
+	spawn_positions = 10 //disables round-start spawn of pilgrims but allows migrant waves
 	allowed_races = RACES_ALL_KINDS
-	tutorial = "Fleeing misfortune you head your way towards Rotwood Vale, you're not a soldier or an explorer, but a humble migrant trying to look for a better life, if you get to survive the trip that is."
+	tutorial = "You are a refugee fleeing the lupian menace. With any luck, you can ply your trade to the adventurers coming through the hamlet in order to make enough coin to buy a life in safer pastures across the sea; That is, if you don't fall victim to the forces you've been fleeing thusfar."
 
 	outfit = null
 	outfit_female = null
@@ -21,6 +21,7 @@
 	display_order = JDO_PILGRIM
 	min_pq = -20
 	max_pq = null
+	round_contrib_points = 2
 	wanderer_examine = TRUE
 	advjob_examine = TRUE
 	always_show_on_latechoices = FALSE

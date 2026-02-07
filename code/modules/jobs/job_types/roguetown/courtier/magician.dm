@@ -24,7 +24,7 @@
 	// Can't get very far as a magician if you can't chant spells now can you?
 	vice_restrictions = list(/datum/charflaw/mute)
 
-	job_traits = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T4, TRAIT_SEEPRICES, TRAIT_INTELLECTUAL)
+	job_traits = list(TRAIT_MAGEARMOR, TRAIT_ARCYNE_T4, TRAIT_SEEPRICES, TRAIT_INTELLECTUAL, TRAIT_DEATHBYSNUSNU)
 	job_subclasses = list(
 		/datum/advclass/courtmage
 	)
@@ -38,11 +38,12 @@
 
 	category_tags = list(CTAG_COURTMAGE)
 	subclass_stats = list(
-		STATKEY_INT = 5,// Automatic advanced magic for most spells. (I.E summon weapon being upgraded to steel from iron/etc)
+		STATKEY_INT = 7,// Automatic advanced magic for most spells. (I.E summon weapon being upgraded to steel from iron/etc)
 		STATKEY_PER = 3,
 		STATKEY_LCK = 1,// Leadership carrot, stats weight lower than usual leadership weight due to having T4 magic.
-		STATKEY_STR = -1,
-		STATKEY_CON = -1,
+		STATKEY_STR = 1,
+		STATKEY_CON = 1,
+		STATKEY_END = 2,
 	)
 
 /datum/outfit/job/roguetown/magician

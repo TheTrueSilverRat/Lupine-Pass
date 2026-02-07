@@ -348,24 +348,26 @@
 		// no ration wrappers by design
 
 /datum/advclass/trader/ponygirl
-	name = "Ponygirl"
+	name = "Whorse"
 	tutorial = "Trained to serve as a mount and beast of burden, you are equipped with special gear and training."
 	outfit = /datum/outfit/job/roguetown/adventurer/ponygirl
-	traits_applied = list(
+	traits_applied = list( //Removed Pacifist cause what other reason is there to have the combat skills in the first place
 		TRAIT_PONYGIRL_RIDEABLE,
 		TRAIT_CRITICAL_RESISTANCE,
 		TRAIT_EMPATH,
 		TRAIT_NOPAIN,
 		TRAIT_NOPAINSTUN,
+		TRAIT_DODGEEXPERT, //You're a mount, it should be easier for you to dodge to save your rider and stuff
 		TRAIT_STABLELIVER,
-		TRAIT_PACIFISM,
 		TRAIT_NASTY_EATER,
 		TRAIT_GOODLOVER,
 		TRAIT_BLOODLOSS_IMMUNE
 	)
 	subclass_stats = list(
-		STATKEY_CON = 10,
-		STATKEY_SPD = 10
+		STATKEY_CON = 5, // Splitted it since Endurance also makes more sense to have as a Mount class
+		STATKEY_END = 5,
+		STATKEY_INT = -5, //You're nothing but cattle, so I guess you're kind of stupid to be one
+		STATKEY_SPD = 10 //It's a speed class so go off I guess
 	)
 
 /datum/outfit/job/roguetown/adventurer/ponygirl/pre_equip(mob/living/carbon/human/H)
@@ -377,6 +379,8 @@
 	H.adjust_skillrank(/datum/skill/combat/knives, 6, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 6, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 6, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 5, TRUE) //Better at actually dodging and so on
+	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE) //Needed to actually READ stuff 
 
 /obj/item/clothing/mask/rogue/ragmask/black
 	color = CLOTHING_BLACK

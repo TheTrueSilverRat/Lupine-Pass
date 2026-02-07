@@ -9,7 +9,7 @@
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_CIVILIZEDBARBARIAN, TRAIT_OUTLANDER)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 2,
+		STATKEY_END = 2,
 		STATKEY_CON = 2,
 		STATKEY_SPD = 1,
 	)
@@ -136,7 +136,7 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
 		STATKEY_STR = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_CON = 2,
 	)
 
@@ -285,7 +285,7 @@
 	traits_applied = list(TRAIT_DODGEEXPERT, TRAIT_EMPATH)
 	subclass_stats = list(
 		STATKEY_STR = 1,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_SPD = 2,
 	)
 
@@ -414,7 +414,7 @@
 	subclass_stats = list(
 		STATKEY_INT = 2,
 		STATKEY_PER = 2,
-		STATKEY_WIL = 1,
+		STATKEY_END = 1,
 		STATKEY_SPD = 1,
 	)
 
@@ -479,7 +479,7 @@
 			cloak = /obj/item/clothing/suit/roguetown/shirt/robe //placeholder, anyone who doesn't have cool patron drip sprites just gets generic robes
 			head = /obj/item/clothing/head/roguetown/roguehood
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_3)	//Minor regen, capped to T3.
+	C.grant_miracles(H, cleric_tier = CLERIC_T4, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_4)
 	if(istype(H.patron, /datum/patron/divine))
 		// For now, only Tennites get this. Heretics can have a special treat later
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/projectile/divineblast)

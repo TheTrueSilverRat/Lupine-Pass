@@ -3,4 +3,6 @@
 	/datum/species/goblinp, \
 	/datum/species/critterfolk \
 
-#define RACES_KEEP /datum/species/lupian
+#define RACES_KEEP \
+	/datum/species/lupian, \
+	/datum/species/vulpkanin \

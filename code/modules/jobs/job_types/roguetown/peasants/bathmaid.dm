@@ -8,10 +8,10 @@
 
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_ALL_KINDS
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	
 
-	tutorial = "You are the innkeep’s assistant, sheltered from the horrors outside by their grace.  Assist them in cooking food, brewing booze, and making up rooms."
+	tutorial = "You are the innkeep’s assistant, sheltered from the horrors outside by their grace.  Assist them in cooking food, brewing booze, and making up rooms... along with the guest's more carnal needs."
 
 	outfit = /datum/outfit/job/roguetown/nightmaiden
 	advclass_cat_rolls = list(CTAG_NIGHTMAIDEN = 20)
@@ -44,8 +44,8 @@
 	// This is just a base outfit, the actual outfits are defined in the advclasses
 
 /datum/advclass/nightmaiden
-	name = "Bath Attendant"
-	tutorial = "A fresh initiate, most would decry the humble bath maid as a desperate fool tempting others into bedsheets for money--only sometimes, you say! You work underneath your betters in the communal bathhouse, keeping it and the guests in turn as tidy as they please. Wash laundry, tend mild wounds, and deftly wash your patrons with soap, for this is your craft."
+	name = "Bath Maid"
+	tutorial = "You've got a gentle touch. Between manning the bar and cooking, you wash laundry, tend mild wounds, and deftly wash your patrons with soap, for this is your craft."
 	outfit = /datum/outfit/job/roguetown/nightmaiden/attendant
 	category_tags = list(CTAG_NIGHTMAIDEN)
 	traits_applied = list(TRAIT_NUTCRACKER, TRAIT_CICERONE)
@@ -92,7 +92,7 @@
 
 /datum/advclass/nightmaiden/concubine
 	name = "Concubine"
-	tutorial = "Unlike your fellow bath attendants who maintain a professional facade, you have abandoned all pretense. You are a prized possession of the nobility, adorned in exotic silks and gold. Your role is to provide companionship, entertainment, and pleasure. Working underneath the finespun courtesans, you're a step above the bath attendants in your craft."
+	tutorial = "You have abandoned all pretense. You are a prized possession of the weary souls who pass through here, adorned in exotic silks and gold. Your role is to provide companionship, entertainment, and pleasure."
 	outfit = /datum/outfit/job/roguetown/nightmaiden/concubine
 	category_tags = list(CTAG_NIGHTMAIDEN)
 	traits_applied = list(TRAIT_LIGHT_STEP, TRAIT_BEAUTIFUL)
@@ -211,7 +211,7 @@
 
 /datum/advclass/nightmaiden/courtesan
 	name = "Courtesan"
-	tutorial = "Overcoming mind games, deceit and competition, you came into your own as one of the bathhouse's most prized moneymakers and socialites. Dressed in lavish gifts left behind by your patrons, not just anyone can have you. Under the matron, you do most of the social heavylifting and provide entertainment of all forms - behind a heavy price tag. "
+	tutorial = "You come from a line of noble blood; Not that that means much now.  At least your courtly ways woo those who have never had the pleasure of attending such."
 	outfit = /datum/outfit/job/roguetown/nightmaiden/courtesan
 	category_tags = list(CTAG_NIGHTMAIDEN)
 	traits_applied = list(TRAIT_KEENEARS, TRAIT_BEAUTIFUL)

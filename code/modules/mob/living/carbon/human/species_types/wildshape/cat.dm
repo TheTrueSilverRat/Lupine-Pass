@@ -203,7 +203,7 @@
                 return
         (!do_after(user, 7 SECONDS, target = target))
         var/ramount = 20
-        var/rid = /datum/reagent/medicine/healthpot
+        var/rid = /datum/reagent/medicine/stronghealth
         target.reagents.add_reagent(rid, ramount)
         ramount = 2
         if(target.mind.has_antag_datum(/datum/antagonist/werewolf))

@@ -32,6 +32,7 @@
 	if(!target.sexcon.considered_limp())
 		user.sexcon.perform_deepthroat_oxyloss(user, 1.3)
 	if(target.sexcon.check_active_ejaculation())
+		user.sexcon.handle_orgasm_counter(target, user)
 		target.visible_message(span_love("[target] cums into [user]'s mouth!"))
 		target.sexcon.cum_into(oral = TRUE)
 

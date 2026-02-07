@@ -10,9 +10,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(RACES_KEEP)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
-	tutorial = "You are a person of the wilds, disgraced by past crimes against your jarl.\
-				Your time as an outcast has made you adept at traversing untrodden land and tracking prey in the dead of winter.\
-				Now, you serve your jarl again in hopes of redemption."
+	tutorial = "You are a Guardian of the Wilds. A disgraced scout, go out and bring back prisoners for the Keep."
 	display_order = JDO_TOWNGUARD
 	whitelist_req = TRUE
 
@@ -25,7 +23,7 @@
 	round_contrib_points = 2
 
 	cmode_music = 'sound/music/cmode/garrison/combat_warden.ogg'
-	job_traits = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN)
+	job_traits = list(TRAIT_OUTDOORSMAN, TRAIT_WOODSMAN, TRAIT_DEATHBYSNUSNU)
 	job_subclasses = list(
 		/datum/advclass/bogguardsman/ranger,
 		/datum/advclass/bogguardsman/forester
@@ -48,7 +46,6 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
-
 /datum/advclass/bogguardsman/ranger
 	name = "Ranger"
 	tutorial = "You are a ranger, a hunter who volunteered to become a part of the wardens. You have experience using bows and daggers."
@@ -56,9 +53,11 @@
 	category_tags = list(CTAG_WARDEN)
 	traits_applied = list(TRAIT_DODGEEXPERT)
 	subclass_stats = list(
-		STATKEY_PER = 2,//7 points weighted, same as MAA. They get temp buffs in the woods instead of in the city.
+		STATKEY_PER = 2,//7 points weighted, same as MAA. They get temp buffs in the woods instead of in the city. +2 strconend
 		STATKEY_SPD = 2,
-		STATKEY_END = 1
+		STATKEY_END = 3,
+		STATKEY_STR = 2,
+		STATKEY_CON = 2
 	)
 
 /datum/outfit/job/roguetown/bogguardsman/ranger/pre_equip(mob/living/carbon/human/H)
@@ -126,9 +125,9 @@
 	category_tags = list(CTAG_WARDEN)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
-		STATKEY_STR = 2,//7 points weighted, same as MAA. They get temp buffs in the woods instead of in the city.
-		STATKEY_CON = 1,
-		STATKEY_END = 1,
+		STATKEY_STR = 4,//7 points weighted, same as MAA. They get temp buffs in the woods instead of in the city. +2strconend
+		STATKEY_CON = 3,
+		STATKEY_END = 3,
 		STATKEY_PER = 1
 	)
 

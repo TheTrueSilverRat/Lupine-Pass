@@ -96,9 +96,6 @@
 			nodmg = TRUE
 			next_attack_msg += span_warning("Armor stops the damage.")
 
-	var/datum/wound/caused_wound
-	if(!nodmg)
-		caused_wound = affecting.bodypart_attacked_by(BCLASS_BITE, dam2do, user, user.zone_selected, crit_message = TRUE)
 	visible_message(span_danger("[user] bites [src]'s [parse_zone(user.zone_selected)]![next_attack_msg.Join()]"), \
 					span_userdanger("[user] bites my [parse_zone(user.zone_selected)]![next_attack_msg.Join()]"))
 
@@ -119,8 +116,8 @@
 				if(HAS_TRAIT(src, TRAIT_SILVER_BLESSED))
 					to_chat(user, span_warning("BLEH! [bite_victim] tastes of SILVER! My gift cannot take hold."))
 				else
-					caused_wound?.werewolf_infect_attempt()
-					if(prob(30))
+//					caused_wound?.werewolf_infect_attempt() No no infecting people
+					if(prob(50))
 						user.werewolf_feed(bite_victim, 10)
 			/*
 				ZOMBIE INFECTION VIA BITE
@@ -254,8 +251,8 @@
 				WEREWOLF CHEW.
 			*/
 			if(istype(user.dna.species, /datum/species/werewolf))
-				caused_wound?.werewolf_infect_attempt()
-				if(prob(30))
+//				caused_wound?.werewolf_infect_attempt() NO no infecting
+				if(prob(50))
 					user.werewolf_feed(C)
 			/*
 				ZOMBIE CHEW. ZOMBIFICATION

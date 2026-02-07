@@ -9,7 +9,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = list(RACES_KEEP)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
-	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED)
+	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED, TRAIT_DEATHBYSNUSNU)
 	tutorial = "You are a professional warrior with many battles under your belt, all while serving courageously.\
 				You are a cut above the standard foot soldier, and as such are trusted to defend such a strategic position.\
 				Obey the orders of your stallari and hersir so that you may bring honor and glory in combat."
@@ -51,8 +51,8 @@
 			S.name = "man-at-arms jupon ([index])"
 
 /datum/outfit/job/roguetown/manorguard
-	cloak = /obj/item/clothing/cloak/stabard/surcoat/guard
-	shoes = /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
+	cloak = /obj/item/clothing/cloak/raincloak/blue
+	shoes = /obj/item/clothing/shoes/roguetown/boots/armor/iron
 	beltl = /obj/item/rogueweapon/mace/cudgel
 	belt = /obj/item/storage/belt/rogue/leather/black
 	backr = /obj/item/storage/backpack/rogue/satchel/black
@@ -67,10 +67,10 @@
 	category_tags = list(CTAG_MENATARMS)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
-		STATKEY_STR = 2,// seems kinda lame but remember guardsman bonus!!
+		STATKEY_STR = 4,
 		STATKEY_INT = 1,
-		STATKEY_CON = 1,
-		STATKEY_END = 1
+		STATKEY_CON = 3,
+		STATKEY_END = 3
 	)
 
 /datum/outfit/job/roguetown/manorguard/footsman/pre_equip(mob/living/carbon/human/H)
@@ -124,10 +124,8 @@
 
 	var/helmets = list(
 	"Simple Helmet" 	= /obj/item/clothing/head/roguetown/helmet,
-	"Kettle Helmet" 	= /obj/item/clothing/head/roguetown/helmet/kettle,
 	"Bascinet Helmet"		= /obj/item/clothing/head/roguetown/helmet/bascinet,
 	"Sallet Helmet"		= /obj/item/clothing/head/roguetown/helmet/sallet,
-	"Winged Helmet" 	= /obj/item/clothing/head/roguetown/helmet/winged,
 	"Skull Cap"			= /obj/item/clothing/head/roguetown/helmet/skullcap,
 	"None"
 	)
@@ -167,9 +165,11 @@
 	category_tags = list(CTAG_MENATARMS)
 	//Garrison ranged/speed class. Time to go wild
 	subclass_stats = list(
-		STATKEY_SPD = 2,// seems kinda lame but remember guardsman bonus!!
+		STATKEY_SPD = 2,
 		STATKEY_PER = 2,
-		STATKEY_END = 1
+		STATKEY_END = 3,
+		STATKEY_CON = 2,
+		STATKEY_STR = 2
 	)
 	extra_context = "Chooses between Light Armor (Dodge Expert) & Medium Armor."
 
@@ -242,10 +242,7 @@
 
 	var/helmets = list(
 	"Simple Helmet" 	= /obj/item/clothing/head/roguetown/helmet,
-	"Kettle Helmet" 	= /obj/item/clothing/head/roguetown/helmet/kettle,
 	"Bascinet Helmet"		= /obj/item/clothing/head/roguetown/helmet/bascinet,
-	"Sallet Helmet"		= /obj/item/clothing/head/roguetown/helmet/sallet,
-	"Winged Helmet" 	= /obj/item/clothing/head/roguetown/helmet/winged,
 	"Skull Cap"			= /obj/item/clothing/head/roguetown/helmet/skullcap,
 	"None"
 	)
@@ -265,10 +262,10 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	//Garrison mounted class; charge and charge often.
 	subclass_stats = list(
-		STATKEY_CON = 2,// seems kinda lame but remember guardsman bonus!!
-		STATKEY_END = 2,// Your name is speed, and speed is running.
-		STATKEY_STR = 1,
-		STATKEY_INT = 1, // No strength to account for the nominally better weapons. We'll see.
+		STATKEY_CON = 4,
+		STATKEY_END = 4,
+		STATKEY_STR = 3,
+		STATKEY_INT = 1,
 	)
 
 /datum/outfit/job/roguetown/manorguard/cavalry/pre_equip(mob/living/carbon/human/H)
@@ -319,11 +316,7 @@
 
 	var/helmets = list(
 	"Simple Helmet" 	= /obj/item/clothing/head/roguetown/helmet,
-	"Kettle Helmet" 	= /obj/item/clothing/head/roguetown/helmet/kettle,
 	"Bascinet Helmet"		= /obj/item/clothing/head/roguetown/helmet/bascinet,
-	"Sallet Helmet"		= /obj/item/clothing/head/roguetown/helmet/sallet,
-	"Winged Helmet" 	= /obj/item/clothing/head/roguetown/helmet/winged,
-	"Skull Cap"			= /obj/item/clothing/head/roguetown/helmet/skullcap,
 	"None"
 	)
 	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets

@@ -135,6 +135,10 @@ GLOBAL_LIST_INIT(peasant_positions, list(
 	TITLE_RAIDER_NOMAD,
 	"Court Agent",
 	"Wretch",
+	TITLE_DEEPDWELLER_CHIEFTAIN,
+	TITLE_DEEPDWELLER_WARRIOR,
+	TITLE_DEEPDWELLER_STOCKMASTER,
+	TITLE_DEEPDWELLER_SMITH,
 ))
 
 GLOBAL_LIST_INIT(mercenary_positions, list(
@@ -174,6 +178,14 @@ GLOBAL_LIST_INIT(roguefight_positions, list(
 	"Green Ranger",
 	"Green Fighter",
 ))
+
+GLOBAL_LIST_INIT(goblin_positions, list(
+	TITLE_DEEPDWELLER_CHIEFTAIN,
+	TITLE_DEEPDWELLER_WARRIOR,
+	TITLE_DEEPDWELLER_STOCKMASTER,
+	TITLE_DEEPDWELLER_SMITH,
+))
+
 
 GLOBAL_LIST_INIT(test_positions, list(
 	"Tester",
