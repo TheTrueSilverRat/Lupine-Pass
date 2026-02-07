@@ -348,3 +348,141 @@
 		playsound(loc, 'sound/misc/gold_license.ogg', 100, TRUE, -1)
 		say("UNKNOWN CREATURE IN SECURE AREA- ARRETZ-VOUS!!")
 		next_yap = world.time + 6 SECONDS
+
+/obj/structure/fluff/walldeco/skullspike
+	icon_state = "skullspike"
+	plane = -1
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/skullspike1
+	icon_state = "skullspike1"
+	plane = -1
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/skullspike2
+	icon_state = "skullspike2"
+	plane = -1
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/skullspike3
+	icon_state = "skullspike3"
+	plane = -1
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/fluff/walldeco/skullspike4
+	icon_state = "skullspike4"
+	plane = -1
+	layer = ABOVE_MOB_LAYER
+
+/*	..................   The Drunken Saiga   ................... */
+/obj/structure/fluff/walldeco/sign/saiga
+	name = "The Drunken Saiga"
+	icon_state = "shopsign_inn_saiga_right"
+	plane = -1
+
+/obj/structure/fluff/walldeco/sign/saiga/left
+	icon_state = "shopsign_inn_saiga_left"
+
+/obj/structure/fluff/walldeco/sign/trophy
+	name = "saiga trophy"
+	icon_state = "saiga_trophy"
+
+/*	..................   Feldsher Sign   ................... */
+/obj/structure/fluff/walldeco/feldshersign
+	name = "feldsher sign"
+	icon_state = "feldsher"
+
+/*	..................   Weaponsmith Sign   ................... */
+/obj/structure/fluff/walldeco/sign/weaponsmithsign
+	name = "weaponsmith shop sign"
+	icon_state = "shopsign_weaponsmith_right"
+	plane = -1
+
+/obj/structure/fluff/walldeco/sign/weaponsmithsign/left
+	icon_state = "shopsign_weaponsmith_left"
+
+/*	..................   Armorsmith Sign   ................... */
+/obj/structure/fluff/walldeco/sign/armorsmithsign
+	name = "armorsmith shop sign"
+	icon_state = "shopsign_armorsmith_right"
+	plane = -1
+
+/obj/structure/fluff/walldeco/sign/armorsmithsign/left
+	icon_state = "shopsign_armorsmith_left"
+
+/*	..................   Merchant Sign   ................... */
+/obj/structure/fluff/walldeco/sign/merchantsign
+	name = "merchant shop sign"
+	icon_state = "shopsign_merchant_right"
+	plane = -1
+
+/obj/structure/fluff/walldeco/sign/merchantsign/left
+	icon_state = "shopsign_merchant_left"
+
+/*	..................   Apothecary Sign   ................... */
+/obj/structure/fluff/walldeco/sign/apothecarysign
+	name = "apothecary sign"
+	icon_state = "shopsign_apothecary_right"
+	plane = -1
+
+/obj/structure/fluff/walldeco/sign/apothecarysign/left
+	icon_state = "shopsign_apothecary_left"
+/*	..................   Tailor Sign   ................... */
+/obj/structure/fluff/walldeco/sign/tailorsign
+	name = "tailor sign"
+	icon_state = "shopsign_tailor_right"
+	plane = -1
+
+/obj/structure/fluff/walldeco/sign/tailorsign/left
+	icon_state = "shopsign_tailor_left"
+
+/*	..................   Artificer Sign   ................... */
+/obj/structure/fluff/walldeco/artificerflag
+	name = "Artificer's Guild"
+	desc = ""
+	icon_state = "artificer"
+
+/*	..................   Wall decorations   ................... */
+/obj/structure/fluff/walldeco/bath // suggestive stonework
+	icon_state = "bath1"
+	alpha = 210
+
+/obj/structure/fluff/walldeco/bath/two
+	icon_state = "bath2"
+
+/obj/structure/fluff/walldeco/bath/three
+	icon_state = "bath3"
+
+/obj/structure/fluff/walldeco/bath/four
+	icon_state = "bath4"
+
+/obj/structure/fluff/walldeco/bath/five
+	icon_state = "bath5"
+
+/obj/structure/fluff/walldeco/bath/six
+	icon_state = "bath6"
+
+/obj/structure/fluff/walldeco/bath/seven
+	icon_state = "bath7"
+
+/obj/structure/fluff/walldeco/bath/gents
+	icon_state = "gents"
+
+/obj/structure/fluff/walldeco/bath/ladies
+	icon_state = "ladies"
+
+/obj/structure/fluff/walldeco/bath/wallrope
+	icon_state = "wallrope"
+	layer = WALL_OBJ_LAYER+0.1
+	color = "#d66262"
+
+/obj/structure/fluff/walldeco/bath/wallpipes
+	icon_state = "wallpipe"
+
+/obj/structure/fluff/walldeco/bath/wallpipes/innie
+	icon_state = "wallpipe_innie"
+	pixel_y = 0
+
+/obj/structure/fluff/walldeco/bath/wallpipes/outie
+	icon_state = "wallpipe_outie"
+	pixel_y = 0

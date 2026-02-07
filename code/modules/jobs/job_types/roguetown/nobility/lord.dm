@@ -37,9 +37,9 @@ GLOBAL_LIST_EMPTY(lord_titles)
 
 	job_subclasses = list(
 		/datum/advclass/lord/warrior,
-		/datum/advclass/lord/merchant,
+/*		/datum/advclass/lord/merchant,
 		/datum/advclass/lord/inbred
-	)
+*/	)
 
 /datum/outfit/job/roguetown/lord
 	job_bitflag = BITFLAG_ROYALTY
@@ -70,7 +70,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
 
 /datum/outfit/job/roguetown/lord
-	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
+	neck = /obj/item/clothing/neck/roguetown/chaincoif/full
 	cloak = /obj/item/clothing/cloak/lordcloak
 	belt = /obj/item/storage/belt/rogue/leather/plaquegold
 	beltl = /obj/item/storage/keyring/lord
@@ -88,17 +88,21 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		to_chat(H, span_warning("My crown must be yet in the realm. I shall search it out."))
 */
 	if(should_wear_femme_clothes(H))
-		pants = /obj/item/clothing/under/roguetown/tights/black
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-		armor = /obj/item/clothing/suit/roguetown/shirt/dress/royal
-		cloak = /obj/item/clothing/cloak/lordcloak/ladycloak
-		wrists = /obj/item/clothing/wrists/roguetown/royalsleeves
-		shoes = /obj/item/clothing/shoes/roguetown/shortboots
+		pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
+		shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+		armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
+		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain
+		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
+		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves 
+		head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet
 	else if(should_wear_masc_clothes(H))
-		pants = /obj/item/clothing/under/roguetown/tights/black
-		shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
-		armor = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/royal
-		shoes = /obj/item/clothing/shoes/roguetown/boots
+		pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
+		shirt = /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk
+		armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
+		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain
+		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
+		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves 
+		head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet
 	if(H.wear_mask)
 		if(istype(H.wear_mask, /obj/item/clothing/mask/rogue/eyepatch))
 			qdel(H.wear_mask)
@@ -129,6 +133,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		STATKEY_CON = 2,
 	)
 
+
 /datum/outfit/job/roguetown/lord/warrior/pre_equip(mob/living/carbon/human/H)
 	..()
 	l_hand = /obj/item/rogueweapon/lordscepter
@@ -154,7 +159,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	Get nice traits for seeing price, secular appraise and keen ears for spying.
 	Weapon skills are worse across the board compared to the warrior lord, apprentice only.
 	Has a high noble income plus a starting pouch with insane amount of money.
-*/
+
 /datum/advclass/lord/merchant
 	name = "Merchant Lord"
 	tutorial = "You were always talented with coins and trade. And your talents have brought you to the position of the Lord of Rotwood Vale. You could be a merchant who bought his way into nobility and power, or an exceptionally talented noble who were inclined to be good with coins. Fighting directly is not your forte\
@@ -190,13 +195,13 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	if(H.mind)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/appraise/secular)
 
-/**
+
 	Inbred Lord subclass. A joke class, evolution of the Inbred Wastrel.
 	Literally the same stat line and skills line, but with one exception - 10 Fortune.
 	Why? Because it is funny, that's why. They also have heavy armor training.
 	The fact that the inbred wastrel with 20 fortune and critical weakness
 	can get into heavy armor and try to fight is hilarious.
-*/
+
 /datum/advclass/lord/inbred
 	name = "Inbred Lord"
 	tutorial = "Psydon and Astrata smiles upon you. For despite your inbred and weak body, and your family's conspiracies to remove you from succession, you have somehow become the Lord of Rotwood Vale. May your reign lasts a hundred years."
@@ -228,6 +233,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	H.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 1, TRUE)
 
+*/
 /datum/outfit/job/roguetown/lord/visuals/pre_equip(mob/living/carbon/human/H)
 	..()
 	head = /obj/item/clothing/head/roguetown/crown/fakecrown //Prevents the crown of woe from happening again.
