@@ -1008,6 +1008,9 @@
 	while(TRUE)
 		if(!user.stamina_add(action.stamina_cost * get_stamina_cost_multiplier()))
 			break
+		if(target.client.prefs.defiant && target.cmode)
+			to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
+			break
 		if(!do_after(user, (action.do_time / get_speed_multiplier()), target = target))
 			break
 		if(current_action == null || performed_action_type != current_action)
