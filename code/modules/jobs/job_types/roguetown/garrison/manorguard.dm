@@ -98,7 +98,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 
-	H.adjust_blindness(-3)
+	H.adjust_blindness(-5)
 	var/weapons = list("Warhammer & Shield","Axe & Shield","Halberd","Greataxe")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
@@ -198,7 +198,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 
-	H.adjust_blindness(-3)
+	H.adjust_blindness(-5)
 	var/weapons = list("Crossbow","Bow","Sling")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	var/armor_options = list("Light Armor", "Medium Armor")
@@ -294,7 +294,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 
-	H.adjust_blindness(-3)
+	H.adjust_blindness(-5)
 	var/weapons = list("Bardiche","Sword & Shield")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
@@ -386,7 +386,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 
-	H.adjust_blindness(-3)
+	H.adjust_blindness(-5)
 	var/weapons = list("Warhammer & Shield","Axe & Shield","Halberd","Greataxe")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
@@ -481,7 +481,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 
-	H.adjust_blindness(-3)
+	H.adjust_blindness(-5)
 	var/weapons = list("Warhammer & Shield","Axe & Shield","Halberd","Greataxe")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
