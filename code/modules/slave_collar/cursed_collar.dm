@@ -122,26 +122,26 @@
 
 	REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 
-
+/*
 /obj/item/clothing/neck/roguetown/cursed_collar/attack_hand(mob/user)
 	for(var/datum/mind/M in GLOB.collar_masters)
 		var/datum/component/collar_master/CM = M.GetComponent(/datum/component/collar_master)
 		if(CM && !(user in CM.my_pets)) //if the user is not a pet, then take it off
-			return
+			return ..()
 	if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(src == C.wear_neck)
 			to_chat(user, "<span class='warning'>I feel at peace. <b style='color:pink'>Why would you want to stop being a slave?</b></span>")
 			return
 	return ..()
-
+*/
 /obj/item/clothing/neck/roguetown/cursed_collar/canStrip(mob/stripper, mob/owner)
 	if(!collar_master)
-		return ..()
+		return 
 	if(collar_master && stripper?.mind && stripper.mind == collar_master)
-		return ..()
+		return 
 	if(stripper && collar_master && owner && owner.mind == collar_master && stripper == owner)
-		return ..()
+		return 
 	if(stripper)
 		to_chat(stripper, span_warning("[src] refuses to come loose."))
 	return FALSE
@@ -174,13 +174,11 @@
     if(istype(user))
         SEND_SIGNAL(user, COMSIG_CARBON_LOSE_COLLAR)
 
-//Recipes
+//Recipe
 /datum/anvil_recipe/cursed_collar
 	name = "Cursed collar"
-	recipe_name = "a cursed collar"
 	req_bar = /obj/item/ingot/iron
 	created_item = /obj/item/clothing/neck/roguetown/cursed_collar
 	craftdiff = 2
 	i_type = "Valuables"
 	category = "Valuables"
-
