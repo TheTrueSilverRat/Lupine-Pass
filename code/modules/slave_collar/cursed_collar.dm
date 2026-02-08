@@ -10,6 +10,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_NECK
 	body_parts_covered = NECK
+	armor = ARMOR_GORGET
 	resistance_flags = INDESTRUCTIBLE
 	var/mob/living/carbon/human/victim = null
 	var/datum/mind/collar_master = null
@@ -89,13 +90,13 @@
 		user.visible_message(span_warning("\The [src] fails to lock around [user]'s neck."))
 		user.dropItemToGround(src, force = TRUE)
 		return
-/*
+
 	if(alert(user, "Submit to the collar's control?", "Cursed Collar", "Yes!", "No") != "Yes!")
 		user.visible_message(span_warning("[user] resists the collar's control."))
 		to_chat(user, span_warning("Your defiant will prevents the collar from binding to you!"))
 		user.dropItemToGround(src, force = TRUE)
 		return
-*/
+
 	// Now send the collar gain signal
 	SEND_SIGNAL(user, COMSIG_CARBON_GAIN_COLLAR, src)
 	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
@@ -122,26 +123,24 @@
 
 	REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 
-/*
+
 /obj/item/clothing/neck/roguetown/cursed_collar/attack_hand(mob/user)
-	for(var/datum/mind/M in GLOB.collar_masters)
-		var/datum/component/collar_master/CM = M.GetComponent(/datum/component/collar_master)
-		if(CM && !(user in CM.my_pets)) //if the user is not a pet, then take it off
-			return ..()
-	if(iscarbon(user))
+	if(!collar_master)
+		return ..()
+	else if(iscarbon(user))
 		var/mob/living/carbon/C = user
 		if(src == C.wear_neck)
 			to_chat(user, "<span class='warning'>I feel at peace. <b style='color:pink'>Why would you want to stop being a slave?</b></span>")
 			return
 	return ..()
-*/
+
 /obj/item/clothing/neck/roguetown/cursed_collar/canStrip(mob/stripper, mob/owner)
 	if(!collar_master)
-		return 
+		return ..()
 	if(collar_master && stripper?.mind && stripper.mind == collar_master)
-		return 
+		return ..()
 	if(stripper && collar_master && owner && owner.mind == collar_master && stripper == owner)
-		return 
+		return ..()
 	if(stripper)
 		to_chat(stripper, span_warning("[src] refuses to come loose."))
 	return FALSE
