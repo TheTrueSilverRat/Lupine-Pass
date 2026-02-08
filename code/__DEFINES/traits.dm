@@ -626,6 +626,7 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define VEHICLE_TRAIT "vehicle" // inherited from riding vehicles
 #define INNATE_TRAIT "innate"
 #define XYLIX_LUCK_TRAIT "xylixluck"
+#define NPC_CRITWEAK_TRAIT "npc_critweak_trait" //This is used solely for the NPC_WIDE crit weakness they should get but to also ensure players do not have it
 
 // unique trait sources, still defines
 #define TRAIT_GUIDANCE "Guidance"

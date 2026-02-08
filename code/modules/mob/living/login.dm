@@ -28,6 +28,10 @@
 	
 	set_ssd_indicator(FALSE)
 
+	if(HAS_TRAIT_FROM(src, TRAIT_CRITICAL_WEAKNESS, NPC_CRITWEAK_TRAIT))
+		to_chat(src, "\n You feel less weaker and more duable \n")
+		REMOVE_TRAIT(src, TRAIT_CRITICAL_WEAKNESS, NPC_CRITWEAK_TRAIT)
+
 /mob/living/proc/login_fade()
 	set waitfor = FALSE
 	if(!client)

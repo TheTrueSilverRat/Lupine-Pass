@@ -741,6 +741,8 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/rp_prompt.txt"))
 	if(dna?.species)
 		dna.species.after_creation(src)
 	roll_stats()
+	if(!mind) //Checks if theyh ave no mind and if not? Make them Critically Weak fuck 'em and shit
+		ADD_TRAIT(src, TRAIT_CRITICAL_WEAKNESS, NPC_CRITWEAK_TRAIT) //Make these fuckers weaker
 
 /mob/dead/new_player/proc/transfer_character()
 	. = new_character
