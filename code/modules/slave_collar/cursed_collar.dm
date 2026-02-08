@@ -89,13 +89,13 @@
 		user.visible_message(span_warning("\The [src] fails to lock around [user]'s neck."))
 		user.dropItemToGround(src, force = TRUE)
 		return
-
+/*
 	if(alert(user, "Submit to the collar's control?", "Cursed Collar", "Yes!", "No") != "Yes!")
 		user.visible_message(span_warning("[user] resists the collar's control."))
 		to_chat(user, span_warning("Your defiant will prevents the collar from binding to you!"))
 		user.dropItemToGround(src, force = TRUE)
 		return
-
+*/
 	// Now send the collar gain signal
 	SEND_SIGNAL(user, COMSIG_CARBON_GAIN_COLLAR, src)
 	ADD_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
@@ -122,6 +122,31 @@
 
 	REMOVE_TRAIT(src, TRAIT_NODROP, CURSED_ITEM_TRAIT)
 
+
+/obj/item/clothing/neck/roguetown/cursed_collar/attack_hand(mob/user)
+	for(var/datum/mind/M in GLOB.collar_masters)
+		var/datum/component/collar_master/CM = M.GetComponent(/datum/component/collar_master)
+		if(CM && !(user in CM.my_pets)) //if the user is not a pet, then take it off
+			return
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		if(src == C.wear_neck)
+			to_chat(user, "<span class='warning'>I feel at peace. <b style='color:pink'>Why would you want to stop being a slave?</b></span>")
+			return
+	return ..()
+
+/obj/item/clothing/neck/roguetown/cursed_collar/canStrip(mob/stripper, mob/owner)
+	if(!collar_master)
+		return ..()
+	if(collar_master && stripper?.mind && stripper.mind == collar_master)
+		return ..()
+	if(stripper && collar_master && owner && owner.mind == collar_master && stripper == owner)
+		return ..()
+	if(stripper)
+		to_chat(stripper, span_warning("[src] refuses to come loose."))
+	return FALSE
+
+/*
 /obj/item/clothing/neck/roguetown/cursed_collar/canStrip(mob/living/carbon/human/stripper, mob/living/carbon/human/owner)
 	if(!owner.mind)
 		return
@@ -137,7 +162,7 @@
 		to_chat(owner, span_warning("The Collar shocks you, stopping you from taking it off!"))
 		return FALSE
 //	. = ..() Might not be necessary
-
+*/
 /obj/item/clothing/neck/roguetown/cursed_collar/proc/send_collar_signal(mob/living/carbon/human/user)
     if(!collar_master) // Don't send signal if no master
         SEND_SIGNAL(user, COMSIG_CARBON_LOSE_COLLAR)
@@ -148,3 +173,14 @@
     . = ..()
     if(istype(user))
         SEND_SIGNAL(user, COMSIG_CARBON_LOSE_COLLAR)
+
+//Recipes
+/datum/anvil_recipe/cursed_collar
+	name = "Cursed collar"
+	recipe_name = "a cursed collar"
+	req_bar = /obj/item/ingot/iron
+	created_item = /obj/item/clothing/neck/roguetown/cursed_collar
+	craftdiff = 2
+	i_type = "Valuables"
+	category = "Valuables"
+
