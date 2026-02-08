@@ -352,6 +352,7 @@
 	name = "Guardmaster"
 	tutorial = "You are a professional soldier of the realm, specializing in melee warfare. You have been instructed in keeping order in the fort; Man the walls, ensure the gate is kept locked, organize idle drengir, and know all who are allowed in and out."
 	outfit = /datum/outfit/job/roguetown/manorguard/footsman
+	maximum_possible_slots = 1
 
 	category_tags = list(CTAG_MENATARMS)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
@@ -446,6 +447,7 @@
 	name = "Slavekeeper"
 	tutorial = "You are a professional in the field of managing slaves.  You get to live comfortably in the fort, and never have to patrol; All you have to do is ensure none of the slaves escape, and they're being used properly!"
 	outfit = /datum/outfit/job/roguetown/manorguard/footsman
+	maximum_possible_slots = 1
 
 	category_tags = list(CTAG_MENATARMS)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
