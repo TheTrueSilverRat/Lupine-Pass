@@ -56,13 +56,17 @@
 	neck = /obj/item/storage/belt/rogue/pouch/coins/rich
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/eastpants1
 	beltl = /obj/item/rogueweapon/whip/psywhip_lesser
+	beltr = /obj/item/rogueweapon/sword/cutlass
+	backr = /obj/item/rogueweapon/shield/buckler
 	backl = /obj/item/storage/backpack/rogue/satchel
 	armor = /obj/item/clothing/suit/roguetown/armor/plate/scale/inqcoat
+	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 
 	H.grant_language(/datum/language/thievescant)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/whipsflails, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sneaking, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/stealing, 4, TRUE)
