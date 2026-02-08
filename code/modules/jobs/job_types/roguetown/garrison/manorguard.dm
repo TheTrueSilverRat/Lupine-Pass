@@ -23,12 +23,15 @@
 	min_pq = 3
 	max_pq = null
 	round_contrib_points = 2
+	advjob_examine = TRUE
 
 	cmode_music = 'sound/music/combat_ManAtArms.ogg'
 	job_subclasses = list(
 		/datum/advclass/manorguard/footsman,
 		/datum/advclass/manorguard/skirmisher,
-		/datum/advclass/manorguard/cavalry
+		/datum/advclass/manorguard/cavalry,
+		/datum/advclass/manorguard/slavekeeper,
+		/datum/advclass/manorguard/guardmaster,
 	)
 
 /datum/outfit/job/roguetown/manorguard
@@ -60,7 +63,7 @@
 
 // Melee goon
 /datum/advclass/manorguard/footsman
-	name = "Footman"
+	name = "Drengir Footman"
 	tutorial = "You are a professional soldier of the realm, specializing in melee warfare. Stalwart and hardy, your body can both withstand and dish out powerful strikes.."
 	outfit = /datum/outfit/job/roguetown/manorguard/footsman
 
@@ -96,7 +99,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
 
-	H.adjust_blindness(-3)
+	H.adjust_blindness(-5)
 	var/weapons = list("Warhammer & Shield","Axe & Shield","Halberd","Greataxe")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
@@ -158,7 +161,7 @@
 
 // Ranged weapons and daggers on the side - lighter armor, but fleet!
 /datum/advclass/manorguard/skirmisher
-	name = "Skirmisher"
+	name = "Drengir Skirmisher"
 	tutorial = "You are a professional soldier of the realm, specializing in ranged implements. You sport a keen eye, looking for your enemies weaknesses."
 	outfit = /datum/outfit/job/roguetown/manorguard/skirmisher
 
@@ -196,7 +199,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 
-	H.adjust_blindness(-3)
+	H.adjust_blindness(-5)
 	var/weapons = list("Crossbow","Bow","Sling")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	var/armor_options = list("Light Armor", "Medium Armor")
@@ -253,7 +256,7 @@
 		
 
 /datum/advclass/manorguard/cavalry
-	name = "Cavalryman"
+	name = "Drengir Cavalryman"
 	tutorial = "You are a professional soldier of the realm, specializing in the steady beat of hoof falls. Lighter and more expendable then the knights, you charge with lance in hand."
 	outfit = /datum/outfit/job/roguetown/manorguard/cavalry
 	horse = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/tame/saddled //Since knights start with the Buck
@@ -292,7 +295,7 @@
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/chain/iron
 
-	H.adjust_blindness(-3)
+	H.adjust_blindness(-5)
 	var/weapons = list("Bardiche","Sword & Shield")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	H.set_blindness(0)
@@ -317,6 +320,197 @@
 	var/helmets = list(
 	"Simple Helmet" 	= /obj/item/clothing/head/roguetown/helmet,
 	"Bascinet Helmet"		= /obj/item/clothing/head/roguetown/helmet/bascinet,
+	"None"
+	)
+	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+	if(helmchoice != "None")
+		head = helmets[helmchoice]
+
+	var/armors = list(
+		"Lightweight Brigandine"		= /obj/item/clothing/suit/roguetown/armor/brigandine/light,
+		"Iron Hauberk"		= /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
+		"Scalemail"	= /obj/item/clothing/suit/roguetown/armor/plate/scale,
+	)
+	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
+	armor = armors[armorchoice]
+
+	var/arms = list(
+		"Brigandine Splint Arms"		= wrists = /obj/item/clothing/wrists/roguetown/splintarms,
+		"Steel Bracers"		= wrists = /obj/item/clothing/wrists/roguetown/bracers,
+		"Jack Chains"		= wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain,
+	)
+	var/armschoice = input("Choose your arm protection.", "READY THYSELF") as anything in arms
+	wrists = arms[armschoice]
+
+	var/chausses = list(
+		"Brigandine Chausses"		= /obj/item/clothing/under/roguetown/splintlegs,
+		"Steel Chain Chausses"		= /obj/item/clothing/under/roguetown/chainlegs,
+	)
+	var/chausseschoice = input("Choose your chausses.", "READY THYSELF") as anything in chausses
+	pants = chausses[chausseschoice]
+
+/datum/advclass/manorguard/guardmaster
+	name = "Drengir Guardmaster"
+	tutorial = "You are a professional soldier of the realm, specializing in melee warfare. You have been instructed in keeping order in the fort; Man the walls, ensure the gate is kept locked, organize idle drengir, and know all who are allowed in and out."
+	outfit = /datum/outfit/job/roguetown/manorguard/guardmaster
+	maximum_possible_slots = 1
+
+	category_tags = list(CTAG_MENATARMS)
+	traits_applied = list(TRAIT_MEDIUMARMOR)
+	subclass_stats = list(
+		STATKEY_STR = 4,
+		STATKEY_INT = 1,
+		STATKEY_CON = 3,
+		STATKEY_END = 3
+	)
+
+/datum/outfit/job/roguetown/manorguard/guardmaster/pre_equip(mob/living/carbon/human/H)
+	..()
+	H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/slings, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
+
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	neck = /obj/item/clothing/neck/roguetown/gorget
+	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
+
+	H.adjust_blindness(-5)
+	var/weapons = list("Warhammer & Shield","Axe & Shield","Halberd","Greataxe")
+	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	H.set_blindness(0)
+	switch(weapon_choice)
+		if("Warhammer & Shield")
+			beltr = /obj/item/rogueweapon/mace/warhammer
+			backl = /obj/item/rogueweapon/shield/iron
+		if("Axe & Shield")
+			beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel
+			backl = /obj/item/rogueweapon/shield/iron
+		if("Halberd")
+			r_hand = /obj/item/rogueweapon/halberd
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
+		if("Greataxe")
+			r_hand = /obj/item/rogueweapon/greataxe
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
+	backpack_contents = list(
+		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
+		/obj/item/rope/chain = 1,
+		/obj/item/storage/keyring/guardcastle = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 1,
+		)
+	H.verbs |= /mob/proc/haltyell
+
+	var/helmets = list(
+	"Guardmaster's Visage" 	= /obj/item/clothing/head/roguetown/helmet/heavy/volfplate,
+	"None"
+	)
+	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets
+	if(helmchoice != "None")
+		head = helmets[helmchoice]
+
+	var/armors = list(
+		"Lightweight Brigandine"		= /obj/item/clothing/suit/roguetown/armor/brigandine/light,
+		"Iron Hauberk"		= /obj/item/clothing/suit/roguetown/armor/chainmail/hauberk/iron,
+		"Scalemail"	= /obj/item/clothing/suit/roguetown/armor/plate/scale,
+	)
+	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
+	armor = armors[armorchoice]
+
+	var/arms = list(
+		"Brigandine Splint Arms"		= wrists = /obj/item/clothing/wrists/roguetown/splintarms,
+		"Steel Bracers"		= wrists = /obj/item/clothing/wrists/roguetown/bracers,
+		"Jack Chains"		= wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain,
+	)
+	var/armschoice = input("Choose your arm protection.", "READY THYSELF") as anything in arms
+	wrists = arms[armschoice]
+
+	var/chausses = list(
+		"Brigandine Chausses"		= /obj/item/clothing/under/roguetown/splintlegs,
+		"Steel Chain Chausses"		= /obj/item/clothing/under/roguetown/chainlegs,
+	)
+	var/chausseschoice = input("Choose your chausses.", "READY THYSELF") as anything in chausses
+	pants = chausses[chausseschoice]
+
+/datum/advclass/manorguard/slavekeeper
+	name = "Drengir Slavekeeper"
+	tutorial = "You are a professional in the field of managing slaves.  You get to live comfortably in the fort, and never have to patrol; All you have to do is ensure none of the slaves escape, and they're being used properly!"
+	outfit = /datum/outfit/job/roguetown/manorguard/slavekeeper
+	maximum_possible_slots = 1
+
+	category_tags = list(CTAG_MENATARMS)
+	traits_applied = list(TRAIT_MEDIUMARMOR)
+	subclass_stats = list(
+		STATKEY_STR = 4,
+		STATKEY_INT = 1,
+		STATKEY_CON = 3,
+		STATKEY_END = 3
+	)
+
+/datum/outfit/job/roguetown/manorguard/slavekeeper/pre_equip(mob/living/carbon/human/H)
+	..()
+	H.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/maces, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/whipsflails, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/slings, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/shields, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
+
+	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
+	neck = /obj/item/clothing/neck/roguetown/gorget
+	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
+
+	H.adjust_blindness(-5)
+	var/weapons = list("Warhammer & Shield","Axe & Shield","Halberd","Greataxe")
+	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
+	H.set_blindness(0)
+	switch(weapon_choice)
+		if("Warhammer & Shield")
+			beltr = /obj/item/rogueweapon/mace/warhammer
+			backl = /obj/item/rogueweapon/shield/iron
+		if("Axe & Shield")
+			beltr = /obj/item/rogueweapon/stoneaxe/woodcut/steel
+			backl = /obj/item/rogueweapon/shield/iron
+		if("Halberd")
+			r_hand = /obj/item/rogueweapon/halberd
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
+		if("Greataxe")
+			r_hand = /obj/item/rogueweapon/greataxe
+			backl = /obj/item/rogueweapon/scabbard/gwstrap
+	backpack_contents = list(
+		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
+		/obj/item/rope/chain = 1,
+		/obj/item/storage/keyring/guardcastle = 1,
+		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 1,
+		)
+	H.verbs |= /mob/proc/haltyell
+
+	var/helmets = list(
+	"Dungeoneer's Visage" 	= /obj/item/clothing/head/roguetown/helmet/heavy/sheriff/black,
+	"Dungeoneer's Grimace"		= /obj/item/clothing/head/roguetown/helmet/heavy/guard/black,
 	"None"
 	)
 	var/helmchoice = input("Choose your Helm.", "TAKE UP HELMS") as anything in helmets

@@ -25,9 +25,14 @@
 
 /datum/outfit/job/roguetown/prisonerr/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	if(!H) return
-	// Equip collar and loincloth only
+	shirt = /obj/item/clothing/suit/roguetown/shirt/exoticsilkbra
 	neck = /obj/item/clothing/neck/roguetown/collar/leather
-	pants = /obj/item/clothing/under/roguetown/loincloth
+	belt = /obj/item/storage/belt/rogue/leather/exoticsilkbelt
+	beltl = /obj/item/storage/belt/rogue/pouch
+	beltr = /obj/item/flint
+	shoes = /obj/item/clothing/shoes/roguetown/anklets
+	mask = /obj/item/clothing/mask/rogue/exoticsilkmask
+	ADD_TRAIT(H, TRAIT_GOODLOVER, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_OUTLAW, TRAIT_GENERIC)
 
 /datum/job/roguetown/prisonerr/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
@@ -488,6 +493,44 @@
 	H.change_stat("constitution", 1)
 	H.change_stat("perception", 1)
 
+/datum/advclass/prisoner_naledi_healer
+	name = "Prisoner Naledi"
+	tutorial = "You cling to your Psy-bracelet. Obedient in using your magic to heal your Masters"
+	allowed_sexes = list(MALE, FEMALE)
+	allowed_races = RACES_ALL_KINDS
+	outfit = /datum/outfit/job/roguetown/prisoner/naledi_healer
+	category_tags = list(CTAG_PRISONER)
+
+/datum/outfit/job/roguetown/prisoner/naledi_healer
+	allowed_patrons = list(/datum/patron/old_god)
+
+/datum/outfit/job/roguetown/mercenary/warscholar_vizier
+
+/datum/outfit/job/roguetown/prisoner/naledi_healer/pre_equip(mob/living/carbon/human/H)
+	..() // Call base prisoner outfit for collar/loincloth
+	if(!istype(H.patron, /datum/patron/old_god))
+		H.set_patron(/datum/patron/old_god)
+	H.adjust_skillrank(/datum/skill/misc/swimming, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
+	H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE)
+	H.adjust_skillrank(/datum/skill/magic/holy, 4, TRUE)
+	wrists = /obj/item/clothing/neck/roguetown/psicross/naledi
+	var/datum/devotion/C = new /datum/devotion(H, H.patron)
+	C.grant_miracles(H, cleric_tier = CLERIC_T4, passive_gain = CLERIC_REGEN_MAJOR, start_maxed = TRUE)	//Starts off maxed out.
+	if(H.mind)
+		H.mind.RemoveSpell(/obj/effect/proc_holder/spell/invoked/lesser_heal)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose/secular)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/guidance)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/regression)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/convergence)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stasis)
+
+/*
 // Cleric Prisoner subclass
 /datum/advclass/prisonercleric
 	name = "Cleric Prisoner"
@@ -554,3 +597,4 @@
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
 	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR)	//Minor regen, can level up to T4.
 
+*/

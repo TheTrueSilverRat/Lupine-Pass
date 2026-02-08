@@ -2,8 +2,6 @@ GLOBAL_LIST_EMPTY(apostasy_players)
 GLOBAL_LIST_EMPTY(cursed_players)
 GLOBAL_LIST_EMPTY(excommunicated_players)
 GLOBAL_LIST_EMPTY(heretical_players)
-#define PRIEST_ANNOUNCEMENT_COOLDOWN (2 MINUTES)
-#define PRIEST_SERMON_COOLDOWN (30 MINUTES)
 #define PRIEST_APOSTASY_COOLDOWN (10 MINUTES)
 #define PRIEST_EXCOMMUNICATION_COOLDOWN (10 MINUTES)
 #define PRIEST_CURSE_COOLDOWN (15 MINUTES)
@@ -207,6 +205,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		if(nomoredukes)
 			nomoredukes.total_positions = -1000 //We got what we got now.
 
+/**
 /mob/living/carbon/human/proc/churchannouncement()
 	set name = "Announcement"
 	set category = "Priest"
@@ -235,6 +234,8 @@ GLOBAL_LIST_EMPTY(heretical_players)
 			to_chat(src, span_warning("Your announcement was interrupted!"))
 			return FALSE
 
+*/
+
 /obj/effect/proc_holder/spell/self/convertrole/templar
 	name = "Recruit Templar"
 	new_role = "Templar"
@@ -253,6 +254,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	accept_message = "FOR THE TEN!"
 	refuse_message = "I refuse."
 
+/**
 /mob/living/carbon/human/proc/completesermon()
 	set name = "Sermon"
 	set category = "Priest"
@@ -298,6 +300,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	return TRUE
 
+*/
 /mob/living/carbon/human/proc/churchecancurse(var/mob/living/carbon/human/H, apostasy = FALSE)
 	if (!H.devotion && apostasy)
 		to_chat(src, span_warning("This one's connection to the ten is too shallow."))
