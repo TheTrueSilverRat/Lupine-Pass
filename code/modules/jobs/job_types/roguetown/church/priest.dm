@@ -205,6 +205,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		if(nomoredukes)
 			nomoredukes.total_positions = -1000 //We got what we got now.
 
+/**
 /mob/living/carbon/human/proc/churchannouncement()
 	set name = "Announcement"
 	set category = "Priest"
@@ -296,6 +297,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	return TRUE
 
+*/
 /mob/living/carbon/human/proc/churchecancurse(var/mob/living/carbon/human/H, apostasy = FALSE)
 	if (!H.devotion && apostasy)
 		to_chat(src, span_warning("This one's connection to the ten is too shallow."))
