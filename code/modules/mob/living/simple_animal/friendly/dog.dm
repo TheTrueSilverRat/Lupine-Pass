@@ -18,7 +18,7 @@
 	turns_per_move = 10
 	var/turns_since_scan = 0
 	var/obj/movement_target
-
+	animal = TRUE
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/pet/dog/Life()

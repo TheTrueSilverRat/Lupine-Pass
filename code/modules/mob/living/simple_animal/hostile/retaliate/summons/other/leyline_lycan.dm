@@ -48,6 +48,7 @@
 	aggressive = 1
 	var/teleport_cooldown
 	var/obj/structure/leyline/source
+	animal = TRUE //Fuck you if its not magical, it's a magic wolf I'm not touching that
 
 /mob/living/simple_animal/hostile/retaliate/rogue/leylinelycan/MoveToTarget(list/possible_targets)
 	stop_automated_movement = 1

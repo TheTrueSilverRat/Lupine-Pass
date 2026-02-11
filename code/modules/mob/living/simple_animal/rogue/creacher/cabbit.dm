@@ -21,6 +21,7 @@
 							/obj/item/alch/bone = 1,
 							/obj/item/natural/fur/rabbit = 1,
 							/obj/item/natural/rabbitsfoot = 1)	//Rare rabbits foot for luck charm.
+	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/mudcrab/cabbit/get_sound(input)
 	switch(input)

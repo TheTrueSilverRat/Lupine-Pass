@@ -27,6 +27,7 @@
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	var/body_color //brown, gray and white, leave blank for random
 	gold_core_spawnable = FRIENDLY_SPAWN
+	animal = TRUE
 
 /mob/living/simple_animal/mouse/Initialize()
 	. = ..()

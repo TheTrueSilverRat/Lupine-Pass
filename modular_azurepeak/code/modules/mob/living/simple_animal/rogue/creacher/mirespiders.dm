@@ -189,7 +189,6 @@
 	minimum_distance = 1
 	ranged_cooldown_time = 100
 	check_friendly_fire = 1
-
 	var/list/mob/living/simple_animal/hostile/retaliate/rogue/mirespider/followers = list()
 
 /mob/living/simple_animal/hostile/rogue/mirespider_lurker/Initialize()

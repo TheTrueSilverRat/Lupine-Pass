@@ -35,7 +35,7 @@
 	blood_volume = BLOOD_VOLUME_NORMAL
 	food_type = list(/obj/item/reagent_containers/food/snacks/grown)
 	var/obj/item/udder/udder = null
-
+	animal = TRUE
 	footstep_type = FOOTSTEP_MOB_SHOE
 
 /mob/living/simple_animal/hostile/retaliate/goat/Initialize()
@@ -116,6 +116,7 @@
 	bonus_tame_chance = 15
 	footstep_type = FOOTSTEP_MOB_SHOE
 	pooptype = /obj/item/natural/poo/cow
+	animal = TRUE
 
 /mob/living/simple_animal/cow/Initialize()
 	if(gender == FEMALE)
@@ -210,7 +211,7 @@
 	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
 	mob_size = MOB_SIZE_TINY
 	gold_core_spawnable = FRIENDLY_SPAWN
-
+	animal = TRUE
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/chick/Initialize()
@@ -272,7 +273,7 @@
 	var/list/validColors = list("brown","black","white")
 	gold_core_spawnable = FRIENDLY_SPAWN
 	var/static/chicken_count = 0
-
+	animal = TRUE
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/chicken/Initialize()
@@ -397,3 +398,4 @@
 	tame_chance = 25
 	bonus_tame_chance = 15
 	footstep_type = FOOTSTEP_MOB_SHOE
+	animal = TRUE
