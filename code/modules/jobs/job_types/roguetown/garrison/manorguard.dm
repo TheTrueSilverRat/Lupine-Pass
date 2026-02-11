@@ -786,6 +786,10 @@
 	H.adjust_skillrank(/datum/skill/misc/riding, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/tracking, 1, TRUE)
 
+spells = list(
+		/obj/effect/proc_holder/spell/self/werewolf_transform
+)
+
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron
