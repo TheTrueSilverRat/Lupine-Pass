@@ -175,6 +175,7 @@
 	STASTR = 12
 	STASPD = 2
 	remains_type = /obj/effect/decal/remains/cow
+	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/bull/get_sound(input)
 	switch(input)

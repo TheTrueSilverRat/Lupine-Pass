@@ -438,7 +438,6 @@
 /obj/item/rope/chain/bindingshackles/attack(mob/living/simple_animal/hostile/retaliate/rogue/captive, mob/living/user)
 	var/list/summon_types = list(
 		/mob/living/simple_animal/hostile/retaliate/rogue/infernal/imp,
-		/mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound,
 		/mob/living/simple_animal/hostile/retaliate/rogue/infernal/watcher,
 		/mob/living/simple_animal/hostile/retaliate/rogue/infernal/fiend,
 		/mob/living/simple_animal/hostile/retaliate/rogue/elemental/crawler,
@@ -451,6 +450,11 @@
 		/mob/living/simple_animal/hostile/retaliate/rogue/fae/sylph,
 		/mob/living/simple_animal/hostile/retaliate/rogue/voidstoneobelisk,
 		/mob/living/simple_animal/hostile/retaliate/rogue/voiddragon)
+
+	if(istype(captive, /mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound))
+		if(do_after(user, 50, target = src))
+			to_chat(user, span_notice("The [captive] stares at you with mindless hate. The binding attempt failed to draw out it's intelligence!"))
+			return
 
 	if(!(captive.type in summon_types))
 		to_chat(user, span_warning("[captive] cannot be bound by these shackles!"))

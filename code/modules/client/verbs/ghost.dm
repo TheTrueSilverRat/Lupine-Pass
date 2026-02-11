@@ -88,3 +88,45 @@ GLOBAL_LIST_INIT(ghost_verbs, list(
 	if(istype(src, /mob/dead/observer)) //Be rid of clogging ghost shades
 		qdel(src)
 	return
+
+/client/proc/possess()
+	set category = "Spirit"
+	set name = "Possess Mindless Creature"
+	set desc= "Take over the body of a mindless creature!"
+
+	if(isobserver(mob))
+
+		var/list/possessible = list()
+		for(var/mob/living/L in GLOB.alive_mob_list)
+			if(!get_turf(L))
+				continue
+			if(istype(L, /mob/living/carbon/human))
+				var/mob/living/carbon/human/H = L
+				if(H.key) //Haha no you can't possess players fuck you
+					continue
+			if(issimple(L)) // NO YOU CANNOT POSSESS THE DOG!! GOOOO AWAAAY
+				var/mob/living/simple_animal/animal = L
+				if(istype(animal, /mob/living/simple_animal/hostile/retaliate/poison/snake)) //SPECIAL CODE FOR THIS STUPID SNAKE CAUSE I CANT PUT A VARIABLE ON HIM!
+					continue
+				if(animal.animal == TRUE)
+					continue
+
+			if(!(L in GLOB.player_list) && !L.mind)
+				possessible += L
+
+		var/mob/living/target = input("Your new life begins today!", "Possess Mob", null, null) as null|anything in sortNames(possessible)
+
+		if(!target)
+			return FALSE
+
+
+		var/mob/dead/observer/o = mob
+		if(o.can_reenter_corpse && o.mind?.current)
+			if(alert(src, "Your soul is still tied to your former life as [o.mind.current.name], if you go forward there is no going back to that life. Are you sure you wish to continue?", "Move On", "Yes", "No") == "No")
+				return FALSE
+		if(target.key)
+			to_chat(src, span_warning("Someone has taken this body while you were choosing!"))
+			return FALSE
+
+		target.key = key
+		return TRUE

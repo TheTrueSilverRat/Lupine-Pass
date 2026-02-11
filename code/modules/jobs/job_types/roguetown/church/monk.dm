@@ -1,3 +1,7 @@
+
+#define PRIEST_ANNOUNCEMENT_COOLDOWN (2 MINUTES)
+#define PRIEST_SERMON_COOLDOWN (30 MINUTES)
+
 /datum/job/roguetown/monk
 	title = TITLE_PRIEST
 	flag = MONK
@@ -37,24 +41,24 @@
 		var/prev_real_name = H.real_name
 		var/prev_name = H.name
 //Default fallback title.
-		var/title = "Devotee"
+		var/title = "Reverend"
 //Actual titles now, based on pronouns.
 		switch(H.pronouns)
 			if(SHE_HER)
-				title = "Sister"
+				title = "Mother"
 			if(SHE_HER_M)
-				title = "Sister"
+				title = "Mother"
 			if(HE_HIM)
-				title = "Brother"
+				title = "Father"
 			if(HE_HIM_F)
-				title = "Brother"
+				title = "Father"
 //Now apply the actual title.
 		H.real_name = "[title] [prev_real_name]"
 		H.name = "[title] [prev_name]"
 
 /datum/advclass/acolyte
 	name = TITLE_PRIEST
-	tutorial = "Chores, some more chores- Even more chores.. Oh how the life of a humble acolyte is exhausting… You have faith, but even you know you gave up a life of adventure for that of the security in the Church. Assist the Bishop in their daily tasks, maybe today will be the day something interesting happens."
+	tutorial = "You are the last priest in the region; By default, that makes you the head of the church here. Your only hope now is that in which you put in faith and the brave souls who come here to rid the land of the menace.  Aid them, if you can, and lead your flock while you're at it."
 	outfit = /datum/outfit/job/roguetown/monk/basic
 	category_tags = list(CTAG_ACOLYTE)
 	subclass_stats = list(
@@ -62,6 +66,81 @@
 		STATKEY_END = 2,
 		STATKEY_SPD = 1
 	)
+
+
+/mob/living/carbon/human/proc/churchannouncement()
+	set name = "Announcement"
+	set category = "Priest"
+
+	if(stat)
+		return
+
+	if (!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
+		to_chat(src, span_warning("I need to do this in the chapel."))
+		return FALSE
+
+	var/announcementinput = input("Bellow to the vale", "Make an Announcement") as text|null
+	if(announcementinput)
+		if(!src.can_speak_vocal())
+			to_chat(src,span_warning("I can't speak!"))
+			return FALSE
+		if (!COOLDOWN_FINISHED(src, priest_announcement))
+			to_chat(src, span_warning("You must wait before speaking again."))
+			return
+		visible_message(span_warning("[src] takes a deep breath, preparing to make an announcement.."))
+		if(do_after(src, 15 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
+			say(announcementinput)
+			priority_announce("[announcementinput]", "The Bishop Preaches", 'sound/misc/bell.ogg', sender = src)
+			COOLDOWN_START(src, priest_announcement, PRIEST_ANNOUNCEMENT_COOLDOWN)
+		else
+			to_chat(src, span_warning("Your announcement was interrupted!"))
+			return FALSE
+
+/mob/living/carbon/human/proc/completesermon()
+	set name = "Sermon"
+	set category = "Priest"
+
+	if (!mind)
+		return
+
+	if (!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
+		to_chat(src, span_warning("I need to do this in the chapel."))
+		return FALSE
+
+	if (!COOLDOWN_FINISHED(src, priest_sermon))
+		to_chat(src, span_warning("You cannot inspire others so early."))
+		return
+
+	src.visible_message(span_notice("[src] begins preaching a sermon..."))
+
+	if (!do_after(src, 120, target = src)) // 120 seconds
+		src.visible_message(span_warning("[src] stops preaching."))
+		return
+
+	src.visible_message(span_notice("[src] finishes the sermon, inspiring those nearby!"))
+	playsound(src.loc, 'sound/magic/bless.ogg', 80, TRUE)
+	COOLDOWN_START(src, priest_sermon, PRIEST_SERMON_COOLDOWN)
+
+	for (var/mob/living/carbon/human/H in view(7, src))
+		if (!H.patron)
+			continue
+
+		if (istype(H.patron, /datum/patron/divine))
+			H.apply_status_effect(/datum/status_effect/buff/sermon)
+			H.add_stress(/datum/stressevent/sermon)
+			to_chat(H, span_notice("You feel a divine affirmation from your patron."))
+
+		else if (istype(H.patron, /datum/patron/inhumen))
+			H.apply_status_effect(/datum/status_effect/debuff/hereticsermon)
+			H.add_stress(/datum/stressevent/heretic_on_sermon)
+			to_chat(H, span_warning("Your patron seethes with disapproval."))
+
+		else
+			// Other patrons - fluff only
+			to_chat(H, span_notice("Nothing seems to happen to you."))
+
+	return TRUE
+
 
 /datum/outfit/job/roguetown/monk
 	name = TITLE_PRIEST
@@ -77,6 +156,7 @@
 	beltl = /obj/item/storage/keyring/churchie
 	backl = /obj/item/storage/backpack/rogue/satchel
 	backr = /obj/item/rogueweapon/woodstaff
+	l_hand = /obj/item/rogueweapon/huntingknife/idagger/steel/holysee
 	backpack_contents = list(/obj/item/ritechalk)
 	H.cmode_music = 'sound/music/cmode/church/combat_acolyte.ogg' // has to be defined here for the selection below to work. sm1 please rewrite cmusic to apply pre-equip.
 	switch(H.patron?.type)
@@ -168,6 +248,7 @@
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 3, TRUE)
