@@ -2,11 +2,9 @@
 	name = "Use their thighs to get off"
 
 /datum/sex_action/thighjob/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user == target)
-		return FALSE
 	if(!user.getorganslot(ORGAN_SLOT_PENIS))
-		return
-	return TRUE
+		return FALSE
+	. = ..()
 
 /datum/sex_action/thighjob/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)

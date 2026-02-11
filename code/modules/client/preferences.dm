@@ -97,7 +97,7 @@ GLOBAL_LIST_EMPTY(chosen_names)
 	var/list/friendlyGenders = list("male" = "masculine", "female" = "feminine")
 	var/phobia = "spiders"
 	var/shake = TRUE
-	var/sexable = FALSE
+//	var/sexable = FALSE
 	var/compliance_notifs = TRUE
 
 	var/list/custom_names = list()
@@ -204,6 +204,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	var/taur_type = null
 	var/taur_color = "ffffff"
+
+	var/defiant = FALSE
 
 /datum/preferences/New(client/C)
 	parent = C
@@ -791,7 +793,8 @@ GLOBAL_LIST_EMPTY(chosen_names)
 
 	dat += "</td>"
 	dat += "<td width='33%' align='right'>"
-	dat += "<b>Be voice:</b> <a href='?_src_=prefs;preference=schizo_voice'>[(toggles & SCHIZO_VOICE) ? "Enabled":"Disabled"]</a>"
+	dat += "<b>Be defiant:</b> <a href='?_src_=prefs;preference=be_defiant'>[(defiant) ? "Yes":"No"]</a><br>"
+	dat += "<b>Be voice:</b> <a href='?_src_=prefs;preference=schizo_voice'>[(toggles & SCHIZO_VOICE) ? "Enabled":"Disabled"]</a><br>"
 	dat += "</td>"
 	dat += "</tr>"
 	dat += "</table>"
@@ -2461,6 +2464,13 @@ Slots: [job.spawn_positions] [job.round_contrib_points ? "RCP: +[job.round_contr
 				if("widescreenpref")
 					widescreenpref = !widescreenpref
 					user.client.change_view(CONFIG_GET(string/default_view))
+
+				if("be_defiant")
+					defiant = !defiant
+					if(defiant)
+						to_chat(user, span_notice("You will now have resistance from people violating you, but be punished for trying to violate others." + " " + span_boldwarning("(COMBAT Mode will disable ERP interactions. Bypassing this is a bannable offense, AHELP if necessary.)")))
+					else
+						to_chat(user, span_boldwarning("You fully immerse yourself in the grim experience, waiving your resistance from people violating you, but letting you do the same unto other non-defiants"))
 
 				if("schizo_voice")
 					toggles ^= SCHIZO_VOICE

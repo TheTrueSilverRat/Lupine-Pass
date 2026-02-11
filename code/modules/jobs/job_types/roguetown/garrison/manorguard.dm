@@ -7,7 +7,7 @@
 	spawn_positions = 8
 
 	allowed_sexes = list(MALE, FEMALE)
-	allowed_races = list(RACES_KEEP)
+	allowed_races = list(RACES_KEEP_DRENGIR)
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED)
 	job_traits = list(TRAIT_GUARDSMAN, TRAIT_STEELHEARTED, TRAIT_DEATHBYSNUSNU)
 	tutorial = "You are a professional warrior with many battles under your belt, all while serving courageously.\
