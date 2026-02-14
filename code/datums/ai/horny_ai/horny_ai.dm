@@ -99,12 +99,14 @@
 			if(Adjacent(L) || loc == L.loc)
 				if(iscarbon(L))
 					chasesfuck = FALSE
+/*
 					if(L.cmode)
 						L.SetImmobilized(40)
 						L.SetKnockdown(40)
 					else //sneak attacked i guess.
 						L.SetImmobilized(60)
 						L.SetKnockdown(60)
+*/
 					if(!L.lying) //i guess if already targeted but got up somehow.
 						L.emote("gasp")
 					if(L.wear_pants)

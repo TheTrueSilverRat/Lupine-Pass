@@ -169,8 +169,12 @@
 	if(src.check_same_tile && (user != target || self_target) && !(sigbitflags & SKIP_TILE_CHECK))
 		var/same_tile = (get_turf(user) == get_turf(target))
 		var/grab_bypass = (src.aggro_grab_instead_same_tile && user.get_highest_grab_state_on(target) == GRAB_AGGRESSIVE)
+
 		if(!same_tile && !grab_bypass)
 			return FALSE
+
+	if(user.erpable) //NPC fucks easy
+		return TRUE
 
 	if(src.require_grab && (user != target || self_target) && !(sigbitflags & SKIP_GRAB_CHECK))
 		var/grabstate = user.get_highest_grab_state_on(target)
