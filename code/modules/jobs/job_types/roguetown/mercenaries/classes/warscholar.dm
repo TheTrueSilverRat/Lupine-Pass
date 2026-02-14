@@ -65,7 +65,7 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/haste)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/fortitude)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/forcewall/greater)
-		H.mind.adjust_spellpoints(15)
+		H.mind.adjust_spellpoints(18)
 	r_hand = /obj/item/rogueweapon/woodstaff/naledi
 
 
@@ -145,7 +145,7 @@
 		H.mind.AddSpell(new/obj/effect/proc_holder/spell/invoked/projectile/repel)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/targeted/touch/summonrogueweapon/bladeofpsydon)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/shadowstep)
-
+		H.mind.adjust_spellpoints(10)
 	head = /obj/item/clothing/head/roguetown/roguehood/pontifex
 	gloves = /obj/item/clothing/gloves/roguetown/angle/pontifex
 	head = /obj/item/clothing/head/roguetown/roguehood/pontifex
@@ -208,7 +208,7 @@
 	H.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 4, TRUE)
-	H.adjust_skillrank(/datum/skill/combat/polearms, 2, TRUE)
+	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)
@@ -249,7 +249,7 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/regression)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/convergence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stasis)
-	
+		H.mind.adjust_spellpoints(10)
 	H.merctype = 14
 
 
