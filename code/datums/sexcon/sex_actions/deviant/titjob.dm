@@ -2,13 +2,9 @@
 	name = "Use their tits to get off"
 
 /datum/sex_action/titjob/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user == target)
+	if(!user.getorganslot(ORGAN_SLOT_PENIS) && !target.getorganslot(ORGAN_SLOT_BREASTS))
 		return FALSE
-	if(!user.getorganslot(ORGAN_SLOT_PENIS))
-		return
-	if(!target.getorganslot(ORGAN_SLOT_BREASTS))
-		return
-	return TRUE
+	. = ..()
 
 /datum/sex_action/titjob/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)

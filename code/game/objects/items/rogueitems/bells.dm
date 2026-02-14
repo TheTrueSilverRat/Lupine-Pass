@@ -84,7 +84,7 @@
 	if(ringing)
 		return
 	if(istype(used_item, /obj/item/rogueweapon/mace/church))
-		playsound(loc, 'sound/misc/bell.ogg', 200, 1)
+		playsound(loc, 'sound/misc/bell.ogg', 200, 1, 200)
 		for(var/mob/M in orange(150, src))
 			if(M.client)
 				to_chat(M, span_notice("The church bell rings, echoing solemnly through the area."))
