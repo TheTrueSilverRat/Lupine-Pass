@@ -243,7 +243,7 @@ SUBSYSTEM_DEF(migrants)
 	to_chat(character, span_notice(role.greet_text))
 
 	ADD_TRAIT(character, TRAIT_OUTLANDER, TRAIT_GENERIC)
-	
+
 	if(role.outfit)
 		var/datum/outfit/outfit = new role.outfit()
 		outfit.equip(character)
@@ -254,6 +254,9 @@ SUBSYSTEM_DEF(migrants)
 	// Adding antag datums can move your character to places, so here's a bandaid
 	if(spawn_on_location)
 		character.forceMove(assignment.spawn_location)
+
+	var/mob/living/carbon/human/human_character = character
+	SSquirks.AssignQuirks(human_character, human_character.client, TRUE)
 
 	if(role.grant_lit_torch)
 		grant_lit_torch(character)

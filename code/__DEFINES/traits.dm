@@ -574,6 +574,9 @@ Remember to update _globalvars/traits.dm if you're adding/removing/renaming trai
 #define TRAIT_NO_TELEPORT		"no-teleport" //you just can't
 #define TRAIT_NO_SELF_UNEQUIP			"no-self-unequip" // For items you can't remove on wearing but can still hold freely
 
+//Quirk system from DreamKeep
+#define QUIRK_TRAIT "quirk"
+
 //quirk traits
 #define TRAIT_ALCOHOL_TOLERANCE	"alcohol_tolerance"
 #define TRAIT_AGEUSIA			"ageusia"
