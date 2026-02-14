@@ -435,6 +435,10 @@
 			. += str
 		else
 			. += "[m3] [belt.get_examine_string(user)] about [m2] waist."
+		if(istype(belt, /obj/item/storage/belt/rogue)) // check if belt has dildo attached
+			var/obj/item/storage/belt/rogue/belt_with_dildo = belt
+			if(belt_with_dildo.attached_toy)
+				. += "[m3] [belt_with_dildo.attached_toy.get_examine_string(user)] attached to [m2] belt. "
 
 	//right belt
 	if(beltr && !(SLOT_BELT_R in obscured))

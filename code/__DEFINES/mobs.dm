@@ -358,7 +358,7 @@
 
 // Roundstart trait system
 
-#define MAX_QUIRKS 6 //The maximum amount of quirks one character can have at roundstart
+#define MAX_QUIRKS 999 //The maximum amount of quirks one character can have at roundstart
 
 // AI Toggles
 #define AI_CAMERA_LUMINOSITY	5
@@ -398,6 +398,12 @@
 //defense intents
 #define INTENT_DODGE 1
 #define INTENT_PARRY 2
+
+// Body position defines. (THIS IS FOR A LATER PR WHEN I PROPERLY REFACTOR STUFF TO LOOK LIKE VANDERLIN)
+/// Mob is standing up, usually associated with lying_angle value of 0.
+#define STANDING_UP 0
+/// Mob is lying down, usually associated with lying_angle values of 90 or 270.
+#define LYING_DOWN 1
 
 //skin tones defines
 

@@ -114,6 +114,24 @@ GLOBAL_VAR_INIT(cmp_field, "name")
 /proc/cmp_wound_severity_dsc(datum/wound/A, datum/wound/B)
 	return B.severity - A.severity
 
+/proc/cmp_quirk_asc(datum/quirk/A, datum/quirk/B)
+	var/a_sign = num2sign(initial(A.value) * -1)
+	var/b_sign = num2sign(initial(B.value) * -1)
+
+	// Neutral traits go last.
+	if(a_sign == 0)
+		a_sign = 2
+	if(b_sign == 0)
+		b_sign = 2
+
+	var/a_name = initial(A.name)
+	var/b_name = initial(B.name)
+
+	if(a_sign != b_sign)
+		return a_sign - b_sign
+	else
+		return sorttext(b_name, a_name)
+
 // Taken from modern TG.
 /proc/cmp_bodypart_by_body_part_asc(obj/item/bodypart/limb_one, obj/item/bodypart/limb_two)
 	return limb_one.body_part - limb_two.body_part

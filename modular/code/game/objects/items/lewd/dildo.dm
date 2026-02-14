@@ -16,6 +16,7 @@
 	var/pleasure = 4
 	var/can_custom = TRUE
 	var/dildo_material
+	var/is_attached_to_belt = FALSE // used to track attached toys so they can't be attached to more than one belt
 
 /obj/item/dildo/New()
 	. = ..()
@@ -56,6 +57,10 @@
 	desc = "To quench the woman's thirst."
 	can_custom = FALSE
 
+/obj/item/dildo/examine()
+	. = ..()
+	. += "[span_notice("It can be attached onto most belts.")]"
+
 /obj/item/dildo/wood
 	color = "#7D4033"
 	resistance_flags = FLAMMABLE
@@ -76,8 +81,9 @@
 	color = "#C6D5E1"
 	dildo_material = "silver"
 	sellprice = 30
+	is_silver = TRUE
 
 /obj/item/dildo/gold
-	color = "#A0A075"
+	color = "#c4b651"
 	dildo_material = "golden"
 	sellprice = 50
