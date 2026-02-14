@@ -10,7 +10,8 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	flee_in_pain = TRUE
 	possible_rmb_intents = list()
 	var/is_silent = FALSE /// Determines whether or not we will scream our funny lines at people.
-
+	erpable = TRUE
+	seeksfuck = TRUE
 
 /mob/living/carbon/human/species/human/northern/searaider/ambush
 	aggressive=1
@@ -38,11 +39,9 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	addtimer(CALLBACK(src, PROC_REF(after_creation)), 1 SECONDS)
 	is_silent = TRUE
 
-
 /mob/living/carbon/human/species/human/northern/searaider/after_creation()
 	..()
 	job = "Sea Raider"
-	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_LEECHIMMUNE, INNATE_TRAIT)
@@ -95,8 +94,11 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 		real_name = pick(world.file2list("strings/rt/names/human/vikingf.txt"))
 	else
 		real_name = pick(world.file2list("strings/rt/names/human/vikingm.txt"))
+	if(erpable)
+		give_genitals()
 	update_hair()
 	update_body()
+
 
 /mob/living/carbon/human/species/human/northern/searaider/npc_idle()
 	if(m_intent == MOVE_INTENT_SNEAK)

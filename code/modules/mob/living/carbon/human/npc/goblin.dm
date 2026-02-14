@@ -26,6 +26,8 @@
 	npc_jump_distance = 3 // this might make them concheck more often, but it'll also mean it's easier to kick their legs out from under them
 	rude = TRUE
 	wander = FALSE
+	erpable = TRUE
+	seeksfuck = TRUE
 
 /mob/living/carbon/human/species/goblin/npc/ambush
 	aggressive = 1
@@ -210,6 +212,8 @@
 
 /mob/living/carbon/human/species/goblin/after_creation()
 	..()
+	if(erpable)
+		give_genitals()
 	gender = MALE
 	if(src.dna && src.dna.species)
 		src.dna.species.soundpack_m = new /datum/voicepack/other/goblin()
