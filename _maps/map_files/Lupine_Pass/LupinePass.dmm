@@ -2265,7 +2265,7 @@
 "mcI" = (/obj/structure/bed/rogue/inn,/obj/item/bedsheet/rogue/cloth,/turf/open/floor/rogue/wood/nosmooth,/area/rogue/under/underdark)
 "mdA" = (/obj/structure/flora/tree/dead,/turf/open/floor/rogue/dirt,/area/rogue/outdoors/beach/forest/hamlet)
 "mdI" = (/obj/structure/fluff/railing/border{dir = 4},/turf/open/floor/rogue/wood,/area/rogue/outdoors/exposed/town/keep)
-"mdK" = (/obj/item/roguegem/amethyst{desc = "A gem said to contain the hopes and dreams of all of the Progenitor's followers.  One of 15.""; name = "Gem of Fate"},/turf/open/floor/rogue/blocks/stonered,/area/rogue/under/underdark)
+"mdK" = (/obj/item/roguegem/amethyst{desc = "A gem said to contain the hopes and dreams of all of the Progenitor's followers.  One of 15."; name = "Gem of Fate"},/turf/open/floor/rogue/blocks/stonered,/area/rogue/under/underdark)
 "mdL" = (/obj/structure/stairs/stone{dir = 8},/turf/open/floor/rogue/cobblerock,/area/rogue/outdoors/beach/forest/hamlet)
 "meg" = (/obj/structure/roguewindow,/turf/open/floor/rogue/concrete,/area/rogue/indoors/town/garrison)
 "mem" = (/obj/structure/flora/grass/both,/obj/structure/flora/roguetree/pine,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/north)

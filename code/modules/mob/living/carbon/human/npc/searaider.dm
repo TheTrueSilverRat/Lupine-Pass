@@ -12,6 +12,7 @@ GLOBAL_LIST_INIT(searaider_aggro, world.file2list("strings/rt/searaideraggroline
 	var/is_silent = FALSE /// Determines whether or not we will scream our funny lines at people.
 	erpable = TRUE
 	seeksfuck = TRUE
+	lewd_talk = TRUE
 
 /mob/living/carbon/human/species/human/northern/searaider/ambush
 	aggressive=1

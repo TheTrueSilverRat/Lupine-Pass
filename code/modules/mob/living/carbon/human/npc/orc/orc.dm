@@ -35,6 +35,7 @@
 	..()
 	erpable = TRUE
 	seeksfuck = TRUE
+	lewd_talk = TRUE
 	job = "Savage Orc"
 	equipOutfit(new orc_outfit)
 	gender = pick(MALE, FEMALE)

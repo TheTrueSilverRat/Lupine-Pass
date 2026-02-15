@@ -96,7 +96,7 @@
 			L = pick(foundfuckmeat)
 			STOP_PROCESSING(SShumannpc,src)
 			mode = AI_OFF
-			if(Adjacent(L) || loc == L.loc)
+			if(loc == L.loc)
 				if(iscarbon(L))
 					chasesfuck = FALSE
 /*
@@ -124,7 +124,8 @@
 						sexcon.force = SEX_FORCE_MID
 					if(!pulling)
 						start_pulling(L)
-					if(!Adjacent(L) || loc != L.loc) //are we at the same tile?
+						start_pulling(L)
+					if(loc != L.loc) //are we at the same tile?
 						walk2derpless(L.loc) //get to them since it looks like shit tweaks out.
 					visible_message(span_danger("[src] starts to breed [L]!"))
 					if(sexcon.force == SEX_FORCE_MAX)

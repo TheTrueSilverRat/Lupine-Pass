@@ -13,6 +13,7 @@ GLOBAL_LIST_INIT(highwayman_aggro, world.file2list("strings/rt/highwaymanaggroli
 	var/is_silent = FALSE /// Determines whether or not we will scream our funny lines at people.
 	erpable = TRUE
 	seeksfuck = TRUE
+	lewd_talk = TRUE
 
 /mob/living/carbon/human/species/human/northern/highwayman/ambush
 	aggressive = 1

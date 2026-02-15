@@ -28,6 +28,7 @@
 	wander = FALSE
 	erpable = TRUE
 	seeksfuck = TRUE
+	lewd_talk = TRUE
 
 /mob/living/carbon/human/species/goblin/npc/ambush
 	aggressive = 1
