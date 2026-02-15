@@ -96,7 +96,8 @@
 			L = pick(foundfuckmeat)
 			STOP_PROCESSING(SShumannpc,src)
 			mode = AI_OFF
-			if(loc == L.loc)
+			var/turf/Target = get_turf(L)
+			if(loc == Target || Adjacent(Target))
 				if(iscarbon(L))
 					chasesfuck = FALSE
 /*
@@ -120,13 +121,16 @@
 								visible_message(span_danger("[src] manages to tug [L]'s [L.wear_pants.name] out of the way!"))
 					if(aggressive)
 						sexcon.force = SEX_FORCE_MAX
+					if(src.dna.species == /datum/species/orc)
+						sexcon.force = SEX_FORCE_LOW //Orcs are the most gentlest fuckers
 					else
 						sexcon.force = SEX_FORCE_MID
 					if(!pulling)
 						start_pulling(L)
 						start_pulling(L)
-					if(loc != L.loc) //are we at the same tile?
-						walk2derpless(L.loc) //get to them since it looks like shit tweaks out.
+					if(loc == L.loc || Adjacent(L)) //are we at the same tile?
+						var/turf/T = get_turf(L)
+						walk_to(src,T,0,update_movespeed())
 					visible_message(span_danger("[src] starts to breed [L]!"))
 					if(sexcon.force == SEX_FORCE_MAX)
 						visible_message(span_danger("[src] pins [L] down for a savage fucking!"))
@@ -165,12 +169,15 @@
 								current_action = /datum/sex_action/rimming
 							if(3) //vaginal
 								current_action = /datum/sex_action/cunnilingus
+					//They wash you assh
+					if(current_action == /datum/sex_action/rimming)
+						visible_message(span_love("[src] takes out a bar of spa and starts washing [L]'s ass before eating [L.p_their()] out"))
 					sexcon.do_until_finished = TRUE
 					sexcon.target = L
 					sexcon.try_start_action(current_action)
 			else
 				var/turf/T = get_turf(L)
-				walk2derpless(T)
+				walk_to(src,T,0,update_movespeed())
 
 /mob/living/carbon/human/proc/stoppedfucking(mob/living/carbon/target, timedout = FALSE)
 	//try to bind after sex.
