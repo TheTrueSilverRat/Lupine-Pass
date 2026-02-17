@@ -57,6 +57,7 @@
 	aggressive = 1
 	stat_attack = UNCONSCIOUS	//You falling unconcious won't save you, little one..
 	eat_forever = TRUE
+	animal = TRUE
 
 //new ai, old ai off
 	AIStatus = AI_OFF

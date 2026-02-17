@@ -23,6 +23,7 @@
 	gold_core_spawnable = FRIENDLY_SPAWN
 
 	footstep_type = FOOTSTEP_MOB_CLAW
+	animal = TRUE
 
 //Captain fox
 /mob/living/simple_animal/pet/fox/Renault

@@ -38,7 +38,7 @@
 	retreat_distance = 0
 	minimum_distance = 0
 	milkies = FALSE
-
+	animal = TRUE
 	STACON = 7
 	STASTR = 7
 	STASPD = 13
