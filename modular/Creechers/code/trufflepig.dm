@@ -126,6 +126,7 @@
 	response_help_continuous = "pets"
 	response_help_simple = "give the signal to the"
 	var/hangry_meter = 0
+	animal = TRUE
 
 
 /obj/effect/decal/remains/pig

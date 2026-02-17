@@ -150,6 +150,8 @@ SUBSYSTEM_DEF(role_class_handler)
 	// Call qdel on it
 	qdel(related_handler)
 
+	SSquirks.AssignQuirks(H, H.client, TRUE)
+
 	adjust_class_amount(picked_class, 1) // adjust the amount here, we are handling one guy right now.
 
 // A dum helper to adjust the class amount, we could do it elsewhere but this will also inform any relevant class handlers open.

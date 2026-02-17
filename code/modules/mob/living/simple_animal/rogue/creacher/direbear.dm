@@ -56,6 +56,7 @@
 	dodgetime = 30
 	aggressive = 1
 	stat_attack = UNCONSCIOUS	//You falling unconcious won't save you, little one..
+	animal = TRUE
 	eat_forever = TRUE
 
 //new ai, old ai off

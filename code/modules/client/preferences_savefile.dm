@@ -208,7 +208,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["autoconsume"]		>> autoconsume
 	S["crt"]				>> crt
 	S["grain"]				>> grain
-	S["sexable"]			>> sexable
+//	S["sexable"]			>> sexable
 	S["shake"]				>> shake
 	S["mastervol"]			>> mastervol
 	S["lastclass"]			>> lastclass
@@ -245,6 +245,10 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	// Custom hotkeys
 	S["key_bindings"]		>> key_bindings
+
+
+	//Defiant mode stuff
+	S["defiant"]			>> defiant
 
 	//try to fix any outdated data if necessary
 	if(needs_update >= 0)
@@ -284,7 +288,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	pda_style		= sanitize_inlist(pda_style, GLOB.pda_styles, initial(pda_style))
 	pda_color		= sanitize_hexcolor(pda_color, 6, 1, initial(pda_color))
 	key_bindings 	= sanitize_islist(key_bindings, list())
-	
+	defiant			= sanitize_integer(defiant, FALSE, TRUE, TRUE)
+
 	//ROGUETOWN
 	parallax = PARALLAX_INSANE
 
@@ -325,7 +330,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["mute_animal_emotes"], mute_animal_emotes)
 	WRITE_FILE(S["autoconsume"], autoconsume)
 	WRITE_FILE(S["crt"], crt)
-	WRITE_FILE(S["sexable"], sexable)
+//	WRITE_FILE(S["sexable"], sexable)
 	WRITE_FILE(S["shake"], shake)
 	WRITE_FILE(S["lastclass"], lastclass)
 	WRITE_FILE(S["mastervol"], mastervol)
@@ -368,6 +373,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["pda_style"], pda_style)
 	WRITE_FILE(S["pda_color"], pda_color)
 	WRITE_FILE(S["key_bindings"], key_bindings)
+	WRITE_FILE(S["defiant"], defiant)
 	WRITE_FILE(S["patreon_say_color"], patreon_say_color)
 	WRITE_FILE(S["patreon_say_color_enabled"], patreon_say_color_enabled)
 	

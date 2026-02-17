@@ -2,13 +2,9 @@
 	name = "Frot them"
 
 /datum/sex_action/frotting/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user == target)
+	if(!user.getorganslot(ORGAN_SLOT_PENIS) && !target.getorganslot(ORGAN_SLOT_PENIS))
 		return FALSE
-	if(!user.getorganslot(ORGAN_SLOT_PENIS))
-		return
-	if(!target.getorganslot(ORGAN_SLOT_PENIS))
-		return
-	return TRUE
+	. = ..()
 
 /datum/sex_action/frotting/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)

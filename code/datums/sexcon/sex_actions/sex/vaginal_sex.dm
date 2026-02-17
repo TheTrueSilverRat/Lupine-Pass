@@ -33,7 +33,7 @@
 /datum/sex_action/vaginal_sex/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] fucks [target]'s cunt."))
 	playsound(target, 'sound/misc/mat/segso.ogg', 50, TRUE, -2, ignore_walls = FALSE)
-	do_thrust_animate(user, target)
+	user.sexcon.do_thrust_animate(target)
 
 	if(HAS_TRAIT(user, TRAIT_DEATHBYSNUSNU))
 		user.sexcon.try_pelvis_crush(target)
@@ -78,7 +78,7 @@
 /datum/sex_action/vaginal_sex/knot/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] knot-fucks [target]'s cunt."))
 	playsound(target, 'sound/misc/mat/segso.ogg', 50, TRUE, -2, ignore_walls = FALSE)
-	do_thrust_animate(user, target)
+	user.sexcon.do_thrust_animate(target)
 
 	user.sexcon.perform_sex_action(user, 2, 0, TRUE)
 	if(user.sexcon.check_active_ejaculation())

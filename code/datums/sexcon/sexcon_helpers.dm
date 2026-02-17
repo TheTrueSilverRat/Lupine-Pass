@@ -56,10 +56,14 @@
 	if(!user.can_do_sex())
 		to_chat(user, "<span class='warning'>I can't do this.</span>")
 		return
+	if(target.client.prefs.defiant && target.cmode) //Technically it's already in shows_on_menu() but eh double protection
+		to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
+		log_combat(user, target, "tried to use ERP menu against")
+		return
+/*
 	if(!user?.client?.prefs.sexable)
 		to_chat(user, "<span class='warning'>I don't want to touch [target]. (Your ERP preference, in the options)</span>")
 		return
-/* Have to do this for testing purposes
 	if(!target?.client?.prefs)
 		to_chat(user, span_warning("[target] is simply not there. I can't do this."))
 		log_combat(user, target, "tried ERP menu against d/ced")
@@ -70,6 +74,7 @@
 		log_combat(user, target, "tried unwanted ERP menu against")
 		return
 */
+
 	user.sexcon.start(target)
 
 /mob/living/proc/can_do_sex()

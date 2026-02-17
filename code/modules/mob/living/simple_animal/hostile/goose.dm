@@ -36,6 +36,7 @@
 	var/icon_vomit = "vomit"
 	var/icon_vomit_end = "vomit_end"
 	var/message_cooldown = 0
+	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/goose/handle_automated_movement()
 	. = ..()

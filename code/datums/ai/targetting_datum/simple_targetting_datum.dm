@@ -38,10 +38,18 @@
 
 	if(isliving(the_target)) //Targetting vs living mobs
 		var/mob/living/L = the_target
-		if(living_mob.summoner && living_mob.summoner == the_target.name) // won't attack whomever summoned it
+		if(faction_check(living_mob, L) || L.stat >= DEAD) //basic targetting doesn't target dead people
 			return FALSE
-		if(faction_check(living_mob, L) || L.stat)
+		if((L.has_quirk(/datum/quirk/monsterhuntermale) && living_mob.gender == MALE) || (L.has_quirk(/datum/quirk/monsterhunterfemale) && living_mob.gender == FEMALE) || HAS_TRAIT(L, TRAIT_PACIFISM) || L.surrendering)
 			return FALSE
+		if((!(L.mobility_flags && MOBILITY_STAND)) && !L.get_active_held_item() && L.ckey && !L.cmode) //if is laying and holding nothing, and not in cmode. Ignore.
+			return FALSE
+		if(living_mob.see_invisible < the_target.invisibility)//Target's invisible to us, forget it
+			return FALSE
+		if(ishuman(L))
+			var/mob/living/carbon/human/hum = L
+			if(hum.handcuffed)
+				return FALSE
 		return TRUE
 
 	return FALSE

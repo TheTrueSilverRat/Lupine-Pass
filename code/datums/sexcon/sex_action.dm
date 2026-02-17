@@ -35,5 +35,9 @@
 /datum/sex_action/proc/is_finished(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	return FALSE
 
+//Refactors the code so conditions that show up IN EVERY ACTION, go here so it's less fucking clunky
+//ALSO USE . = ..() SO THAT THE RETURN VALUE IS RECORDED  WHICH IS NEEDED CAUSE THIS IS A BOOLEAN CHECKER PROC
 /datum/sex_action/proc/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
+	if(user == target) //don't do . = ..() f it's a Masturbation action
+		return FALSE
 	return TRUE

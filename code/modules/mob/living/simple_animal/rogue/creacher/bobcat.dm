@@ -30,6 +30,7 @@
 	STACON = 6
 	STASTR = 6
 	STASPD = 15	//Fast as fuck, boy
+	animal = TRUE
 
 /obj/effect/decal/remains/bobcat
 	name = "remains"

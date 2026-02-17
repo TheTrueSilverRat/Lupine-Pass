@@ -3,13 +3,9 @@
 	stamina_cost = 1.0
 
 /datum/sex_action/tailpegging_vaginal/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user == target)
+	if(!target.getorganslot(ORGAN_SLOT_VAGINA) && !user.getorganslot(ORGAN_SLOT_TAIL))
 		return FALSE
-	if(!target.getorganslot(ORGAN_SLOT_VAGINA))
-		return FALSE
-	if(!user.getorganslot(ORGAN_SLOT_TAIL))
-		return FALSE
-	return TRUE
+	. = ..()
 
 /datum/sex_action/tailpegging_vaginal/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
@@ -29,7 +25,7 @@
 /datum/sex_action/tailpegging_vaginal/on_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	user.visible_message(user.sexcon.spanify_force("[user] [user.sexcon.get_generic_force_adjective()] fucks [target]'s cunt with their tail."))
 	playsound(target, 'sound/misc/mat/segso.ogg', 50, TRUE, -2, ignore_walls = FALSE)
-	do_thrust_animate(user, target)
+	user.sexcon.do_thrust_animate(target)
 
 	user.sexcon.perform_sex_action(user, 2.4, 7, TRUE)
 	user.sexcon.handle_passive_ejaculation(target)

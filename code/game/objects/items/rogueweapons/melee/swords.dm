@@ -412,8 +412,8 @@
 	name = "forgefiend flamberge"
 	desc = "This sword's creation took a riddle in its own making. A great sacrifice was made for a blade of perfect quality."
 	icon_state = "malumflamberge"
-	force = 28 // +3 force as a unique sword. Longsword isn't THAT good anyway
-	force_wielded = 33 // Also +3
+	force = 30 // +5 force as a unique sword. Longsword isn't THAT good anyway
+	force_wielded = 36 // Also +6
 	max_integrity = 200
 
 /obj/item/rogueweapon/sword/long/zizo

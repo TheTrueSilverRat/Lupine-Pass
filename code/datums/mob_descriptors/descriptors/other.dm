@@ -1,3 +1,22 @@
+//PORT FROM DREAMKEEP
+
+/datum/mob_descriptor/defiant
+	name = "Defiant"
+	slot = MOB_DESCRIPTOR_SLOT_NOTHING
+	verbage = "looks"
+	describe = "defiant!"
+	show_obscured = TRUE
+
+/datum/mob_descriptor/defiant/can_describe(mob/living/described)
+	if(!described.client?.prefs.defiant)
+		return FALSE
+	return TRUE
+
+/datum/mob_descriptor/defiant/can_user_see(mob/living/described, mob/user)
+	// I was looking at the code of Dream Keep and I realized it was basically a whole lotta if conditions that just lead to True. so just skipping to the point
+	return TRUE
+
+
 /datum/mob_descriptor/age
 	name = "Age"
 	slot = MOB_DESCRIPTOR_SLOT_AGE

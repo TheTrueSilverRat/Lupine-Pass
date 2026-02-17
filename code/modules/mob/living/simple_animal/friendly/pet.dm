@@ -6,6 +6,7 @@
 	var/unique_pet = FALSE // if the mob can be renamed
 	var/obj/item/clothing/neck/petcollar/pcollar
 	var/collar_type //if the mob has collar sprites, define them.
+	animal = TRUE
 
 /mob/living/simple_animal/pet/handle_atom_del(atom/A)
 	if(A == pcollar)

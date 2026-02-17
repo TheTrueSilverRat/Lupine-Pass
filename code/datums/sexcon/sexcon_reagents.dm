@@ -12,8 +12,10 @@
 
 /datum/reagent/consumable/ethanol/beer/emberwine/on_mob_metabolize(mob/living/carbon/human/C)
 	..()
-	if(!C.client.prefs.sexable)
+	if(C.client.prefs.defiant && C.cmode)
+		to_chat(C, span_boldgreen("YOU GRIT YOUR TEETH AND RESIST THE APHROSDISIAC"))
 		volume = 0
+		C.sexcon.aphrodisiac = 1
 		return
 	C.sexcon.aphrodisiac += 1
 

@@ -44,6 +44,7 @@
 	dodgetime = 30
 	aggressive = 1
 	var/flame_cd
+	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/infernal/hellhound/Initialize()
 	. = ..()

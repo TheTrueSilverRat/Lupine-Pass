@@ -47,7 +47,7 @@
 	retreat_health = 0.3
 	attack_sound = list('sound/vo/mobs/spider/attack (1).ogg','sound/vo/mobs/spider/attack (2).ogg','sound/vo/mobs/spider/attack (3).ogg','sound/vo/mobs/spider/attack (4).ogg')
 	aggressive = 1
-	
+	animal = FALSE //I'm told this isn't bestialtiy cause it's a fantasy animal, I hope it's not. Psydon forgive me if they decieved me
 
 	//new ai, old ai off
 	AIStatus = AI_OFF

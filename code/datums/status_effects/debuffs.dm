@@ -82,8 +82,6 @@
 /datum/status_effect/incapacitating/sleeping/on_creation(mob/living/new_owner, updating_canmove)
 	. = ..()
 	if(.)
-		if(owner.cmode)
-			owner.cmode = 0
 		SSdroning.kill_droning(owner.client)
 		SSdroning.kill_loop(owner.client)
 		SSdroning.kill_rain(owner.client)

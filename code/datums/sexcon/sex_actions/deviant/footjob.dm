@@ -3,11 +3,9 @@
 	check_same_tile = FALSE
 
 /datum/sex_action/footjob/shows_on_menu(mob/living/carbon/human/user, mob/living/carbon/human/target)
-	if(user == target)
-		return FALSE
 	if(!target.getorganslot(ORGAN_SLOT_PENIS))
 		return FALSE
-	return TRUE
+	. = ..()
 
 /datum/sex_action/footjob/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)

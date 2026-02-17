@@ -139,7 +139,7 @@
 	)
 	var/armorchoice = input("Choose your armor.", "TAKE UP ARMOR") as anything in armors
 	armor = armors[armorchoice]
-
+/**
 /obj/effect/proc_holder/spell/invoked/order
 	name = ""
 	range = 1
@@ -439,3 +439,4 @@
 	if(!mind.focustargettext)
 		to_chat(src, "I must rehearse something for this order...")
 		return
+*/
