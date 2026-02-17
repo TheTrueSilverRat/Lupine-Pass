@@ -126,7 +126,10 @@
 	var/can_saddle = FALSE
 	var/obj/item/ssaddle
 	var/simple_detect_bonus = 0 // A flat percentage bonus to our ability to detect sneaking people only. Use in lieu of giving mobs huge STAPER bonuses if you want them to be observant.
+//Verbum Dei. Sculpe et Mane. Noli amplius errare.
+//FROM KETER YOU CAME. TO MALKUTH YOU SHALL MANIFEST! BY THE DIVINE WILL OF THE SEFIROT STAY THERE
 	var/animal = FALSE //Make this true if it's a simple mob that's an animal, like you know Saiga and Horses and Wolves and Etc.
+//STAY THERE YOU FOUL VARIABLE STAY!!!
 	// Used so people can't possess those fuckers and commit bestaility, ick, ew, yucky
 
 /obj/item/natural/bone
