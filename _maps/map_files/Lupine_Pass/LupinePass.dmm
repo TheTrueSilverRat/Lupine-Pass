@@ -964,6 +964,7 @@
 "eXs" = (/obj/item/clothing/head/roguetown/helmet/skullcap{pixel_y = 6},/obj/effect/decal/remains/human,/turf/open/floor/rogue/snow,/area/rogue/outdoors/mountains/decap)
 "eXD" = (/obj/structure/hotspring,/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/north)
 "eYe" = (/obj/structure/fluff/walldeco/wantedposter,/turf/open/floor/rogue/blocks/green,/area/rogue/under/town/sewer)
+"eYf" = (/obj/structure/mineral_door/wood{locked = 1; lockid = "burg"; name = "burgmeister's home"; max_integrity = 4000},/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
 "eYK" = (/obj/structure/chair/bench/ultimacouch/r,/turf/open/floor/rogue/ruinedwood/herringbone,/area/rogue/indoors/shelter/mountains/decap)
 "eZw" = (/obj/structure/bed/rogue/shit,/obj/effect/landmark/start/banditlate,/turf/open/floor/rogue/ruinedwood,/area/rogue/indoors/shelter/bog)
 "eZK" = (/obj/machinery/light/rogue/firebowl/stump,/turf/open/floor/rogue/dirt/road,/area/rogue/under/town/sewer)
@@ -2196,7 +2197,7 @@
 "lnq" = (/turf/closed/wall/mineral/rogue/pipe,/area/rogue/under/town/sewer)
 "lnx" = (/obj/structure/fluff/walldeco/bigpainting/lake,/turf/open/transparent/openspace,/area/rogue/indoors/town)
 "lny" = (/turf/open/water/swamp,/area/rogue/under/town/sewer)
-"loi" = (/obj/structure/roguewindow/openclose{dir = 4},/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
+"loi" = (/obj/structure/roguewindow/openclose{dir = 4},/obj/structure/bars{max_integrity = 2000},/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
 "lou" = (/obj/structure/table/wood/poor,/obj/machinery/light/rogue/wallfire/candle/floorcandle,/turf/open/floor/rogue/ruinedwood/spiral,/area/rogue/outdoors/woods/north)
 "loA" = (/obj/structure/chair/stool/rogue,/mob/living/carbon/human/species/goblin/npc/ambush,/turf/open/floor/rogue/blocks,/area/rogue/under/underdark)
 "loB" = (/obj/item/reagent_containers/glass/bucket,/turf/open/floor/rogue/tile/bath,/area/rogue/indoors/town/magician)
@@ -2457,12 +2458,12 @@
 "mEk" = (/obj/machinery/anvil,/obj/item/rogueweapon/hammer/aalloy,/obj/effect/turf_decal/weather/snow/corner{dir = 8},/turf/open/floor/rogue/blocks/platform,/area/rogue/outdoors/mountains/decap)
 "mEv" = (/obj/structure/gate{name = "ancient gate"; desc = "One of the few ways out of the region, built by dwarves long ago."},/turf/open/floor/rogue/snow,/area/rogue/outdoors/woods/south)
 "mEz" = (/obj/machinery/light/rogue/torchholder/l,/obj/structure/closet/crate/roguecloset,/obj/effect/spawner/lootdrop/roguetown/dungeon/clothing,/obj/effect/spawner/lootdrop/roguetown/dungeon/weapons,/turf/open/floor/rogue/twig,/area/rogue/indoors/town/shop)
-"mFd" = (/obj/structure/roguewindow/openclose{dir = 4},/turf/closed,/area/rogue/indoors/town)
+"mFd" = (/obj/structure/roguewindow/openclose{dir = 4},/obj/structure/bars{max_integrity = 2000},/turf/closed,/area/rogue/indoors/town)
 "mFZ" = (/turf/closed/wall/mineral/rogue/wooddark/window,/area/rogue/outdoors/beach)
 "mGB" = (/obj/structure/table/wood/large_table/north_west,/obj/item/cooking/platter/copper,/obj/item/reagent_containers/food/snacks/rogue/meat/steak,/turf/open/floor/rogue/twig,/area/rogue/under/cavewet/bogcaves/central)
 "mHh" = (/turf/closed/wall/mineral/rogue/stone/moss,/area/rogue/outdoors/bog/north)
 "mHu" = (/obj/machinery/light/rogue/firebowl/standing/blue,/turf/open/floor/rogue/dirt/road,/area/rogue/outdoors/bog/north)
-"mIf" = (/obj/structure/roguewindow/openclose{dir = 1},/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
+"mIf" = (/obj/structure/roguewindow/openclose{dir = 1},/obj/structure/bars{max_integrity = 2000},/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
 "mIi" = (/mob/living/carbon/human/species/goblin/npc/sea{faction = list("orcs")},/turf/open/floor/rogue/cobble,/area/rogue/under/cavewet/bogcaves/central)
 "mIY" = (/obj/structure/bed/rogue/inn/wooldouble,/obj/item/bedsheet/rogue/double_pelt,/turf/open/floor/carpet/royalblack,/area/rogue/outdoors/exposed/bath/vault)
 "mJd" = (/obj/structure/mineral_door/wood/fancywood{locked = 1; lockid = "tower"; name = "Vala's Den"; max_integrity = 4000},/turf/open/floor/rogue/ruinedwood{icon_state = "weird1"},/area/rogue/indoors/town/magician)
@@ -2805,7 +2806,7 @@
 "ork" = (/obj/structure/flora/bush,/turf/open/floor/rogue/snow,/area/rogue/outdoors/beach/forest/hamlet)
 "orz" = (/obj/machinery/light/rogue/wallfire/candle/blue/l,/turf/open/floor/rogue/twig,/area/rogue/indoors/shelter)
 "orA" = (/obj/structure/stairs{dir = 1},/turf/open/transparent/openspace,/area/rogue/outdoors/beach)
-"orJ" = (/obj/structure/table/wood/poor,/obj/item/reagent_containers/glass/bottle/rogue/wine,/obj/item/roguecoin/gold/pile,/obj/item/roguecoin/gold/pile,/obj/item/roguecoin/gold/pile,/obj/item/roguecoin/gold/pile,/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
+"orJ" = (/obj/structure/table/wood/poor,/obj/item/reagent_containers/glass/bottle/rogue/wine,/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
 "osb" = (/obj/structure/table/wood/long_table,/obj/item/rogueweapon/whip,/obj/structure/fluff/walldeco/med2{pixel_y = -32},/turf/open/floor/rogue/cobble,/area/rogue/under/town/basement/keep)
 "osn" = (/obj/machinery/light/rogue/wallfire/candle/r{pixel_x = 0; pixel_y = -28},/turf/open/floor/rogue/blocks/stonered,/area/rogue/indoors/town/manor)
 "osu" = (/obj/structure/table/wood/large_table/middle_east,/obj/item/reagent_containers/food/snacks/rogue/meat/salami,/turf/open/floor/carpet/red,/area/rogue/outdoors/mountains/decap/minotaurfort)
@@ -4356,7 +4357,7 @@
 "wCq" = (/obj/structure/vine{opacity = 1},/turf/open/floor/rogue/church,/area/rogue/under/underdark)
 "wCA" = (/obj/structure/flora/shroomstump,/turf/open/floor/rogue/dirt,/area/rogue/under/underdark)
 "wCG" = (/obj/effect/decal/cleanable/debris/woody,/turf/open/floor/rogue/ruinedwood/turned,/area/rogue/indoors/shelter)
-"wDf" = (/obj/structure/roguewindow/openclose{dir = 8},/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
+"wDf" = (/obj/structure/roguewindow/openclose{dir = 8},/obj/structure/bars{max_integrity = 2000},/turf/open/floor/rogue/wood,/area/rogue/indoors/town)
 "wDj" = (/obj/structure/fluff/railing/border/west,/obj/structure/winch{desc = "The centerpiece of any ship. You're not going anywhere without it."; name = "nautical wheel"; pixel_x = -3},/obj/structure/fluff/walldeco/church/line{dir = 4},/turf/open/floor/rogue/metal,/area/rogue/outdoors/beach)
 "wDN" = (/obj/structure/table/wood/long_table,/obj/effect/spawner/lootdrop/roguetown/dungeon/food,/turf/open/floor/carpet/royalblack,/area/rogue/under/underdark)
 "wDR" = (/obj/structure/fluff/walldeco/church/line{dir = 4},/obj/structure/table/wood/long_table,/obj/structure/bars/passage/shutter{redstone_id = "weaponsmith_shutter"},/obj/structure/bars/shop,/turf/open/floor/rogue/hexstone,/area/rogue/indoors/town/dwarfin)
@@ -5475,7 +5476,7 @@ gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeT
 gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCpvepveczCczCczCczCczCczCalNalNalNalNalNalNalNalNalNalNalNhKleTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCvovvovvovvovvovvovvovvovvovvovvovvoveTCvovvovvoveTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCwdweQrwdwwdwqGEeQreQrmWomWomWomWoqAOgUaeQrcJTwdwwdwxCFxCFxCFxCFrdPwdwoKJoKJoKJoKJoKJsTdygaygajKPfKfoKJgHGwdwwdweTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTC
 gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCczCczCczCczCdgrczCczCczCalNalNalNalNalNalNalNalNalNalNalNczCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCvovvovvovvovvovvovvovvovvovvovvovvoveTCvovvovvoveTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCwdweQrwdwwdwghfpiLeQrqYjxacnCRmWoqAOfrZeQrcJTwdwwdwxCFxCFxCFxCFxCFwdwoKJoKJoKJoKJoKJsTdygacpExqJfKfoKJgHGwdwwdweTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTC
 gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCczCczCczCczCczCczCczCgYGalNalNalNalNalNalNalNalNalNalNalNeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCvovvovvovvovvovvovvovvovvovvovvovvoveTCvovvovvoveTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCwdweQrwdwwdwwdwqGEeQrbVlwdwjzYejixQbauqeQrcJTwdwwdwxCFxCFxCFxCFxCFwdwoKJoKJoKJoKJoKJsTdygacpEabwmFdoKJgHGwdwwdweTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTC
-gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCczCczCaqVczCczCczCdLPczCalNalNalNalNalNalNalNalNalNalNalNeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCvovvovvovvovvovvovvovvovvovvovvovvoveTCvovvovvoveTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeQrwdwwdwwdwwdwqGEeQreQreQreQreQreQreQreQrcJTwdwxCFxCFxCFxCFxCFxCFwdwoKJoKJoKJsTdsTdhQIvLjsTdsTdaxvsTdgHGwdwwdweTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTC
+gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCczCczCaqVczCczCczCdLPczCalNalNalNalNalNalNalNalNalNalNalNeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCvovvovvovvovvovvovvovvovvovvovvovvoveTCvovvovvoveTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeQrwdwwdwwdwwdwqGEeQreQreQreQreQreQreQreQrcJTwdwxCFxCFxCFxCFxCFxCFwdwoKJoKJoKJsTdsTdhQIeYfsTdsTdaxvsTdgHGwdwwdweTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTC
 gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCaqVczCczCczCgYGdgrczCczCalNalNalNalNalNalNalNeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCvovvovvovvovvovvovvovvovvovvovvovvoveTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCiCFeQreQreQreQreQrghfcJTcJTcJTcJTcJTcJTcJTcJTtvuxCFxCFxCFxCFxCFxCFxCFwdwoKJoKJoKJfKfrJLxQjkNaeiMxKDkWmfKfgHGwdwwdweTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTC
 gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCczCczCczCdLPczCczCczCczCalNalNalNalNalNalNalNeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCvovvovvovvovvovvovvovvovvovvovvovvoveTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCiCFeQreQreQreQreQreQrwdwwdwwdwwdwwdwwdwwdwwdwwdwxCFxCFxCFxCFxCFxCFxCFwdwoKJoKJoKJloibibbibbibbibbibbibwDfgHGwdwwdweTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTC
 gKaeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCczCdLPczCczCczCczCalNalNeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCiCFeQreQreQreQreQreQrwdwwdwwdwwdweQrwdweQrxCFxCFxCFxCFxCFxCFxCFxCFxCFwdwoKJoKJoKJfKfbTjbibpgtbibbibcCpfKfgHGwdwwdweTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTCeTC
