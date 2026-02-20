@@ -43,7 +43,7 @@
 	can_saddle = TRUE
 	aggressive = 1
 	remains_type = /obj/effect/decal/remains/saiga
-
+	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/horse/male
 	icon_state = "horsewhite"
