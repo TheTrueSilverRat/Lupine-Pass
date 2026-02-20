@@ -42,7 +42,7 @@
 	STACON = 3
 	var/turns_since_scan = 0
 	gold_core_spawnable = FRIENDLY_SPAWN
-
+	animal = TRUE
 	footstep_type = FOOTSTEP_MOB_CLAW
 
 /mob/living/simple_animal/pet/cat/Initialize()
