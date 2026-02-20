@@ -48,6 +48,9 @@
 	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 2, TRUE)
 	H.adjust_skillrank(/datum/skill/magic/holy, 2, TRUE)
+	H.verbs |= /mob/living/carbon/human/proc/coronate_lord
+	H.verbs |= /mob/living/carbon/human/proc/churchannouncement
+	H.verbs |= /mob/living/carbon/human/proc/completesermon
 	var/weapons = list("Katar","Knuckle Dusters")
 	var/weapon_choice = input("Choose your weapon.", "TAKE UP ARMS") as anything in weapons
 	switch(weapon_choice)
