@@ -530,7 +530,6 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/convergence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stasis)
 
-/*
 // Cleric Prisoner subclass
 /datum/advclass/prisonercleric
 	name = "Cleric Prisoner"
@@ -595,6 +594,5 @@
 			wrists = /obj/item/clothing/neck/roguetown/psicross/xylix
 	// Grant miracles like missionary
 	var/datum/devotion/C = new /datum/devotion(H, H.patron)
-	C.grant_miracles(H, cleric_tier = CLERIC_T1, passive_gain = CLERIC_REGEN_MINOR)	//Minor regen, can level up to T4.
+	C.grant_miracles(H, cleric_tier = CLERIC_T4, passive_gain = CLERIC_REGEN_MINOR, devotion_limit = CLERIC_REQ_4)
 
-*/
