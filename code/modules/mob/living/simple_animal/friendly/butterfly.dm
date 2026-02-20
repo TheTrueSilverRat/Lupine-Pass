@@ -28,7 +28,7 @@
 	verb_ask = "flutters inquisitively"
 	verb_exclaim = "flutters intensely"
 	verb_yell = "flutters intensely"
-
+	ainmal = TRUE
 /mob/living/simple_animal/butterfly/Initialize()
 	. = ..()
 	var/newcolor = rgb(rand(0, 255), rand(0, 255), rand(0, 255))
