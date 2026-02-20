@@ -11,6 +11,7 @@
 	faction = list("cabbits")	//Snowflake code
 	emote_hear = list("meows.", "clucks.")
 	emote_see = list("brings their ears alert.", "scratches their ear with a hindleg.")
+	animal = True
 	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/rabbit = 2)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/rabbit = 3, 
 							/obj/item/alch/sinew = 1,
