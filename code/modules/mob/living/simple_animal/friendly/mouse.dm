@@ -36,7 +36,7 @@
 	icon_state = "mouse_[body_color]"
 	icon_living = "mouse_[body_color]"
 	icon_dead = "mouse_[body_color]_dead"
-
+	animal = TRUE
 
 /mob/living/simple_animal/mouse/proc/splat()
 	src.health = 0
