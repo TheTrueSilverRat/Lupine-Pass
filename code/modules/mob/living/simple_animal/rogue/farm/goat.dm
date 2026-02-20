@@ -109,6 +109,7 @@
 	buckle_lying = 0
 	can_saddle = TRUE
 	remains_type = /obj/effect/decal/remains/cow
+	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/goat/get_sound(input)
 	switch(input)
