@@ -1190,8 +1190,8 @@
 /datum/status_effect/buff/sermon
 	id = "sermon"
 	alert_type = /atom/movable/screen/alert/status_effect/buff/sermon
-	effectedstats = list(STATKEY_LCK = 1, STATKEY_CON = 1, STATKEY_END = 1, STATKEY_INT = 2)
-	duration = 20 MINUTES
+	effectedstats = list(STATKEY_LCK = 2, STATKEY_CON = 2, STATKEY_END = 2, STATKEY_INT = 2)
+	duration = 30 MINUTES
 
 /atom/movable/screen/alert/status_effect/buff/sermon
 	name = "sermon"
