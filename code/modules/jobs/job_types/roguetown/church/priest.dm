@@ -205,18 +205,18 @@ GLOBAL_LIST_EMPTY(heretical_players)
 		if(nomoredukes)
 			nomoredukes.total_positions = -1000 //We got what we got now.
 
-/**
+
 /mob/living/carbon/human/proc/churchannouncement()
 	set name = "Announcement"
 	set category = "Priest"
 
 	if(stat)
 		return
-
+/*
 	if (!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
 		to_chat(src, span_warning("I need to do this in the chapel."))
 		return FALSE
-
+*/
 	var/announcementinput = input("Bellow to the vale", "Make an Announcement") as text|null
 	if(announcementinput)
 		if(!src.can_speak_vocal())
@@ -226,15 +226,15 @@ GLOBAL_LIST_EMPTY(heretical_players)
 			to_chat(src, span_warning("You must wait before speaking again."))
 			return
 		visible_message(span_warning("[src] takes a deep breath, preparing to make an announcement.."))
-		if(do_after(src, 15 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
+		if(do_after(src, 1 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
 			say(announcementinput)
-			priority_announce("[announcementinput]", "The Bishop Preaches", 'sound/misc/bell.ogg', sender = src)
+			priority_announce("[announcementinput]", "The Priest Preaches", 'sound/misc/bell.ogg', sender = src)
 			COOLDOWN_START(src, priest_announcement, PRIEST_ANNOUNCEMENT_COOLDOWN)
 		else
 			to_chat(src, span_warning("Your announcement was interrupted!"))
 			return FALSE
 
-*/
+
 
 /obj/effect/proc_holder/spell/self/convertrole/templar
 	name = "Recruit Templar"
@@ -254,7 +254,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	accept_message = "FOR THE TEN!"
 	refuse_message = "I refuse."
 
-/**
+
 /mob/living/carbon/human/proc/completesermon()
 	set name = "Sermon"
 	set category = "Priest"
@@ -262,17 +262,13 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	if (!mind)
 		return
 
-	if (!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
-		to_chat(src, span_warning("I need to do this in the chapel."))
-		return FALSE
-
 	if (!COOLDOWN_FINISHED(src, priest_sermon))
 		to_chat(src, span_warning("You cannot inspire others so early."))
 		return
 
 	src.visible_message(span_notice("[src] begins preaching a sermon..."))
 
-	if (!do_after(src, 120, target = src)) // 120 seconds
+	if (!do_after(src, 120 SECONDS, target = src)) // 120 seconds
 		src.visible_message(span_warning("[src] stops preaching."))
 		return
 
@@ -300,7 +296,7 @@ GLOBAL_LIST_EMPTY(heretical_players)
 
 	return TRUE
 
-*/
+
 /mob/living/carbon/human/proc/churchecancurse(var/mob/living/carbon/human/H, apostasy = FALSE)
 	if (!H.devotion && apostasy)
 		to_chat(src, span_warning("This one's connection to the ten is too shallow."))
@@ -317,11 +313,6 @@ GLOBAL_LIST_EMPTY(heretical_players)
 	if (istype(H.patron, /datum/patron/divine/abyssor))
 		to_chat(src, span_warning("The Dreamer, Abyssor has his clutches grasped firmly around this one. The light of the ten only barely penetrates the depths."))
 		ADD_TRAIT(H, TRAIT_CURSE_RESIST, TRAIT_GENERIC)
-
-	//Let's not curse heretical antags.
-	if(HAS_TRAIT(H, TRAIT_HERESIARCH))
-		to_chat(src, span_warning("The patron of this one shields them from being suppressed."))
-		return FALSE
 
 	return TRUE
 

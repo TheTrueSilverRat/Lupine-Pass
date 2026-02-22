@@ -68,6 +68,7 @@
 	AIStatus = AI_OFF
 	can_have_ai = FALSE
 	ai_controller = /datum/ai_controller/wolf_undead
+	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/wolf_undead/Initialize()
 	. = ..()

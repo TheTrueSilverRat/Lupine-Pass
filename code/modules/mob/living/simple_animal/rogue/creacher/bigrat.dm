@@ -59,7 +59,7 @@
 	attack_same = 1
 	retreat_health = 0.3
 	aggressive = 1
-	
+	animal = TRUE	
 
 	remains_type = /obj/effect/decal/remains/bigrat
 	eat_forever = TRUE

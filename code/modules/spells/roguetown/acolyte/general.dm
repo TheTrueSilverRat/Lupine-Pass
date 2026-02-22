@@ -423,6 +423,29 @@
 	update_icon()
 	return
 
+//Naledi version of revive
+
+/obj/effect/proc_holder/spell/invoked/revive/naledi
+	name = "Temporal Revival"
+	desc = "The Ultimate Display of Time. Turn back the Clock and Revive them."
+	releasedrain = 90
+	chargedrain = 0
+	chargetime = 50
+	range = 1
+	warnie = "sydwarning"
+	no_early_release = TRUE
+	movement_interrupt = TRUE
+	chargedloop = /datum/looping_sound/invokeholy
+	req_items = null
+	sound = 'sound/magic/timeforward.ogg'
+	associated_skill = /datum/skill/magic/holy
+	overlay_state = "sands_of_time"
+	antimagic_allowed = TRUE
+	recharge_time = 2 MINUTES
+	miracle = TRUE
+	devotion_cost = 80
+
+
 //Universal miracle T3 miracle.
 //Instantly heals all wounds & damage on a selected limb.
 //Long CD (so a Medical class would still outpace this if there's more than one patient to heal)

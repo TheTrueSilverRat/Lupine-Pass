@@ -25,6 +25,7 @@
 	//No nobility for you, being a member of the clergy means you gave UP your nobility. It says this in many of the church tutorial texts.
 	virtue_restrictions = list(/datum/virtue/utility/noble)
 	job_traits = list(TRAIT_RITUALIST, TRAIT_GRAVEROBBER)
+	spells = list(/obj/effect/proc_holder/spell/invoked/cure_rot, /obj/effect/proc_holder/spell/self/convertrole/templar, /obj/effect/proc_holder/spell/invoked/projectile/divineblast)
 	advclass_cat_rolls = list(CTAG_ACOLYTE = 2)
 	job_subclasses = list(
 		/datum/advclass/acolyte
@@ -37,6 +38,13 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
+		H.verbs |= /mob/living/carbon/human/proc/coronate_lord
+		H.verbs |= /mob/living/carbon/human/proc/churchannouncement
+		H.verbs |= /mob/living/carbon/human/proc/churchexcommunicate //your button against clergy
+		H.verbs |= /mob/living/carbon/human/proc/churchpriestcurse //snowflake priests button. Will not sacrifice them
+		H.verbs |= /mob/living/carbon/human/proc/churcheapostasy //punish the lamb reward the wolf
+		H.verbs |= /mob/living/carbon/human/proc/completesermon
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/diagnose/secular)
 //Title stuff. This is super sloppy.
 		var/prev_real_name = H.real_name
 		var/prev_name = H.name
@@ -56,6 +64,7 @@
 		H.real_name = "[title] [prev_real_name]"
 		H.name = "[title] [prev_name]"
 
+
 /datum/advclass/acolyte
 	name = TITLE_PRIEST
 	tutorial = "You are the last priest in the region; By default, that makes you the head of the church here. Your only hope now is that in which you put in faith and the brave souls who come here to rid the land of the menace.  Aid them, if you can, and lead your flock while you're at it."
@@ -67,79 +76,6 @@
 		STATKEY_SPD = 1
 	)
 
-
-/mob/living/carbon/human/proc/churchannouncement()
-	set name = "Announcement"
-	set category = "Priest"
-
-	if(stat)
-		return
-
-	if (!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
-		to_chat(src, span_warning("I need to do this in the chapel."))
-		return FALSE
-
-	var/announcementinput = input("Bellow to the vale", "Make an Announcement") as text|null
-	if(announcementinput)
-		if(!src.can_speak_vocal())
-			to_chat(src,span_warning("I can't speak!"))
-			return FALSE
-		if (!COOLDOWN_FINISHED(src, priest_announcement))
-			to_chat(src, span_warning("You must wait before speaking again."))
-			return
-		visible_message(span_warning("[src] takes a deep breath, preparing to make an announcement.."))
-		if(do_after(src, 15 SECONDS, target = src)) // Reduced to 15 seconds from 30 on the original Herald PR. 15 is well enough time for sm1 to shove you.
-			say(announcementinput)
-			priority_announce("[announcementinput]", "The Bishop Preaches", 'sound/misc/bell.ogg', sender = src)
-			COOLDOWN_START(src, priest_announcement, PRIEST_ANNOUNCEMENT_COOLDOWN)
-		else
-			to_chat(src, span_warning("Your announcement was interrupted!"))
-			return FALSE
-
-/mob/living/carbon/human/proc/completesermon()
-	set name = "Sermon"
-	set category = "Priest"
-
-	if (!mind)
-		return
-
-	if (!istype(get_area(src), /area/rogue/indoors/town/church/chapel))
-		to_chat(src, span_warning("I need to do this in the chapel."))
-		return FALSE
-
-	if (!COOLDOWN_FINISHED(src, priest_sermon))
-		to_chat(src, span_warning("You cannot inspire others so early."))
-		return
-
-	src.visible_message(span_notice("[src] begins preaching a sermon..."))
-
-	if (!do_after(src, 120, target = src)) // 120 seconds
-		src.visible_message(span_warning("[src] stops preaching."))
-		return
-
-	src.visible_message(span_notice("[src] finishes the sermon, inspiring those nearby!"))
-	playsound(src.loc, 'sound/magic/bless.ogg', 80, TRUE)
-	COOLDOWN_START(src, priest_sermon, PRIEST_SERMON_COOLDOWN)
-
-	for (var/mob/living/carbon/human/H in view(7, src))
-		if (!H.patron)
-			continue
-
-		if (istype(H.patron, /datum/patron/divine))
-			H.apply_status_effect(/datum/status_effect/buff/sermon)
-			H.add_stress(/datum/stressevent/sermon)
-			to_chat(H, span_notice("You feel a divine affirmation from your patron."))
-
-		else if (istype(H.patron, /datum/patron/inhumen))
-			H.apply_status_effect(/datum/status_effect/debuff/hereticsermon)
-			H.add_stress(/datum/stressevent/heretic_on_sermon)
-			to_chat(H, span_warning("Your patron seethes with disapproval."))
-
-		else
-			// Other patrons - fluff only
-			to_chat(H, span_notice("Nothing seems to happen to you."))
-
-	return TRUE
 
 
 /datum/outfit/job/roguetown/monk

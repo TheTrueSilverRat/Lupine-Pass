@@ -162,33 +162,33 @@
 /datum/virtue/utility/blacksmith
 	name = "Blacksmith's Apprentice"
 	desc = "In my youth, I worked under a skilled blacksmith, honing my skills with an anvil."
-	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
-						list(/datum/skill/craft/weaponsmithing, 2, 2),
-						list(/datum/skill/craft/armorsmithing, 2, 2),
-						list(/datum/skill/craft/blacksmithing, 2, 2),
-						list(/datum/skill/craft/smelting, 2, 2)
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 6),
+						list(/datum/skill/craft/weaponsmithing, 2, 6),
+						list(/datum/skill/craft/armorsmithing, 2, 6),
+						list(/datum/skill/craft/blacksmithing, 2, 6),
+						list(/datum/skill/craft/smelting, 2, 6)
 	)
 
 /datum/virtue/utility/hunter
 	name = "Hunter's Apprentice"
 	desc = "In my youth, I trained under a skilled hunter, learning how to butcher animals and work with leather/hide."
-	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
-						list(/datum/skill/craft/traps, 2, 2),
-						list(/datum/skill/labor/butchering, 2, 2),
-						list(/datum/skill/misc/sewing, 2, 2),
-						list(/datum/skill/craft/tanning, 2, 2),
-						list(/datum/skill/misc/tracking, 2, 2)
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 6),
+						list(/datum/skill/craft/traps, 2, 6),
+						list(/datum/skill/labor/butchering, 2, 6),
+						list(/datum/skill/misc/sewing, 2, 6),
+						list(/datum/skill/craft/tanning, 2, 6),
+						list(/datum/skill/misc/tracking, 2, 6)
 	)
 
 /datum/virtue/utility/artificer
 	name = "Artificer's Apprentice"
 	desc = "In my youth, I worked under a skilled artificer, studying construction and engineering."
-	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
-						list(/datum/skill/craft/carpentry, 2, 2),
-						list(/datum/skill/craft/masonry, 2, 2),
-						list(/datum/skill/craft/engineering, 2, 2),
-						list(/datum/skill/craft/smelting, 2, 2),
-						list(/datum/skill/misc/ceramics, 2, 2)
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 6),
+						list(/datum/skill/craft/carpentry, 2, 6),
+						list(/datum/skill/craft/masonry, 2, 6),
+						list(/datum/skill/craft/engineering, 2, 6),
+						list(/datum/skill/craft/smelting, 2, 6),
+						list(/datum/skill/misc/ceramics, 2, 6)
 	)
 	added_stashed_items = list(
 		"Hammer" = /obj/item/rogueweapon/hammer/wood,
@@ -200,9 +200,9 @@
 	name = "Physician's Apprentice"
 	desc = "In my youth, I worked under a skilled physician, studying medicine and alchemy."
 	added_stashed_items = list("Medicine Pouch" = /obj/item/storage/belt/rogue/pouch/medicine)
-	added_skills = list(list(/datum/skill/craft/crafting, 2, 2),
-						list(/datum/skill/craft/alchemy, 2, 2),
-						list(/datum/skill/misc/medicine, 2, 2)
+	added_skills = list(list(/datum/skill/craft/crafting, 2, 6),
+						list(/datum/skill/craft/alchemy, 2, 6),
+						list(/datum/skill/misc/medicine, 2, 6)
 	)
 
 /datum/virtue/utility/physician/apply_to_human(mob/living/carbon/human/recipient)
@@ -268,11 +268,11 @@
 	name = "Forester"
 	desc = "The forest is your home, or at least, it used to be. You always long to return and roam free once again, and you have not forgotten your knowledge on how to be self sufficient."
 	added_stashed_items = list("Trusty hoe" = /obj/item/rogueweapon/hoe)
-	added_skills = list(list(/datum/skill/craft/cooking, 2, 2),
-						list(/datum/skill/misc/athletics, 2, 2),
-						list(/datum/skill/labor/farming, 2, 2),
-						list(/datum/skill/labor/fishing, 2, 2),
-						list(/datum/skill/labor/lumberjacking, 2, 2)
+	added_skills = list(list(/datum/skill/craft/cooking, 2, 6),
+						list(/datum/skill/misc/athletics, 2, 6),
+						list(/datum/skill/labor/farming, 2, 6),
+						list(/datum/skill/labor/fishing, 2, 6),
+						list(/datum/skill/labor/lumberjacking, 2, 6)
 	)
 
 /datum/virtue/utility/mining
@@ -322,7 +322,7 @@
 	name = "Bronze Arm (R)"
 	desc = "Through connections or wealth, my arm had been replaced by one of bronze and gears, that can grip and hold onto things. I've learned just a bit of Engineering as a result."
 	custom_text = "Replaces your Right arm with a prosthetic Bronze one. Incompatible with Wood Arm (R) vice"
-	added_skills = list(list(/datum/skill/craft/engineering, 1, 6))
+	added_skills = list(list(/datum/skill/craft/engineering, 2, 6))
 
 /datum/virtue/utility/bronzearm_r/apply_to_human(mob/living/carbon/human/recipient)
 	. = ..()
@@ -341,7 +341,7 @@
 	name = "Bronze Arm (L)"
 	desc = "Through connections or wealth, my arm had been replaced by one of bronze and gears, that can grip and hold onto things. I've learned just a bit of Engineering as a result."
 	custom_text = "Replaces your Left arm with a prosthetic Bronze one. Incompatible with Wood Arm (L) vice"
-	added_skills = list(list(/datum/skill/craft/engineering, 1, 6))
+	added_skills = list(list(/datum/skill/craft/engineering, 2, 6))
 
 /datum/virtue/utility/bronzearm_l/apply_to_human(mob/living/carbon/human/recipient)
 	. = ..()

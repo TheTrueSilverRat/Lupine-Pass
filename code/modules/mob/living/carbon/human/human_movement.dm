@@ -114,7 +114,7 @@
 // ===== MOUNTING PONIES =====
 
 /mob/living/carbon/human/buckle_mob(mob/living/M, force = FALSE, check_loc = TRUE)
-	if(!force && !HAS_TRAIT(src, TRAIT_PONYGIRL_RIDEABLE))
+	if(!HAS_TRAIT(src, TRAIT_PONYGIRL_RIDEABLE))
 		return FALSE
 
 	if(..()) // call parent buckle

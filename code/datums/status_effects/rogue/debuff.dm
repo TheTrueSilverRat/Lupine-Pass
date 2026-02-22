@@ -523,7 +523,7 @@
 	id = "Heretic on sermon!"
 	alert_type = /atom/movable/screen/alert/status_effect/debuff/hereticsermon
 	effectedstats = list(STATKEY_INT = -2, STATKEY_SPD = -2, STATKEY_LCK = -2)
-	duration = 20 MINUTES
+	duration = 5 MINUTES
 
 /atom/movable/screen/alert/status_effect/debuff/hereticsermon
 	name = "Heretic on sermon!"

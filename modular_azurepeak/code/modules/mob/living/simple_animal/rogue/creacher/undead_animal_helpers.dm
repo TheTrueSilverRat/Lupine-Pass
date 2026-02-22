@@ -1,6 +1,6 @@
 
 /datum/component/infection_spreader
-	var/infection_chance = 20
+	var/infection_chance = 0
 	//More time than a standard infection to compensate for the fact these things will dwell in the woods.
 	var/infection_timer = 5 MINUTES
 
@@ -37,7 +37,7 @@ GLOBAL_LIST_INIT(animal_to_undead, list(
 	/mob/living/simple_animal/hostile/retaliate/rogue/saiga/saigabuck = /mob/living/simple_animal/hostile/retaliate/rogue/saiga/undead,
 	/mob/living/simple_animal/hostile/retaliate/rogue/wolf = /mob/living/simple_animal/hostile/retaliate/rogue/wolf_undead,
 ))
-#define ZOMBIE_REANIMATION_CHANCE 25
+#define ZOMBIE_REANIMATION_CHANCE 0
 #define ZOMBIE_REANIMATION_TIMER 15 MINUTES
 
 /datum/component/deadite_animal_reanimation

@@ -2,7 +2,7 @@
 	var/obj/item/accepted_power_source = /obj/item/roguegear/bronze	//Bronze by default
 	var/charge_per_source = 5
 	var/current_charge = 0
-	var/misfire_chance = 15
+	var/misfire_chance = 6
 	var/sneaky_misfire_chance
 	var/misfiring = FALSE
 	var/cog_accept = TRUE
@@ -56,7 +56,7 @@
 	..()
 
     // === VOLTIC ZAP ===
-/obj/item/clothing/gloves/roguetown/contraption/voltic/proc/activate(mob/living/user)
+/obj/item/clothing/gloves/roguetown/contraption/voltic/attack_right(mob/user)
 	if (!user)
 		return
 	if (!current_charge)
@@ -65,7 +65,7 @@
 		return
 	var/skill = user.get_skill_level(/datum/skill/craft/engineering)
 	// Check for misfire before activation
-	if(misfire_chance && prob(max(0, misfire_chance - user.goodluck(2) - skill)))
+	if(misfire_chance && prob(max(0, misfire_chance - skill)))
 		misfire(src, user)
 		return
 	// spend a charge

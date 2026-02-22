@@ -1,4 +1,4 @@
-#define DEAD_TO_ZOMBIE_TIME 7 MINUTES	//Time before death -> raised as zombie (when outside of the city)	
+#define DEAD_TO_ZOMBIE_TIME -1 MINUTES	//Time before death -> raised as zombie (when outside of the city)	
 										//(This isn't exact time. Extended 5 -> 7 because only takes 2-3 min in testing at 5.)
 
 /datum/component/rot
@@ -68,7 +68,7 @@
 		qdel(src)
 		return
 	
-	if(amount > DEAD_TO_ZOMBIE_TIME)
+	if(amount < DEAD_TO_ZOMBIE_TIME) // Changed from > to < to essentially make it impossible to rot
 		if(is_zombie)
 			var/datum/antagonist/zombie/Z = C.mind.has_antag_datum(/datum/antagonist/zombie)
 			if(Z && !Z.has_turned && !Z.revived && C.stat == DEAD)
@@ -81,13 +81,13 @@
 	for(var/obj/item/bodypart/B in C.bodyparts)
 		if(!B.skeletonized && B.is_organic_limb())
 			if(!B.rotted)
-				if(amount > 20 MINUTES)
+				if(amount < -1 SECONDS)
 					B.rotted = TRUE
 					findonerotten = TRUE
 					shouldupdate = TRUE
 					C.apply_status_effect(/datum/status_effect/debuff/rotted_zombie)	//-8 con to rotting zombie corpse.
 			else
-				if(amount > 40 MINUTES)
+				if(amount < -1 SECONDS)
 					if(!is_zombie)
 						B.skeletonize()
 						if(C.dna && C.dna.species)
@@ -96,11 +96,10 @@
 						shouldupdate = TRUE
 				else
 					findonerotten = TRUE
-		if(amount > 35 MINUTES)  // Code to delete a corpse after 35 minutes if it's not a zombie and not skeletonized. Possible failsafe.
+		if(amount > 5 MINUTES)  // Code to delete a corpse after 35 minutes if it's not a zombie and not skeletonized. Possible failsafe.
 			if(!is_zombie)
 				if(!C.client)	// We want to dust NPC bodies, not player bodies.
-					if(B.skeletonized)
-						dustme = TRUE
+					dustme = TRUE
 
 	if(dustme)
 		qdel(src)

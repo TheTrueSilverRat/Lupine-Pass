@@ -41,6 +41,7 @@
 	milkies = FALSE //Do not the hog
 	childtype = list(/mob/living/simple_animal/hostile/retaliate/rogue/swine/piglet = 60, /mob/living/simple_animal/hostile/retaliate/rogue/swine/hog/piglet = 40)
 	remains_type = /obj/effect/decal/remains/pig
+	animal = TRUE
 
 /mob/living/simple_animal/hostile/retaliate/rogue/swine/get_sound(input)
 	switch(input)

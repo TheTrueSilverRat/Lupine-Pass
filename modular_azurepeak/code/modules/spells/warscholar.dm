@@ -37,3 +37,4 @@
 
 /obj/item/melee/touch_attack/rogueweapon/attack_self()
 	attached_spell.remove_hand()
+
