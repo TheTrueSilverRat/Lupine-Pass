@@ -39,7 +39,7 @@
 	backl = /obj/item/storage/backpack/rogue/backpack
 	backr = /obj/item/rogueweapon/shield/wood
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
 		/obj/item/storage/belt/rogue/pouch/coins/poor,
 		/obj/item/bomb = 2,
 		/obj/item/rogueweapon/scabbard/sheath = 1

@@ -54,7 +54,7 @@
 					/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
 					/obj/item/lockpick = 1,
 					/obj/item/flashlight/flare/torch = 1,
-					/obj/item/roguekey/mercenary = 1,
+					/obj/item/storage/keyring/mercenary = 1,
 					/obj/item/rogueweapon/scabbard/sheath = 1
 					)
 	var/weapons = list("Harp","Lute","Accordion","Guitar","Hurdy-Gurdy","Viola","Vocal Talisman","Flute","Trumpet")

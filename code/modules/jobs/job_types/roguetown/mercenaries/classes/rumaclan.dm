@@ -31,7 +31,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/eastgloves2
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
 		/obj/item/flashlight/flare/torch/lantern,
 		)
 	H.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
@@ -78,7 +78,7 @@
 	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/bow/recurve
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
 		/obj/item/storage/belt/rogue/pouch/coins/poor,
 		/obj/item/rogueweapon/huntingknife/idagger,
 		/obj/item/rogueweapon/scabbard/sheath = 1,

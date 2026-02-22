@@ -50,7 +50,7 @@
 	H.cmode_music = 'sound/music/combat_vagarian.ogg'
 	H.grant_language(/datum/language/gronnic)
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary = 1,
+		/obj/item/storage/keyring/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
@@ -105,7 +105,7 @@
 	H.cmode_music = 'sound/music/combat_shaman2.ogg'
 	H.grant_language(/datum/language/gronnic)
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary = 1,
+		/obj/item/storage/keyring/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)

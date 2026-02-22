@@ -271,6 +271,9 @@
 /obj/item/storage/keyring/nightman
 	keys = list(/obj/item/roguekey/nightman, /obj/item/roguekey/nightmaiden)
 
+/obj/item/storage/keyring/mercenary
+	keys = list(/obj/item/roguekey/mercenary, /obj/item/roguekey/nightman, /obj/item/roguekey/nightmaiden)
+
 /obj/item/storage/keyring/hand
 	keys = list(/obj/item/roguekey/hand, /obj/item/roguekey/steward, /obj/item/roguekey/tavern, /obj/item/roguekey/church, /obj/item/roguekey/walls, /obj/item/roguekey/dungeon, /obj/item/roguekey/garrison, /obj/item/roguekey/manor, /obj/item/roguekey/graveyard, /obj/item/roguekey/armory, /obj/item/roguekey/sergeant, /obj/item/roguekey/knight)
 

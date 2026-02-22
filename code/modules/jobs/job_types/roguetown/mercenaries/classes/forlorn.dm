@@ -32,7 +32,7 @@
 	backl = /obj/item/rogueweapon/shield/heater
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife,
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
 		/obj/item/rogueweapon/scabbard/sheath
 		)
 	

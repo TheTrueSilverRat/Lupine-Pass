@@ -53,7 +53,7 @@
 	r_hand = /obj/item/rogueweapon/halberd/glaive
 	backr = /obj/item/rogueweapon/scabbard/gwstrap
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary = 1,
+		/obj/item/storage/keyring/mercenary = 1,
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
@@ -102,7 +102,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/shirt/undershirt/black
 	pants = /obj/item/clothing/under/roguetown/trou/leather
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary = 1,
+		/obj/item/storage/keyring/mercenary= 1,
 		/obj/item/storage/belt/rogue/pouch/coins/poor = 1,
 		/obj/item/rogueweapon/huntingknife/idagger/navaja = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
