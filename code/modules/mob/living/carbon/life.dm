@@ -586,7 +586,7 @@ GLOBAL_LIST_INIT(ballmer_windows_me_msg, list("Yo man, what if, we like, uh, put
 			energy_add(sleepy_mod * 15)
 		if(hydration > 0 || yess)
 			if(!bleed_rate)
-				blood_volume = min(blood_volume + (4 * sleepy_mod), BLOOD_VOLUME_NORMAL)
+				blood_volume = min(blood_volume + (4 * sleepy_mod), max_blood_volume)
 			for (var/obj/item/bodypart/affecting in bodyparts)
 				if (!affecting)
 					continue

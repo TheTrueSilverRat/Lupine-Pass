@@ -61,6 +61,7 @@
 				if(MF.known_people)
 					MF.known_people -= prev_real_name
 					H.mind.person_knows_me(MF)
+		H.faction |= "Keep"
 
 /datum/outfit/job/roguetown/knight
 	cloak = /obj/item/clothing/cloak/raincloak/furcloak/brown

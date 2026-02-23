@@ -254,7 +254,7 @@
 	toxin_healing = -2
 	blood_multiplier = 3
 	blood_storage = BLOOD_VOLUME_BAD
-	blood_maximum = BLOOD_VOLUME_NORMAL
+	blood_maximum = BLOOD_VOLUME_MAXIMUM
 	mindless_attach = FALSE
 
 /obj/item/natural/worms/leech/cheele/attack_self(mob/user)

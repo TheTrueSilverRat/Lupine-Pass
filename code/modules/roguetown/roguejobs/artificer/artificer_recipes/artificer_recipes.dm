@@ -110,15 +110,15 @@
 /datum/artificer_recipe/bronze/lockpicks
 	name = "Lockpick (x3)"
 	required_item = /obj/item/ingot/iron
-	created_item = list(/obj/item/lockpickring,/obj/item/lockpickring,/obj/item/lockpickring)
-	hammers_per_item = 5
+	created_item = list(/obj/item/lockpick,/obj/item/lockpick,/obj/item/lockpick)
+	hammers_per_item = 3
 	skill_level = 2
 
 /datum/artificer_recipe/bronze/lockpickring
 	name = "Lockpickring (x3)"
 	required_item = /obj/item/ingot/iron
 	created_item = list(/obj/item/lockpickring,/obj/item/lockpickring,/obj/item/lockpickring)
-	hammers_per_item = 5
+	hammers_per_item = 3
 	skill_level= 0
 
 // --------- TOOLS -----------

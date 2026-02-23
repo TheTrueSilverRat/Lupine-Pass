@@ -35,6 +35,8 @@
 	desc = "A gauntlet of bronze and brass, fitted with whirring machinery and etched with voltic runes. It hums with unstable energy."
 	icon_state = "volticgauntlets"
 	slot_flags = ITEM_SLOT_GLOVES
+	armor = ARMOR_GLOVES_PLATE_GOOD
+	body_parts_covered = HANDS | ARMS
 	var/activate_sound = 'sound/items/stunmace_gen (2).ogg'
 	var/cdtime = 1.5 MINUTES
 	var/activetime = 5 SECONDS

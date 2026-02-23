@@ -52,6 +52,7 @@
 			if(!index)
 				index = H.real_name
 			S.name = "man-at-arms jupon ([index])"
+		H.faction |= "Keep"
 
 /datum/outfit/job/roguetown/manorguard
 	cloak = /obj/item/clothing/cloak/raincloak/blue

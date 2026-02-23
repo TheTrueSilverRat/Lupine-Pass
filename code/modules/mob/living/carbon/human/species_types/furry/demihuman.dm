@@ -67,6 +67,9 @@
 		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
 		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
 		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
+		// Customizable eyes means overriden eyes get thrown out.
+		// HUD organ deals with less parenting problems aswell.
+		ORGAN_SLOT_HUD = /obj/item/organ/eyes/night_vision,
 		)
 	bodypart_features = list(
 		/datum/bodypart_feature/hair/head,

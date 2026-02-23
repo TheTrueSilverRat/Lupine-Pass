@@ -99,6 +99,8 @@
 
 	var/blood_volume = BLOOD_VOLUME_NORMAL //how much blood the mob has
 
+	var/max_blood_volume = BLOOD_VOLUME_NORMAL //How much blood they have at max
+
 	var/see_override = 0 //0 for no override, sets see_invisible = see_override in silicon & carbon life process via update_sight()
 
 	var/list/status_effects //a list of all status effects the mob has

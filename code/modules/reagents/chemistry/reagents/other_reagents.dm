@@ -80,8 +80,8 @@
 		var/mob/living/carbon/human/H = M
 		if(!HAS_TRAIT(H, TRAIT_NOHUNGER))
 			H.adjust_hydration(hydration)
-		if(M.blood_volume < BLOOD_VOLUME_NORMAL)
-			M.blood_volume = min(M.blood_volume+WATER_BLOOD_RESTORE, BLOOD_VOLUME_NORMAL)
+		if(M.blood_volume < M.max_blood_volume)
+			M.blood_volume = min(M.blood_volume+WATER_BLOOD_RESTORE, M.max_blood_volume)
 	..()
 #undef WATER_BLOOD_RESTORE
 
@@ -695,7 +695,7 @@
 	color = "#606060" //pure iron? let's make it violet of course
 
 /datum/reagent/iron/on_mob_life(mob/living/carbon/C)
-	if(C.blood_volume < BLOOD_VOLUME_NORMAL)
+	if(C.blood_volume < C.max_blood_volume)
 		C.blood_volume += 0.5
 	..()
 

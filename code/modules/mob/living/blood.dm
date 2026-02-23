@@ -18,10 +18,10 @@
 	if((bodytemperature <= TCRYO) || HAS_TRAIT(src, TRAIT_HUSK)) //cryosleep or husked people do not pump the blood.
 		return
 	//Blood regeneration if there is some space
-	if(blood_volume < BLOOD_VOLUME_NORMAL)
+	if(blood_volume < max_blood_volume)
 		blood_volume += 0.1 // regenerate blood VERY slowly
 		if((blood_volume < BLOOD_VOLUME_OKAY) && !HAS_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE))
-			adjustOxyLoss(round((BLOOD_VOLUME_NORMAL - blood_volume) * 0))
+			adjustOxyLoss(round((max_blood_volume - blood_volume) * 0))
 
 /mob/living/proc/handle_blood()
 	if((bodytemperature <= TCRYO) || HAS_TRAIT(src, TRAIT_HUSK)) //cryosleep or husked people do not pump the blood.
@@ -68,8 +68,8 @@
 		bleed_rate = FALSE
 	if(bleed_rate)
 		bleed(bleed_rate)
-	else if(blood_volume < BLOOD_VOLUME_NORMAL)
-		blood_volume = min(blood_volume + 1, BLOOD_VOLUME_NORMAL)
+	else if(blood_volume < max_blood_volume)
+		blood_volume = min(blood_volume + 1, max_blood_volume)
 
 // Takes care blood loss and regeneration
 /mob/living/carbon/handle_blood()
@@ -79,7 +79,7 @@
 	blood_volume = min(blood_volume, BLOOD_VOLUME_MAXIMUM)
 	if(dna?.species)
 		if(NOBLOOD in dna.species.species_traits)
-			blood_volume = BLOOD_VOLUME_NORMAL
+			blood_volume = max_blood_volume
 			remove_stress(/datum/stressevent/bleeding)
 			remove_status_effect(/datum/status_effect/debuff/bleeding)
 			remove_status_effect(/datum/status_effect/debuff/bleedingworse)
@@ -87,7 +87,7 @@
 			return
 
 	//Blood regeneration if there is some space
-	if(blood_volume < BLOOD_VOLUME_NORMAL && blood_volume)
+	if(blood_volume < max_blood_volume && blood_volume)
 		var/nutrition_ratio = 1
 //			switch(nutrition)
 //				if(0 to NUTRITION_LEVEL_STARVING)
@@ -103,7 +103,7 @@
 //			if(satiety > 80)
 //				nutrition_ratio *= 1.25
 //			adjust_hydration(-nutrition_ratio * HUNGER_FACTOR) //get thirsty twice as fast when regenning blood
-		blood_volume = min(BLOOD_VOLUME_NORMAL, blood_volume + 0.5 * nutrition_ratio)
+		blood_volume = min(max_blood_volume, blood_volume + 0.5 * nutrition_ratio)
 
 	//Effects of bloodloss
 	if(!HAS_TRAIT(src, TRAIT_BLOODLOSS_IMMUNE))
@@ -216,7 +216,7 @@
 	bleed_rate = 0
 
 /mob/living/carbon/human/restore_blood()
-	blood_volume = BLOOD_VOLUME_NORMAL
+	blood_volume = max_blood_volume
 	bleed_rate = 0
 
 /****************************************************

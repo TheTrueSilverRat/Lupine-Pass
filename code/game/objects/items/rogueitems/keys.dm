@@ -167,6 +167,12 @@
 	icon_state = "mazekey"
 	lockid = "manor"
 
+/obj/item/roguekey/burg
+	name = "burgmeister key"
+	desc = "This key will open your burger doors."
+	icon_state = "mazekey"
+	lockid = "burg"
+
 /obj/item/roguekey/heir
 	name = "heir room key"
 	desc = "A highly coveted key belonging to the doors of the heirs of this realm."

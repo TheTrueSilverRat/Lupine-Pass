@@ -45,7 +45,7 @@
 		OFFSET_SHIRT_F = list(0,0), OFFSET_ARMOR_F = list(0,0), OFFSET_UNDIES_F = list(0,-4), \
 		)
 	inherent_traits = list(TRAIT_KEENEARS)
-	race_bonus = list(STAT_SPEED = 1)
+	race_bonus = list(STAT_SPEED = 2, STAT_INTELLIGENCE = 2, STAT_STRENGTH = -1, STAT_CONSTITUTION = -2)
 	enflamed_icon = "widefire"
 	organs = list(
 		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
@@ -61,6 +61,9 @@
 		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/tapered,
 		//ORGAN_SLOT_BREASTS = /obj/item/organ/breasts,
 		//ORGAN_SLOT_VAGINA = /obj/item/organ/vagina,
+		// Customizable eyes means overriden eyes get thrown out.
+		// HUD organ deals with less parenting problems aswell.
+		ORGAN_SLOT_HUD = /obj/item/organ/eyes/night_vision,
 		)
 	bodypart_features = list(
 		/datum/bodypart_feature/hair/head,

@@ -18,7 +18,9 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/heavy/chargah
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
+		/obj/item/roguekey/nightman, 
+		/obj/item/roguekey/nightmaiden,
 		/obj/item/flashlight/flare/torch,
 		/obj/item/rogueweapon/huntingknife/idagger/steel,
 		/obj/item/storage/belt/rogue/pouch/coins/poor,

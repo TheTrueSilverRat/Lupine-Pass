@@ -496,7 +496,7 @@
 		return
 	else
 		if(hud_used.bloods)
-			var/bloodloss = ((BLOOD_VOLUME_NORMAL - blood_volume) / BLOOD_VOLUME_NORMAL) * 100
+			var/bloodloss = ((max_blood_volume - blood_volume) / max_blood_volume) * 100
 
 			var/burnhead = 0
 			var/brutehead = 0

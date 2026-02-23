@@ -507,8 +507,8 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	glass_desc = ""
 
 /datum/reagent/consumable/ethanol/bloody_mary/on_mob_life(mob/living/carbon/C)
-	if(C.blood_volume < BLOOD_VOLUME_NORMAL)
-		C.blood_volume = min(BLOOD_VOLUME_NORMAL, C.blood_volume + 3) //Bloody Mary quickly restores blood loss.
+	if(C.blood_volume < C.max_blood_volume)
+		C.blood_volume = min(C.max_blood_volume, C.blood_volume + 3) //Bloody Mary quickly restores blood loss.
 	..()
 
 /datum/reagent/consumable/ethanol/brave_bull

@@ -446,8 +446,8 @@
 	H.color = "#FF0000"
 	var/list/wCount = owner.get_wounds()
 	if(!owner.construct)
-		if(owner.blood_volume < BLOOD_VOLUME_NORMAL)
-			owner.blood_volume = min(owner.blood_volume+healing_on_tick, BLOOD_VOLUME_NORMAL)
+		if(owner.blood_volume < owner.max_blood_volume)
+			owner.blood_volume = min(owner.blood_volume+healing_on_tick, owner.max_blood_volume)
 		if(wCount.len > 0)
 			owner.heal_wounds(healing_on_tick)
 			owner.update_damage_overlays()
@@ -503,8 +503,8 @@
 		if(skill_level >= SKILL_LEVEL_JOURNEYMAN)
 			if(owner.blood_volume < BLOOD_VOLUME_SURVIVE)
 				owner.blood_volume = BLOOD_VOLUME_SURVIVE
-		if(owner.blood_volume < BLOOD_VOLUME_NORMAL)
-			owner.blood_volume = min(owner.blood_volume + healing_on_tick, BLOOD_VOLUME_NORMAL)
+		if(owner.blood_volume < owner.max_blood_volume)
+			owner.blood_volume = min(owner.blood_volume + healing_on_tick, owner.max_blood_volume)
 
 #undef BLOODHEAL_DUR_SCALE_PER_LEVEL
 #undef BLOODHEAL_RESTORE_DEFAULT
@@ -529,8 +529,8 @@
 	H.color = "#a5a5a5"
 	var/list/wCount = owner.get_wounds()
 	if(!owner.construct)
-		if(owner.blood_volume < BLOOD_VOLUME_NORMAL)
-			owner.blood_volume = min(owner.blood_volume + (healing_on_tick + 10), BLOOD_VOLUME_NORMAL)
+		if(owner.blood_volume < owner.max_blood_volume)
+			owner.blood_volume = min(owner.blood_volume + (healing_on_tick + 10), owner.max_blood_volume)
 		if(wCount.len > 0)
 			owner.heal_wounds(healing_on_tick, list(/datum/wound/slash, /datum/wound/puncture, /datum/wound/bite, /datum/wound/bruise))
 			owner.update_damage_overlays()
@@ -682,8 +682,8 @@
 		if(wCount.len > 0)
 			owner.heal_wounds(healing_on_tick)
 			owner.update_damage_overlays()
-		if(owner.blood_volume < BLOOD_VOLUME_NORMAL)
-			owner.blood_volume = min(owner.blood_volume+4, BLOOD_VOLUME_NORMAL)
+		if(owner.blood_volume < owner.max_blood_volume)
+			owner.blood_volume = min(owner.blood_volume+4, owner.max_blood_volume)
 
 /atom/movable/screen/alert/status_effect/buff/rockmuncher_lesser
 	name = "Sated"
@@ -875,8 +875,8 @@
 	owner.emote("agony")
 	new /obj/effect/temp_visual/flies(get_turf(owner))
 	var/list/wCount = owner.get_wounds()
-	if(owner.blood_volume < BLOOD_VOLUME_NORMAL)
-		owner.blood_volume = min(owner.blood_volume+100, BLOOD_VOLUME_NORMAL)
+	if(owner.blood_volume < owner.max_blood_volume)
+		owner.blood_volume = min(owner.blood_volume+100, owner.max_blood_volume)
 	if(wCount.len > 0)
 		owner.heal_wounds(healing_on_tick)
 		owner.update_damage_overlays()
@@ -959,8 +959,8 @@
 
 /datum/status_effect/buff/undermaidenbargainheal/tick()
 	var/list/wCount = owner.get_wounds()
-	if(owner.blood_volume < BLOOD_VOLUME_NORMAL)
-		owner.blood_volume = min(owner.blood_volume+60, BLOOD_VOLUME_NORMAL)
+	if(owner.blood_volume < owner.max_blood_volume)
+		owner.blood_volume = min(owner.blood_volume+60, owner.max_blood_volume)
 	if(wCount.len > 0)
 		owner.heal_wounds(100) // we're gonna try really hard to heal someone's arterials and also stabilize their blood, so they don't instantly bleed out again. Ideally they should be 'just' alive.
 		owner.update_damage_overlays()
@@ -1237,7 +1237,7 @@
 	if(ishuman(owner))
 		var/mob/living/carbon/human/H = owner
 		H.playsound_local(get_turf(H), 'sound/misc/adrenaline_rush.ogg', 100, TRUE)
-		H.blood_volume = min((H.blood_volume + blood_restore), BLOOD_VOLUME_NORMAL)
+		H.blood_volume = min((H.blood_volume + blood_restore), owner.max_blood_volume)
 		H.stamina -= max((H.stamina - (H.max_stamina / 2)), 0)
 
 /datum/status_effect/buff/adrenaline_rush/on_remove()

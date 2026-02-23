@@ -23,7 +23,7 @@
 	beltl = /obj/item/rogueweapon/scabbard/sword/kazengun/gold
 	backr = /obj/item/storage/backpack/rogue/satchel
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
 		/obj/item/flashlight/flare/torch,
 		/obj/item/flashlight/flare/torch/lantern,
 		)

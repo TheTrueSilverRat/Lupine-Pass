@@ -436,7 +436,7 @@ GLOBAL_LIST_INIT(character_flaws, list(
 	user.apply_status_effect(/datum/status_effect/debuff/addiction)
 	var/current_pain = user.get_complex_pain()
 	// Bloodloss makes the pain count as extra large to allow people to bloodlet themselves with cutting weapons to satisfy vice
-	var/bloodloss_factor = clamp(1.0 - (user.blood_volume / BLOOD_VOLUME_NORMAL), 0.0, 0.5)
+	var/bloodloss_factor = clamp(1.0 - (user.blood_volume / user.max_blood_volume), 0.0, 0.5)
 	var/new_pain_threshold = get_pain_threshold(current_pain * (1.0 + (bloodloss_factor * 1.4))) // Bloodloss factor goes up to 50%, and then counts at 140% value of that
 	if(last_pain_threshold == NONE)
 		to_chat(user, span_boldwarning("I could really use some pain right now..."))

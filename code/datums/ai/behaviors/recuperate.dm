@@ -32,7 +32,7 @@
 		pawn.fire_stacks = pawn.fire_stacks - DEFAULT_FIRE_HEAL
 		pawn.fire_stacks = clamp(pawn.fire_stacks, 0, 999)
 		pawn.blood_volume += pawn.blood_volume + DEFAULT_BLOOD_RECOVERY
-		pawn.blood_volume = clamp(pawn.blood_volume, 0, BLOOD_VOLUME_NORMAL)
+		pawn.blood_volume = clamp(pawn.blood_volume, 0, pawn.max_blood_volume)
 
 	finish_action(controller, TRUE)
 

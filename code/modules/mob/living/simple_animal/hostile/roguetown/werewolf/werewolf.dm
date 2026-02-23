@@ -22,7 +22,7 @@
 	dextrous = TRUE
 	held_items = list(null, null)
 //	base_intents = list(INTENT_HELP, INTENT_GRAB, /datum/intent/simple/claw/wwolf)
-	faction = list("wolves")
+	faction = list("wolves", "Keep")
 	robust_searching = TRUE
 	stat_attack = UNCONSCIOUS
 	footstep_type = FOOTSTEP_MOB_HEAVY

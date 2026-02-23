@@ -48,7 +48,7 @@
 	gloves = /obj/item/clothing/gloves/roguetown/fingerless_leather
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 
-	backpack_contents = list(/obj/item/roguekey/mercenary)
+	backpack_contents = list(/obj/item/storage/keyring/mercenary)
 
 	H.grant_language(/datum/language/aavnic)		//Your character could not have possibly "graduated" without atleast some basic knowledge of Aavnic.
 	H.merctype = 6
@@ -100,7 +100,7 @@
 	backr = /obj/item/storage/backpack/rogue/satchel/short
 	neck = /obj/item/clothing/neck/roguetown/leather //minimal defense
 
-	backpack_contents = list(/obj/item/roguekey/mercenary)
+	backpack_contents = list(/obj/item/storage/keyring/mercenary)
 
 	H.grant_language(/datum/language/aavnic)		//Your character could not have possibly "graduated" without atleast some basic knowledge of Aavnic.
 	H.merctype = 6

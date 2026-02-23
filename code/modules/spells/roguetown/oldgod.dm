@@ -65,9 +65,9 @@
 
 	// Transfer blood
 	var/blood_transfer = 0
-	if(H.blood_volume < BLOOD_VOLUME_NORMAL)
-		blood_transfer = BLOOD_VOLUME_NORMAL - H.blood_volume
-		H.blood_volume = BLOOD_VOLUME_NORMAL
+	if(H.blood_volume < H.max_blood_volume)
+		blood_transfer = H.max_blood_volume - H.blood_volume
+		H.blood_volume = H.max_blood_volume
 		user.blood_volume -= blood_transfer
 		to_chat(user, span_warning("You feel your blood drain into [H]!"))
 		to_chat(H, span_notice("You feel your blood replenish!"))

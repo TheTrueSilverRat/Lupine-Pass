@@ -2,7 +2,7 @@
 	title = "Consort"
 	flag = LADY
 	department_flag = NOBLEMEN
-	faction = "Station"
+	faction = "Keep"
 	total_positions = 0
 	spawn_positions = 0
 

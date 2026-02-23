@@ -315,7 +315,7 @@
 	
 	zombie.can_do_sex = FALSE	//no fuck off
 
-	zombie.blood_volume = BLOOD_VOLUME_NORMAL
+	zombie.blood_volume = zombie.max_blood_volume
 	zombie.setOxyLoss(0, updating_health = FALSE, forced = TRUE)
 	zombie.setToxLoss(0, updating_health = FALSE, forced = TRUE)
 	if(!infected_wake)	// if we died, heal all this too
@@ -364,7 +364,7 @@
 
 	GLOB.azure_round_stats[STATS_DEADITES_WOKEN_UP]++
 	// Heal the zombie
-	zombie.blood_volume = BLOOD_VOLUME_NORMAL
+	zombie.blood_volume = zombie.max_blood_volume
 	zombie.setOxyLoss(0, updating_health = FALSE, forced = TRUE) // Zombies don't breathe
 	zombie.setToxLoss(0, updating_health = FALSE, forced = TRUE) // Zombies are immune to poison
 

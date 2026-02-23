@@ -79,6 +79,9 @@
 		//ORGAN_SLOT_PENIS = /obj/item/organ/penis/knotted,
 		//ORGAN_SLOT_BREASTS = /obj/item/organ/breasts,
 		//ORGAN_SLOT_VAGINA = /obj/item/organ/vagina,
+		// Customizable eyes means overriden eyes get thrown out.
+		// HUD organ deals with less parenting problems aswell.
+		ORGAN_SLOT_HUD = /obj/item/organ/eyes/night_vision,
 		)
 	bodypart_features = list(
 		/datum/bodypart_feature/hair/head,

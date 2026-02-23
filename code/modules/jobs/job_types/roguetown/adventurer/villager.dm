@@ -32,6 +32,7 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
+		H.faction |= "Keep"
 
 /*
 /datum/job/roguetown/adventurer/villager/New()

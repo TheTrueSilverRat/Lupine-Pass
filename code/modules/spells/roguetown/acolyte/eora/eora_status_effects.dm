@@ -156,8 +156,8 @@
 	M.adjustOxyLoss(-healing_power)
 	M.adjustCloneLoss(-healing_power)
 
-	if(M.blood_volume < BLOOD_VOLUME_NORMAL)
-		M.blood_volume = min(M.blood_volume + healing_power * 2, BLOOD_VOLUME_NORMAL)
+	if(M.blood_volume < M.max_blood_volume)
+		M.blood_volume = min(M.blood_volume + healing_power * 2, M.max_blood_volume)
 
 	var/list/wounds = M.get_wounds()
 	if(length(wounds))

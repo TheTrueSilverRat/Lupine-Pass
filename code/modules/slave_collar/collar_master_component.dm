@@ -319,7 +319,7 @@ GLOBAL_LIST_EMPTY(collar_masters)
 
     // Share blood if applicable
     if(master.blood_volume && pet.blood_volume)
-        var/blood_diff = BLOOD_VOLUME_NORMAL - master.blood_volume
+        var/blood_diff = master.max_blood_volume - master.blood_volume
         if(blood_diff > 0)
             var/blood_share = min(blood_diff * 0.5, pet.blood_volume - BLOOD_VOLUME_SAFE)
             if(blood_share > 0)
@@ -571,7 +571,7 @@ GLOBAL_LIST_EMPTY(collar_masters)
 
     // Pass blood level if it exists
     if(pet.blood_volume && master.blood_volume)
-        pet.blood_volume = max(BLOOD_VOLUME_SAFE, pet.blood_volume - (BLOOD_VOLUME_NORMAL - master.blood_volume) * 0.5)
+        pet.blood_volume = max(BLOOD_VOLUME_SAFE, pet.blood_volume - (master.max_blood_volume - master.blood_volume) * 0.5)
 
     // Pass organ damage
     for(var/obj/item/organ/organ in master.internal_organs)

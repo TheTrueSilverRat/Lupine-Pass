@@ -56,6 +56,7 @@
 		H.advsetup = 1
 		H.invisibility = INVISIBILITY_MAXIMUM
 		H.become_blind("advsetup")
+		H.faction |= "Keep"
 
 /datum/outfit/job/roguetown/magician/basic/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -39,7 +39,7 @@
 	pants = /obj/item/clothing/under/roguetown/splintlegs
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
 		/obj/item/rogueweapon/huntingknife/idagger/navaja,
 		/obj/item/clothing/neck/roguetown/shalal,
 		/obj/item/flashlight/flare/torch,
@@ -118,7 +118,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather/pontifex/raneshen
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
 		/obj/item/rogueweapon/huntingknife/idagger/navaja,
 		/obj/item/rogueweapon/scabbard/sheath,
 		/obj/item/clothing/neck/roguetown/shalal,
@@ -196,7 +196,7 @@
 	pants = /obj/item/clothing/under/roguetown/trou/leather/pontifex/raneshen
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary,
+		/obj/item/storage/keyring/mercenary,
 		/obj/item/rogueweapon/huntingknife/idagger/navaja,
 		/obj/item/rogueweapon/scabbard/sheath,
 		/obj/item/clothing/neck/roguetown/shalal,

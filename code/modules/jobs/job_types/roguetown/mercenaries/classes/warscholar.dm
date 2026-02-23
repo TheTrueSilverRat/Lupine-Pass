@@ -82,7 +82,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary = 1,
+		/obj/item/storage/keyring/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife/idagger = 1,
 		/obj/item/spellbook_unfinished/pre_arcyne = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
@@ -160,7 +160,7 @@
 	shoes = /obj/item/clothing/shoes/roguetown/sandals
 	backr = /obj/item/storage/backpack/rogue/satchel/black
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary = 1,
+		/obj/item/storage/keyring/mercenary = 1,
 		/obj/item/lockpick = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
@@ -235,7 +235,7 @@
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson/lord
 
 	backpack_contents = list(
-		/obj/item/roguekey/mercenary = 1,
+		/obj/item/storage/keyring/mercenary = 1,
 		/obj/item/rogueweapon/huntingknife = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
@@ -249,6 +249,7 @@
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/regression)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/convergence)
 		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/stasis)
+		H.mind.AddSpell(new /obj/effect/proc_holder/spell/invoked/temporal_revival)
 	
 	H.merctype = 14
 

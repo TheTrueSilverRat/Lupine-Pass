@@ -179,7 +179,7 @@
 	if(HAS_TRAIT(M, TRAIT_CRACKHEAD))
 		if(volume >= 60)
 			M.reagents.remove_reagent(/datum/reagent/medicine/loversruin, 2)
-		if(M.blood_volume < BLOOD_VOLUME_NORMAL)
+		if(M.blood_volume < M.max_blood_volume)
 			M.blood_volume = min(M.blood_volume+40, BLOOD_VOLUME_MAXIMUM)
 		var/list/wCount = M.get_wounds()
 		if(wCount.len > 0)

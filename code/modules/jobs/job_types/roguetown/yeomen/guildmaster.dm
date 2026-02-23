@@ -72,9 +72,9 @@
 		H.adjust_skillrank(/datum/skill/craft/armorsmithing, 5, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/weaponsmithing, 5, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/smelting, 4, TRUE)
-		H.adjust_skillrank(/datum/skill/craft/engineering, 3, TRUE) // 2 Engineering, let them make more artificers stuffs
-		H.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE) // Worse than the real tailor, so can't steal their job right away
-		H.adjust_skillrank(/datum/skill/craft/tanning, 2, TRUE)
+		H.adjust_skillrank(/datum/skill/craft/engineering, 5, TRUE)
+		H.adjust_skillrank(/datum/skill/misc/sewing, 3, TRUE) // Worse than the real tailor, so can't steal their job right away
+		H.adjust_skillrank(/datum/skill/craft/tanning, 3, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/lockpicking, 4, TRUE)
 		H.adjust_skillrank(/datum/skill/misc/ceramics, 2, TRUE)
 		H.adjust_skillrank(/datum/skill/craft/traps, 2, TRUE)
