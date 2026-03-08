@@ -94,7 +94,7 @@
 	twohands_required = FALSE
 	gripped_intents = null
 	w_class = WEIGHT_CLASS_BULKY
-	smeltresult = /obj/item/rogueore/coal/charcoal
+	smeltresult = /obj/item/rogueore/coal
 	lumber_amount = 0
 	metalizer_result = /obj/item/rogueore/copper
 

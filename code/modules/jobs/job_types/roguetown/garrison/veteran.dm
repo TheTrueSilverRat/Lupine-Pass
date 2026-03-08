@@ -77,6 +77,7 @@
 	cloak = /obj/item/clothing/cloak/half/vet
 	belt = /obj/item/storage/belt/rogue/leather/black
 	backpack_contents = list(
+		/obj/item/roguekey/burg = 1,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
@@ -136,6 +137,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(
+		/obj/item/roguekey/burg,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
@@ -192,6 +194,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(
+		/obj/item/roguekey/burg,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/storage/keyring/guardcastle = 1
@@ -271,6 +274,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(
+		/obj/item/roguekey/burg,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
 		)
@@ -346,6 +350,7 @@
 	belt = /obj/item/storage/belt/rogue/leather/black
 	cloak = /obj/item/clothing/cloak/half/vet
 	backpack_contents = list(
+		/obj/item/roguekey/burg,
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/storage/keyring/guardcastle = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1
@@ -411,6 +416,7 @@
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/silver/elvish = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
+		/obj/item/roguekey/burg,
 		/obj/item/storage/keyring/guardcastle = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/poison = 1,
 		/obj/item/lockpickring/mundane,
