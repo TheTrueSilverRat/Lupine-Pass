@@ -59,10 +59,10 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		else
 			GLOB.lordsurname = "of [L.real_name]"
 		SSticker.set_ruler_mob(L)
-		to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is [SSticker.rulertype] of Rotwood Vale.</span></span></b>")
+		to_chat(world, "<b><span class='notice'><span class='big'>[L.real_name] is [SSticker.rulertype] overseeing the Lupine Pass.</span></span></b>")
 		if(istype(SSticker.regentmob, /mob/living/carbon/human))
 			var/mob/living/carbon/human/regentbuddy = SSticker.regentmob
-			to_chat(L, span_notice("Word reached me on the approach that [regentbuddy.real_name], the [regentbuddy.job], served as regent in my absence."))
+			to_chat(L, span_notice("Word reached me on the approach that [regentbuddy.real_name], the [regentbuddy.job], served as commander in my absence."))
 		SSticker.regentmob = null //Time for regent to give up the position.
 
 		addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_marriage_choice)), 50)
@@ -93,7 +93,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain
 		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
-		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves 
+		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves
 		head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet
 	else if(should_wear_masc_clothes(H))
 		pants = /obj/item/clothing/under/roguetown/platelegs/blacksteel/modern
@@ -101,7 +101,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		armor = /obj/item/clothing/suit/roguetown/armor/plate/blacksteel_half_plate
 		wrists = /obj/item/clothing/wrists/roguetown/bracers/jackchain
 		shoes = /obj/item/clothing/shoes/roguetown/boots/blacksteel/modern/plateboots
-		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves 
+		gloves = /obj/item/clothing/gloves/roguetown/blacksteel/modern/plategloves
 		head = /obj/item/clothing/head/roguetown/helmet/blacksteel/modern/armet
 	if(H.wear_mask)
 		if(istype(H.wear_mask, /obj/item/clothing/mask/rogue/eyepatch))

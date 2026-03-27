@@ -71,10 +71,11 @@
 	category_tags = list(CTAG_MENATARMS)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
-		STATKEY_STR = 4,
+		STATKEY_STR = 3, //slightly beefed stats since the guardsman bonus doesnt rlly apply here
 		STATKEY_INT = 1,
 		STATKEY_CON = 3,
-		STATKEY_END = 3
+		STATKEY_END = 1,
+		STATKEY_PER = 1
 	)
 
 /datum/outfit/job/roguetown/manorguard/footsman/pre_equip(mob/living/carbon/human/H)
@@ -172,7 +173,6 @@
 		STATKEY_SPD = 2,
 		STATKEY_PER = 2,
 		STATKEY_END = 3,
-		STATKEY_CON = 2,
 		STATKEY_STR = 2
 	)
 	extra_context = "Chooses between Light Armor (Dodge Expert) & Medium Armor."
@@ -254,7 +254,7 @@
 	if(helmchoice != "None")
 		head = helmets[helmchoice]
 
-		
+
 
 /datum/advclass/manorguard/cavalry
 	name = "Drengir Cavalryman"
@@ -266,10 +266,11 @@
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	//Garrison mounted class; charge and charge often.
 	subclass_stats = list(
-		STATKEY_CON = 4,
-		STATKEY_END = 4,
-		STATKEY_STR = 3,
+		STATKEY_CON = 2,
+		STATKEY_END = 2,
+		STATKEY_STR = 1,
 		STATKEY_INT = 1,
+		STATKEY_PER = 2
 	)
 
 /datum/outfit/job/roguetown/manorguard/cavalry/pre_equip(mob/living/carbon/human/H)
@@ -283,7 +284,7 @@
 	H.adjust_skillrank(/datum/skill/combat/bows, 1, TRUE)			// We discourage horse archers, though.
 	H.adjust_skillrank(/datum/skill/combat/slings, 1, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/climbing, 3, TRUE)
-	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE) 
+	H.adjust_skillrank(/datum/skill/misc/athletics, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
@@ -308,7 +309,7 @@
 			beltr = /obj/item/rogueweapon/scabbard/sword
 			r_hand = /obj/item/rogueweapon/sword/sabre
 			backl = /obj/item/rogueweapon/shield/wood
-	
+
 	backpack_contents = list(
 		/obj/item/rogueweapon/huntingknife/idagger/steel/special = 1,
 		/obj/item/rope/chain = 1,
@@ -359,10 +360,10 @@
 	category_tags = list(CTAG_MENATARMS)
 	traits_applied = list(TRAIT_MEDIUMARMOR)
 	subclass_stats = list(
-		STATKEY_STR = 4,
-		STATKEY_INT = 1,
-		STATKEY_CON = 3,
-		STATKEY_END = 3
+		STATKEY_STR = 3,
+		STATKEY_INT = -1,
+		STATKEY_CON = 2,
+		STATKEY_END = 2
 	)
 
 /datum/outfit/job/roguetown/manorguard/guardmaster/pre_equip(mob/living/carbon/human/H)
@@ -486,7 +487,7 @@
 		if(user.job == "Knight Captain")
 			if(!(target.job in list(TITLE_STELLARI, "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
-				return		
+				return
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			return
@@ -549,7 +550,7 @@
 		if(user.job == "Knight Captain")
 			if(!(target.job in list(TITLE_STELLARI, "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
-				return		
+				return
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			return
@@ -581,7 +582,7 @@
 		if(user.job == "Knight Captain")
 			if(!(target.job in list(TITLE_STELLARI, "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
-				return		
+				return
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			return
@@ -640,7 +641,7 @@
 		if(user.job == "Knight Captain")
 			if(!(target.job in list(TITLE_STELLARI, "Squire")))
 				to_chat(user, span_alert("I cannot order one not of my ranks!"))
-				return		
+				return
 		if(target == user)
 			to_chat(user, span_alert("I cannot order myself!"))
 			return
@@ -687,7 +688,7 @@
 			return
 		if(HAS_TRAIT(target, TRAIT_CRITICAL_WEAKNESS))
 			to_chat(user, span_alert("They are already vulnerable!"))
-			return	
+			return
 		user.say("[msg]")
 		target.apply_status_effect(/datum/status_effect/debuff/order/focustarget)
 		return TRUE
@@ -788,7 +789,7 @@
 	H.adjust_skillrank(/datum/skill/misc/tracking, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/medicine, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/misc/sewing, 4, TRUE)
-	
+
 	shirt = /obj/item/clothing/suit/roguetown/armor/gambeson
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	gloves = /obj/item/clothing/gloves/roguetown/plate/iron

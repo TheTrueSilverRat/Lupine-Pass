@@ -370,3 +370,21 @@
 	stressadd = 10
 	desc = span_boldred("Perhaps I shouldn't have done that...")
 	timer = 12 MINUTES
+
+/datum/stressevent/goblins
+	stressadd = 3
+	desc = span_red("There are goblins here..")
+	timer = 12 SECONDS
+
+/datum/stressevent/goblins/orc
+	desc = span_red("There are orcs here..")
+
+/datum/stressevent/werewolf_litter
+	stressadd = 2
+	desc = span_red("The werewolf child within me is stirred by the moonlight on my body..")
+	timer = -1
+
+/datum/stressevent/bandit_child
+	stressadd = 2
+	desc = span_red("I carry the child of an outlaw.. Awful.")
+	timer = INFINITY

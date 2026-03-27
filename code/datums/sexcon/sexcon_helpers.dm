@@ -86,16 +86,28 @@
 	else
 		playsound(src, pick('sound/misc/mat/guymouth (1).ogg','sound/misc/mat/guymouth (2).ogg','sound/misc/mat/guymouth (3).ogg','sound/misc/mat/guymouth (4).ogg','sound/misc/mat/guymouth (5).ogg'), 35, TRUE, ignore_walls = FALSE)
 
-/mob/living/carbon/human/proc/try_impregnate(mob/living/carbon/human/wife)
+/mob/living/carbon/human/species/proc/try_impregnate(mob/living/carbon/human/species/wife)
 	var/obj/item/organ/testicles/testes = getorganslot(ORGAN_SLOT_TESTICLES)
 	if(!testes)
 		return
 	var/obj/item/organ/vagina/vag = wife.getorganslot(ORGAN_SLOT_VAGINA)
 	if(!vag)
 		return
+	var/father_race = src.race
 	if(prob(vag.impregnation_probability) && wife.is_fertile() && is_virile())
 		vag.be_impregnated(src)
 		vag.impregnation_probability = IMPREG_PROB_DEFAULT // Reset on success
+		if((father_race == /datum/species/goblin || father_race == /datum/species/goblinp) && !(wife.dna.species == /datum/species/goblinp)) //Gobbos shouldn't be able to traumatize other gobbos. You get a normal gregnancy.
+			wife.apply_status_effect(/datum/status_effect/pregnancy/goblin)
+		if(father_race == /datum/species/werewolf && !(wife.dna.species == /datum/species/werewolf || wife.dna.species == /datum/species/lupian))
+			wife.apply_status_effect(/datum/status_effect/pregnancy/werewolf)
+		if(father_race == /datum/species/orc && !(wife.dna.species == /datum/species/orc))
+			wife.apply_status_effect(/datum/status_effect/pregnancy/orc)
+//		if(father_race == /datum/species/lupian) Keeping this disabled for now because I don't want to implement job slot changes.
+//			wife.apply_status_effect(/datum/status_effect/pregnancy/lupian) If you're here to do that, players WILL knock up NPCs to open up slots. Implement a check to prevent that.
+		if(src.client && wife.client) //Make sure we don't runtime if it's a NPC.
+			if(src.mind.has_antag_datum(/datum/antagonist/bandit) && !wife.mind.has_antag_datum(/datum/antagonist/bandit))
+				wife.apply_status_effect(/datum/status_effect/pregnancy/bandit)
 	else
 		vag.impregnation_probability = min(vag.impregnation_probability + IMPREG_PROB_INCREMENT, IMPREG_PROB_MAX)
 

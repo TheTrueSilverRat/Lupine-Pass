@@ -107,4 +107,3 @@ SUBSYSTEM_DEF(nightshift)
 /mob/living/carbon/human/proc/progress_cycles()
 	survived_cycles++
 	GLOB.carebox.human_cycle_progress(src)
-
