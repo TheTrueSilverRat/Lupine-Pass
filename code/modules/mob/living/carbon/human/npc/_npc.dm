@@ -1,3 +1,5 @@
+#define MAX_RANGE_FIND 32
+
 /mob/living/carbon/human
 	var/aggressive=0 //0= retaliate only
 	var/frustration=0
@@ -447,7 +449,6 @@
 		NPC_THINK("Already pathing!")
 		return FALSE
 	if(!length(myPath)) // need a new path
-		var/const/MAX_RANGE_FIND = 32
 		NPC_THINK("Pathfinding to [pathfinding_target]...")
 		is_currently_pathing = TRUE
 		myPath = get_path_to(src, turf_of_target, TYPE_PROC_REF(/turf, Heuristic_cardinal_3d), MAX_RANGE_FIND + 1, 250, 1, adjacent = TYPE_PROC_REF(/turf, reachableTurftest3d))
@@ -511,10 +512,23 @@
 	if(HAS_TRAIT(src, TRAIT_PACIFISM))
 		return FALSE
 
+	//those are here for proc dependancy.
+	if(L.lying && !L.get_active_held_item() && L.ckey) //laying with no items in hand, no threat, also its a player mob.
+		if(prob(4) && (L.has_quirk(/datum/quirk/monsterhuntermale) || L.has_quirk(/datum/quirk/monsterhunterfemale)) && erpable) //tiny chance to trigger abuss.
+			fuckcd = 0
+		return FALSE
+
+	if(ishuman(L)) //leave alone if handcuffed.
+		var/mob/living/carbon/human/lhuman = L
+		if(lhuman.handcuffed)
+			if(prob(8) && (lhuman.has_quirk(/datum/quirk/monsterhuntermale) || lhuman.has_quirk(/datum/quirk/monsterhunterfemale)) && erpable) //small chance to trigger abuss.
+				fuckcd = 0
+			return FALSE
+
 	if(L == src)
 		return FALSE
 
-	if (L.alpha == 0 && L.rogue_sneaking)
+	if (L.alpha == 0 || L.rogue_sneaking)
 		return FALSE
 
 	if(!is_in_zweb(src.z,L.z))
@@ -947,3 +961,52 @@
 		return TRUE
 	else
 		return FALSE
+
+
+// blocks
+// taken from /mob/living/carbon/human/interactive/
+/mob/living/carbon/human/proc/walk2derpless(target)
+	if(!target || IsStandingStill())
+		back_to_idle()
+		return 0
+
+	var/dir_to_target = get_dir(src, target)
+	var/turf/turf_of_target = get_turf(target)
+	if(!turf_of_target)
+		back_to_idle()
+		return 0
+	var/target_z = turf_of_target.z
+	if(turf_of_target?.z == z)
+		if(myPath.len <= 0)
+			for(var/obj/structure/O in get_step(src,dir_to_target))
+				if(O.density && O.climbable)
+					O.climb_structure(src)
+					myPath = list()
+					break
+			myPath = get_path_to(src, turf_of_target, /turf/proc/Distance, MAX_RANGE_FIND + 1, 250,1)
+
+		if(myPath)
+			if(myPath.len > 0)
+				for(var/i = 0; i < maxStepsTick; ++i)
+					if(!IsDeadOrIncap())
+						if(myPath.len >= 1)
+							walk_to(src,myPath[1],0,update_movespeed())
+							myPath -= myPath[1]
+				return 1
+	else
+		if(turf_of_target?.z < z)
+			turf_of_target = get_step_multiz(turf_of_target, DOWN)
+		else
+			turf_of_target = get_step_multiz(turf_of_target, UP)
+		if(turf_of_target?.z != target_z) //too far away
+			back_to_idle()
+			return 0
+	// failed to path correctly so just try to head straight for a bit
+	walk_to(src,turf_of_target,0,update_movespeed())
+	sleep(1)
+	walk_to(src,0)
+
+	return 0
+
+
+#undef MAX_RANGE_FIND

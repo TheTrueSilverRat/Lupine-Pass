@@ -169,8 +169,12 @@
 	if(src.check_same_tile && (user != target || self_target) && !(sigbitflags & SKIP_TILE_CHECK))
 		var/same_tile = (get_turf(user) == get_turf(target))
 		var/grab_bypass = (src.aggro_grab_instead_same_tile && user.get_highest_grab_state_on(target) == GRAB_AGGRESSIVE)
+
 		if(!same_tile && !grab_bypass)
 			return FALSE
+
+	if(user.erpable) //NPC fucks easy
+		return TRUE
 
 	if(src.require_grab && (user != target || self_target) && !(sigbitflags & SKIP_GRAB_CHECK))
 		var/grabstate = user.get_highest_grab_state_on(target)
@@ -1044,12 +1048,16 @@
 
 /datum/sex_controller/proc/try_start_action(action_type)
 //Refactoring it so I can make a global bit if checker
-	if(target.client.prefs.defiant && !target.compliance && target != user)
-		var/consent_check = alert(target, "You are currently in Defiant Mode, Would you wish to allow this act to continue or not? \
-				(Notice: If you wish to turn off this prompt but not Defiant Mode, please turn on Compliance Mode during Sex)", "WARNING!!!", "Yes", "No")
-		if(consent_check == "No")
-			try_stop_current_action()
-			return
+	if(target.client) //Since NPCs don't have prefs, we need a bypass to avoid a runtime
+		if(target.client.prefs.defiant && !target.compliance && target != user)
+			var/consent_check = alert(target, "You are currently in Defiant Mode, Would you wish to allow this act to continue or not? \
+					(Notice: If you wish to turn off this prompt but not Defiant Mode, please turn on Compliance Mode during Sex)", "WARNING!!!", "Yes", "No")
+			if(consent_check == "No")
+				try_stop_current_action()
+				return
+	if(!target.client && !target.erpable)
+		try_stop_current_action()
+		return
 	if(action_type == current_action)
 		try_stop_current_action()
 		return
@@ -1079,8 +1087,11 @@
 	// Do action loop
 	var/performed_action_type = current_action
 	var/datum/sex_action/action = SEX_ACTION(current_action)
-	if(target.client.prefs.defiant && target.cmode)
-		to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
+	if(target.client) //Since NPCs don't have prefs, we need a bypass to avoid a runtime
+		if(target.client.prefs.defiant && target.cmode)
+			to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
+			return
+	if(!target.client && !target.erpable)
 		return
 	action.on_start(user, target)
 	find_occupying_bed()
@@ -1088,8 +1099,11 @@
 	while(TRUE)
 		if(!user.stamina_add(action.stamina_cost * get_stamina_cost_multiplier()))
 			break
-		if(target.client.prefs.defiant && target.cmode)
-			to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
+		if(target.client) //Since NPCs don't have prefs, we need a bypass to avoid a runtime
+			if(target.client.prefs.defiant && target.cmode)
+				to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
+				break
+		if(!target.client && !target.erpable)
 			break
 		if(!do_after(user, (action.do_time / get_speed_multiplier()), target = target))
 			break

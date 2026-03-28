@@ -56,10 +56,11 @@
 	if(!user.can_do_sex())
 		to_chat(user, "<span class='warning'>I can't do this.</span>")
 		return
-	if(target.client.prefs.defiant && target.cmode) //Technically it's already in shows_on_menu() but eh double protection
-		to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
-		log_combat(user, target, "tried to use ERP menu against")
-		return
+	if(!target.erpable) //Since NPCs don't have prefs, we need a bypass to avoid a runtime
+		if(target.client.prefs.defiant && target.cmode) //Technically it's already in shows_on_menu() but eh double protection
+			to_chat(user, span_warningbig("[target] IS DEFIANT!!! YOU CANNOT RAPE THIS ONE ANY LONGER!!!"))
+			log_combat(user, target, "tried to use ERP menu against")
+			return
 /*
 	if(!user?.client?.prefs.sexable)
 		to_chat(user, "<span class='warning'>I don't want to touch [target]. (Your ERP preference, in the options)</span>")

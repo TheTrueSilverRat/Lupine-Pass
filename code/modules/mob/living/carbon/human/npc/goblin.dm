@@ -26,6 +26,9 @@
 	npc_jump_distance = 3 // this might make them concheck more often, but it'll also mean it's easier to kick their legs out from under them
 	rude = TRUE
 	wander = FALSE
+	erpable = TRUE
+	seeksfuck = TRUE
+	lewd_talk = TRUE
 
 /mob/living/carbon/human/species/goblin/npc/ambush
 	aggressive = 1
@@ -210,7 +213,9 @@
 
 /mob/living/carbon/human/species/goblin/after_creation()
 	..()
-	gender = MALE
+	gender = pick(MALE, FEMALE)
+	if(erpable)
+		give_genitals()
 	if(src.dna && src.dna.species)
 		src.dna.species.soundpack_m = new /datum/voicepack/other/goblin()
 		src.dna.species.soundpack_f = new /datum/voicepack/other/goblin()
@@ -226,7 +231,7 @@
 		QDEL_NULL(eyes)
 	eyes = new /obj/item/organ/eyes/night_vision/nightmare
 	eyes.Insert(src)
-	src.underwear = "Nude"
+	src.underwear = null
 	if(src.charflaw)
 		QDEL_NULL(src.charflaw)
 	update_body()

@@ -75,7 +75,7 @@
 		charflaw.flaw_on_life(src)
 	if(health <= 0)
 		adjustOxyLoss(0.5)
-	if(mode == NPC_AI_OFF && !client && !HAS_TRAIT(src, TRAIT_NOSLEEP))
+	if(mode == NPC_AI_OFF && !client && !HAS_TRAIT(src, TRAIT_NOSLEEP) && !seeksfuck) //Lupine pass edit, don't let lewd npc's sleep, fucks with their sex behavior. Yeah I know it's a crutch, but those NPCs don't sleep anyway.
 		if(mob_timers["slo"])
 			if(world.time > mob_timers["slo"] + 90 SECONDS)
 				Sleeping(100)

@@ -60,6 +60,9 @@
 	var/cansnout = FALSE //for masks - can we MMB this to change it into a snouty sprite?
 	var/snouting = FALSE //do we have the snout-snug sprite toggled?
 
+	///for skirts etc that allow passage to fun lands.
+	var/genitalaccess = FALSE
+
 /obj/item
 	var/blocking_behavior
 	var/wetness = 0

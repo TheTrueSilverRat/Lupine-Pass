@@ -109,3 +109,4 @@
 	item_state = "plate_skirt"
 	body_parts_covered = GROIN
 	armor_class = ARMOR_CLASS_LIGHT
+	genitalaccess = TRUE

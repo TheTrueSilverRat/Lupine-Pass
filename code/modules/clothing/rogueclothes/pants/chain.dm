@@ -99,6 +99,7 @@
 	item_state = "chain_skirt"
 	body_parts_covered = GROIN
 	armor_class = ARMOR_CLASS_LIGHT
+	genitalaccess = TRUE
 
 /obj/item/clothing/under/roguetown/chainlegs/kilt
 	name = "steel chain kilt"

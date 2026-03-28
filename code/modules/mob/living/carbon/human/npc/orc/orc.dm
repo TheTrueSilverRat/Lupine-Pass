@@ -33,6 +33,9 @@
 
 /mob/living/carbon/human/species/orc/npc/after_creation()
 	..()
+	erpable = TRUE
+	seeksfuck = TRUE
+	lewd_talk = TRUE
 	job = "Savage Orc"
 	equipOutfit(new orc_outfit)
 	gender = pick(MALE, FEMALE)
@@ -86,6 +89,7 @@
 		real_name = pick(world.file2list("strings/rt/names/other/halforcf.txt"))
 	else
 		real_name = pick(world.file2list("strings/rt/names/other/halforcm.txt"))
+	give_genitals()
 	update_hair()
 	update_body()
 
