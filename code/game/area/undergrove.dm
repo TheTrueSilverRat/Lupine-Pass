@@ -20,6 +20,24 @@
 	converted_type = /area/rogue/outdoors/caves
 	deathsight_message = "root-bound caverns"
 
+/area/rogue/under/cavewet/infested
+	name = "Infested Hive"
+	icon_state = "cavewet"
+	warden_area = TRUE
+	first_time_text = "The Infested Hive"
+	ambientsounds = AMB_CAVEWATER
+	ambientnight = AMB_CAVEWATER
+	spookysounds = SPOOKY_CAVE
+	spookynight = SPOOKY_CAVE
+	droning_sound = 'sound/music/area/caves.ogg'
+	droning_sound_dusk = null
+	droning_sound_night = null
+	ambush_times = list("night","dawn","dusk","day")
+	ambush_mobs = list(
+				new /datum/ambush_config/common_infected_swarm = 100)
+	converted_type = /area/rogue/outdoors/caves
+	deathsight_message = "infested hives"
+
 /area/rogue/under/cavewet/bogcaves
 	name = "The Undergrove"
 	first_time_text = "The Undergrove"

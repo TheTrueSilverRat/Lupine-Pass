@@ -15,6 +15,8 @@
 /datum/sex_action/vaginal_ride_sex/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
+	if(user.erpable) // User is a npc, bypasss shit I'm too tired for this
+		return TRUE
 	if(!check_location_accessible(user, user, BODY_ZONE_PRECISE_GROIN, TRUE))
 		return FALSE
 	if(!check_location_accessible(user, target, BODY_ZONE_PRECISE_GROIN, TRUE))
@@ -45,6 +47,10 @@
 
 	user.sexcon.perform_sex_action(target, 2, 4, FALSE)
 	if(target.sexcon.check_active_ejaculation())
+		if(istype(user.dna.species, /datum/species/werewolf) && target.has_quirk(/datum/quirk/kinfolk))
+			target.attempt_werewolf_infection(user)
+		if(istype(user.dna.species, /datum/species/infected) && target.has_quirk(/datum/quirk/infectable))
+			target.attempt_infected_infection(user)
 		user.sexcon.handle_orgasm_counter(target, user)
 		target.visible_message(span_love("[target] cums into [user]'s cunt!"))
 		target.sexcon.cum_into(splashed_user = user)

@@ -780,6 +780,7 @@
 	rog_intent_change(3) // grab intent
 	npc_choose_grab_zone(victim)
 	UnarmedAttack(victim, TRUE) // instead of start_pulling(victim)
+	used_intent = a_intent //Fix cause for some fucking reason they didn't had this properly
 	var/stam_penalty = used_intent.releasedrain
 	if(istype(rmb_intent, /datum/rmb_intent/strong) || istype(rmb_intent, /datum/rmb_intent/swift))
 		stam_penalty += 4 // as opposed to 10 for a weapon; these are your hands, it's easier to move them

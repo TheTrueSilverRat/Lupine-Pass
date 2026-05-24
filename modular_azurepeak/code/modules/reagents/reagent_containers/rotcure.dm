@@ -3,7 +3,7 @@
 	list_reagents = list(/datum/reagent/rotcure = 18)	//Should be enough for 2 usages.
 
 /datum/reagent/rotcure
-	name = "Rot-Cure"
+	name = "Rot and Curse Cure Potion"
 	description = "A putrid substance that appears to be in perpetual motion. It smells and looks of living-sludge."
 	color = "#034212"
 	taste_description = "living sludge"
@@ -20,4 +20,5 @@
 	if(volume > 8)	//Roughly 1 sip from vial.
 		M.remove_status_effect(/datum/status_effect/debuff/rotted)	//Removes de-rot debuff, which is otherwise perminant.
 		M.remove_status_effect(/datum/status_effect/debuff/revived)	//Removes the 15-minute temp revive debuff
+		M.remove_status_effect(/datum/status_effect/werewolf_infection)
 	..()

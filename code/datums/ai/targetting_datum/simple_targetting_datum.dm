@@ -38,12 +38,13 @@
 
 	if(isliving(the_target)) //Targetting vs living mobs
 		var/mob/living/L = the_target
-		if(faction_check(living_mob, L) || L.stat >= DEAD) //basic targetting doesn't target dead people
+		if(faction_check(living_mob, L) || L.stat >= SOFT_CRIT) //basic targetting doesn't target people in crit
 			return FALSE
-		if((L.has_quirk(/datum/quirk/monsterhuntermale) && living_mob.gender == MALE) || (L.has_quirk(/datum/quirk/monsterhunterfemale) && living_mob.gender == FEMALE) || HAS_TRAIT(L, TRAIT_PACIFISM) || L.surrendering)
+		if(/*(L.has_quirk(/datum/quirk/monsterhuntermale) && living_mob.gender == MALE) || (L.has_quirk(/datum/quirk/monsterhunterfemale) && living_mob.gender == FEMALE) || */ HAS_TRAIT(L, TRAIT_PACIFISM) || L.surrendering)
 			return FALSE
-		if((!(L.mobility_flags && MOBILITY_STAND)) && !L.get_active_held_item() && L.ckey && !L.cmode) //if is laying and holding nothing, and not in cmode. Ignore.
+/*		if((!(L.mobility_flags && MOBILITY_STAND)) && !L.get_active_held_item() && L.ckey && !L.cmode) //if is laying and holding nothing, and not in cmode. Ignore.
 			return FALSE
+*/
 		if(living_mob.see_invisible < the_target.invisibility)//Target's invisible to us, forget it
 			return FALSE
 		if(ishuman(L))

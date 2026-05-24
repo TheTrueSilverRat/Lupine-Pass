@@ -107,6 +107,8 @@
 			to_chat(user, span_warning("I need to hold a [is_robotic ? "screwdriver" : "cautery"] in your inactive hand to stop [M]'s surgery!"))
 */
 
+//I need to reformat so many shit Aghh, okay gonna have to boostrap a hard fix -Azazel
+//horny is to check if this is for fucking or not
 /proc/get_location_accessible(mob/victim, location = BODY_ZONE_CHEST, grabs = FALSE, skipundies = TRUE)
 	var/covered_locations = NONE	//based on body_parts_covered
 	if(iscarbon(victim))

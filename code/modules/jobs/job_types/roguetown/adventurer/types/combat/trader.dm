@@ -361,7 +361,8 @@
 		TRAIT_STABLELIVER,
 		TRAIT_NASTY_EATER,
 		TRAIT_GOODLOVER,
-		TRAIT_BLOODLOSS_IMMUNE
+		TRAIT_BLOODLOSS_IMMUNE,
+		TRAIT_HORSEY
 	)
 	subclass_stats = list(
 		STATKEY_CON = 5, // Splitted it since Endurance also makes more sense to have as a Mount class

@@ -294,6 +294,10 @@
 			if(rot && rot.amount && rot.amount >= 5 MINUTES)	//Fail-safe to make sure the dead person has at least rotted for ~5 min.
 				stinky = TRUE
 
+		if(target.has_status_effect(/datum/status_effect/werewolf_infection))
+	
+			target.remove_status_effect(/datum/status_effect/werewolf_infection)
+
 		if(remove_rot(target = target, user = user, method = "prayer",
 			success_message = "The rot leaves [target]'s body!",
 			fail_message = "Nothing happens.", lethal = is_lethal))

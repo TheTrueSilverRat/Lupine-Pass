@@ -9,6 +9,8 @@
 /datum/sex_action/rimming/can_perform(mob/living/user, mob/living/target)
 	if(user == target)
 		return FALSE
+	if(user.erpable) // User is a npc, bypasss shit I'm too tired for this
+		return TRUE
 	if(!check_location_accessible(user, target, BODY_ZONE_PRECISE_GROIN, TRUE))
 		return FALSE
 	if(!check_location_accessible(user, user, BODY_ZONE_PRECISE_MOUTH))

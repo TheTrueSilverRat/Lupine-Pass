@@ -39,18 +39,22 @@
 /datum/antagonist/werewolf/on_gain()
 	greet()
 	owner.special_role = name
-	if(increase_votepwr)
+/*	if(increase_votepwr)
 		forge_werewolf_objectives()
 	
 	wolfname = "[pick(GLOB.wolf_prefixes)] [pick(GLOB.wolf_suffixes)]"
-	owner.AddSpell(new /obj/effect/proc_holder/spell/self/werewolf_transform)
+*/
+//Backup in case elder werewolves dont get the spell, but Lesser Werewolves can't transform back as mentioned before
+	if(!(owner.has_spell(/obj/effect/proc_holder/spell/self/werewolf_transform)) || !owner.has_antag_datum(/datum/antagonist/werewolf/lesser))
+		owner.AddSpell(new /obj/effect/proc_holder/spell/self/werewolf_transform)
 	return ..()
 
 /datum/antagonist/werewolf/on_removal()
 	if(!silent && owner.current)
 		to_chat(owner.current,span_danger("I am no longer a [special_role]!"))
 	owner.special_role = null
-	owner.RemoveSpell(/obj/effect/proc_holder/spell/self/werewolf_transform)
+	if(owner.has_spell(/obj/effect/proc_holder/spell/self/werewolf_transform))
+		owner.RemoveSpell(/obj/effect/proc_holder/spell/self/werewolf_transform)
 	return ..()
 
 /datum/antagonist/werewolf/proc/add_objective(datum/objective/O)
@@ -67,7 +71,7 @@
 		return
 
 /datum/antagonist/werewolf/greet()
-	to_chat(owner.current, span_userdanger("Since a bite long, long ago, Dendor's Madness has welled within me. Before the Moonlight, I will sate my hallowed Hunger."))
+	to_chat(owner.current, span_userdanger("You are an example of Supremacy of Nature over all of Man. Glory to Lupian Kind."))
 	return ..()
 
 /datum/antagonist/werewolf/lesser/greet()

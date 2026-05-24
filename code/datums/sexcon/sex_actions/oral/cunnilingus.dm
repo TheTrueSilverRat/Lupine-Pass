@@ -11,6 +11,8 @@
 /datum/sex_action/cunnilingus/can_perform(mob/living/user, mob/living/target)
 	if(user == target)
 		return FALSE
+	if(user.erpable) // User is a npc, bypasss shit I'm too tired for this
+		return TRUE
 	if(!check_location_accessible(user, target, BODY_ZONE_PRECISE_GROIN, TRUE))
 		return FALSE
 	if(!check_location_accessible(user, user, BODY_ZONE_PRECISE_MOUTH))
@@ -29,6 +31,9 @@
 
 	user.sexcon.perform_sex_action(target, 2, 3, TRUE)
 	if(target.sexcon.check_active_ejaculation())
+		if(istype(user.dna.species, /datum/species/werewolf) && target.has_quirk(/datum/quirk/kinfolk))
+			to_chat(target, span_love("I feel a bestial essence curling in my chest"))
+			target.apply_status_effect(/datum/status_effect/werewolf_infection)
 		user.sexcon.handle_orgasm_counter(target, user)
 		target.visible_message(span_love("[target] ejaculates into [user]'s mouth!"))
 		target.sexcon.cum_into(oral = TRUE, splashed_user = user)

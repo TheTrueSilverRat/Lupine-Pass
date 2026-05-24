@@ -160,7 +160,7 @@
 	if(sigbitflags & SIG_CHECK_FAIL)
 		return FALSE
 
-	if(!user.Adjacent(target) && !(sigbitflags & SKIP_ADJACENCY_CHECK))
+	if(!user.Adjacent(target) && !user.erpable && !(sigbitflags & SKIP_ADJACENCY_CHECK))
 		return FALSE
 
 	if(!bodypart)
@@ -173,13 +173,13 @@
 		if(!same_tile && !grab_bypass)
 			return FALSE
 
-	if(user.erpable) //NPC fucks easy
-		return TRUE
-
 	if(src.require_grab && (user != target || self_target) && !(sigbitflags & SKIP_GRAB_CHECK))
 		var/grabstate = user.get_highest_grab_state_on(target)
 		if((grabstate == null || grabstate < src.required_grab_state))
 			return FALSE
+	
+	if(user.erpable) //If the User is a sex npc, make everything true cause gosh darnit to fuck
+		return TRUE
 
 	var/result = get_location_accessible(target, location = location, grabs = grabs, skipundies = skipundies)
 	if(result && user == target && !(bodypart in user_controller.using_zones) && user_controller.current_action == SEX_ACTION(src))
@@ -1056,17 +1056,22 @@
 				try_stop_current_action()
 				return
 	if(!target.client && !target.erpable)
+		//to_chat(world, "DEBUG: [user] isn't Erpable ABORTING")
 		try_stop_current_action()
 		return
 	if(action_type == current_action)
+		//to_chat(world, "DEBUG: [user] selected the same action as current actio , aborting")
 		try_stop_current_action()
 		return
 	if(current_action != null)
+		//to_chat(world, "DEBUG: [user]'s current action isn't NULL, ABORTING")
 		try_stop_current_action()
 		return
 	if(!action_type)
+		//to_chat(world, "DEBUG: User [user] has no action type selected")
 		return
 	if(!can_perform_action(action_type))
+		//to_chat(world, "DEBUG: User [user] is unable to perform action type")
 		return
 	if(knotted_status)
 		knot_remove()
@@ -1126,11 +1131,14 @@
 
 /datum/sex_controller/proc/can_perform_action(action_type)
 	if(!action_type)
+		//to_chat(world, "[user] does not have an action type")
 		return FALSE
 	var/datum/sex_action/action = SEX_ACTION(action_type)
 	if(!inherent_perform_check(action_type))
+		//to_chat(world, "[user] did not succeed in the inherent_perform_check")
 		return FALSE
 	if(!action.can_perform(user, target))
+		//to_chat(world, "[user] did not suceed in the can perform check")
 		return FALSE
 	return TRUE
 

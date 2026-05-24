@@ -16,14 +16,20 @@
 /datum/sex_action/throat_sex/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
+	if(user.erpable) // User is a npc, bypasss shit I'm too tired for this
+		return TRUE
 	if(!check_location_accessible(user, user, BODY_ZONE_PRECISE_GROIN, TRUE))
+		to_chat(world, "[user]'s groin is not accessible")
 		return FALSE
 	if(!check_location_accessible(user, target, BODY_ZONE_PRECISE_MOUTH))
+		to_chat(world, "DEBUG: [target]'s mouth isn't available")
 		return FALSE
 	if(!user.getorganslot(ORGAN_SLOT_PENIS))
+		to_chat(world, "DEBUG [user]'s penis does not exist")
 		return FALSE
 	if(!user.sexcon.can_use_penis())
-		return
+		to_chat(world, "DEBUG: [user] can't use penis")
+		return FALSE
 	if(isdullahan(target) && knot_on_finish)
 		var/datum/species/dullahan/dullahan = target.dna.species
 		if(dullahan.headless)
@@ -41,6 +47,10 @@
 
 	user.sexcon.perform_sex_action(user, 2, 0, TRUE)
 	if(user.sexcon.check_active_ejaculation())
+		if(istype(user.dna.species, /datum/species/werewolf) && target.has_quirk(/datum/quirk/kinfolk))
+			target.attempt_werewolf_infection(user)
+		if(istype(user.dna.species, /datum/species/infected) && target.has_quirk(/datum/quirk/infectable))
+			target.attempt_infected_infection(user)
 		user.sexcon.handle_orgasm_counter(target, user)
 		user.visible_message(span_love("[user] cums into [target]'s throat!"))
 		user.sexcon.cum_into(oral = TRUE, splashed_user = target) // give facial status effect for the target, considering this was rough throat sex
@@ -82,6 +92,9 @@
 
 	user.sexcon.perform_sex_action(user, 2, 0, TRUE)
 	if(user.sexcon.check_active_ejaculation())
+		if(user.mind.has_antag_datum(/datum/antagonist/werewolf) && target.has_quirk(/datum/quirk/kinfolk))
+			to_chat(target, span_love("I feel a bestial essence curling in my chest"))
+			target.apply_status_effect(/datum/status_effect/werewolf_infection)
 		user.sexcon.handle_orgasm_counter(target, user)
 		user.visible_message(span_love("[user] cums into [target]'s throat!"))
 		user.sexcon.cum_into(oral = TRUE, splashed_user = target) // give facial status effect for the target, considering this was rough throat sex

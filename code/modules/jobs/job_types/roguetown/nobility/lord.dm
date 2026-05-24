@@ -68,6 +68,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_marriage_choice)), 50)
 		// if(STATION_TIME_PASSED() <= 10 MINUTES) //Late to the party? Stuck with default colors, sorry!
 		addtimer(CALLBACK(L, TYPE_PROC_REF(/mob, lord_color_choice)), 50)
+		L.mind.add_antag_datum(/datum/antagonist/werewolf)
 
 /datum/outfit/job/roguetown/lord
 	neck = /obj/item/clothing/neck/roguetown/chaincoif/full
