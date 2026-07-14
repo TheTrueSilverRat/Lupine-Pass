@@ -71,6 +71,9 @@
 				visible_message(span_warning("The ice fades away around you. [L] "))  //antimagic needs some testing
 				playsound(get_turf(L), 'sound/magic/magic_nulled.ogg', 100)
 				return 
+			if(ishuman(L))
+				var/mob/living/carbon/human/H = L
+				H.apply_weather_temperature(-35)	//checks for cold protection before applying temp
 			play_cleave = TRUE
 			L.adjustFireLoss(damage)
 			L.apply_status_effect(/datum/status_effect/buff/frostbite/)

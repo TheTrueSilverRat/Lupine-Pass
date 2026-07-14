@@ -22,6 +22,10 @@
 	max_integrity = 100
 	sewrepair = TRUE
 	block2add = FOV_BEHIND
+	cold_protection = HEAD
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = HEAD
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/head/roguetown/roguehood/ComponentInitialize()
 	. = ..()
@@ -78,6 +82,10 @@
 	sewrepair = TRUE
 	mask_override = TRUE
 	overarmor = FALSE
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = HEAD
+	max_heat_protection_temperature = 600
 
 /obj/item/clothing/head/roguetown/roguehood/shalal/AdjustClothes(mob/user)
 	if(loc == user)
@@ -126,6 +134,10 @@
 	item_state = "heavyhood"
 	icon_state = "heavyhood"
 	hidesnoutADJ = FALSE
+	cold_protection = HEAD
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/head/roguetown/roguehood/shalal/hijab/yoruku
 	name = "shadowed hood"

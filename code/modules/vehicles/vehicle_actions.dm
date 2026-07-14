@@ -1,3 +1,4 @@
+
 //VEHICLE DEFAULT HANDLING
 /obj/vehicle/proc/generate_actions()
 	return
@@ -98,3 +99,4 @@
 
 /datum/action/vehicle/ridden
 	var/obj/vehicle/ridden/vehicle_ridden_target
+

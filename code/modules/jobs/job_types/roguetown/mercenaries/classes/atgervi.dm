@@ -124,24 +124,45 @@
 	icon_state = "atgervi_shaman_coat"
 	item_state = "atgervi_shaman_coat"
 
+	cold_protection = CHEST
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
+
 /obj/item/clothing/under/roguetown/trou/leather/atgervi
 	name = "fur pants"
 	desc = "Thick fur pants made to endure the coldest winds, offering a share of protection from fang and claw of beast or men alike."
 	icon_state = "atgervi_pants"
 	item_state = "atgervi_pants"
 	flags_inv = HIDECROTCH|HIDEBOOB
-	
+
+	armor = ARMOR_GRONN_LIGHT
+	cold_protection = GROIN
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
+
 /obj/item/clothing/gloves/roguetown/angle/atgervi
 	name = "fur-lined leather gloves"
 	desc = "Thick, padded gloves made for the harshest of climates, and wildest of beasts encountered in the untamed lands."
 	icon_state = "atgervi_raider_gloves"
 	item_state = "atgervi_raider_gloves"
 
+	cold_protection = HAND_LEFT | HAND_RIGHT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
+
 /obj/item/clothing/gloves/roguetown/plate/atgervi
 	name = "beast claws"
 	desc = "A menacing pair of plated claws, A closely protected tradition of the Shamans. The four claws embodying the four great beasts. Decorated with symbols of the gods they praise and the Gods they reject."
 	icon_state = "atgervi_shaman_gloves"
 	item_state = "atergvi_shaman_gloves"
+
+	cold_protection = HAND_LEFT | HAND_RIGHT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/head/roguetown/helmet/bascinet/atgervi
 	name = "owl helmet"
@@ -154,6 +175,11 @@
 	block2add = null
 	worn_x_dimension = 32
 	worn_y_dimension = 48
+
+	cold_protection = HEAD
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/head/roguetown/helmet/leather/saiga/atgervi
 	name = "moose hood"
@@ -168,6 +194,11 @@
 	worn_y_dimension = 48
 	experimental_inhand = FALSE
 	experimental_onhip = FALSE
+
+	cold_protection = HEAD
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/shoes/roguetown/boots/leather/atgervi
 	name = "atgervi leather boots"

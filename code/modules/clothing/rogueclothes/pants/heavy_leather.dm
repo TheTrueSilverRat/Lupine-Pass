@@ -31,6 +31,10 @@
 	name = "otavan leather trousers"
 	desc = "padded leather armor made by Otavan tailors, its quality is remarkable."
 	icon_state = "fencerpants"
+	cold_protection = GROIN | LEG_RIGHT | LEG_LEFT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic
 	name = "fencing breeches"
@@ -40,6 +44,10 @@
 	color = "#FFFFFF"
 	detail_color = "#5E4440"
 	allowed_race = NON_DWARVEN_RACE_TYPES
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = GROIN | LEG_RIGHT | LEG_LEFT
+	max_heat_protection_temperature = 600
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan/generic/update_icon()
 	cut_overlays()
@@ -65,6 +73,10 @@
 	armor_class = ARMOR_CLASS_LIGHT
 	color = "#262927"
 	detail_color = "#FFFFFF"
+	cold_protection = GROIN | LEG_RIGHT | LEG_LEFT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/under/roguetown/heavy_leather_pants/grenzelpants/attack_right(mob/user)
 	..()

@@ -171,7 +171,7 @@
 	icon_state = "border";
 	dir = 6
 	},
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/candle/blue/l,
 /turf/open/floor/rogue/ruinedwood/chevron,
 /area/rogue/indoors/shelter)
 "aD" = (
@@ -828,7 +828,7 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/beach/forest)
 "eQ" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/machinery/light/rogue/candle/blue,
 /obj/structure/table/wood/fancy/black,
 /obj/effect/spawner/lootdrop/roguetown/dungeon/spells,
 /turf/open/floor/rogue/ruinedwood{
@@ -894,7 +894,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/beach)
 "ff" = (
-/obj/machinery/light/rogue/wallfire/candle/l,
+/obj/machinery/light/rogue/candle/l,
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/indoors/cave)
 "fg" = (
@@ -917,7 +917,7 @@
 	icon_state = "border";
 	dir = 4
 	},
-/obj/machinery/light/rogue/wallfire/candle/l,
+/obj/machinery/light/rogue/candle/l,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -1000,7 +1000,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/indoors/cave)
 "fO" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/candle/blue/l,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave/dukecourt)
 "fQ" = (
@@ -1120,7 +1120,7 @@
 /area/rogue/outdoors/beach/forest)
 "gz" = (
 /obj/structure/closet/crate/chest/neu,
-/obj/machinery/light/rogue/wallfire/candle,
+/obj/machinery/light/rogue/candle,
 /obj/item/natural/cloth,
 /obj/item/natural/cloth,
 /obj/item/natural/cloth,
@@ -1128,7 +1128,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/shelter)
 "gA" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/machinery/light/rogue/candle/blue/r,
 /turf/open/water/bath,
 /area/rogue/under/cave/dukecourt)
 "gC" = (
@@ -1313,7 +1313,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/orcdungeon)
 "hV" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/machinery/light/rogue/candle/blue,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave/dukecourt)
 "hX" = (
@@ -1407,7 +1407,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/beach)
 "iD" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/machinery/light/rogue/candle/blue,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave/dukecourt)
@@ -1627,7 +1627,7 @@
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/beach/forest)
 "kr" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/candle/blue/l,
 /obj/structure/table/wood/fancy/black,
 /obj/item/roguestatue/gold/loot{
 	pixel_y = 11
@@ -1735,7 +1735,7 @@
 	pixel_x = 8;
 	pixel_y = -3
 	},
-/obj/machinery/light/rogue/wallfire{
+/obj/machinery/light/rogue/campfire/fireplace{
 	pixel_y = 32
 	},
 /turf/open/floor/rogue/ruinedwood{
@@ -2383,7 +2383,7 @@
 	},
 /area/rogue/under/cave/dukecourt)
 "pJ" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/machinery/light/rogue/candle/blue/r,
 /turf/open/floor/carpet/red,
 /area/rogue/under/cave/mazedungeon)
 "pL" = (
@@ -2439,7 +2439,7 @@
 /turf/closed/wall/mineral/rogue/craftstone,
 /area/rogue/under/cave/mazedungeon)
 "qg" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/candle/blue/l,
 /obj/structure/flora/roguegrass/herb/random,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave/dukecourt)
@@ -3018,7 +3018,7 @@
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/shelter)
 "tQ" = (
-/obj/machinery/light/rogue/wallfire/candle/r,
+/obj/machinery/light/rogue/candle/r,
 /turf/closed/mineral/random/rogue/med,
 /area/rogue/indoors/cave)
 "tR" = (
@@ -3397,7 +3397,7 @@
 /turf/closed/wall/mineral/rogue/wooddark/horizontal,
 /area/rogue/indoors/cave)
 "wr" = (
-/obj/machinery/light/rogue/wallfire/candle/l,
+/obj/machinery/light/rogue/candle/l,
 /obj/structure/bookcase/random/archive,
 /obj/effect/decal/cleanable/dirt/cobweb,
 /turf/open/floor/rogue/ruinedwood{
@@ -4313,7 +4313,7 @@
 /turf/open/water/ocean/deep,
 /area/rogue/outdoors/beach)
 "Cu" = (
-/obj/machinery/light/rogue/wallfire,
+/obj/machinery/light/rogue/campfire/fireplace,
 /turf/closed/wall/mineral/rogue/stone,
 /area/rogue/under/cave/mazedungeon)
 "Cx" = (
@@ -4465,7 +4465,7 @@
 	icon_state = "border";
 	dir = 1
 	},
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/machinery/light/rogue/candle/blue/r,
 /obj/structure/closet/crate/chest/lootbox,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter)
@@ -4645,7 +4645,7 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/cave)
 "EM" = (
-/obj/machinery/light/rogue/wallfire/candle,
+/obj/machinery/light/rogue/candle,
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/shelter)
 "EN" = (
@@ -4765,7 +4765,7 @@
 /turf/open/floor/rogue/tile/brick,
 /area/rogue/under/cave/dukecourt)
 "Fx" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/candle/blue/l,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/cave)
 "Fz" = (
@@ -5476,7 +5476,7 @@
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/beach/forest)
 "Kb" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/machinery/light/rogue/candle/blue/r,
 /turf/open/floor/rogue/cobble,
 /area/rogue/indoors/shelter)
 "Ke" = (
@@ -5490,7 +5490,7 @@
 	},
 /area/rogue/under/cave/mazedungeon)
 "Kg" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/candle/blue/l,
 /obj/structure/chair/wood/rogue{
 	dir = 4
 	},
@@ -5911,7 +5911,7 @@
 	},
 /area/rogue/under/cave/mazedungeon)
 "MS" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/machinery/light/rogue/candle/blue/r,
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/indoors/cave)
 "MU" = (
@@ -5956,7 +5956,7 @@
 /turf/open/floor/rogue/naturalstone,
 /area/rogue/indoors/cave)
 "Nu" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/machinery/light/rogue/candle/blue/r,
 /obj/structure/fluff/railing/border{
 	dir = 8
 	},
@@ -6015,7 +6015,7 @@
 /turf/open/floor/rogue/blocks/platform,
 /area/rogue/under/cave/orcdungeon)
 "NJ" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/machinery/light/rogue/candle/blue,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/mazedungeon)
 "NL" = (
@@ -6023,7 +6023,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/outdoors/beach)
 "NM" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/machinery/light/rogue/candle/blue/r,
 /turf/open/floor/rogue/cobble,
 /area/rogue/under/cave/orcdungeon)
 "NP" = (
@@ -6318,7 +6318,7 @@
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/cave/dukecourt)
 "PI" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/candle/blue/l,
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/cave/orcdungeon)
 "PK" = (
@@ -6482,7 +6482,7 @@
 /turf/open/floor/rogue/woodturned,
 /area/rogue/indoors/shelter)
 "QQ" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/l,
+/obj/machinery/light/rogue/candle/blue/l,
 /turf/open/floor/rogue/tile/bath,
 /area/rogue/under/cave/dukecourt)
 "QR" = (
@@ -6602,7 +6602,7 @@
 /turf/open/floor/rogue/herringbone,
 /area/rogue/under/cave/orcdungeon)
 "RB" = (
-/obj/machinery/light/rogue/wallfire/candle/blue{
+/obj/machinery/light/rogue/candle/blue{
 	pixel_y = -32
 	},
 /turf/open/water/bath,
@@ -7017,7 +7017,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/orcdungeon)
 "UB" = (
-/obj/machinery/light/rogue/wallfire/candle/blue{
+/obj/machinery/light/rogue/candle/blue{
 	pixel_y = -32
 	},
 /obj/structure/flora/roguegrass,
@@ -7159,7 +7159,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/beach/forest)
 "VA" = (
-/obj/machinery/light/rogue/wallfire/candle/blue/r,
+/obj/machinery/light/rogue/candle/blue/r,
 /obj/structure/flora/roguegrass,
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/under/cave/dukecourt)
@@ -7223,7 +7223,7 @@
 	icon_state = "border";
 	dir = 8
 	},
-/obj/machinery/light/rogue/wallfire/candle/r,
+/obj/machinery/light/rogue/candle/r,
 /turf/open/floor/rogue/ruinedwood{
 	icon_state = "weird1"
 	},
@@ -7492,7 +7492,7 @@
 /turf/open/floor/rogue/wood/nosmooth,
 /area/rogue/indoors/shelter)
 "Yc" = (
-/obj/machinery/light/rogue/wallfire/candle/blue,
+/obj/machinery/light/rogue/candle/blue,
 /turf/open/floor/rogue/dirt,
 /area/rogue/under/cave/mazedungeon)
 "Yd" = (
@@ -7713,7 +7713,7 @@
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/under/cave/orcdungeon)
 "Zw" = (
-/obj/machinery/light/rogue/wallfire/candle/blue{
+/obj/machinery/light/rogue/candle/blue{
 	pixel_y = -32
 	},
 /turf/open/floor/rogue/dirt/road,

@@ -135,6 +135,19 @@
 /// The limit the human body can take before it starts taking damage from coldness.
 #define BODYTEMP_COLD_DAMAGE_LIMIT			(BODYTEMP_NORMAL - 50)
 
+#define BODYTEMP_NORMAL_MAX 350
+#define BODYTEMP_NORMAL_MIN 250
+/// Heat level 1 350-450
+#define BODYTEMP_HEAT_LEVEL_ONE_MAX			450//(BODYTEMP_NORMAL_MAX + 100)
+/// Cold level 1 250-150
+#define BODYTEMP_COLD_LEVEL_ONE_MAX			150	//(BODYTEMP_NORMAL_MIN - 100)
+
+// Temperature state defines
+#define TEMP_STATE_VERY_COLD 1
+#define TEMP_STATE_COLD 2
+#define TEMP_STATE_NORMAL 3
+#define TEMP_STATE_HOT 4
+#define TEMP_STATE_VERY_HOT 5
 
 /// what min_cold_protection_temperature is set to for space-helmet quality headwear. MUST NOT BE 0.
 #define SPACE_HELM_MIN_TEMP_PROTECT			2.0

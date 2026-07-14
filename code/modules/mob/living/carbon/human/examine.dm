@@ -561,7 +561,7 @@
 	if(stat == DEAD || (HAS_TRAIT(src, TRAIT_FAKEDEATH)))
 		appears_dead = TRUE
 
-	var/temp = getBruteLoss() + getFireLoss() //no need to calculate each of these twice
+	var/temp = getBruteLoss()
 
 	if(!(user == src && src.hal_screwyhud == SCREWYHUD_HEALTHY)) //fake healthy
 		// Damage
@@ -574,6 +574,29 @@
 				msg += "<B>[m1] severely wounded.</B>"
 			if(100 to INFINITY)
 				msg += span_danger("[m1] gravely wounded.")
+		
+		temp = getFireLoss()
+
+		switch(temp)
+			if(5 to 25)
+				msg += "[m1] a little burnt."
+			if(25 to 50)
+				msg += "[m1] burned."
+			if(50 to 100)
+				msg += "<B>[m1] severely burnt.</B>"
+			if(100 to INFINITY)
+				msg += span_danger("[m1] gravely burnt.")
+
+	//body temp
+	switch(bodytemperature)
+		if(0 to BODYTEMP_COLD_LEVEL_ONE_MAX)
+			msg += span_biginfo("<font color='#023E8A'> [m1] shivering uncontrollably</font>")
+		if(BODYTEMP_COLD_LEVEL_ONE_MAX to BODYTEMP_NORMAL_MIN)
+			msg += span_biginfo("<font color='#99e6ff'> [m1] shivering</font>")
+		if(BODYTEMP_NORMAL_MAX to BODYTEMP_HEAT_LEVEL_ONE_MAX)
+			msg += span_biginfo("<font color='#ffff00'> [m1] sweating</font>")
+		if(BODYTEMP_HEAT_LEVEL_ONE_MAX to 600)
+			msg += span_biginfo("<font color='#DC143C?'> [m1] sweating greatly</font>")
 
 	// Blood volume
 	switch(blood_volume)
@@ -647,6 +670,11 @@
 		else
 			missing_limb_message = span_danger("[missing_limb_message]")
 		msg += missing_limb_message
+
+	if(has_status_effect(/datum/status_effect/fire_handler/fire_stacks))
+		msg += "[t_He] [t_is] covered in something flammable.\n"
+	if(has_status_effect(/datum/status_effect/fire_handler/wet_stacks))
+		msg += "[t_He] look[p_s()] a little soaked.\n"
 
 	//Grabbing
 	if(pulledby && pulledby.grab_state)

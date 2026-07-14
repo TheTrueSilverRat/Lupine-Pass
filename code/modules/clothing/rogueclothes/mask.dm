@@ -169,6 +169,8 @@
 	slot_flags = ITEM_SLOT_MASK|ITEM_SLOT_HIP
 	armor = ARMOR_PADDED 
 	sewrepair = TRUE
+	cold_protection = HEAD
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
 
 /obj/item/clothing/mask/rogue/sack/psy
 	name = "psydonian sack mask"

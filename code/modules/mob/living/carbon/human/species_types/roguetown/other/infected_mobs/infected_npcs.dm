@@ -1,4 +1,5 @@
 /mob/living/carbon/human/species/infected/npc 
+	name = "Common Infected"
 	aggressive=1
 	mode = NPC_AI_IDLE
 	dodgetime = 30 //they can dodge easily, but have a cooldown on it
@@ -12,15 +13,51 @@
 	lewd_talk = TRUE
 	attack_speed = 2
 
+//Special variation for the Infected
+/mob/living/carbon/human/species/infected/npc/give_genitals()
+	erpable = TRUE
+	if(sexcon == null)
+		sexcon = new /datum/sex_controller(src)
+	if(!issimple(src))
+		var/mob/living/carbon/human/species/user = src
+		if(gender == FEMALE)
+
+			if(!user.getorganslot(ORGAN_SLOT_BREASTS))
+				var/obj/item/organ/breasts/breasts = user.getorganslot(ORGAN_SLOT_BREASTS)
+				breasts = new /obj/item/organ/breasts
+				breasts.breast_size = MAX_BREASTS_SIZE
+				breasts.Insert(user, TRUE)
+
+			if(!user.getorganslot(ORGAN_SLOT_VAGINA))
+				var/obj/item/organ/vagina/vagina = user.getorganslot(ORGAN_SLOT_VAGINA)
+				vagina = new /obj/item/organ/vagina
+				vagina.Insert(user, TRUE)
+
+			if(!user.getorganslot(ORGAN_SLOT_TESTICLES))
+				var/obj/item/organ/testicles/testicles = user.getorganslot(ORGAN_SLOT_TESTICLES)
+				testicles = new /obj/item/organ/testicles
+				testicles.ball_size = MAX_TESTICLES_SIZE
+				testicles.Insert(user, TRUE)
+
+			if(!user.getorganslot(ORGAN_SLOT_PENIS))
+				var/obj/item/organ/penis/penis = user.getorganslot(ORGAN_SLOT_PENIS)
+				penis = new /obj/item/organ/penis
+				penis.penis_size = MAX_PENIS_SIZE
+				penis.Insert(user, TRUE)
+
+
 /mob/living/carbon/human/species/infected/npc/Initialize()
 	. = ..()
 	addtimer(CALLBACK(src, PROC_REF(after_creation), 1 SECONDS))
 
 /mob/living/carbon/human/species/infected/npc/after_creation()
 	. = ..()
+	name = "common infected"
+	real_name = "common infected"
 	erpable = TRUE
 	seeksfuck = TRUE
 	lewd_talk = TRUE	
+	gender = FEMALE
 	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC)
 	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC)
 	give_genitals()
@@ -35,6 +72,9 @@
 	adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
 	faction = list("Infected")
+
+	
+
 
 /mob/living/carbon/human/species/infected/jizzer/npc 
 	aggressive=1

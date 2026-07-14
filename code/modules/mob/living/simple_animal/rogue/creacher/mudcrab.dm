@@ -32,6 +32,7 @@
 	var/obj/item/inventory_mask
 	gold_core_spawnable = FRIENDLY_SPAWN
 	
+	minbodytemp = 0
 
 	can_have_ai = FALSE //disable native ai
 	AIStatus = AI_OFF

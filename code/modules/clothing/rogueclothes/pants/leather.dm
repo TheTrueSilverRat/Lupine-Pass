@@ -15,6 +15,10 @@
 	l_sleeve_status = SLEEVE_NORMAL
 	armor_class = ARMOR_CLASS_LIGHT
 	salvage_amount = 1
+	cold_protection = GROIN | LEG_RIGHT | LEG_LEFT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/under/roguetown/trou/leather
 	name = "leather trousers"
@@ -24,6 +28,10 @@
 	max_integrity = ARMOR_INT_LEG_LEATHER
 	resistance_flags = FIRE_PROOF
 	salvage_result = /obj/item/natural/hide/cured
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/under/roguetown/trou/leather/mourning
 	name = "mourning trousers"
@@ -73,6 +81,10 @@
 	name = "baggy desert pants"
 	desc = "A handmade pair of baggy, thin leather pants. Keeps sand out of your boots, sun off your legs, and a creacher's fangs from piercing your ankles."
 	naledicolor = FALSE
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = GROIN | LEG_RIGHT | LEG_LEFT
+	max_heat_protection_temperature = 600
 
 /obj/item/clothing/under/roguetown/trou/leather/eastern
 	icon_state = "eastpants1"

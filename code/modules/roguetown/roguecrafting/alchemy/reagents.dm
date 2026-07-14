@@ -181,6 +181,15 @@
 			// Rapidly purge stacking buffs
 	..()
 
+/datum/reagent/buff/temperature_normalize
+	name = "temperature"
+	color = "#ff9000"
+	taste_description = "like water"
+
+/datum/reagent/buff/temperature_normalize/on_mob_life(mob/living/carbon/M)
+	M.apply_status_effect(/datum/status_effect/buff/alch/temperaturepot)
+	return ..()
+
 /datum/reagent/buff/strength
 	name = STATKEY_STR
 	color = "#ff9000"

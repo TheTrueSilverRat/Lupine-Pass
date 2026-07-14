@@ -13,7 +13,10 @@
 	grid_width = 64
 	grid_height = 64
 
-
+	cold_protection = CHEST | ARM_RIGHT | ARM_LEFT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = CHEST | ARM_RIGHT | ARM_LEFT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 //////////////////////////
 /// TABARD
 ////////////////////////
@@ -32,6 +35,10 @@
 	flags_inv = HIDECROTCH|HIDEBOOB
 	var/picked
 	var/overarmor = TRUE
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/tabard/ComponentInitialize()
 	. = ..()
@@ -58,6 +65,10 @@
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_CLOAK
 	flags_inv = HIDECROTCH|HIDEBOOB
 	var/overarmor = TRUE
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/abyssortabard/ComponentInitialize()
 	. = ..()
@@ -95,6 +106,10 @@
 	flags_inv = HIDECROTCH|HIDEBOOB
 	var/open_wear = FALSE
 	var/overarmor = TRUE
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/psydontabard/ComponentInitialize()
 	. = ..()
@@ -455,6 +470,10 @@
 	flags_inv = HIDECROTCH|HIDEBOOB
 	var/picked
 	var/overarmor = TRUE
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/stabard/ComponentInitialize()
 	. = ..()
@@ -762,6 +781,10 @@
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	detail_tag = "_det"
 	detail_color = CLOTHING_AZURE
+	cold_protection = CHEST | GROIN | ARM_RIGHT | ARM_LEFT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/lordcloak/update_icon()
 	cut_overlays()
@@ -817,6 +840,10 @@
 	inhand_mod = TRUE
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	salvage_result = /obj/item/natural/fur
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/darkcloak/ComponentInitialize()
 	. = ..()
@@ -836,6 +863,10 @@
 	icon_state = "bear_cloak"
 	item_state = "bear_cloak"
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/darkcloak/bear/light
 	name = "light direbear cloak"
@@ -854,6 +885,10 @@
 	boobed = TRUE
 	allowed_race = CLOTHED_RACES_TYPES
 	flags_inv = HIDECROTCH|HIDEBOOB
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/apron/ComponentInitialize()
 	. = ..()
@@ -976,6 +1011,10 @@
 	body_parts_covered = HEAD
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR|HIDETAIL
 	block2add = FOV_BEHIND
+	cold_protection = HEAD
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = HEAD
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/raincloak/furcloak
 	name = "fur cloak"
@@ -984,6 +1023,10 @@
 	inhand_mod = FALSE
 	hoodtype = /obj/item/clothing/head/hooded/rainhood/furhood
 	salvage_result = /obj/item/natural/fur
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/raincloak/furcloak/crafted/Initialize()
 	. = ..()
@@ -1007,6 +1050,10 @@
 /obj/item/clothing/head/hooded/rainhood/furhood
 	icon_state = "fur_hood"
 	block2add = FOV_BEHIND
+	cold_protection = HEAD
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/cape
 	name = "cape"
@@ -1021,6 +1068,10 @@
 	nodismemsleeves = TRUE
 	inhand_mod = FALSE
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/cape/purple
 	color = "#663584"
@@ -1075,14 +1126,6 @@
 	icon_state = "hoodcape"
 	item_state = "hoodcape"
 
-/obj/item/clothing/cloak/cape/fur
-	name = "fur cape"
-	icon_state = "furcape"
-	item_state = "furcape"
-	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
-	inhand_mod = TRUE
-	salvage_result = /obj/item/natural/fur
-
 /obj/item/clothing/cloak/chasuble
 	name = "chasuble"
 	desc = ""
@@ -1105,6 +1148,10 @@
 	sleevetype = null
 	body_parts_covered = null
 	flags_inv = null
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/stole/red
 	icon_state = "stole_red"
@@ -1139,6 +1186,10 @@
 	allowed_race = NON_DWARVEN_RACE_TYPES
 	sellprice = 50
 	nodismemsleeves = TRUE
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/undivided
 	name = "undivided cloak"
@@ -1180,6 +1231,10 @@
 	allowed_sex = list(MALE, FEMALE)
 	flags_inv = null
 	var/flipped = FALSE
+	cold_protection = CHEST | ARM_RIGHT | ARM_LEFT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = CHEST | ARM_RIGHT | ARM_LEFT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/half/ComponentInitialize()
 	. = ..()
@@ -1394,6 +1449,10 @@
 	inhand_mod = FALSE
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
 	flags_inv = HIDECROTCH|HIDEBOOB
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/wickercloak
 	name = "wicker cloak"
@@ -1407,6 +1466,10 @@
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
 	inhand_mod = TRUE
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/tribal
 	name = "tribal pelt"
@@ -1420,6 +1483,10 @@
 	nodismemsleeves = TRUE
 	boobed = FALSE
 	sellprice = 10
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/lordcloak/ladycloak
 	name = "ladylike shortcloak"
@@ -1435,6 +1502,10 @@
 	nodismemsleeves = TRUE
 	detail_tag = "_detail"
 	detail_color = CLOTHING_BLACK
+	cold_protection = ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/matron
 	name = "matron cloak"
@@ -1449,6 +1520,10 @@
 	nodismemsleeves = TRUE
 	sleevetype = "shirt"
 	slot_flags = ITEM_SLOT_CLOAK
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/cloak/battlenun
 	name = "nun vestments"
@@ -1547,6 +1622,10 @@
 	icon = 'icons/roguetown/clothing/special/blkknight.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/blkknight.dmi'
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/head/roguetown/helmet/heavy/blkknight
 	name = "blacksteel helmet"
@@ -1740,6 +1819,10 @@
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
 	inhand_mod = TRUE
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection =  CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/wardencloak/ComponentInitialize()
 	. = ..()
@@ -1755,6 +1838,10 @@
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
 	inhand_mod = TRUE
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection =  CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/graggar/Initialize()
 	. = ..()
@@ -1770,6 +1857,10 @@
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
 	inhand_mod = TRUE
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection =  CHEST | GROIN | ARM_LEFT | ARM_RIGHT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/forrestercloak/ComponentInitialize()
 	. = ..()
@@ -1779,6 +1870,7 @@
 	name = "snow cloak"
 	desc = "A cloak meant to keep one's body warm in the cold of the mountains as well as the dampness of the vale."
 	icon_state = "snowcloak"
+	cold_protection = CHEST | GROIN | ARM_LEFT | ARM_RIGHT
 
 //eastern update
 
@@ -1820,6 +1912,10 @@
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
 	inhand_mod = TRUE
+	cold_protection = CHEST
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = CHEST
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/ordinatorcape/ComponentInitialize()
 	. = ..()
@@ -1835,6 +1931,10 @@
 	sleevetype = "shirt"
 	nodismemsleeves = TRUE
 	inhand_mod = TRUE
+	cold_protection = CHEST | GROIN
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = CHEST | GROIN
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/absolutionistrobe/ComponentInitialize()
 	. = ..()
@@ -1896,6 +1996,10 @@
 	detail_tag = "_detail"
 	alternate_worn_layer = CLOAK_BEHIND_LAYER
 	detail_color = "#39404d"
+	cold_protection = CHEST
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = CHEST
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/cloak/captain/Initialize()
 	. = ..()

@@ -43,6 +43,7 @@
 	var/swim_skill = FALSE
 	nomouseover = FALSE
 	var/swimdir = FALSE
+	temperature = 200
 
 /turf/open/water/Initialize()
 	.  = ..()
@@ -198,6 +199,9 @@
 					if(AM.loc == src)
 						water_overlay.layer = ABOVE_MOB_LAYER
 						water_overlay.plane = GAME_PLANE_HIGHEST
+			if(temperature <= 250 && L.bodytemperature > BODYTEMP_COLD_LEVEL_ONE_MAX + 10)	//swimming in cold water will cool you down and chill you.
+				L.adjust_bodytemperature(-10)
+				L.update_health_hud()
 		if(!istype(L, /mob/living/carbon/human/species/skeleton))
 			return
 		if(!istype(src, /turf/open/water/sewer))
@@ -239,10 +243,15 @@
 				if(wash_in)
 					wash_atom(user, CLEAN_STRONG)
 				playsound(user, pick(wash), 100, FALSE)
-/*				if(water_reagent == /datum/reagent/water) //become shittified, checks so bath water can be naturally gross but not discolored
-					water_reagent = /datum/reagent/water/gross
-					water_color = "#a4955b"
-					update_icon()*/
+				if(temperature < 250 && L.bodytemperature > BODYTEMP_COLD_LEVEL_ONE_MAX + 75)	//washing yourself helps to cool you off.
+					L.adjust_bodytemperature(-75)
+					L.update_health_hud()
+				if(temperature >= 300)	//bathhouses, predominantly
+					if(L.bodytemperature < BODYTEMP_NORMAL_MIN)	//washing yourself helps to warm you up.
+						L.adjust_bodytemperature(75)
+						L.update_health_hud()
+					if(L.bodytemperature > BODYTEMP_NORMAL_MAX)	//washing yourself helps to cool you off.
+						L.adjust_bodytemperature(-75)
 		else
 			user.visible_message(span_info("[user] starts to wash [item2wash] in [src]."))
 			if(do_after(L, 30, target = src))
@@ -324,6 +333,7 @@
 	water_color = "#FFFFFF"
 	slowdown = 3
 	water_reagent = /datum/reagent/water/bathwater
+	temperature = 300
 
 /turf/open/water/bath/Initialize()
 	.  = ..()
@@ -339,6 +349,7 @@
 	slowdown = 1
 	wash_in = FALSE
 	water_reagent = /datum/reagent/water/gross
+	temperature = 300
 
 /turf/open/water/sewer/Initialize()
 	icon_state = "paving"
@@ -355,6 +366,7 @@
 	slowdown = 3
 	wash_in = TRUE
 	water_reagent = /datum/reagent/water/gross
+	temperature = 275
 
 /turf/open/water/bloody
 	name = "blood"
@@ -366,6 +378,7 @@
 	slowdown = 3
 	wash_in = TRUE
 	water_reagent = /datum/reagent/blood
+	temperature = 300
 
 /turf/open/water/swamp/Initialize()
 	icon_state = "dirt"
@@ -573,6 +586,7 @@
 	var/heal_interval = 5 SECONDS
 	var/heal_amount = 20
 	var/last_heal = 0
+	temperature = 300
 
 /turf/open/water/ocean/deep/thermalwater/Initialize()
 	. = ..()

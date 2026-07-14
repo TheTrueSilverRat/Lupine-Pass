@@ -787,7 +787,7 @@
 
 /datum/crafting_recipe/roguetown/structure/wallcandle
 	name = "wall candles (1 stone, 1 yellow candle)"
-	result = /obj/machinery/light/rogue/wallfire/candle
+	result = /obj/machinery/light/rogue/candle
 	reqs = list(/obj/item/natural/stone = 1, /obj/item/candle/yellow = 1)
 	verbage_simple = "build"
 	verbage = "builds"
@@ -797,7 +797,7 @@
 
 /datum/crafting_recipe/roguetown/structure/wallcandleblue
 	name = "wall candles blue (1 stone, 1 yellow candle, 1 ash)"
-	result = /obj/machinery/light/rogue/wallfire/candle/blue
+	result = /obj/machinery/light/rogue/candle/blue
 	reqs = list(/obj/item/natural/stone = 1, /obj/item/candle/yellow = 1, /obj/item/ash = 1)
 	verbage_simple = "build"
 	verbage = "builds"

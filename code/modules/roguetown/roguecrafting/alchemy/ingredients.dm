@@ -151,7 +151,7 @@
 /obj/item/alch/swampdust
 	name = "swampweed dust"
 	icon_state = "swampdust"
-	major_pot = /datum/alch_cauldron_recipe/berrypoison
+	major_pot = /datum/alch_cauldron_recipe/temp_potion
 	med_pot = /datum/alch_cauldron_recipe/aphrodisiac
 	minor_pot = /datum/alch_cauldron_recipe/end_potion
 
@@ -420,6 +420,10 @@
 	muteinmouth = FALSE
 	alternate_worn_layer  = 8.9 //On top of helmet
 	mill_result = /obj/item/reagent_containers/food/snacks/grown/rogue/rosa_petals
+	major_pot = /datum/alch_cauldron_recipe/temp_potion
+	med_pot = /datum/alch_cauldron_recipe/aphrodisiac
+	minor_pot = /datum/alch_cauldron_recipe/stamina_potion
+
 
 /obj/item/alch/rosa/equipped(mob/living/carbon/human/user, slot)
 	. = ..()

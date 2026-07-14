@@ -72,3 +72,21 @@
 	name = STATKEY_LCK
 	icon_state = "buff"
 
+/datum/status_effect/buff/alch/temperaturepot
+	id = "temppot"
+	alert_type = /atom/movable/screen/alert/status_effect/buff/alch/temperaturepot
+	effectedstats = list()
+	duration = 15 SECONDS
+
+/atom/movable/screen/alert/status_effect/buff/alch/temperaturepot
+	name = "Temperature Equilibrium"
+	desc = "Your entire body is stabilizing your temperature."
+	icon_state = "buff"
+
+/datum/status_effect/buff/alch/temperaturepot/process()
+
+	.=..()
+	if(owner.bodytemperature > BODYTEMP_NORMAL_MAX)
+		owner.adjust_bodytemperature(-5)
+	if(owner.bodytemperature < BODYTEMP_NORMAL_MIN)
+		owner.adjust_bodytemperature(-5)

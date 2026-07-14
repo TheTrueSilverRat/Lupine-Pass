@@ -261,3 +261,14 @@
 	timer = 5 MINUTES
 	stressadd = -3
 	desc = "<span class='green'>I got some love, and it was wonderful!</span>"
+
+
+/datum/stressevent/bloodrevel
+	timer = 1 MINUTES
+	stressadd = -4
+	desc = span_red("It's raining blood! Blessed be my Patron!")
+
+/datum/stressevent/fireflies
+	timer = 10 MINUTES
+	stressadd = -5
+	desc = span_boldgreen("What wonderious fireflies...")

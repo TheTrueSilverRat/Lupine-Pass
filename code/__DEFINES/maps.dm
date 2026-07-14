@@ -48,6 +48,8 @@ require only minor tweaks.
 #define ZTRAIT_UP "Up"
 #define ZTRAIT_DOWN "Down"
 
+#define ZTRAIT_IGNORE_WEATHER_TRAIT "NoDayorWeather"
+
 // enum - how space transitions should affect this level
 #define ZTRAIT_LINKAGE "Linkage"
     // UNAFFECTED if absent - no space transitions

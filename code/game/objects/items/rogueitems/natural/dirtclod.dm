@@ -36,6 +36,15 @@
 			qdel(src)
 			new /obj/structure/fluff/clodpile(T)
 
+/obj/item/natural/dirtclod/snow
+	name = "packed snow"
+	desc = "A handful of snow"
+	icon_state = "snow1"
+
+/obj/item/natural/dirtclod/snow/Initialize(mapload)
+	..()
+	icon_state = "snow[rand(1,2)]"
+
 /obj/item/natural/dirtclod/attack_self(mob/living/user)
 	user.visible_message(span_warning("[user] scatters [src]."))
 	qdel(src)

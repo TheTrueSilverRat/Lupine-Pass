@@ -105,6 +105,10 @@
 			if(src.mind?.has_antag_datum(/datum/antagonist/zombie) && (!src.handcuffed) && prob(50))
 				visible_message(span_warning("[src] spits out [mouth]."))
 				dropItemToGround(mouth, silent = FALSE)
+		if(istype(get_turf(src), /turf/open/floor/rogue/snow) && !HAS_TRAIT(src, TRAIT_LIGHT_STEP))
+			var/obj/effect/decal/cleanable/blood/footprints/mud/mudprint = new /obj/effect/decal/cleanable/blood/footprints/mud(get_turf(src))
+			mudprint.entered_dirs |= dir
+			mudprint.update_icon()
 
 /mob/living/carbon/human/Process_Spacemove(movement_dir = 0) //Temporary laziness thing. Will change to handles by species reee.
 	if(dna.species.space_move(src))

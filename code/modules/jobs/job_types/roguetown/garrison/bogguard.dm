@@ -74,7 +74,8 @@
 		/obj/item/flashlight/flare/torch/lantern = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
 		/obj/item/reagent_containers/glass/bottle/rogue/healthpot = 1,
-		/obj/item/signal_horn = 1
+		/obj/item/signal_horn = 1,
+		/obj/item/barometer = 1
 		)
 	H.adjust_skillrank(/datum/skill/combat/bows, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/slings, 4, TRUE)
@@ -145,7 +146,8 @@
 		/obj/item/storage/keyring/guardcastle = 1,
 		/obj/item/flashlight/flare/torch/lantern = 1,
 		/obj/item/rogueweapon/scabbard/sheath = 1,
-		/obj/item/signal_horn = 1
+		/obj/item/signal_horn = 1,
+		/obj/item/barometer = 1
 		)
 	H.adjust_skillrank(/datum/skill/combat/axes, 4, TRUE)
 	H.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)

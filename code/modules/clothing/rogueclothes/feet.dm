@@ -171,6 +171,10 @@
 	item_state = "shalal"
 	sewrepair = TRUE
 	armor = list("blunt" = 25, "slash" = 20, "stab" = 25, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = FOOT_LEFT | FOOT_RIGHT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/shoes/roguetown/boots/leather
 	name = "leather boots"
@@ -183,6 +187,10 @@
 	armor = ARMOR_BOOTS_BAD
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/hide/cured
+	cold_protection = FOOT_LEFT | FOOT_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/shoes/roguetown/boots/leather/reinforced
 	name = "heavy leather boots"
@@ -360,6 +368,10 @@
 	armor = ARMOR_BOOTS_BAD
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/fur
+	cold_protection = FOOT_LEFT | FOOT_RIGHT
+	min_cold_protection_temperature = 50
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/shoes/roguetown/boots/furlinedanklets
 	name = "fur lined anklets"
@@ -373,6 +385,10 @@
 	is_barefoot = TRUE
 	salvage_amount = 1
 	salvage_result = /obj/item/natural/fur
+	cold_protection = FOOT_LEFT | FOOT_RIGHT
+	min_cold_protection_temperature = BODYTEMP_COLD_LEVEL_ONE_MAX
+	heat_protection = null
+	max_heat_protection_temperature = BODYTEMP_NORMAL_MAX
 
 /obj/item/clothing/shoes/roguetown/boots/clothlinedanklets
 	name = "cloth lined anklets"
@@ -383,6 +399,10 @@
 	is_barefoot = TRUE
 	sewrepair = TRUE
 	armor = ARMOR_BOOTS_BAD
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = FOOT_LEFT | FOOT_RIGHT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 /obj/item/clothing/shoes/roguetown/boots/otavan/inqboots
 	name = "inquisitorial boots"
@@ -440,6 +460,10 @@
 	is_barefoot = TRUE
 	sewrepair = TRUE
 	armor = ARMOR_BOOTS_BAD
+	cold_protection = null
+	min_cold_protection_temperature = BODYTEMP_NORMAL_MIN
+	heat_protection = FOOT_LEFT | FOOT_RIGHT
+	max_heat_protection_temperature = BODYTEMP_HEAT_LEVEL_ONE_MAX
 
 //kazen update
 /obj/item/clothing/shoes/roguetown/armor/rumaclan

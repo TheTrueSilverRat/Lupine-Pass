@@ -1589,10 +1589,55 @@
 		SEND_SIGNAL(src, COMSIG_LIVING_EXTINGUISHED, src)
 		update_fire()
 
-/mob/living/proc/adjust_fire_stacks(add_fire_stacks) //Adjusting the amount of fire_stacks we have on person
-	fire_stacks = CLAMP(fire_stacks + add_fire_stacks, -20, 20)
-	if(on_fire && fire_stacks <= 0)
-		ExtinguishMob()
+/**
+ * Handles effects happening when mob is on normal fire
+ *
+ * Vars:
+ * * seconds_per_tick
+ * * times_fired
+ * * fire_handler: Current fire status effect that called the proc
+ */
+
+/mob/living/proc/on_fire_stack(seconds_per_tick, datum/status_effect/fire_handler/fire_stacks/fire_handler)
+	adjust_bodytemperature(((fire_handler.stacks)) * 0.5 * seconds_per_tick)
+
+/**
+ * Adjust the amount of fire stacks on a mob
+ *
+ * This modifies the fire stacks on a mob.
+ *
+ * Vars:
+ * * stacks: int The amount to modify the fire stacks
+ * * fire_type: type Type of fire status effect that we apply, should be subtype of /datum/status_effect/fire_handler/fire_stacks
+ */
+/mob/living/proc/adjust_fire_stacks(stacks, fire_type = /datum/status_effect/fire_handler/fire_stacks)
+	if(stacks < 0)
+		if(HAS_TRAIT(src, TRAIT_NO_EXTINGUISH)) //You can't reduce fire stacks of the everlasting flames
+			return
+		stacks = max(-fire_stacks, stacks)
+	apply_status_effect(fire_type, stacks)
+
+/**
+ * Set the fire stacks on a mob
+ *
+ * This sets the fire stacks on a mob, stacks are clamped between -20 and 20.
+ * If the fire stacks are reduced to 0 then we will extinguish the mob.
+ *
+ * Vars:
+ * * stacks: int The amount to set fire_stacks to
+ * * fire_type: type Type of fire status effect that we apply, should be subtype of /datum/status_effect/fire_handler/fire_stacks
+ * * remove_wet_stacks: bool If we remove all wet stacks upon doing this
+ */
+
+/mob/living/proc/set_fire_stacks(stacks, fire_type = /datum/status_effect/fire_handler/fire_stacks)
+	if(stacks < 0) //Shouldn't happen, ever
+		CRASH("set_fire_stacks received negative [stacks] fire stacks")
+
+	if(stacks == 0)
+		remove_status_effect(fire_type)
+		return
+
+	apply_status_effect(fire_type, stacks, TRUE)
 
 /mob/living/proc/adjust_divine_fire_stacks(add_fire_stacks) //Adjusting the amount of divine_fire_stacks we have on person
 	divine_fire_stacks = CLAMP(divine_fire_stacks + add_fire_stacks, 0, 100)

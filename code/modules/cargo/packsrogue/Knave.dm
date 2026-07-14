@@ -71,6 +71,7 @@
 	cost = 30
 	contains = list(/obj/item/clothing/suit/roguetown/armor/leather/heavy/coat)
 
+
 ///////////////////
 // WRISTS/GLOVES //
 ///////////////////
