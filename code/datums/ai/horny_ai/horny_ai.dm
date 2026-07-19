@@ -331,7 +331,7 @@
 					penis.penis_size = rand(MAX_PENIS_SIZE)
 					penis.Insert(user, TRUE)
 
-/* I am shelving Simple mobs for now
+
 //--------------simple mobs ----------------
 //sex stuff brainrot for things like werevolves --vide noir
 //talking is not optional here for show of sentience.
@@ -365,11 +365,11 @@
 				continue
 			chasesfuck = TRUE
 			if(gender == MALE)
-				visible_message(span_boldwarning("[src] has his eyes on [fucktarg], cock throbbing!"))
-				say(pick(male_lewdtalk), language = /datum/language/common)
+				if(prob(5))
+					visible_message(span_boldwarning("[src] has his eyes on [fucktarg], cock throbbing!"))
 			else
-				visible_message(span_boldwarning("[src] has her eyes on [fucktarg], cunt dripping!"))
-				say(pick(female_lewdtalk), language = /datum/language/common)
+				if(prob(5))
+					visible_message(span_boldwarning("[src] has her eyes on [fucktarg], cunt dripping!"))
 			break
 	if(chasesfuck) //until fuck is acquired, keep chasing.
 		seekboredom += 1
@@ -377,13 +377,11 @@
 		target = null
 		approaching_target = FALSE
 		in_melee = FALSE
-		if(prob(10))
+		if(prob(5))
 			if(gender == MALE)
 				visible_message(span_warning("[src] seeks his mate, cock throbbing!"))
-				say(pick(male_lewdtalk), language = /datum/language/common)
 			else
 				visible_message(span_warning("[src] seeks her mate, cunt dripping!"))
-				say(pick(female_lewdtalk), language = /datum/language/common)
 		seeklewd()
 	if(seekboredom > 25) //give up after a while and go dormant again, this should also help them get unstuck.
 		stoppedfucking(timedout = TRUE)
@@ -518,10 +516,8 @@
 
 /mob/living/simple_animal/Initialize()
 	. = ..()
-	if(erpable)
-		give_genitals()
 	if(prob(hornychance))
 		seeksfuck = TRUE
 		fuckcd = rand(0,20)
 
-*/
+
