@@ -61,6 +61,7 @@
 	languages = list(
 		/datum/language/common
 	)
+	var/infected_alt_sprite = "infected" //used for the alt sprites used for the infected mobs
 
 /datum/species/infected/send_voice(mob/living/carbon/human/H)
 	playsound(get_turf(H), pick('sound/vo/mobs/spider/speak (1).ogg','sound/vo/mobs/spider/speak (2).ogg', 'sound/vo/mobs/spider/speak (3).ogg', 'sound/vo/mobs/spider/speak (4).ogg'), 100, TRUE, -1)
@@ -68,7 +69,7 @@
 /datum/species/infected/regenerate_icons(mob/living/carbon/human/H)
 	H.icon = 'icons/roguetown/mob/monster/infected_mobs.dmi'
 	H.base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB, INTENT_HARM)
-	H.icon_state = "infected"
+	H.icon_state = infected_alt_sprite
 	return TRUE
 
 /datum/species/infected/on_species_gain(mob/living/carbon/C, datum/species/old_species)
