@@ -75,12 +75,11 @@
 
 	
 
-
-/mob/living/carbon/human/species/infected/jizzer/npc 
+/mob/living/carbon/human/species/infected/npc/jizzer
 	aggressive=1
 	mode = NPC_AI_IDLE
 	dodgetime = 30 //they can dodge easily, but have a cooldown on it
-	flee_in_pain = FALSE
+	flee_in_pain = TRUE
 	npc_jump_chance = 60
 	npc_jump_distance = 6 // this might make them concheck more often, but it'll also mean it's easier to kick their legs out from under them
 	rude = TRUE
@@ -91,6 +90,29 @@
 	attack_speed = 2
 	var/projectiletype = /obj/projectile/bullet/spider
 
+/mob/living/carbon/human/species/infected/npc/jizzer/after_creation()
+	. = ..()
+	name = "jizzer infected"
+	real_name = "jizzer infected"
+	erpable = TRUE
+	seeksfuck = TRUE
+	lewd_talk = TRUE	
+	gender = FEMALE
+	ADD_TRAIT(src, TRAIT_NOMOOD, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_NOHUNGER, TRAIT_GENERIC)
+	give_genitals()
+
+
+
+	STASTR = rand(8,15) -4
+	STASPD = rand(10,15) +4
+	STACON = rand(8,12) -6
+	STAEND = rand(5,10) + 4
+	STAINT = rand(1,6)
+	STAPER = rand(8,10) + 8
+	adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
+	faction = list("Infected")
 
 
 /*
