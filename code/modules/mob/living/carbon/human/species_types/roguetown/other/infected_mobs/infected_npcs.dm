@@ -88,7 +88,6 @@
 	seeksfuck = TRUE
 	lewd_talk = TRUE
 	attack_speed = 2
-	var/projectiletype = /obj/projectile/bullet/spider
 
 /mob/living/carbon/human/species/infected/npc/jizzer/after_creation()
 	. = ..()

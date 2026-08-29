@@ -35,9 +35,9 @@
 		message_cooldown_time = world.time + message_cooldown_amount
 //The Infection has ran its course, full time infection
 	if(world.time > transformation_time)
-		var/mob/living/carbon/human/H = owner
-		if(!iscarbon(H))
+		if(!iscarbon(owner))
 			H.remove_status_effect(/datum/status_effect/werewolf_infection/infected)
+		var/mob/living/carbon/human/H = owner
 		H.infected_transform()
 		H.remove_status_effect(/datum/status_effect/werewolf_infection/infected)
 
