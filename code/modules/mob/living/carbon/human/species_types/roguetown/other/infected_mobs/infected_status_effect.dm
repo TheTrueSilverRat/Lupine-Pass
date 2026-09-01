@@ -36,9 +36,19 @@
 //The Infection has ran its course, full time infection
 	if(world.time > transformation_time)
 		if(!iscarbon(owner))
-			H.remove_status_effect(/datum/status_effect/werewolf_infection/infected)
+			owner.remove_status_effect(/datum/status_effect/werewolf_infection/infected)
 		var/mob/living/carbon/human/H = owner
-		H.infected_transform()
+		var/infected_list = list("Common Infected", "Jizzers", "Commanders", "Flashers")
+		var/infected_choice = input(H, span_love("Which Infection strain do you wish to be?"), "INFECTION HAS TAKEN FRUITION", "Common Infected") as anything in infected_list
+		switch(infected_choice)
+			if("Jizzers")
+				H.infected_transform_jizzer()
+			if("Commanders")
+				//add option here
+			if("Flashers")
+				//add option here
+			else
+				H.infected_transform()
 		H.remove_status_effect(/datum/status_effect/werewolf_infection/infected)
 
 /datum/status_effect/werewolf_infection/infected/on_apply()

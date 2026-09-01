@@ -129,7 +129,6 @@
 	max_integrity = 150
 	item_flags = DROPDEL
 
-
 //Infection Proc, used for specifying transformation stuff.
 /mob/living/carbon/human/proc/infected_transform()
 	if(!mind)
@@ -239,7 +238,7 @@
 	inf.AddSpell(new /obj/effect/proc_holder/spell/self/claws)
 	inf.AddSpell(new /obj/effect/proc_holder/spell/targeted/woundlick)
 
-	ADD_TRAIT(src, TRAIT_NOSLEEP, TRAIT_GENERIC)
+	ADD_TRAIT(inf, TRAIT_NOSLEEP, TRAIT_GENERIC)
 	ADD_TRAIT(inf, TRAIT_STRONGBITE, TRAIT_GENERIC)
 	ADD_TRAIT(inf, TRAIT_ZJUMP, TRAIT_GENERIC)
 	ADD_TRAIT(inf, TRAIT_NOFALLDAMAGE1, TRAIT_GENERIC)

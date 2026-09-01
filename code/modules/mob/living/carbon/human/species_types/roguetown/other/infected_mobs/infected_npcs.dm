@@ -114,7 +114,7 @@
 	faction = list("Infected")
 
 
-/*
+/* These are used as a sort of debug tester thing
 /mob/living/carbon/human/species/orc/npc/Initialize()
 	. = ..()
 	set_species(/datum/species/orc)
