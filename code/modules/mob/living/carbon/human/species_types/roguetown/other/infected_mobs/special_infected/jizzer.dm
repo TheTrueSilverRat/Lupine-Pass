@@ -35,8 +35,8 @@
 	recharge_time = 2 SECONDS
 	no_early_release = FALSE
 	movement_interrupt = FALSE
-	invocations = list("HISS!")
-	invocation_type = "shout"
+	invocation_type = "emote"
+	invocation_emote_self = "hisses and shoots out a wad of jizz from its phallus"
 	associated_skill = /datum/skill/combat/slings
 	cost = 5
 	xp_gain = TRUE
