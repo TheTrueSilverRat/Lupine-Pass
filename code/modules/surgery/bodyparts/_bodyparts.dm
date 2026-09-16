@@ -18,7 +18,7 @@
 	var/aux_zone // used for hands
 	var/aux_layer
 	var/body_part = null //bitflag used to check which clothes cover this bodypart
-	var/use_digitigrade = NOT_DIGITIGRADE //Used for alternate legs, useless elsewhere
+	var/use_digitigrade = FALSE //Used for alternate legs, useless elsewhere
 	var/held_index = 0 //are we a hand? if so, which one!
 	var/is_pseudopart = FALSE //For limbs that don't really exist, eg chainsaws
 
@@ -611,13 +611,16 @@
 
 	var/is_organic_limb = is_organic_limb()
 
+/* Can't believe they fucking kept it in, just comment it out at least so there's less processing wasted
+			if(should_draw_gender)
+				limb.icon_state = "[body_zone][skel]"
+*/
+
 	if(is_organic_limb)
 		if(should_draw_greyscale)
 			limb.icon = species_icon
-			if(should_draw_gender)
-				limb.icon_state = "[body_zone][skel]"
-			else if(use_digitigrade)
-				limb.icon_state = "digitigrade_[use_digitigrade]_[body_zone]"
+			if(use_digitigrade && !skeletonized) // sprites use 1 for the full legs and 2 for squished digi smol legs
+				limb.icon_state = "digitigrade_[body_zone]" // temporarily removed _[use_digitigrade] since I figured it would be fine
 			else
 				limb.icon_state = "[body_zone][skel]"
 		else
@@ -628,7 +631,10 @@
 				limb.icon_state = "[species_id]_[body_zone]"
 		if(aux_zone)
 			if(!hideaux)
-				aux = image(limb.icon, "[aux_zone][skel]", -aux_layer, image_dir)
+				if(use_digitigrade && !skeletonized)
+					aux = image(limb.icon, "[aux_zone]_digitigrade", -aux_layer, image_dir)				
+				else
+					aux = image(limb.icon, "[aux_zone][skel]", -aux_layer, image_dir)
 				. += aux
 
 	else
@@ -888,7 +894,7 @@
 
 /obj/item/bodypart/l_leg/digitigrade
 	name = "left digitigrade leg"
-	use_digitigrade = FULL_DIGITIGRADE
+	use_digitigrade = TRUE
 
 /obj/item/bodypart/l_leg/monkey
 	icon = 'icons/mob/animal_parts.dmi'
@@ -938,7 +944,7 @@
 
 /obj/item/bodypart/r_leg/digitigrade
 	name = "right digitigrade leg"
-	use_digitigrade = FULL_DIGITIGRADE
+	use_digitigrade = TRUE
 
 /obj/item/bodypart/r_leg/monkey
 	icon = 'icons/mob/animal_parts.dmi'

@@ -455,11 +455,8 @@
 	for(var/X in bodyparts)
 		var/obj/item/bodypart/BP = X
 		. += BP.body_zone
-		switch(BP.use_digitigrade)
-			if(FULL_DIGITIGRADE)
-				. += "digitigrade_full"
-			if(SQUISHED_DIGITIGRADE)
-				. += "digitigrade_squashed"
+		if(BP.use_digitigrade)
+			. += "digitigrade"
 		if(BP.animal_origin)
 			. += BP.animal_origin
 		if(BP.status == BODYPART_ORGANIC)

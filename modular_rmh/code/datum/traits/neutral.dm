@@ -42,6 +42,28 @@
 	var/mob/living/carbon/human/H = quirk_holder
 	H.virginity = TRUE
 	ADD_TRAIT(H, TRAIT_NUTCRACKER, TRAIT_GENERIC)
+
+
+/datum/quirk/digi_legs
+	name = "Digitigrade Legs"
+	desc = "(TESTING) Allows for your legs to be swapped with Digitigrade ones (Will reflect on spawn due to how trait codes work)"
+	value = 0
+	gain_text = span_notice("I got them grippers")
+
+/datum/quirk/digi_legs/on_spawn()
+	var/mob/living/carbon/human/C = quirk_holder
+	C.dna.species.species_traits += DIGITIGRADE
+	C.Digitigrade_Leg_Swap(FALSE)
+	C.update_body()
+	C.regenerate_icons()
+
+/datum/quirk/digi_legs/remove()
+	var/mob/living/carbon/human/C = quirk_holder
+	C.dna.species.species_traits -= DIGITIGRADE
+	C.Digitigrade_Leg_Swap(TRUE)
+	C.update_body()
+	C.regenerate_icons()
+
 /*
 /datum/quirk/resident
 	name = "Resident"

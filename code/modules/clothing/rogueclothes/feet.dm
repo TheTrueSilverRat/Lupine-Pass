@@ -12,6 +12,28 @@
 	resistance_flags = FIRE_PROOF
 	experimental_inhand = FALSE
 	salvage_amount = 0
+/*
+/obj/item/clothing/shoes/roguetown/AdjustClothes(mob/user)
+#ifdef MATURESERVER
+	if(loc == user)
+		if(adjustable == CAN_CADJUST)
+			adjustable = CADJUSTED
+			icon_state = "[initial(icon_state)]_t"
+			body_parts_covered = null
+			slowdown += 2
+			if(ishuman(user))
+				var/mob/living/carbon/H = user
+				H.update_inv_shoes()
+		else if(adjustable == CADJUSTED)
+			ResetAdjust(user)
+			if(user)
+				if(ishuman(user))
+					var/mob/living/carbon/H = user
+					H.update_inv_shoes()
+#else
+	return
+#endif
+*/
 
 /obj/item/clothing/shoes/roguetown/boots
 	name = "dark boots"
