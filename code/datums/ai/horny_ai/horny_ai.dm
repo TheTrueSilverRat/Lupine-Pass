@@ -188,34 +188,50 @@
 						visible_message(span_info("[src] is infected and has their arousal set high"))
 					log_admin("[src] is trying to init sex on [L]")
 					var/current_action = /datum/sex_action/rimming
-					if(gender == FEMALE && L.gender == MALE)
+					var/list/actions //an attempt to modularize the sex actions
+					if(gender == FEMALE && L.getorganslot(ORGAN_SLOT_PENIS))
+						actions += /datum/sex_action/anal_ride_sex
+						actions += /datum/sex_action/vaginal_ride_sex
+					/*
 						switch(rand(1,2))
 							if(1) //anal
 								current_action = /datum/sex_action/anal_ride_sex
 							if(2) //vaginal
-								current_action = /datum/sex_action/vaginal_ride_sex
-					if(gender == MALE && L.gender == MALE)
+								current_action = /datum/sex_action/vaginal_ride_sex*/
+					if(gender == MALE && L.getorganslot(ORGAN_SLOT_PENIS))
+						actions += /datum/sex_action/throat_sex
+						actions += /datum/sex_action/anal_sex
+						/*	
 						switch(rand(1,2))
 							if(1) //oral
 								current_action = /datum/sex_action/throat_sex
 							if(2) //anal
-								current_action = /datum/sex_action/anal_sex
-					if(gender == MALE && L.gender == FEMALE)
+								current_action = /datum/sex_action/anal_sex*/
+					if(gender == MALE && L.getorganslot(ORGAN_SLOT_VAGINA))
+						actions += /datum/sex_action/throat_sex
+						actions += /datum/sex_action/anal_sex
+						actions += /datum/sex_action/vaginal_sex
+						/*
 						switch(rand(1,3))
 							if(1) //oral
 								current_action = /datum/sex_action/throat_sex
 							if(2) //anal
 								current_action = /datum/sex_action/anal_sex
 							if(3) //vaginal
-								current_action = /datum/sex_action/vaginal_sex
-					if(gender == FEMALE && L.gender == FEMALE)
+								current_action = /datum/sex_action/vaginal_sex*/
+					if(gender == FEMALE && L.getorganslot(ORGAN_SLOT_VAGINA))
+						actions += /datum/sex_action/scissoring
+						actions += /datum/sex_action/rimming
+						actions += /datum/sex_action/cunnilingus
+						/*
 						switch(rand(1,3))
 							if(1) //SCISSORING
 								current_action = /datum/sex_action/scissoring
 							if(2) //anal
 								current_action = /datum/sex_action/rimming
 							if(3) //vaginal
-								current_action = /datum/sex_action/cunnilingus
+								current_action = /datum/sex_action/cunnilingus*/
+					current_action = rand(actions)
 					//They wash you assh
 					if(current_action == /datum/sex_action/rimming && is_species(src, /datum/species/orc))
 						visible_message(span_love("[src] takes out a bar of spa and starts washing [L]'s ass before eating [L.p_their()] out"))
