@@ -305,7 +305,7 @@ There are several things that need to be remembered:
 
 /* --------------------------------------- */
 //vvvvvv UPDATE_INV PROCS vvvvvv
-
+//Found some digitigrade stuff things to work on
 /mob/living/carbon/human/update_inv_w_uniform()
 	return
 /*
@@ -617,13 +617,16 @@ There are several things that need to be remembered:
 		if(dna && dna.species.sexes)
 			var/footindex = get_limbloss_index(LEG_RIGHT, LEG_LEFT)
 			var/racecustom
+			var/digitigrade_feet
 			var/mutable_appearance/shoes_overlay
 			if(dna.species.custom_clothes)
 				racecustom = dna.species.clothes_id
+			if(DIGITIGRADE in dna.species.species_traits)
+				digitigrade_feet = TRUE
 			if((gender == FEMALE && !dna.species.use_m) || dna.species.use_f)
-				shoes_overlay = shoes.build_worn_icon(default_layer = SHOES_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = TRUE, customi = racecustom, sleeveindex = footindex, boobed_overlay = has_boobed_overlay())
+				shoes_overlay = shoes.build_worn_icon(default_layer = SHOES_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = TRUE, customi = racecustom, digitigrade = digitigrade_feet, sleeveindex = footindex, boobed_overlay = has_boobed_overlay())
 			else
-				shoes_overlay = shoes.build_worn_icon(default_layer = SHOES_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = FALSE, customi = racecustom, sleeveindex = footindex)
+				shoes_overlay = shoes.build_worn_icon(default_layer = SHOES_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = FALSE, customi = racecustom, digitigrade = digitigrade_feet, sleeveindex = footindex)
 
 			if(OFFSET_SHOES in dna.species.offset_features)
 				shoes_overlay.pixel_x += dna.species.offset_features[OFFSET_SHOES][1]
@@ -1352,18 +1355,21 @@ There are several things that need to be remembered:
 		update_observer_view(wear_pants,1)
 		if(dna && dna.species.sexes)
 			var/racecustom
+			var/digitigrade
 			var/legsindex = get_limbloss_index(LEG_RIGHT, LEG_LEFT)
 			var/mutable_appearance/pants_overlay
 
 			if(dna.species.custom_clothes)
 				racecustom = dna.species.clothes_id
+			if(DIGITIGRADE in dna.species.species_traits) //for digi legs
+				digitigrade = TRUE
 			if(gender == FEMALE && !dna.species.use_m)
-				pants_overlay = wear_pants.build_worn_icon(default_layer = PANTS_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = TRUE, customi = racecustom, sleeveindex = legsindex, boobed_overlay = has_boobed_overlay(), clip_mask = c_mask)
+				pants_overlay = wear_pants.build_worn_icon(default_layer = PANTS_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = TRUE, digitigrade = digitigrade, customi = racecustom, sleeveindex = legsindex, boobed_overlay = has_boobed_overlay(), clip_mask = c_mask)
 			else
 				if(dna.species.use_f)
-					pants_overlay = wear_pants.build_worn_icon(default_layer = PANTS_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = TRUE, customi = racecustom, sleeveindex = legsindex, boobed_overlay = has_boobed_overlay(), clip_mask = c_mask)
+					pants_overlay = wear_pants.build_worn_icon(default_layer = PANTS_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = TRUE, digitigrade = digitigrade, customi = racecustom, sleeveindex = legsindex, boobed_overlay = has_boobed_overlay(), clip_mask = c_mask)
 				else
-					pants_overlay = wear_pants.build_worn_icon(default_layer = PANTS_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = FALSE, customi = racecustom, sleeveindex = legsindex, clip_mask = c_mask)
+					pants_overlay = wear_pants.build_worn_icon(default_layer = PANTS_LAYER, default_icon_file = 'icons/mob/clothing/feet.dmi', female = FALSE, digitigrade = digitigrade, customi = racecustom, sleeveindex = legsindex, clip_mask = c_mask)
 
 			if(gender == MALE)
 				if(OFFSET_PANTS in dna.species.offset_features)
@@ -1378,10 +1384,11 @@ There are several things that need to be remembered:
 			//add sleeve overlays, then offset
 			var/list/sleeves = list()
 			var/femw = ((gender == FEMALE && !dna.species.use_m) || dna.species.use_f) ? "_f" : ""
+			var/digi = (DIGITIGRADE in dna.species.species_traits) ? "_digi" : "" //FOr digi legs
 			if(wear_pants.sleeved && legsindex > 0 && wear_pants.adjustable != CADJUSTED)
 				sleeves = get_sleeves_layer(wear_pants,legsindex,LEGSLEEVE_LAYER)
 			if(wear_pants.adjustable == CADJUSTED)
-				var/mutable_appearance/overleg = mutable_appearance(wear_pants.mob_overlay_icon, "[wear_pants.icon_state][femw][racecustom ? "_[racecustom]" : ""]", -LEGSLEEVE_LAYER)
+				var/mutable_appearance/overleg = mutable_appearance(wear_pants.mob_overlay_icon, "[wear_pants.icon_state][femw][racecustom ? "_[racecustom]" : ""][digi]", -LEGSLEEVE_LAYER)
 				sleeves += overleg
 			if(sleeves)
 				for(var/X in sleeves)
@@ -1554,7 +1561,7 @@ generate/load female uniform sprites matching all previously decided variables
 
 
 */
-/obj/item/proc/build_worn_icon(default_layer = 0, default_icon_file = null, isinhands = FALSE, femaleuniform = NO_FEMALE_UNIFORM, override_state = null, female = FALSE, customi = null, sleeveindex, boobed_overlay = FALSE, var/icon/clip_mask = null)
+/obj/item/proc/build_worn_icon(default_layer = 0, default_icon_file = null, isinhands = FALSE, femaleuniform = NO_FEMALE_UNIFORM, override_state = null, female = FALSE, digitigrade = FALSE, customi = null, sleeveindex, boobed_overlay = FALSE, var/icon/clip_mask = null)
 	var/t_state
 	var/sleevejazz = sleevetype
 	if(override_state)
@@ -1573,6 +1580,10 @@ generate/load female uniform sprites matching all previously decided variables
 		t_state += "_[customi]"
 		if(sleevejazz)
 			sleevejazz += "_[customi]"
+	if(digitigrade)
+		t_state += "_digi"
+		if(sleevejazz)
+			sleevejazz += "_digi"
 	var/t_icon = mob_overlay_icon
 
 	if(!t_icon)
@@ -1816,11 +1827,8 @@ generate/load female uniform sprites matching all previously decided variables
 			. += "organic"
 		else
 			. += "robotic"
-		switch(BP.use_digitigrade)
-			if(FULL_DIGITIGRADE)
-				. += "digitigrade_full"
-			if(SQUISHED_DIGITIGRADE)
-				. += "digitigrade_squashed"
+		if(BP.use_digitigrade == TRUE)
+			. += "digitigrade"
 		if(BP.rotted)
 			. += "rotted"
 		if(BP.skeletonized)
