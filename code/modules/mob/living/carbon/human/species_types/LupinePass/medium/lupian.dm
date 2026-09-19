@@ -19,6 +19,7 @@
 		EYECOLOR,
 		LIPS,
 		HAIR,
+		DIGITIGRADE,
 	)
 	inherent_biotypes = MOB_ORGANIC|MOB_HUMANOID
 	use_skintones = 1

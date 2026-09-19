@@ -25,7 +25,7 @@
 	the Great Sissean Uprisings plunged the republic into economic and moral chaos with many leaders accused of Matthiosan worship. This turmoil \
 	eventually sparked the brutal Ainoan Crusade, splintering the republic into several rump states led by merchant warlords and so-called pirate kings. \
 	However, instead of trying to reclaim the glory of the past, Axians embrace their new lifestyle and thrive in the chaos."
-	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS)
+	species_traits = list(EYECOLOR,LIPS,STUBBLE,MUTCOLORS, DIGITIGRADE)
 	inherent_traits = list(TRAIT_WATERBREATHING, TRAIT_SEA_DRINKER)
 	possible_ages = ALL_AGES_LIST
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | RACE_SWAP | SLIME_EXTRACT
