@@ -254,7 +254,7 @@
 	ADD_TRAIT(inf, TRAIT_PIERCEIMMUNE, TRAIT_GENERIC)
 	ADD_TRAIT(inf, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
 	ADD_TRAIT(inf, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
-	faction |= list("Infected")
+	faction = list("Infected")
 
 	invisibility = oldinv
 

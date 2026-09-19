@@ -71,7 +71,7 @@
 	STAINT = rand(1,6)
 	adjust_skillrank(/datum/skill/combat/wrestling, 3, TRUE)
 	adjust_skillrank(/datum/skill/combat/unarmed, 3, TRUE)
-	faction = list("Infected")
+	faction = list("infected")
 
 	
 

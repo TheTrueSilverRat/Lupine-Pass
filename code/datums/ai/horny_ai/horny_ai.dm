@@ -207,7 +207,7 @@
 					//They wash you assh
 					if(current_action == /datum/sex_action/rimming && is_species(src, /datum/species/orc))
 						visible_message(span_love("[src] takes out a bar of spa and starts washing [L]'s ass before eating [L.p_their()] out"))
-					//to_chat(world, span_info("[name]'s current action is [current_action]"))
+					log_admin("[name]'s current action is [current_action]")
 					sexcon.do_until_finished = TRUE
 					sexcon.target = L
 					if(!(sexcon.finished_check()) && (sexcon.current_action == null))

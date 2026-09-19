@@ -44,7 +44,7 @@
 			if("Jizzers")
 				H.infected_transform_jizzer()
 			if("Commanders")
-				//add option here
+				H.infected_transform_commander()
 			if("Flashers")
 				//add option here
 			else

@@ -3,17 +3,17 @@
 	id = "infected_commander"
 	infected_alt_sprite = "commander"
 
-/datum/species/infected/flasher/on_species_gain(mob/living/carbon/C, datum/species/old_species)
+/datum/species/infected/commander/on_species_gain(mob/living/carbon/C, datum/species/old_species)
 	. = ..()
-	C.AddSpell()
-	C.AddSpell()
-	C.AddSpell()
-	
+	C.AddSpell() //Buffs all Infected around them.
+	C.AddSpell() //Specifically debuffs one specific person
+	C.AddSpell(new /obj/effect/proc_holder/spell/invoked/summon_infected) //Summons more infected to the field
+
 
 /obj/item/clothing/suit/roguetown/armor/skin_armor/infected_carpace/commander
 	name = "\improper commander infected's carpace"
-	armor = ARMOR_LEATHER_STUDDED
-	max_integrity = 500
+	armor = ARMOR_PLATE_GOOD
+	max_integrity = 1000
 
 //Infection Proc, used for specifying transformation stuff.
 /mob/living/carbon/human/proc/infected_transform_commander()
@@ -34,7 +34,7 @@
 
 	src.fully_heal(FALSE)
 
-	var/infected_path = /mob/living/carbon/human/species/infected/jizzer
+	var/infected_path = /mob/living/carbon/human/species/infected/commander
 
 	var/mob/living/carbon/human/species/infected/inf = new infected_path(loc)
 
@@ -45,14 +45,14 @@
 	inf.limb_destroyer = TRUE
 	inf.ambushable = FALSE
 	inf.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
-	inf.skin_armor = new /obj/item/clothing/suit/roguetown/armor/skin_armor/infected_carpace/jizzer(inf)
+	inf.skin_armor = new /obj/item/clothing/suit/roguetown/armor/skin_armor/infected_carpace/commaner(inf)
 	playsound(inf.loc, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
 	inf.spawn_gibs(FALSE)
 	src.forceMove(inf)
 
 	inf.after_creation()
-	inf.real_name = "Jizzer Infected"
-	inf.name = "Jizzer Infected"
+	inf.real_name = "Commander Infected"
+	inf.name = "Commander Infected"
 
 	inf.stored_language = new
 	inf.stored_language.copy_known_languages_from(src)
@@ -108,14 +108,15 @@
 	inf.adjust_skillrank(/datum/skill/misc/climbing, 6, TRUE)
 	inf.adjust_skillrank(/datum/skill/misc/swimming, 5, TRUE)
 	inf.adjust_skillrank(/datum/skill/combat/slings, 6, TRUE)
+	inf.adjust_skillrank(/datum/skill/magic/arcane, 6, TRUE)
 
-	inf.STASTR = src.STASTR -4
+	inf.STASTR = src.STASTR +4
 	inf.STAPER = src.STAPER +4
-	inf.STAINT = src.STAINT -2
-	inf.STALUC = src.STALUC 
-	inf.STASPD = src.STASPD +4
-	inf.STACON = src.STACON -6
-	inf.STAEND = src.STAEND +6
+	inf.STAINT = src.STAINT +8
+	inf.STALUC = src.STALUC +8
+	inf.STASPD = src.STASPD +8
+	inf.STACON = src.STACON +8
+	inf.STAEND = src.STAEND +8
 
 //To do, make a changeling like hivemind chat
 	inf.AddSpell(new /obj/effect/proc_holder/spell/self/claws)
@@ -137,6 +138,6 @@
 	ADD_TRAIT(inf, TRAIT_PIERCEIMMUNE, TRAIT_GENERIC)
 	ADD_TRAIT(inf, TRAIT_LONGSTRIDER, TRAIT_GENERIC)
 	ADD_TRAIT(inf, TRAIT_DEATHBYSNUSNU, TRAIT_GENERIC)
-	faction |= list("Infected")
+	faction = list("Infected")
 
 	invisibility = oldinv
