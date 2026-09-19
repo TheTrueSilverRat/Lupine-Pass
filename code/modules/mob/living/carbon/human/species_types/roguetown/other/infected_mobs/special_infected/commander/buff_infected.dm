@@ -5,7 +5,7 @@
 	recharge_time = 1 MINUTES
 	still_recharging_msg = span_warn("It'll take time to boost the psionic presence of the hive's local node.")
 
-	var/cast_without_targets = FALSE
+	cast_without_targets = FALSE
 
 	invocations = list("FOR THE HIVE!!") //what is uttered when the wizard casts the spell
 	invocation_type = "shout"

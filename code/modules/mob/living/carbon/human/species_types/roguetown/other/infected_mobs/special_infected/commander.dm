@@ -10,6 +10,11 @@
 	C.AddSpell(new /obj/effect/proc_holder/spell/invoked/summon_infected) //Summons more infected to the field
 
 
+/mob/living/carbon/human/species/infected/commander
+	name = "Commander Infected"
+	race = /datum/species/infected/commander
+	gender = FEMALE
+
 /obj/item/clothing/suit/roguetown/armor/skin_armor/infected_carpace/commander
 	name = "\improper commander infected's carpace"
 	armor = ARMOR_PLATE_GOOD
@@ -45,7 +50,7 @@
 	inf.limb_destroyer = TRUE
 	inf.ambushable = FALSE
 	inf.cmode_music = 'sound/music/cmode/antag/combat_darkstar.ogg'
-	inf.skin_armor = new /obj/item/clothing/suit/roguetown/armor/skin_armor/infected_carpace/commaner(inf)
+	inf.skin_armor = new /obj/item/clothing/suit/roguetown/armor/skin_armor/infected_carpace/commander(inf)
 	playsound(inf.loc, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
 	inf.spawn_gibs(FALSE)
 	src.forceMove(inf)
