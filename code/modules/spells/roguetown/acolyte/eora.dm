@@ -1164,7 +1164,7 @@
 
 /proc/process_ochre_revivals(list/mob/living/carbon/human/targets_to_revive)
 	for(var/mob/living/carbon/human/target in targets_to_revive)
-		continue
+//		continue
 		if(target.stat != DEAD)
 			continue
 
