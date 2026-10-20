@@ -298,7 +298,7 @@
 /datum/intent/hit
 	name = "hit"
 	icon_state = "instrike"
-	attack_verb = list("hit", "strike")
+	attack_verb = list("hits", "strikes")
 	item_d_type = "blunt"
 	chargetime = 0
 	swingdelay = 0

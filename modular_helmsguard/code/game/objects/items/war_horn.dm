@@ -44,7 +44,7 @@
 	farchargesound = 'modular_helmsguard/sound/items/horns/o_charge_distant.ogg'
 
 /datum/intent/war_horn
-	attack_verb = list("hit", "strike")
+	attack_verb = list("hits", "strikes")
 	item_d_type = "blunt"
 	chargetime = 0
 	swingdelay = 0
